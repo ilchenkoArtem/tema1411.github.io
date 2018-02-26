@@ -1,0 +1,50 @@
+.caption {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.caption b {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 103%;
+	letter-spacing: -4%;
+	text-transform: uppercase;
+	padding: 0 5px;
+}
+
+.caption__right,
+.caption__left {
+	flex-grow: 1;
+	height: 1px;
+	background-color: #FFA600;
+}
+
+/*стрелка в моих работах*/
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;
+	}
+}
+
+@keyframes pulse2 {
+	0% {
+		box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+	}
+}
