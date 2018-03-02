@@ -4,33 +4,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 </head>
 
 <body class="body">
-	<header class="header">
-		<div class="header__name">
-			<b>Artem<br> Ichenko</b>
-			<p>HTML coder</p>
+	<header class="header" id="top">
+		<div class="header__mainlogo">
+			<div class="header__logo">
+				<img src="img/mylogo.svg" alt="" height="" width="">
+			</div>
+			<div class="header__menu">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</div>
-		<button class="header__button"></button>
 		<nav class="header__nav">
-			<ul class="header__links">
-				<li class="main-nav__link"></li>
-				<li class="main-nav__link"></li>
-				<li class="main-nav__link"></li>
-				<li class="main-nav__link"></li>
-				<li class="main-nav__link"></li>
-				<li class="main-nav__link"></li>
+			<ul class="header__links" id="menu">
+				<li class="main-nav__link"><a href="#about-me">Обо мне</a></li>
+				<li class="main-nav__link"><a href="#skills">Мои навыки</a></li>
+				<li class="main-nav__link"><a href="#mywork">Мои работы</a></li>
+				<li class="main-nav__link"><a href="#why">Почему я?</a></li>
+				<li class="main-nav__link"><a href="#web">WEB образование</a></li>
+				<li class="main-nav__link"><a href="#contacts">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main class="main">
 		<section class="screen">
+			<!--			<p>Всегда пишу код так, будто сопровождать его будет склонный к насилию психопат, который знает, где я живу</p>-->
 			<ul class="screen__social">
 				<li class="screen__item screen__item--telegram">
 					<a href="">
@@ -55,7 +67,7 @@
 			</ul>
 		</section>
 
-		<section class="about-me">
+		<section class="about-me" id="about-me">
 			<div class="caption">
 				<div class="caption__left"></div>
 				<b>Обо мне</b>
@@ -64,7 +76,7 @@
 			<p>Здравствуйте! Я Артём Ильченко. HTML coder, специализирующийся на преобразовании графического макета (Photoshop, Figma или другие) в код web-страницы, оформляю созданный код с помощью встроенных средств языка разметки, либо же с помощью каскадных таблиц стилей CSS, а также использую JavaScript для программирования взаимодействия с пользователем.</p>
 		</section>
 
-		<section class="skills">
+		<section class="skills" id="skills">
 			<div class="caption">
 				<div class="caption__left"></div>
 				<b>Мои навыки</b>
@@ -144,7 +156,7 @@
 					</div>
 				</li>
 				<li class="skills__items--browser">
-					<img src="img/Group.svg" alt="" height="109" width="">
+					<img src="img/Group1.svg" alt="" height="109" width="">
 					<p>Кроссбраузерность</p>
 					<div class="skills__progress">
 						<div class="skills__progres-bar"></div>
@@ -153,58 +165,64 @@
 			</ul>
 		</section>
 
-		<section class="mywork">
+		<section class="mywork" id="mywork">
 			<div class="caption">
 				<div class="caption__left"></div>
 				<b>Мои работы</b>
 				<div class="caption__right"></div>
 			</div>
-			<div>
+			<div class="mywork__container">
 				<div class="mywork__all mywork__all--mishka">
 					<img src="img/mishka-index-desktop.jpg" alt="" height="185" width="280">
-					<b>“Мишка”</b>
-					<p>Вёрстка сайта магазина “Мишка”, игрушек ручной работы</p>
-					<p>Описание выполненных работ:</p>
-					<ul>
-						<li>Вёрстка: адаптивная + резина</li>
-						<li>Использована адаптивная графика</li>
-						<li>Оптимизирована загрузка шрифтов</li>
-						<li>Оптиизация изображений под экраны с большой плотностью пикселей, а также использование новейшего формата от Google .webp, что позволяет значительно уменьшить вес изображений и следовательно увеличить скорость загрузки страниц</li>
-						<li>Оптимизированная векторная графика</li>
-						<li>Вёрстка без использования Фреймворков</li>
-						<li>Валидная вёрстка</li>
-					</ul>
+					<b class="mywork__caption">“Мишка”</b>
+					<div class="mywork__description">
+						<p>Вёрстка сайта магазина “Мишка”, игрушек ручной работы</p>
+						<p>Описание выполненных работ:</p>
+						<ul>
+							<li>Вёрстка: адаптивная + резина</li>
+							<li>Использована адаптивная графика</li>
+							<li>Оптимизирована загрузка шрифтов</li>
+							<li>Оптиизация изображений под экраны с большой плотностью пикселей, а также использование новейшего формата от Google .webp, что позволяет значительно уменьшить вес изображений и следовательно увеличить скорость загрузки страниц</li>
+							<li>Оптимизированная векторная графика</li>
+							<li>Вёрстка без использования Фреймворков</li>
+							<li>Валидная вёрстка</li>
+						</ul>
+					</div>
 				</div>
 				<div class="mywork__all mywork__all--nerds">
 					<img src="img/nerds-index.png" alt="" height="185" width="280">
-					<b>“nerds”</b>
-					<p>Вёрстка сайта магазина “Nerds”, сайта по продаже шаблонов</p>
-					<p>Описание выполненых работ:</p>
-					<ul>
-						<li>Фиксированая вёрстка</li>
-						<li>Оптимизированна векторная графика</li>
-						<li>Оптимизированна растравая графика</li>
-						<li>Вёрстка без использования Фреймворков</li>
-						<li>Валидная вёрстка</li>
-					</ul>
+					<b class="mywork__caption">“nerds”</b>
+					<div class="mywork__description">
+						<p>Вёрстка сайта магазина “Nerds”, сайта по продаже шаблонов</p>
+						<p>Описание выполненых работ:</p>
+						<ul>
+							<li>Фиксированая вёрстка</li>
+							<li>Оптимизированна векторная графика</li>
+							<li>Оптимизированна растравая графика</li>
+							<li>Вёрстка без использования Фреймворков</li>
+							<li>Валидная вёрстка</li>
+						</ul>
+					</div>
 				</div>
 				<div class="mywork__all mywork__all--gllacy">
 					<img src="img/gllacy-index-1200.png" alt="" height="185" width="280">
-					<b>“Gllacy”</b>
-					<p>Вёрстка сайта магазина “Gllacy”, сайта по продаже мароженого</p>
-					<p>Описание выполненых работ:</p>
-					<ul>
-						<li>Фиксированая вёрстка</li>
-						<li>Оптимизированна векторная графика</li>
-						<li>Оптимизированна растравая графика</li>
-						<li>Вёрстка без использования Фреймворков</li>
-						<li>Валидная вёрстка</li>
-					</ul>
+					<b class="mywork__caption">“Gllacy”</b>
+					<div class="mywork__description">
+						<p>Вёрстка сайта магазина “Gllacy”, сайта по продаже мароженого</p>
+						<p>Описание выполненых работ:</p>
+						<ul>
+							<li>Фиксированая вёрстка</li>
+							<li>Оптимизированна векторная графика</li>
+							<li>Оптимизированна растравая графика</li>
+							<li>Вёрстка без использования Фреймворков</li>
+							<li>Валидная вёрстка</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="why">
+		<section class="why" id="why">
 			<div class="caption">
 				<div class="caption__left"></div>
 				<b>Почему я?</b>
@@ -224,17 +242,19 @@
 			</ul>
 		</section>
 
-		<section class="web">
+		<section class="web" id="web">
 			<div class="caption">
 				<div class="caption__left"></div>
 				<b>Web образование</b>
 				<div class="caption__right"></div>
 			</div>
-			<img src="img/2.png" alt="" height="" width="280">
-			<img src="img/1.png" alt="" height="" width="280">
+			<div class="web__container">
+				<img src="img/2.png" alt="" height="" width="280">
+				<img src="img/1.png" alt="" height="" width="280">
+			</div>
 		</section>
 
-		<section class="contacts">
+		<section class="contacts" id='contacts'>
 			<div class="caption">
 				<div class="caption__left"></div>
 				<b>Контакты</b>
@@ -242,23 +262,23 @@
 			</div>
 			<div>
 				<p>Со мной можно связаться через следующие сервисы:</p>
-				<ul class="contacts__social">
-					<li class="screen__item screen__item--telegram">
+				<ul class="contacts-footer__social">
+					<li class="contacts-footer__social-item">
 						<a href="">
 						<img src="img/telegram.svg" alt="" height="29" width="29">
 					</a>
 					</li>
-					<li class="screen__item">
+					<li class="contacts-footer__social-item">
 						<a href="">
 						<img src="img/iconmonstr-twitter-1.svg" alt="" height="29" width="29">
 					</a>
 					</li>
-					<li class="screen__item">
+					<li class="contacts-footer__social-item">
 						<a href="">
 						<img src="img/iconmonstr-skype-1.svg" alt="" height="29" width="29">
 					</a>
 					</li>
-					<li class="screen__item">
+					<li class="contacts-footer__social-item">
 						<a href="">
 						<img src="img/iconmonstr-instagram-1.svg" alt="" height="29" width="29">
 					</a>
@@ -271,6 +291,16 @@
 			</div>
 		</section>
 	</main>
+	<div class="back-top">
+		<a href="#top"><img src="img/up-arrow.svg" alt="" width="20" height="20"></a>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+
+	</script>
+	<script src="script/script.js"></script>
 </body>
+
+
 
 </html>

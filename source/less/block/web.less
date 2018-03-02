@@ -1,0 +1,30 @@
+.web {
+	background-color: #202020;
+	padding: 10px 20px;
+}
+
+.web img {
+	margin-top: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.web img:nth-child(2) {
+	margin-top: 22px;
+}
+
+.web__container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+@media(min-width: 600px) {
+	.web img {
+		width: 49%;
+		height: 100%;
+	}
+	.web img:nth-child(2) {
+		margin-top: 10px;
+	}
+}

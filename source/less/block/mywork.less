@@ -6,7 +6,7 @@
 .mywork__all {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	&--mishka {
 		margin-top: 10px;
 	}
@@ -31,6 +31,7 @@
 }
 
 .mywork__all b {
+	align-self: center;
 	font-weight: bold;
 	line-height: normal;
 	font-size: 17px;
@@ -59,4 +60,30 @@
 
 .mywork__all img {
 	margin-bottom: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.mywork__description {
+	max-height: 800px;
+	overflow: hidden;
+	transition: 0.3s linear;
+}
+
+.mywork__description--close {
+	max-height: 0;
+}
+
+@media(min-width: 600px) {
+	.mywork__container {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.mywork__all {
+		margin-top: 10px;
+		width: 48%;
+		height: 100%;
+	}
 }

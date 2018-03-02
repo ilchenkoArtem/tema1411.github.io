@@ -7,6 +7,11 @@
 
 .skills {
 	padding: 10px 20px;
+	padding-right: 0;
+}
+
+.skills .caption__right {
+	margin-right: 20px;
 }
 
 .skills img {
@@ -22,8 +27,8 @@
 }
 
 
-.skills li:not(:nth-child(3n)) {
-	margin-right: 27px;
+.skills li {
+	margin-right: 20px;
 }
 
 .skills ul {
@@ -91,6 +96,7 @@
 
 ul.skills__items li.skills__items--browser {
 	margin: 0;
+	margin-right: 20px;
 }
 
 .skills__items--browser .skills__progress {
@@ -102,10 +108,15 @@ ul.skills__items li.skills__items--browser {
 	width: 143.9px;
 }
 
+.skills__items--browser {
+	width: 100%;
+}
+
 .skills__items--browser p {
 	font-weight: bold;
 	line-height: 11px;
 	font-size: 10px;
-	letter-spacing: -4%;
 	text-transform: uppercase;
 }
+
+@media (min-width: 378px) {}
