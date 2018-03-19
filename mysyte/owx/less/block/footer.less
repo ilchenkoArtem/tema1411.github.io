@@ -1,0 +1,43 @@
+.footer__container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 37px;
+	padding-bottom: 54px;
+}
+
+.footer__container section {
+	width: 25%;
+	padding-right: 78px;
+	position: relative;
+}
+
+.footer__container section:not(:last-of-type)::after {
+	content: "";
+	position: absolute;
+	right: 40px;
+	top: 0;
+	width: 1px;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(253, 253, 253, 1) 0%, rgba(221, 220, 220, 1) 52%, rgba(253, 253, 253, 1) 100%);
+}
+
+.footer__container section {
+	padding-right: 28px;
+}
+
+.footer__container section:not(:last-of-type)::after {
+	right: 10px;
+}
+
+
+@media(max-width:999px) {
+	.footer__container section {
+		width: 100%;
+	}
+	.footer__container section:not(:last-of-type)::after {
+		display: none;
+	}
+	.footer__container {
+		flex-direction: column;
+	}
+}
