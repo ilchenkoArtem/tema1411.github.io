@@ -56,11 +56,14 @@ div.footer__bottom {
 	align-items: flex-end;
 }
 
-.footer__bottom-adress,
-.footer__bottom .link {
+div.footer__bottom {
 	font-weight: 300;
 
 	color: #f2f2f2;
+}
+
+div.footer__bottom .number {
+	font-weight: normal;
 }
 
 .footer__top-social {
@@ -148,7 +151,7 @@ a.footer__top-call {
 	align-items: center;
 }
 
-.footer__bottom-contacts > adress {
+.footer__bottom-contacts .link {
 	font-size: 16px;
 
 	margin-bottom: 11px;
@@ -157,7 +160,7 @@ a.footer__top-call {
 }
 
 .footer__bottom-contacts p {
-	font-weight: normal;
+	font-weight: 300;
 	line-height: 117%;
 
 	margin-top: 14px;
@@ -183,7 +186,7 @@ a.footer__top-call {
 	align-items: center;
 }
 
-.footer__bottom-adress > adress {
+.footer__bottom-adress > p {
 	line-height: 121%;
 
 	text-align: center;
