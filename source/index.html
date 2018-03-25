@@ -10,8 +10,8 @@
 	<meta name="format-detection" content="telephone=no">
 </head>
 
-<body class="body">
-	<header class="header" id="top">
+<body class="body" id="top">
+	<header class="header">
 		<div class="header__logo">
 			<img src="img/mylogo.svg" alt="" height="" width="">
 		</div>
@@ -173,7 +173,9 @@
 				<div class="mywork__all mywork__all--mishka">
 					<div class="mywork__container-img">
 						<b class="mywork__caption">“Мишка”</b>
-						<img src="img/mishka-index-desktop.jpg" alt="" height="185" width="280" class="mywork__img">
+						<picture>
+							<img src="img/mishka.jpg" srcset="img/mishka@2x.jpg 2x, img/mishka@3x.jpg 3x" alt="Проект 'Мишка'" class="mywork__img">
+						</picture>
 					</div>
 					<div class="mywork__description">
 						<p>Вёрстка сайта магазина “Мишка”, игрушек ручной работы</p>
@@ -253,8 +255,13 @@
 				<div class="caption__right"></div>
 			</div>
 			<div class="web__container">
-				<img src="img/2.png" alt="" height="" width="280">
-				<img src="img/1.png" alt="" height="" width="280">
+				<picture>
+					<img src="img/mobile_base.png" srcset="img/mobile_base@2x.png 2x, img/mobile_base@3x.png 3x" alt="Сертифткат за базовый курс HTML Academy">
+				</picture>
+
+				<picture>
+					<img src="img/mobile_pro.png" srcset="img/mobile_pro@2x.png 2x, img/mobile_pro@3x.png 3x" alt="Сертифткат за базовый курс HTML Academy">
+				</picture>
 			</div>
 		</section>
 

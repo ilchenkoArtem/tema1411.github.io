@@ -4,13 +4,18 @@
 	.bi3;
 }
 
-.web img {
+.web picture {
 	margin-top: 10px;
 	width: 100%;
 	height: 100%;
 }
 
-.web img:nth-child(2) {
+.web img {
+	width: 100%;
+	height: 100%;
+}
+
+.web picture:nth-child(2) {
 	margin-top: 22px;
 }
 
@@ -21,11 +26,16 @@
 }
 
 @media(min-width: 600px) {
-	.web img {
+	.web picture {
 		width: 49%;
 		height: 100%;
 	}
-	.web img:nth-child(2) {
-		margin-top: 10px;
+	.web picture:nth-child(2),
+	.web picture {
+		margin-top: 0;
+	}
+	.web__container {
+		align-items: flex-start;
+		padding-top: 22px;
 	}
 }

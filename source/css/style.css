@@ -296,8 +296,8 @@ th {
             transform: translateY(0px);
   }
   50% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
   }
   100% {
     -webkit-transform: translateY(0px);
@@ -310,8 +310,8 @@ th {
             transform: translateY(0px);
   }
   50% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
   }
   100% {
     -webkit-transform: translateY(0px);
@@ -671,6 +671,14 @@ body {
   width: 100%;
   height: 100%;
 }
+@media (min-width: 1000px) {
+  .screen {
+    height: 89vh;
+  }
+  .screen__item {
+    width: 90%;
+  }
+}
 .about-me {
   padding: 10px 20px;
   background-color: #202020;
@@ -688,6 +696,22 @@ body {
     width: 50%;
     background-color: #282828;
     background-image: url(../img/fon.png);
+    position: relative;
+  }
+  .about-me::after {
+    content: "";
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 166, 0, 0.2)), color-stop(40%, rgba(255, 166, 0, 0.5)), color-stop(51%, rgba(255, 166, 0, 0.5)), color-stop(60%, rgba(255, 166, 0, 0.5)), to(rgba(255, 166, 0, 0.2)));
+    background: -webkit-linear-gradient(top, rgba(255, 166, 0, 0.2) 0%, rgba(255, 166, 0, 0.5) 40%, rgba(255, 166, 0, 0.5) 51%, rgba(255, 166, 0, 0.5) 60%, rgba(255, 166, 0, 0.2) 100%);
+    background: -o-linear-gradient(top, rgba(255, 166, 0, 0.2) 0%, rgba(255, 166, 0, 0.5) 40%, rgba(255, 166, 0, 0.5) 51%, rgba(255, 166, 0, 0.5) 60%, rgba(255, 166, 0, 0.2) 100%);
+    background: linear-gradient(to bottom, rgba(255, 166, 0, 0.2) 0%, rgba(255, 166, 0, 0.5) 40%, rgba(255, 166, 0, 0.5) 51%, rgba(255, 166, 0, 0.5) 60%, rgba(255, 166, 0, 0.2) 100%);
+    width: 1px;
+    height: 95%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-47%);
+        -ms-transform: translateY(-47%);
+            transform: translateY(-47%);
   }
 }
 .mywork {
@@ -765,6 +789,10 @@ body {
   width: 100%;
   height: 100%;
 }
+.mywork__all picture {
+  width: 100%;
+  height: 100%;
+}
 .mywork__description {
   max-height: 800px;
   overflow: hidden;
@@ -790,11 +818,6 @@ body {
   margin-bottom: 7px;
 }
 @media (min-width: 600px) {
-  .mywork {
-    background-color: #000;
-    background-color: #00020d;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='384' height='384' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%236a6b65' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23545454'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
-  }
   .mywork__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -833,17 +856,26 @@ body {
   left: -13px;
   top: 6px;
 }
+@media (min-width: 890px) {
+  .why {
+    background-image: url(../img/fon.png);
+  }
+}
 .web {
   background-color: #202020;
   padding: 10px 20px;
   background-image: url(../img/fon.png);
 }
-.web img {
+.web picture {
   margin-top: 10px;
   width: 100%;
   height: 100%;
 }
-.web img:nth-child(2) {
+.web img {
+  width: 100%;
+  height: 100%;
+}
+.web picture:nth-child(2) {
   margin-top: 22px;
 }
 .web__container {
@@ -857,12 +889,19 @@ body {
       flex-wrap: wrap;
 }
 @media (min-width: 600px) {
-  .web img {
+  .web picture {
     width: 49%;
     height: 100%;
   }
-  .web img:nth-child(2) {
-    margin-top: 10px;
+  .web picture:nth-child(2),
+  .web picture {
+    margin-top: 0;
+  }
+  .web__container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 22px;
   }
 }
 .contacts {
@@ -909,6 +948,18 @@ body {
 .contacts-footer__social img {
   width: 100%;
   height: 100%;
+}
+@media (min-width: 890px) {
+  .contacts {
+    background-image: url(../img/fon.png);
+  }
+}
+@media (min-width: 890px) {
+  .contacts__button {
+    font-size: 22px;
+    height: 45px;
+    padding: 0 37px;
+  }
 }
 .skills__progress {
   width: 61px;
