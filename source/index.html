@@ -12,37 +12,34 @@
 
 <body class="body">
 	<header class="header" id="top">
-		<div class="header__mainlogo">
-			<div class="header__logo">
-				<img src="img/mylogo.svg" alt="" height="" width="">
-			</div>
-			<div class="header__menu">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
+		<div class="header__logo">
+			<img src="img/mylogo.svg" alt="" height="" width="">
+		</div>
+		<div class="header__menu">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
 		</div>
 		<nav class="header__nav">
 			<ul class="header__links" id="menu">
-				<li class="main-nav__link"><a href="#about-me">Обо мне</a></li>
-				<li class="main-nav__link"><a href="#skills">Мои навыки</a></li>
-				<li class="main-nav__link"><a href="#mywork">Мои работы</a></li>
-				<li class="main-nav__link"><a href="#why">Почему я?</a></li>
-				<li class="main-nav__link"><a href="#web">WEB образование</a></li>
-				<li class="main-nav__link"><a href="#contacts">Контакты</a></li>
+				<li class="header-nav__link header-nav__link--about-me"><a href="#about-me">Обо мне</a></li>
+				<li class="header-nav__link header-nav__link--skills"><a href="#skills"> Навыки</a></li>
+				<li class="header-nav__link"><a href="#mywork"> Портфолио</a></li>
+				<li class="header-nav__link"><a href="#why">Почему я?</a></li>
+				<li class="header-nav__link"><a href="#web">WEB образование</a></li>
+				<li class="header-nav__link"><a href="#contacts">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main class="main">
 		<section class="screen">
-			<!--			<p>Всегда пишу код так, будто сопровождать его будет склонный к насилию психопат, который знает, где я живу</p>-->
 			<ul class="screen__social">
 				<li class="screen__item screen__item--telegram">
 					<a href="">
@@ -66,104 +63,105 @@
 				</li>
 			</ul>
 		</section>
+		<div class="main__container-SkillAbout">
+			<section class="about-me" id="about-me">
+				<div class="caption">
+					<div class="caption__left"></div>
+					<b>Обо мне</b>
+					<div class="caption__right"></div>
+				</div>
+				<p>Здравствуйте! Я Артём Ильченко. HTML coder, специализирующийся на преобразовании графического макета (Photoshop, Figma или другие) в код web-страницы, оформляю созданный код с помощью встроенных средств языка разметки, либо же с помощью каскадных таблиц стилей CSS, а также использую JavaScript для программирования взаимодействия с пользователем.</p>
+			</section>
 
-		<section class="about-me" id="about-me">
-			<div class="caption">
-				<div class="caption__left"></div>
-				<b>Обо мне</b>
-				<div class="caption__right"></div>
-			</div>
-			<p>Здравствуйте! Я Артём Ильченко. HTML coder, специализирующийся на преобразовании графического макета (Photoshop, Figma или другие) в код web-страницы, оформляю созданный код с помощью встроенных средств языка разметки, либо же с помощью каскадных таблиц стилей CSS, а также использую JavaScript для программирования взаимодействия с пользователем.</p>
-		</section>
-
-		<section class="skills" id="skills">
-			<div class="caption">
-				<div class="caption__left"></div>
-				<b>Мои навыки</b>
-				<div class="caption__right"></div>
-			</div>
-			<ul class="skills__items">
-				<li class="skills__items--html">
-					<img src="img/html-5 (1).svg" alt="" height="69">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--js">
-					<img src="img/javascript.svg" alt="" height="69">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--css">
-					<img src="img/css-3.svg" alt="" height="69" width="">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--figma">
-					<img src="img/ddd.svg" alt="" height="67" width="">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--ps">
-					<img src="img/photoshop (1).svg" alt="" height="67" width="">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--ai">
-					<img src="img/illustrator.svg" alt="" height="67" width="">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--sass">
-					<img src="img/sass.svg" alt="" height="47" width="">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--gulp">
-					<img src="img/gulp.svg" alt="" height="94" width="">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--less">
-					<img src="img/less.svg" alt="" height="36" width="">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--svg">
-					<img src="img/svg.svg" alt="" height="67" width="">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--git">
-					<img src="img/icons8-git.svg" alt="" height="69" width="">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--bem">
-					<img src="img/bem.svg" alt="" height="53" width="">
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-				<li class="skills__items--browser">
-					<img src="img/Group1.svg" alt="" height="109" width="">
-					<p>Кроссбраузерность</p>
-					<div class="skills__progress">
-						<div class="skills__progres-bar"></div>
-					</div>
-				</li>
-			</ul>
-		</section>
+			<section class="skills" id="skills">
+				<div class="caption">
+					<div class="caption__left"></div>
+					<b>Мои навыки</b>
+					<div class="caption__right"></div>
+				</div>
+				<ul class="skills__items">
+					<li class="skills__items--html">
+						<img src="img/html-5 (1).svg" alt="" height="69">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--js">
+						<img src="img/javascript.svg" alt="" height="69">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--css">
+						<img src="img/css-3.svg" alt="" height="69" width="">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--figma">
+						<img src="img/ddd.svg" alt="" height="67" width="">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--ps">
+						<img src="img/photoshop (1).svg" alt="" height="67" width="">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--ai">
+						<img src="img/illustrator.svg" alt="" height="67" width="">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--sass">
+						<img src="img/sass.svg" alt="" height="47" width="">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--gulp">
+						<img src="img/gulp.svg" alt="" height="94" width="">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--less">
+						<img src="img/less.svg" alt="" height="36" width="">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--svg">
+						<img src="img/svg.svg" alt="" height="67" width="">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--git">
+						<img src="img/icons8-git.svg" alt="" height="69" width="">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--bem">
+						<img src="img/bem.svg" alt="" height="53" width="">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--browser">
+						<img src="img/Group1.svg" alt="" height="109" width="">
+						<p>Кроссбраузерность</p>
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
 
 		<section class="mywork" id="mywork">
 			<div class="caption">
@@ -173,8 +171,10 @@
 			</div>
 			<div class="mywork__container">
 				<div class="mywork__all mywork__all--mishka">
-					<img src="img/mishka-index-desktop.jpg" alt="" height="185" width="280">
-					<b class="mywork__caption">“Мишка”</b>
+					<div class="mywork__container-img">
+						<b class="mywork__caption">“Мишка”</b>
+						<img src="img/mishka-index-desktop.jpg" alt="" height="185" width="280" class="mywork__img">
+					</div>
 					<div class="mywork__description">
 						<p>Вёрстка сайта магазина “Мишка”, игрушек ручной работы</p>
 						<p>Описание выполненных работ:</p>
@@ -190,8 +190,10 @@
 					</div>
 				</div>
 				<div class="mywork__all mywork__all--nerds">
-					<img src="img/nerds-index.png" alt="" height="185" width="280">
-					<b class="mywork__caption">“nerds”</b>
+					<div class="mywork__container-img">
+						<b class="mywork__caption">“nerds”</b>
+						<img src="img/nerds-index.png" alt="" height="185" width="280">
+					</div>
 					<div class="mywork__description">
 						<p>Вёрстка сайта магазина “Nerds”, сайта по продаже шаблонов</p>
 						<p>Описание выполненых работ:</p>
@@ -205,8 +207,10 @@
 					</div>
 				</div>
 				<div class="mywork__all mywork__all--gllacy">
-					<img src="img/gllacy-index-1200.png" alt="" height="185" width="280">
-					<b class="mywork__caption">“Gllacy”</b>
+					<div class="mywork__container-img">
+						<b class="mywork__caption">“Gllacy”</b>
+						<img src="img/gllacy-index-1200.png" alt="Проект Gllacy" height="185" width="280">
+					</div>
 					<div class="mywork__description">
 						<p>Вёрстка сайта магазина “Gllacy”, сайта по продаже мароженого</p>
 						<p>Описание выполненых работ:</p>

@@ -1,9 +1,7 @@
-var caption = document.querySelectorAll(".mywork__caption");
+var caption = document.querySelectorAll(".mywork__container-img");
 var discription = document.querySelectorAll(".mywork__description");
 var menuNav = document.querySelector(".header__links");
 var link = document.querySelectorAll(".main-nav__link");
-
-menuNav.classList.add("header__links--close");
 
 if (discription) {
 	for (var i = 0; i < discription.length; i++) {
