@@ -7,10 +7,12 @@
 		"autoprefixer": "7.2.x",
 		"browser-sync": "2.23.x",
 		"crass": "^0.12.3",
+		"del": "^3.0.0",
 		"gulp": "3.9.x",
 		"gulp-crass": "^0.2.2",
 		"gulp-csscombx": "^4.2.1",
 		"gulp-csso": "^3.0.1",
+		"gulp-imagemin": "^4.1.0",
 		"gulp-less": "3.4.x",
 		"gulp-plumber": "1.2.x",
 		"gulp-postcss": "7.0.x",
@@ -32,9 +34,5 @@
 	],
 	"engines": {
 		"node": "8.9"
-	},
-	"dependencies": {
-		"del": "^3.0.0",
-		"npm": "^5.7.1"
 	}
 }
