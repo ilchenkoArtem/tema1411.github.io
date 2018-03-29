@@ -968,12 +968,19 @@ ul.skills__items li.skills__items--browser {
 .modal__fone--close {
   display: none;
 }
+.wwfwf {
+  overflow: auto;
+}
 .modal__form {
   position: fixed;
   z-index: 24;
   top: 50%;
   left: 50%;
+  overflow: auto;
+  height: 84%;
   transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: transparent;
 }
 .modal__form--close {
   display: none;
