@@ -17,6 +17,8 @@ var imagemin = require('gulp-tinypng');
 var del = require('del');
 var csscomb = require('gulp-csscombx');
 var svgo = require('gulp-svgo');
+var webp = require('gulp-webp');
+
 
 gulp.task("style", function () {
 	gulp.src("source/less/style.less")
@@ -99,7 +101,13 @@ gulp.task('imgsize', function () {
 		.pipe(sizereport())
 })
 
-
+gulp.task('webp', function () {
+	gulp.src('source/img/*.{jpeg,jpg,png}')
+		.pipe(sizereport())
+		.pipe(webp())
+		.pipe(sizereport())
+		.pipe(gulp.dest('source/img'))
+});
 
 /*----------------------------------------------*/
 
