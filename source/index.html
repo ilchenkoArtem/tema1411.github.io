@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/style-min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
@@ -40,28 +40,15 @@
 
 	<main class="main">
 		<section class="screen">
-			<ul class="screen__social">
-				<li class="screen__item screen__item--telegram">
-					<a href="">
-						<img src="img/telegram.svg" alt="" height="29" width="29">
-					</a>
-				</li>
-				<li class="screen__item">
-					<a href="">
-						<img src="img/iconmonstr-twitter-1.svg" alt="" height="29" width="29">
-					</a>
-				</li>
-				<li class="screen__item">
-					<a href="">
-						<img src="img/iconmonstr-skype-1.svg" alt="" height="29" width="29">
-					</a>
-				</li>
-				<li class="screen__item">
-					<a href="">
-						<img src="img/iconmonstr-instagram-1.svg" alt="" height="29" width="29">
-					</a>
-				</li>
-			</ul>
+			<picture>
+				<source media="(min-width: 1000px)" srcset="img/mobile_main500px.png 1x, img/mobile_main500px@2x.png 2x, img/mobile_main500px@3x.png 3x">
+				<source media="(min-width: 700px)" srcset="img/mobile_main700px.png 1x, img/mobile_main700px@2x.png 2x, img/mobile_main700px@3x.png 3x">
+				<source media="(min-width: 500px)" srcset="img/mobile_main500px.png 1x, img/mobile_main500px@2x.png 2x, img/mobile_main500px@3x.png 3x">
+				<img src="img/mobile_main.png" srcset="img/mobile_main@2x.png 2x, img/mobile_main@3x.png 3x" alt="" height="" width="">
+			</picture>
+			<div>
+				<p>ARTEM ILCHENKO<br>(HTML CODER)</p>
+			</div>
 		</section>
 		<div class="main__container-SkillAbout">
 			<section class="about-me" id="about-me">
@@ -71,6 +58,26 @@
 					<div class="caption__right"></div>
 				</div>
 				<p>Здравствуйте! Я Артём Ильченко. HTML coder, специализирующийся на преобразовании графического макета (Photoshop, Figma или другие) в код web-страницы, оформляю созданный код с помощью встроенных средств языка разметки, либо же с помощью каскадных таблиц стилей CSS, а также использую JavaScript для программирования взаимодействия с пользователем.</p>
+				<ul class="about-me__language">
+					<li class="skills__items--html">
+						<img src="img/ukraine.svg" alt="" height="80">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--html">
+						<img src="img/russia.svg" alt="" height="80">
+						<div class="skills__progress">
+							<div class="skills__progres-bar"></div>
+						</div>
+					</li>
+					<li class="skills__items--html">
+						<img src="img/united-kingdom.svg" alt="" height="80">
+						<div class="skills__progress ">
+							<div class="skills__progres-bar engl"></div>
+						</div>
+					</li>
+				</ul>
 			</section>
 
 			<section class="skills" id="skills">
@@ -326,6 +333,33 @@
 	</main>
 	<div class="back-top">
 		<a href="#top"><img src="img/up-arrow.svg" alt="" width="20" height="20"></a>
+	</div>
+	<div>
+		<div class="modal__fone modal__fone--close">
+		</div>
+		<div class="modal__form modal__form--close" method="post">
+			<form class="modal__item--container">
+				<div class="modal__button--close"></div>
+				<div class="modal__item">
+					<label for="name">Ваше имя*:</label>
+					<input type="text" name="name" placeholder="Иван" id="name" required>
+				</div>
+				<div class="modal__item">
+					<label for="email">Ваш E-mail*:</label>
+					<input type="email" name="email" placeholder="Ivan@gmail.com" id="email" required>
+				</div>
+				<div class="modal__item">
+					<label for="tel">Ваш телефон:</label>
+					<input type="tel" name="tel" placeholder="0502680469/749597556983" id="tel">
+				</div>
+				<div class="modal__item">
+					<label for="text">Ваш вопрос/задание*:</label>
+					<textarea name="text" id="text" cols="30" rows="10" placeholder="Привет, какая стоимость вёрстки лендинга?" required></textarea>
+				</div>
+				<p>* - поля обязательные к заполнению</p>
+				<input type="submit" value="Отправить">
+			</form>
+		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 

@@ -15,13 +15,6 @@ for (var i = 0; i < caption.length; i++) {
 	})
 };
 
-/*
-for (var i = 0; i < link.length; i++) {
-	link[i].addEventListener("click", function () {
-		menuNav.classList.add("header__links--close")
-	})
-};*/
-
 const menuOne = document.querySelector('.header__menu');
 
 function addClassFunOne() {
@@ -59,7 +52,7 @@ $(document).ready(function () {
 		}, 500);
 	});
 });
-
+/*----------------------------------------*/
 
 /*Возвращение на верх*/
 jQuery(function (f) {
@@ -67,4 +60,33 @@ jQuery(function (f) {
 	f(window).scroll(function () {
 		element['fade' + (f(this).scrollTop() > 200 ? 'In' : 'Out')](500);
 	});
+});
+/*------------------------------------------------*/
+
+var buttonModal = document.querySelector(".contacts__button");
+var Modalfon = document.querySelector(".modal__fone");
+var form = document.querySelector(".modal__form");
+var formclose = document.querySelector(".modal__button--close");
+
+buttonModal.addEventListener('click', function () {
+	Modalfon.classList.remove("modal__fone--close");
+	form.classList.remove("modal__form--close");
+})
+
+function close() {
+	console.log("клик")
+	Modalfon.classList.add("modal__fone--close");
+	form.classList.add("modal__form--close");;
+}
+
+formclose.addEventListener('click', function () {
+	close();
+});
+Modalfon.addEventListener('click', function () {
+	close();
+});
+window.addEventListener('keydown', function (evt) {
+	if (evt.keyCode === 27) {
+		close();
+	}
 });
