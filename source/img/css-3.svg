@@ -1,18 +1,1 @@
-<svg width="62" height="69" viewBox="0 0 62 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>css-3</title>
-<desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(-43 -419)">
-<g id="css-3" style="mix-blend-mode:luminosity">
-<g id="Vector">
-<use xlink:href="#path0_fill" transform="translate(43.5 419)" fill="#2196F3"/>
-</g>
-<g id="Vector">
-<use xlink:href="#path1_fill" transform="translate(54.6891 431.696)" fill="#FAFAFA"/>
-</g>
-</g>
-</g>
-<defs>
-<path id="path0_fill" d="M 0 0L 5.55536 62.1L 30.5 69L 55.4359 62.1043L 61 0L 0 0Z"/>
-<path id="path1_fill" d="M 37.9333 7.61156L 37.2318 15.4129L 35.1142 38.7996L 19.3109 43.125L 19.2978 43.1293L 3.50314 38.7996L 2.40079 26.5693L 10.1391 26.5693L 10.7142 32.913L 19.3021 35.2072L 19.3065 35.2029L 27.9075 32.9087L 29.0796 22.3387L 2.03043 22.4121L 1.26357 15.1843L 29.7288 14.8523L 30.3039 7.11562L 0.501072 7.19756L 3.40734e-07 2.46763e-08L 19.3109 2.46763e-08L 38.6217 2.46763e-08L 37.9333 7.61156Z"/>
-</defs>
-</svg>
+<svg width="62" height="69" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g style="mix-blend-mode:luminosity"><use xlink:href="#path0_fill" transform="translate(.5)" fill="#2196F3"/><use xlink:href="#path1_fill" transform="translate(11.69 12.696)" fill="#FAFAFA"/></g><defs><path id="path0_fill" d="M0 0l5.555 62.1L30.5 69l24.936-6.896L61 0H0z"/><path id="path1_fill" d="M37.933 7.612l-.701 7.8L35.114 38.8l-15.803 4.325-.013.004L3.503 38.8 2.401 26.57h7.738l.575 6.344 8.588 2.294.005-.004 8.6-2.294 1.173-10.57-27.05.073-.766-7.228 28.465-.332.575-7.736L.5 7.198 0 0h38.622l-.689 7.612z"/></defs></svg>

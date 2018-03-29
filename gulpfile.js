@@ -16,6 +16,7 @@ var run = require('run-sequence');
 var imagemin = require('gulp-tinypng');
 var del = require('del');
 var csscomb = require('gulp-csscombx');
+var svgo = require('gulp-svgo');
 
 gulp.task("style", function () {
 	gulp.src("source/less/style.less")
@@ -75,7 +76,7 @@ gulp.task('cssmin2', function () {
 		.pipe(rename("style-min.css"))
 		.pipe(gulp.dest('build/'));;
 });
-
+/*------------Изображения--------------*/
 gulp.task('tinypng', function () {
 	gulp.src('source/img/*.{png,jpg,jpeg}')
 		.pipe(sizereport())
@@ -84,6 +85,23 @@ gulp.task('tinypng', function () {
 		.pipe(gulp.dest('source/img'))
 
 });
+
+gulp.task('svgoptim', function () {
+	return gulp.src('source/img/*.svg')
+		.pipe(sizereport())
+		.pipe(svgo())
+		.pipe(sizereport())
+		.pipe(gulp.dest('source/img'));
+});
+
+gulp.task('imgsize', function () {
+	return gulp.src('source/img/*.{svg,jpeg,webp,png,jpg}')
+		.pipe(sizereport())
+})
+
+
+
+/*----------------------------------------------*/
 
 gulp.task("clean", function () {
 	return del("build");

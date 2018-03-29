@@ -18,14 +18,12 @@
 
 .modal__form {
 	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
 	z-index: 24;
+	top: 0;
+	width: 100%;
+	left: 0;
+	height: 100%;
 	overflow: auto;
-	background-color: transparent;
-	border-radius: 10px;
-	height: 84%;
 	&--close {
 		display: none;
 	}
@@ -46,13 +44,17 @@
 }
 
 .modal__item--container {
-	background-image: url(../img/fon.png);
+	position: relative;
 	width: 73vw;
+	max-width: 600px;
 	padding: 20px;
 	border-radius: 10px;
-	box-shadow: 0px 0px 21px #000;
-	max-width: 600px;
-	position: relative;
+	background-image: url(../img/fon.png);
+	box-shadow: 0 0 21px #000;
+	margin: auto;
+	z-index: 40;
+	top: 8%;
+	transform: translate3d(0, 0, 0);
 	& p {
 		font-size: 14px;
 		color: #FFA600;
