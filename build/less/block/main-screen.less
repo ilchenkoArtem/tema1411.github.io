@@ -1,0 +1,81 @@
+.screen {
+	background-image: url(../img/main_mobile.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 101%;
+	min-width: 320px;
+	height: 53vw;
+	padding: 0 20px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+
+	@media (min-resolution: @retina-dpi),
+	(min-resolution: @retina-dppx) {
+		background-image: url("../img/main_mobile@2x.jpg");
+	}
+}
+
+@media(min-width: 600px) {
+	background-image: url(../img/main_tablet.jpg);
+	@media (min-resolution: @retina-dpi),
+	(min-resolution: @retina-dppx) {
+		background-image: url("../img/main_tablet@2x.jpg");
+	}
+}
+
+@media(min-width: 900px) {
+	background-image: url(../img/main_tablet900.jpg);
+	@media (min-resolution: @retina-dpi),
+	(min-resolution: @retina-dppx) {
+		background-image: url("../img/main_tablet900@2x.jpg");
+	}
+}
+
+@media(min-width: 1000px) {
+	background-image: url(../img/main_desctop.jpg);
+	@media (min-resolution: @retina-dpi),
+	(min-resolution: @retina-dppx) {
+		background-image: url("../img/main_desctop@2x.jpg");
+	}
+}
+
+.screen picture:first-child {
+	width: 100%;
+	height: auto;
+	margin-right: 4px;
+	background-color: #A0A0A0;
+	border-radius: 50%;
+}
+
+.screen div {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 3.7vw;
+	font-weight: bold;
+}
+
+.screen p {
+	text-shadow: 1px 1px 1px #000;
+}
+
+.screen img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@media(min-width: 1000px) {
+	.screen {
+		height: 36vw;
+	}
+	.screen picture:first-child {
+		width: 31%;
+	}
+
+	.screen div {
+		width: 56%;
+	}
+}

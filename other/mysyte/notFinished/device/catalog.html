@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Device-catalog</title>
+    <link rel="stylesheet" href="css//normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header header-catalog center">
+        <div class="logo center2">
+            <a href="index.html" class="logo_item">device</a>
+        </div>
+        <div class="main_items1 center2">
+            <form action="">
+                <ul class="main_item1 listStNo">
+                    <li class="logo_search">
+                        <input type="text" placeholder="Поиск по сайту" class="search-input">
+                        <input type="submit" value="Найти" class="search_submit">
+                    </li>
+                </ul>
+            </form>
+            <ul class="main_item2 listStNo ">
+                <li>
+                    <ul class="main_item2-left listStNo">
+                        <li><a href="#" class="main_item2-link1 main_item2-link">Валентин Петухов  <span class="exit">Выйти</span></a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <ul class="main_item2-right listStNo">
+                        <li><a href="#" class="main_item2-link2 main_item2-link">Сравнить</a></li>
+                        <li><a href="#" class="main_item2-link3 main_item2-link">Корзина</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <ul class="main_items2 center2 ">
+            <li class="main_nav1">
+                <a href="#" class="main_items2-link1 main_items2-link ">каталог товаров</a>
+                <div class="summ"></div>
+                <ul class="nav_poppup listStNo">
+                    <li class="poppup_column">
+                        <a href="#" class="poppup_item">Виртуальная реальность</a>
+                        <a href="#" class="poppup_item">Моноподы для селфи</a>
+                        <a href="#" class="poppup_item">Экшн-камеры</a>
+                    </li>
+                    <li class="poppup_column">
+                        <a href="#" class="poppup_item">Фитнес-браслеты</a>
+                        <a href="#" class="poppup_item">Умные часы</a>
+                    </li>
+                    <li class="poppup_column">
+                        <a href="#" class="poppup_item">Квадракоптеры</a>
+                    </li>
+                </ul>
+            </li>
+            <div class="main_nav2">
+                <div class="main_nav2_left">
+                    <a href="" class="main_items2-link2 main_items2-link">доставка</a>
+                </div>
+                <div class="main_nav2_right">
+                    <a href="" class="main_items2-link3 main_items2-link">гарантия</a>
+                    <a href="" class="main_items2-link4 main_items2-link">контакты</a>
+                </div>
+            </div>
+        </ul>
+    </header>
+    <main class="center">
+        <div class="conteiner__crumbs center2">
+            <p>Моноподы для селфи</p>
+            <ul class="crumbs__items">
+                <li class="crumbs__item_svg"><a href="index.html">Главная</a></li>
+                <li class="crumbs__item_svg"><a href="#">Каталог товаров</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+            </ul>
+        </div>
+        <form class="container__form">
+            <div class="container__form_range">
+                <p class="
+caption__filter">Стоимость</p>
+                <div class="form__range">
+                    <div class="form__range_items1">
+                        <div class="form__range_items2"></div>
+                    </div>
+                    <div class="form__range_controls controls1"></div>
+                    <div class="form__range_controls controls2"></div>
+                </div>
+                <div class="price__range">
+                    <label for="price-min">от
+                <input type="text" id="price-min" value="0">
+                </label>
+                    <label for="price-max">до
+                <input type="text" id="price-max" value="5000">
+                </label>
+                </div>
+            </div>
+            <div class="container__color">
+                <p class="
+caption__filter">Цвет</p>
+                <div class="color__filter">
+                    <input type="checkbox" name="color" id="black" class="visually-hidden" checked>
+                    <label for="black">Черный</label>
+                    <input type="checkbox" name="color" id="white" class="visually-hidden">
+                    <label for="white">Белый</label>
+                    <input type="checkbox" name="color" id="blue" class="visually-hidden" checked>
+                    <label for="blue">Синий</label>
+                    <input type="checkbox" name="color" id="red" class="visually-hidden" checked>
+                    <label for="red">Красный</label>
+                    <input type="checkbox" name="color" id="pink" class="visually-hidden">
+                    <label for="pink">Розовый</label>
+                </div>
+            </div>
+            <div class="container__bluetooth">
+                <p class="
+caption__filter">Bluetooth</p>
+                <div class="bluetooth__filter">
+                    <input type="radio" name="yes" id="yes" class="visually-hidden" checked>
+                    <label for="yes">Есть</label>
+                    <input type="radio" name="yes" id="no" class="visually-hidden">
+                    <label for="no">Нет</label>
+                </div>
+            </div>
+            <div class="filter__submit-container">
+                <button class="filter__submite" type="submit">Показать</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

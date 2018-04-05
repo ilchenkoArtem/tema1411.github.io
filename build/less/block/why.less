@@ -1,0 +1,35 @@
+.why {
+	padding: 10px 20px;
+	.bi1;
+}
+
+.why li {
+	list-style: none;
+	position: relative;
+	margin-bottom: 11px;
+	line-height: 18px;
+	font-size: 14px;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background-color: #F2994A;
+		left: -13px;
+		top: 6px;
+	}
+
+}
+
+@media(min-width: 890px) {
+	.why {
+		background-image: url(../img/fon.png);
+	}
+}
+
+@media(min-width: 1000px) {
+	.why li {
+		font-size: 16px;
+	}
+}
