@@ -302,7 +302,6 @@ header {
 .form__input--phone::placeholder {
   color: #bdbdbd;
   font-size: 20px;
-  line-height: 72px;
 }
 .form__input--submit {
   color: #000;
@@ -389,7 +388,6 @@ header {
     font-size: 14px;
   }
   .form__input--phone::placeholder {
-    padding: 5px 20px 5px 0;
     font-size: 14px;
   }
   .form__input--submit {
