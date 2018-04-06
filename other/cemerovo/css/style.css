@@ -191,15 +191,15 @@ th {
   font-weight: bold;
   font-style: normal;
 }
+html {
+  background: url(../img/fon__cemerovo.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
 body {
   height: 100vh;
   min-height: 320px;
   padding: 0 30px;
   color: #fff;
-  background-image: url(../img/fon__cemerovo.jpg);
-  background-repeat: no-repeat;
-  background-position: 20% center;
-  background-size: cover;
   font-family: "ApercuPro";
   font-weight: normal;
 
@@ -247,8 +247,10 @@ header {
   display: none;
 }
 .main {
+  box-sizing: border-box;
   max-width: 1275px;
   margin: 0 auto;
+  padding-bottom: 20px;
   text-align: center;
 }
 .main__caption {
@@ -307,11 +309,10 @@ header {
   background-color: #fee800;
   font-size: 24px;
   font-weight: bold;
+
+  -webkit-appearance: none;
 }
 @media (max-width: 1215px) {
-  body {
-    background-size: 2;
-  }
   .main__caption {
     font-size: 5.5vw;
   }
@@ -325,9 +326,8 @@ header {
   }
 }
 @media (max-width: 656px) {
-  body {
+  html {
     background-image: url(../img/fon__cemerovo-mob.jpg);
-    background-size: auto;
   }
   .header__adress {
     display: none;
@@ -351,7 +351,7 @@ header {
   }
 }
 @media (max-width: 600px) {
-  body {
+  html {
     background-position: 58% center;
   }
   .form {
@@ -366,7 +366,7 @@ header {
   }
 }
 @media (max-width: 485px) {
-  body {
+  html {
     background-position: 21% center;
   }
   header {
