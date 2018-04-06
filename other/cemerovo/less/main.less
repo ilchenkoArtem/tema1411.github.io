@@ -15,6 +15,7 @@
 
 
 body {
+	font-display: swap;
 	min-height: 320px;
 	padding: 0 30px;
 	color: #fff;
@@ -32,7 +33,7 @@ header {
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 40px;
+	padding-top: 40px;
 	margin-bottom: 150px;
 	flex-wrap: wrap;
 }
@@ -99,11 +100,17 @@ header {
 	margin-bottom: 30px;
 }
 
+.main__info a,
 .main__info {
 	font-size: 12px;
 	letter-spacing: 0.2px;
 	margin-top: 10px;
 	color: #BDBDBD;
+}
+
+.main__info a {
+	text-decoration: none;
+	border-bottom: 1px solid #BDBDBD;
 }
 
 .form {
@@ -132,6 +139,7 @@ header {
 		&::placeholder {
 			font-size: 20px;
 			color: #BDBDBD;
+			line-height: 72px;
 		}
 	}
 	&--submit {
@@ -143,6 +151,9 @@ header {
 }
 
 @media(max-width: 1215px) {
+	body {
+		background-size: 2;
+	}
 	.main__caption {
 		font-size: 5.5vw;
 	}
@@ -159,6 +170,7 @@ header {
 
 @media(max-width: 656px) {
 	body {
+		background-size: auto;
 		background-image: url(../img/fon__cemerovo-mob.jpg);
 	}
 	.header__adress {
@@ -225,6 +237,7 @@ header {
 		&--phone::placeholder {
 			font-size: 14px;
 			padding: 5px 20px 5px 0px;
+
 		}
 		&--submit {
 			font-size: 20px;

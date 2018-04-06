@@ -202,6 +202,8 @@ body {
   background-size: cover;
   font-family: "ApercuPro";
   font-weight: normal;
+
+  font-display: swap;
 }
 header {
   display: flex;
@@ -209,8 +211,8 @@ header {
   justify-content: space-between;
   max-width: 1275px;
   margin: 0 auto;
-  margin-top: 40px;
   margin-bottom: 150px;
+  padding-top: 40px;
 }
 .header-maininfo__adress,
 .header__adress {
@@ -261,11 +263,16 @@ header {
   margin-bottom: 30px;
   font-size: 24px;
 }
+.main__info a,
 .main__info {
   margin-top: 10px;
   letter-spacing: 0.2px;
   color: #bdbdbd;
   font-size: 12px;
+}
+.main__info a {
+  text-decoration: none;
+  border-bottom: 1px solid #bdbdbd;
 }
 .form {
   display: flex;
@@ -293,6 +300,7 @@ header {
 .form__input--phone::placeholder {
   color: #bdbdbd;
   font-size: 20px;
+  line-height: 72px;
 }
 .form__input--submit {
   color: #000;
@@ -301,6 +309,9 @@ header {
   font-weight: bold;
 }
 @media (max-width: 1215px) {
+  body {
+    background-size: 2;
+  }
   .main__caption {
     font-size: 5.5vw;
   }
@@ -316,6 +327,7 @@ header {
 @media (max-width: 656px) {
   body {
     background-image: url(../img/fon__cemerovo-mob.jpg);
+    background-size: auto;
   }
   .header__adress {
     display: none;
