@@ -377,7 +377,7 @@ header {
     font-size: 14px;
   }
   .form__input--phone::placeholder {
-    padding: 5px 20px 5px 64px;
+    padding: 5px 20px 5px 0;
     font-size: 14px;
   }
   .form__input--submit {
