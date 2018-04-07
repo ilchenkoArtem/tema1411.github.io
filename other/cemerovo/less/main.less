@@ -126,6 +126,8 @@ header {
 	box-sizing: border-box;
 	border-radius: 8px;
 	border: none;
+	outline: none;
+	transition: 0.4s all;
 	&--phone {
 		margin-right: 10px;
 		padding: 24px 20px 24px 64px;
@@ -137,9 +139,15 @@ header {
 		color: #BDBDBD;
 		font-weight: bold;
 		font-size: 20px;
+		box-sizing: border-box;
+		border: 2px solid transparent;
 		&::placeholder {
 			font-size: 20px;
 			color: #BDBDBD;
+		}
+		&:hover,
+		&:focus {
+			border: 2px solid #FEE800;
 		}
 	}
 	&--submit {
@@ -148,7 +156,15 @@ header {
 		font-size: 24px;
 		font-weight: bold;
 		-webkit-appearance: none;
+		&:hover,
+		&:focus {
+			background-color: #FEFC00;
+		}
+		&:active {
+			background-color: #CDCD0C;
+		}
 	}
+
 }
 
 @media(max-width: 1215px) {

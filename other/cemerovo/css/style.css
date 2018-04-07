@@ -284,13 +284,17 @@ header {
   box-sizing: border-box;
   width: 368px;
   height: 72px;
+  transition: 0.4s all;
   border: none;
   border-radius: 8px;
+  outline: none;
 }
 .form__input--phone {
+  box-sizing: border-box;
   margin-right: 10px;
   padding: 24px 20px 24px 64px;
   color: #bdbdbd;
+  border: 2px solid transparent;
   background-color: #fff;
   background-image: url(../img/call.svg);
   background-repeat: no-repeat;
@@ -303,6 +307,10 @@ header {
   color: #bdbdbd;
   font-size: 20px;
 }
+.form__input--phone:hover,
+.form__input--phone:focus {
+  border: 2px solid #fee800;
+}
 .form__input--submit {
   color: #000;
   background-color: #fee800;
@@ -310,6 +318,13 @@ header {
   font-weight: bold;
 
   -webkit-appearance: none;
+}
+.form__input--submit:hover,
+.form__input--submit:focus {
+  background-color: #fefc00;
+}
+.form__input--submit:active {
+  background-color: #cdcd0c;
 }
 @media (max-width: 1215px) {
   .main__caption {
