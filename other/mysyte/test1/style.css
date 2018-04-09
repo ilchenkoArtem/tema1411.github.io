@@ -1,0 +1,174 @@
+body {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	max-width: 1142px;
+}
+
+.cont2,
+.cont1 {
+	display: flex;
+}
+
+.bg1 {
+	background-image: url("img/Layer 6.png");
+	height: 402px;
+	width: 378px;
+}
+
+.bg2 {
+	background-image: url("img/metal.png");
+	height: 200px;
+	width: 378px;
+}
+
+.bg3 {
+	background-image: url("img/enerdgy.png");
+	height: 200px;
+	width: 378px;
+}
+
+.bg4 {
+	background-image: url("img/mahenic.png");
+	height: 200px;
+	width: 378px;
+}
+
+.bg5 {
+	background-image: url("img/zaryadca.png");
+	height: 402px;
+	width: 378px;
+	margin-top: -202px
+}
+
+.bg5 {
+	background-image: url("img/zaryadca.png");
+	height: 402px;
+	width: 378px;
+	margin-top: -202px
+}
+
+.bg6 {
+	background-image: url("img/%D1%85%D0%B8%D0%BC.png");
+	height: 200px;
+	width: 378px;
+	margin-top: -202px
+}
+
+.bg5 {
+	background-image: url("img/zaryadca.png");
+	height: 402px;
+	width: 378px;
+	margin-top: -202px
+}
+
+.bg6 {
+	background-image: url("img/%D1%85%D0%B8%D0%BC.png");
+	height: 200px;
+	width: 378px;
+	margin-top: -202px
+}
+
+.bg7 {
+	background-image: url("img/atraction.png");
+	height: 200px;
+	width: 378px;
+}
+
+.bg8 {
+	background-image: url("img/ecstrim.png");
+	height: 200px;
+	width: 378px;
+}
+
+.bg9 {
+	background-image: url("img/page1-img6.png");
+	height: 402px;
+	width: 378px;
+	margin-top: -202px
+}
+
+@media (max-width:1023px) {
+	body {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 578px;
+		width: 578px;
+		margin: 0 auto;
+	}
+
+	.bg1 {
+		background-image: url("img/Layer 6.png");
+		height: 402px;
+		width: 50%;
+		order: 2;
+	}
+	.cont2,
+	.cont1 {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		order: 3;
+	}
+	.bg2 {
+		background-image: url("img/metal.png");
+		height: 200px;
+		width: 100%;
+	}
+
+	.bg3 {
+		background-image: url("img/enerdgy.png");
+		height: 200px;
+		width: 100%;
+	}
+
+	.bg4 {
+		background-image: url("img/mahenic.png");
+		height: 200px;
+		width: 50%;
+		order: 4;
+	}
+
+	.bg5 {
+		background-image: url("img/zaryadca.png");
+		height: 200px;
+		width: 100%;
+		order: 1;
+	}
+
+
+	.bg6 {
+		background-image: url("img/%D1%85%D0%B8%D0%BC.png");
+		height: 200px;
+		width: 50%;
+		order: 5;
+		margin-top: 0;
+
+	}
+	.cont2 {
+		order: 6;
+		width: 50%;
+	}
+
+
+	.bg7 {
+		background-image: url("img/atraction.png");
+		height: 200px;
+		width: 100%;
+	}
+
+	.bg8 {
+		background-image: url("img/ecstrim.png");
+		height: 200px;
+		width: 100%;
+	}
+
+	.bg9 {
+		background-image: url("img/page1-img6.png");
+		height: 402px;
+		width: 50%;
+		order: 7;
+		margin-top: 0;
+	}
+}
