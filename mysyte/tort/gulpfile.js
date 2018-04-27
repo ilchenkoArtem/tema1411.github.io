@@ -20,12 +20,12 @@ var svgo = require('gulp-svgo');
 var webp = require('gulp-webp');
 var concat = require('gulp-concat');
 var minify = require('gulp-minify');
-
+var sass = require('gulp-sass');
 
 gulp.task("style", function () {
-	gulp.src("source/less/style.less")
+	gulp.src("source/scss/style.scss")
 		.pipe(plumber())
-		.pipe(less())
+		.pipe(sass())
 		.pipe(csscomb())
 		.pipe(gulp.dest("source/css"))
 		.pipe(server.stream())
@@ -49,7 +49,7 @@ gulp.task("serve", ["style"], function () {
 		ui: false
 	});
 
-	gulp.watch("source/less/**/*.less", ["style"]);
+	gulp.watch("source/scss/**/*.scss", ["style"]);
 	gulp.watch("source/*.html").on("change", server.reload);
 });
 
