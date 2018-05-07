@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'IntroScript';
+  src: url('../fonts/IntroScriptR-H2Base.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../fonts/PlayfairDisplay-Bold.ttf') format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../fonts/PlayfairDisplay-BoldItalic.ttf') format("ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-Bold.woff') format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-Regular.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+.body {
+  font-family: 'Circe', serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #fbebea;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container{
+  padding: 0;
+}
+
+
+@media(min-width: 768px) {
+  .body{
+    width: 768px;
+
+  }
+}
+
+@media(min-width: 1220px) {
+  .body{
+    padding: 0;
+    width: 1220px;
+  }
+}
+
+
