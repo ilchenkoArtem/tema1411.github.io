@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>map</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		html,
+		body {
+			font-family: 'Arial', sans-serif;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		#map {
+			height: 100%;
+		}
+
+	</style>
+</head>
+
+
+<body>
+	<div id="map">
+
+	</div>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ-_BdEIfczcceoOje3-hbHVK3JU2C53g&callback=initMap">
+		//нужно настроить свой API и полить ссылку https://classroom.udacity.com/courses/ud864/lessons/8304370457/concepts/2fb18c4e-5344-43e3-bb98-638a940e8158
+
+	</script>
+
+	<script>
+		function initMap() {
+			var map = new google.maps.Map(document.getElementById('map') /*идентификатор блока карты*/ , {
+				center: {
+					lat: 40.7413549, //Широта долгота маркера на карте
+					lng: -73.9980244
+				},
+				zoom: 13, //зум карты
+
+				/*--------------НАчало стилизации карты полное изменение внешнего вида(этот кусок кода не обязтелен--------------------------*/
+				// подробнее о стилях карты https://developers.google.com/maps/documentation/javascript/style-reference
+
+				styles: [{
+						elementType: 'geometry',
+						stylers: [{
+							color: '#242f3e'
+						}]
+					},
+					{
+						elementType: 'labels.text.stroke',
+						stylers: [{
+							color: '#242f3e'
+						}]
+					},
+					{
+						elementType: 'labels.text.fill',
+						stylers: [{
+							color: '#746855'
+						}]
+					},
+					{
+						featureType: 'administrative.locality',
+						elementType: 'labels.text.fill',
+						stylers: [{
+							color: '#d59563'
+						}]
+					},
+					{
+						featureType: 'poi',
+						elementType: 'labels.text.fill',
+						stylers: [{
+							color: '#d59563'
+						}]
+					},
+					{
+						featureType: 'poi.park',
+						elementType: 'geometry',
+						stylers: [{
+							color: '#263c3f'
+						}]
+					},
+					{
+						featureType: 'poi.park',
+						elementType: 'labels.text.fill',
+						stylers: [{
+							color: '#6b9a76'
+						}]
+					},
+					{
+						featureType: 'road',
+						elementType: 'geometry',
+						stylers: [{
+							color: '#38414e'
+						}]
+					},
+					{
+						featureType: 'road',
+						elementType: 'geometry.stroke',
+						stylers: [{
+							color: '#212a37'
+						}]
+					},
+					{
+						featureType: 'road',
+						elementType: 'labels.text.fill',
+						stylers: [{
+							color: '#9ca5b3'
+						}]
+					},
+					{
+						featureType: 'road.highway',
+						elementType: 'geometry',
+						stylers: [{
+							color: '#746855'
+						}]
+					},
+					{
+						featureType: 'road.highway',
+						elementType: 'geometry.stroke',
+						stylers: [{
+							color: '#1f2835'
+						}]
+					},
+					{
+						featureType: 'road.highway',
+						elementType: 'labels.text.fill',
+						stylers: [{
+							color: '#f3d19c'
+						}]
+					},
+					{
+						featureType: 'transit',
+						elementType: 'geometry',
+						stylers: [{
+							color: '#2f3948'
+						}]
+					},
+					{
+						featureType: 'transit.station',
+						elementType: 'labels.text.fill',
+						stylers: [{
+							color: '#d59563'
+						}]
+					},
+					{
+						featureType: 'water',
+						elementType: 'geometry',
+						stylers: [{
+							color: '#17263c'
+						}]
+					},
+					{
+						featureType: 'water',
+						elementType: 'labels.text.fill',
+						stylers: [{
+							color: '#515c6d'
+						}]
+					},
+					{
+						featureType: 'water',
+						elementType: 'labels.text.stroke',
+						stylers: [{
+							color: '#17263c'
+						}]
+					}
+				]
+				/*------------------Конец стилизации карты-----------------*/
+			});
+			var tribeca = { //имя произвольное, Точка коородинат для маркера
+				lat: 40.7413549,
+				lng: -73.9980244
+			}
+			var image = 'icon-map-pin.svg'; //путь к кастомному маркеру
+			var marker = new google.maps.Marker({ //объявление маркера
+				position: tribeca, //переменная с координатами маркера
+				map: map, //переменная с картой
+				title: 'MY MARKER', //название которое высветится при наведении на маркер
+				animation: google.maps.Animation.BOUNCE, //Анимация маркера DROP – указывает, что маркер должен как бы "падать" сверху на свою позицию.BOUNCE – указывает, что маркер должен подпрыгивать на месте.
+				icon: image //указывает на переменную с кастомным маркером
+			});
+		}
+
+	</script>
+</body>
+
+</html>
