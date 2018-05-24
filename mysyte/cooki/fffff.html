@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>2</title>
+
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+</head>
+
+<body>
+	<div class="popup" id="popup">
+		<p>By using this website, you agree with our use of cookies to improve its performance and enhance your user experience. More info in our <a href="http://www.euronews.com/cookie-policy">Cookies policy page.</a>
+		</p>
+		<input type="submit" value="OK" id="setCookie">
+	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="cook.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#setCookie").click(function() {
+				$.cookie("popup", "24house", {
+					expires: 0
+				});
+				$("#popup").hide();
+			});
+			if ($.cookie("popup") == null) {
+				setTimeout(function() {
+					$("#popup").show();
+				}, 4000)
+			} else {
+				$("#popup").hide();
+			}
+		});
+
+	</script>
+</body>
+
+</html>
