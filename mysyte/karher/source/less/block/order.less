@@ -1,0 +1,128 @@
+.order {
+	position: relative;
+	padding-left: 81px;
+	padding-right: 81px;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+.order__depiction {
+	float: left;
+}
+.order__depiction h2{
+	margin-top: 0;
+}
+.order__form{
+	float: right;
+	margin-top: 55px;
+}
+.order__depiction p {
+	width: 50%;
+	overflow: hidden;
+	margin-left: 40px;
+	font-size: 32.18;
+	line-height: 41.12px;
+}
+
+.order__price {
+	font-family: "RobotoBlack";
+	font-size: 80px;
+	line-height: normal;
+	float: left;
+}
+
+.order img {
+	position: relative;
+	margin-left: -47px;
+	margin-top: -44px;
+	z-index: -1;
+}
+
+.order__form input {
+	width: 320px;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid #9fa3a7;
+	font-family: "OpenSansSemibold";
+	font-size: 14px;
+	line-height: 26px;
+	color: #2c2c2c;
+	padding-left: 10px;
+	margin-bottom: 30px;
+	margin-left: 15px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+input.form__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0 20px;
+	background-color: #ffc80a;
+	width: auto;
+	height: 47px;
+	font-family: "RobotoMedium";
+	font-size: 12px;
+	letter-spacing: 0.24em;
+	color: #ffffff;
+	border: 0;
+	border-radius: 25px;
+	box-sizing: border-box;
+}
+
+.order__form label {
+	text-transform: uppercase;
+	color: #9fa3a7;
+	font-family: "RobotoBold";
+	font-size: 12px;
+	line-height: 27px;
+	letter-spacing: 0.12em;
+}
+
+.order__input{
+	text-align: right;
+}
+
+.order__button {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.order__button p {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	color: #9fa3a7;
+}
+.order__button span {
+	font-family: "OpenSansSemibold";
+	font-size: 20px;
+	line-height: 26px;
+	color: #f9593a;
+}
+
+
+.order__button input {
+	margin-left: 60px;
+}
+.order__reference {
+	position: relative;
+	padding-left: 20px;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 10px;
+		height: 9px;
+		background-image: url(../img/bq__required.png);
+		background-repeat: no-repeat;
+	}
+}

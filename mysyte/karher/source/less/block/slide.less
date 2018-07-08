@@ -1,0 +1,75 @@
+.slide {
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 81px;
+}
+
+.slide_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1061px;
+  margin-left: auto;
+}
+
+.slide_text {
+  z-index: 2;
+  width: 360px;
+  p {
+      margin-bottom: 45px;
+  }
+}
+.slide_item img {
+  z-index: 1;
+}
+.slide_container-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide_container-link__button {
+  min-width: 170px;
+  text-decoration: none;
+  color: #292929;
+  &--more{
+    background-color: inherit;
+    border: 2px solid #f6f6f6;
+  }
+}
+
+.slide .slick-dots {
+  left: 30px;
+  bottom: auto;
+  width: auto;
+  li {
+    display: block;
+    button {
+      &:before {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        content: '';
+        background-color: #bdbdbd;
+      }
+    }
+    &.slick-active button:before {
+      background-color: #ffc80a;
+    }
+  }
+}
+
+.header__link-down{
+  display: block;
+  position: absolute;
+  background-image: url(../img/Mouse.png);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 72px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
