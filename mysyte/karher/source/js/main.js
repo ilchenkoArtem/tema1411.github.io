@@ -59,7 +59,6 @@ var scrolling = function (links){
   		event.preventDefault();
   		var id = $(this).attr('href'),
   			top = $(id).offset().top;
-        console.log(top)
   		$('body,html').animate({
   			scrollTop: top - heigthHeader
   		}, 500);

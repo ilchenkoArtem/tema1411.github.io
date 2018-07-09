@@ -1132,7 +1132,7 @@ body {
   position: absolute;
   z-index: -1;
   top: 50%;
-  right: -37%;
+  right: -40%;
   transform: translateY(-50%);
 }
 @media all and (max-width: 1279px) {
