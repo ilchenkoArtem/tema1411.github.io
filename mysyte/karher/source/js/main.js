@@ -55,7 +55,7 @@ $('.header__burger').click(function () {
 var scrolling = function (links){
   $(document).ready(function () {
     var heigthHeader = $('.header_nav-fixed').height()
-  	$(links).on("click", "a", function (event) {
+  	$(links).on('click', 'a', function (event) {
   		event.preventDefault();
   		var id = $(this).attr('href'),
   			top = $(id).offset().top;

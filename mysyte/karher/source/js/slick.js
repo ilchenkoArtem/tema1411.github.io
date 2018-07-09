@@ -44,15 +44,15 @@
                 appendDots: $(element),
                 arrows: true,
                 asNavFor: null,
-                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-                nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+                prevArrow: '<button class='slick-prev' aria-label='Previous' type='button'>Previous</button>',
+                nextArrow: '<button class='slick-next' aria-label='Next' type='button'>Next</button>',
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,
                 centerPadding: '50px',
                 cssEase: 'ease',
                 customPaging: function(slider, i) {
-                    return $('<button type="button" />').text(i + 1);
+                    return $('<button type='button' />').text(i + 1);
                 },
                 dots: false,
                 dotsClass: 'slick-dots',
@@ -522,11 +522,11 @@
         _.$slider.addClass('slick-slider');
 
         _.$slideTrack = (_.slideCount === 0) ?
-            $('<div class="slick-track"/>').appendTo(_.$slider) :
-            _.$slides.wrapAll('<div class="slick-track"/>').parent();
+            $('<div class='slick-track'/>').appendTo(_.$slider) :
+            _.$slides.wrapAll('<div class='slick-track'/>').parent();
 
         _.$list = _.$slideTrack.wrap(
-            '<div class="slick-list"/>').parent();
+            '<div class='slick-list'/>').parent();
         _.$slideTrack.css('opacity', 0);
 
         if (_.options.centerMode === true || _.options.swipeToSlide === true) {
@@ -2114,13 +2114,13 @@
          * accepts arguments in format of:
          *
          *  - for changing a single option's value:
-         *     .slick("setOption", option, value, refresh )
+         *     .slick('setOption', option, value, refresh )
          *
          *  - for changing a set of responsive options:
-         *     .slick("setOption", 'responsive', [{}, ...], refresh )
+         *     .slick('setOption', 'responsive', [{}, ...], refresh )
          *
          *  - for updating multiple values at once (not responsive)
-         *     .slick("setOption", { 'option': value, ... }, refresh )
+         *     .slick('setOption', { 'option': value, ... }, refresh )
          */
 
         var _ = this, l, item, option, value, refresh = false, type;

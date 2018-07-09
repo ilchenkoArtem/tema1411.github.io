@@ -771,6 +771,7 @@ h2 {
   }
   .slide_item img {
     width: 100%;
+    height: auto;
   }
   .slide_container-link {
     flex-wrap: wrap;
@@ -781,7 +782,7 @@ h2 {
   }
 }
 .reviews {
-  display: flex;
+  display: block;
   align-items: center;
   height: 100vh;
   padding: 0 81px;
