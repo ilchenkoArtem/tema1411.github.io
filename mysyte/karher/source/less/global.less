@@ -80,3 +80,56 @@ h2 {
 	border-radius: 25px;
 	box-sizing: border-box;
 }
+.container-succes {
+	position: fixed;
+	z-index: 100;
+	right: 0;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0.8;
+	background-color: #fff;
+	&--hidden {
+		display: none;
+	}
+}
+.succes__popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	padding: 10px;
+	height: 15%;
+	max-height: 224px;
+	border-radius: 20px;
+	color: #000;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	opacity: 1;
+	z-index: 101;
+	transform: translate(-50%, -50%);
+	background-color: #ffc80a;
+
+}
+@media all and(max-width: 919px) {
+	h2 {
+			text-align: center;
+	    font-size: 30px;
+			br {
+				display: none;
+			}
+	}
+}
+
+@media all and(max-width: 719px) {
+	h2 {
+	    font-size: 27px;
+			br {
+				display: none;
+			}
+	}
+}

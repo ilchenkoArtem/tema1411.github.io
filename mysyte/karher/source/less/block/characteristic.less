@@ -1,13 +1,15 @@
 .characteristic {
 	overflow: hidden;
 	position: relative;
-	padding-left: 81px;
-	padding-right: 81px;
+	padding: 0 81px;
 	display: flex;
 	align-items: center;
-	min-height: 100vh;
+	height: 100vh;
 	.container {
 		width: 50%;
+	}
+	br {
+		display: none;
 	}
 }
 
@@ -15,15 +17,65 @@
 	max-width: 405px;
 	margin-left: auto;
 }
-.characteristic__text ul{
+.characteristic__items{
 	list-style: none;
 	padding-left: 0;
 }
 
 .characteristic__text img {
 	position: absolute;
-	right: 0;
-	top: 59%;
+	right: -37%;
+	top: 50%;
 	transform: translateY(-50%);
 	z-index: -1;
+}
+
+@media all and(max-width: 1279px) {
+  .characteristic {
+		overflow: hidden;
+		height: auto;
+    margin-bottom: 90px;
+		padding: 0 30px;
+  }
+
+	.characteristic__text img {
+		position: absolute;
+		right: -52%;
+	}
+
+}
+
+
+@media all and(max-width: 919px) {
+  .characteristic {
+		overflow: hidden;
+		height: auto;
+    margin-bottom: 90px;
+		padding: 0 30px;
+  }
+
+	.characteristic__text img {
+		position: static;
+		transform: translateY(0);
+		width: 100%;
+		height: auto;
+	}
+
+	.characteristic__text {
+    max-width: 100%;
+    margin-left: auto;
+	}
+	.characteristic .container {
+		width: auto;
+	}
+
+	.characteristic__items {
+		text-align: center;
+	}
+}
+
+@media all and(max-width: 919px) {
+	.characteristic__items {
+		text-align: left;
+	}
 }
