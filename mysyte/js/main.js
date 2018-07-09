@@ -154,13 +154,18 @@ var inputForm = form.querySelectorAll('input');
 var testValid = function(){
   var validity = this.validity.valid;
   var value = this.value;
+  console.log('VALUE', value)
+  console.log('VALIDITY', validity)
   if(!validity) {
-    this.style = 'background-image: url(img/error.png)'
+    this.style = 'background-image: url(../img/error.png)'
 
   }else {
-    this.style = 'background-image: url(img/bq__succes.png)'
+    this.style = 'background-image: url(../img/bq__succes.png)'
   }
 }
 inputForm.forEach(function (it) {
   it.addEventListener('change', testValid)
 })
+
+
+console.log('INPUTFORM', inputForm)

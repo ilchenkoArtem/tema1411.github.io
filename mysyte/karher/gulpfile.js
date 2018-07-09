@@ -135,9 +135,9 @@ gulp.task("copy", function () {
 });
 
 gulp.task('scripts', function () {
-	return gulp.src(['source/script/jquery-3.3.1.min.js', 'source/script/script.js'])
+	return gulp.src(['source/js/slick.js', 'source/js/main.js'])
 		.pipe(sizereport())
-		.pipe(concat('script-min.js'))
+		.pipe(concat('script.js'))
 		.pipe(sizereport())
 		.pipe(minify())
 		.pipe(sizereport())
