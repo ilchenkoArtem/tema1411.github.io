@@ -6,8 +6,7 @@ $(document).ready(function(){
     nextArrow: null,
     dots: true,
     arrows: false,
-    fade: true,
-    verticalSwiping: true
+    fade: true
   });
 });
 //
