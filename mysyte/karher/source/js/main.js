@@ -1,7 +1,7 @@
 'use strict';
 $(document).ready(function(){
   $('.slide').slick({
-    // autoplay: true,
+    autoplay: true,
     prevArrow: null,
     nextArrow: null,
     dots: true,
@@ -149,3 +149,24 @@ var onFormSubmit = function (evt) {
 }
 
 form.addEventListener('submit', onFormSubmit);
+
+//Валидация формы
+var inputForm = form.querySelectorAll('input');
+var testValid = function(){
+  var validity = this.validity.valid;
+  var value = this.value;
+  console.log('VALUE', value)
+  console.log('VALIDITY', validity)
+  if(!validity) {
+    this.style = 'background-image: url(../img/error.png)'
+
+  }else {
+    this.style = 'background-image: url(../img/bq__succes.png)'
+  }
+}
+inputForm.forEach(function (it) {
+  it.addEventListener('change', testValid)
+})
+
+
+console.log('INPUTFORM', inputForm)
