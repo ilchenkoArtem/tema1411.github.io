@@ -550,7 +550,6 @@ h2 {
 }
 .header {
   position: relative;
-  max-height: 100vh;
 }
 .header_nav-fixed {
   position: fixed;
@@ -638,6 +637,9 @@ h2 {
   }
 }
 @media all and (max-width: 655px) {
+  .header {
+    height: auto;
+  }
   .header__nav {
     display: none;
   }
