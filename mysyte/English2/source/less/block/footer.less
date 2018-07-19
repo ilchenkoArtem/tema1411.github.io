@@ -1,0 +1,76 @@
+.footer {
+  padding: 0 15px;
+}
+
+.footer__form-container {
+  h2 {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+}
+
+.footer__button {
+  margin-top: 30px;
+  background-color: #fee308;
+  width: 180px;
+  &:hover {
+    background-color: #fcbc05;
+  }
+}
+
+.footer-submit {
+  p {
+    font-size: 8px;
+    font-weight: 500;
+  }
+}
+
+.footer__contact-item {
+  position: relative;
+  padding-left: 25px;
+  p {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 10px;
+  }
+  a {
+    display: block;
+    margin-top: 2px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #222222;
+    text-decoration: none;
+    line-height: 9px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-repeat: no-repeat;
+  }
+  &--whatsapp::after {
+    width: 19px;
+    height: 19px;
+    left: 3px;
+    background-image: url('../img/whatsapp.svg');
+  }
+  &--skype::after {
+    width: 20px;
+    height: 18px;
+    left: 2px;
+    background-image: url('../img/skype-logo.svg');
+  }
+  &--email::after {
+    width: 21px;
+    height: 16px;
+    left: 4px;
+    background-image: url('../img/mail.svg');
+  }
+}
+
+
