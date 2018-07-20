@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 100vh;
-  background-color: #fee308;
+  background-color: #FFEE01;
   background-image: url(../img/header_bg.png);
   background-repeat: no-repeat;
   background-position-x: 58%;
@@ -10,12 +10,11 @@
 }
 
 .header__container {
-  width: 320px;
+  width: 100%;
   background-color: transparent;
   position: fixed;
   margin: 0 auto;
   left: 0;
-  right: 0;
   padding: 0 20px;
   box-sizing: border-box;
   display: flex;
@@ -47,7 +46,7 @@
 }
 
 .header__main-nav {
-  width: 320px;
+  width: 100%;
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -57,8 +56,6 @@
   height: 100%;
   padding: 41px 20px 0 20px;
   left: 0;
-  right: 0;
-  margin: 0 auto;
   z-index: 9;
   transform: scaleY(0);
   background-color: #ffffff;
@@ -89,42 +86,6 @@
 
 a.header__tel {
   font-size: 12px;
-}
-
-.header__social {
-  display: flex;
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 23px;
-    height: 23px;
-    border-radius: 50%;
-    background-color: #222222;
-    text-align: center;
-  }
-  &--active {
-    display: flex;
-  }
-}
-
-.header__social a:not(:last-of-type) {
-  margin-right: 12px;
-}
-
-.header__social--fb {
-  width: 8px;
-  height: 16px;
-}
-
-.header__social--inst {
-  width: 13px;
-  height: 11px;
-}
-
-.header__social--telegram {
-  width: 11px;
-  height: 10px;
 }
 
 .header__logo {
@@ -178,7 +139,7 @@ a.header__tel {
   }
 }
 
-.header__social-info {
+.header__info-social {
   display: none;
 }
 
@@ -206,5 +167,79 @@ a.header__tel {
   margin-bottom: 60px;
   &:hover {
     background-color: #f8edc6;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-size: auto;
+    background-position-x: 28.5vw;
+  }
+  .header__burger {
+    display: none
+  }
+
+  .header__nav {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header__main-nav {
+    position: static;
+    align-items: flex-end;
+    padding: 0;
+    transform: none;
+    background-color: transparent;
+  }
+
+  .header__nav-elements {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    opacity: 1;
+    li:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+
+  .header__contact-container {
+    opacity: 1;
+    margin-bottom: 0;
+    margin-top: -35px;
+    font-weight: normal;
+    .social {
+      display: none;
+    }
+  }
+
+  .header__logo img {
+    height: 37px;
+    width: 92px;
+  }
+
+  .header__button {
+    margin-bottom: 0;
+  }
+  .header__info-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+  }
+  .header__info {
+    height: auto;
+    justify-content: center;
+    h1 {
+      font-size: 27px;
+      line-height: 28px;
+    }
+  }
+  .header__info-social{
+    display: flex;
+    margin-bottom: 45px;
+    align-self: flex-end;
   }
 }

@@ -1,6 +1,6 @@
 .about {
-  padding-top: 50px;
   padding: 0 20px;
+  padding-top: 50px;
   margin-bottom: 100px;
   box-sizing: border-box;
 }
@@ -34,5 +34,28 @@
 .advantages__buttons {
   a {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+    padding-top: 50px;
+  }
+
+  .about__text {
+    width: 45%;
+    max-width: 416px
+  }
+
+  .about__video {
+    width: 45%;
+    h2 {
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
   }
 }

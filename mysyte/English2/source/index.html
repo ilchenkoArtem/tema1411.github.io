@@ -24,17 +24,17 @@
                     <li><a href="#">Как это работает</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
-                <div class="header__contact-container">
+                <div class=".header__contact-container header__contact-container">
                     <a class="header__tel" href="tel:+380962757698">+38 (096) 275 -76 -98</a>
-                    <div class="header__social header__social--nav">
+                    <div class="social">
                         <a href="#">
-                            <img class='header__social--fb' src="img/facebook-f.svg" alt="" width="8" height="16">
+                            <img class='social--fb' src="img/facebook-f.svg" alt="" width="8" height="16">
                         </a>
                         <a href="#">
-                            <img class='header__social--inst' src="img/instagram.svg" alt="" width="13" height="11">
+                            <img class='social--inst' src="img/instagram.svg" alt="" width="13" height="11">
                         </a>
                         <a href="#">
-                            <img class='header__social--telegram' src="img/telegram-plane.svg" alt="" width="11"
+                            <img class='social--telegram' src="img/telegram-plane.svg" alt="" width="11"
                                  height="10">
                         </a>
                     </div>
@@ -45,21 +45,23 @@
             <div class="header__burger-ico"></div>
         </div>
     </div>
-    <div class="header__info">
-        <h1>ОНЛАЙН ШКОЛА<br> АНГЛИЙСКОГО ЯЗЫКА</h1>
-        <p>РАБОТАЕМ С МОЗГОМ А НЕ С КНИЖКАМИ</p>
-        <button class="button header__button">ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК</button>
-    </div>
-    <div class="header__social header__social-info">
-        <a href="#">
-            <img class='header__social--fb' src="img/facebook-f.svg" alt="" width="8" height="16">
-        </a>
-        <a href="#">
-            <img class='header__social--inst' src="img/instagram.svg" alt="" width="13" height="11">
-        </a>
-        <a href="#">
-            <img class='header__social--telegram' src="img/telegram-plane.svg" alt="" width="11" height="10">
-        </a>
+    <div class="header__info-container">
+        <div class="header__info">
+            <h1>ОНЛАЙН ШКОЛА<br> АНГЛИЙСКОГО ЯЗЫКА</h1>
+            <p>РАБОТАЕМ С МОЗГОМ А НЕ С КНИЖКАМИ</p>
+            <button class="button header__button">ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК</button>
+        </div>
+        <div class="social header__info-social">
+            <a href="#">
+                <img class='social--fb' src="img/facebook-f.svg" alt="" width="8" height="16">
+            </a>
+            <a href="#">
+                <img class='social--inst' src="img/instagram.svg" alt="" width="13" height="11">
+            </a>
+            <a href="#">
+                <img class='social--telegram' src="img/telegram-plane.svg" alt="" width="11" height="10">
+            </a>
+        </div>
     </div>
 </header>
 <main class="main">
@@ -121,7 +123,7 @@
                 <input type="checkbox" id="skype" name="services" class="services__radio" checked>
                 <div class="services__container">
                     <div class="services__item-description">
-                        <label for="skype">Индивидуальные уроки по Skype</label>
+                        <label for="skype">Индивидуальные<br> уроки по Skype</label>
                     </div>
                     <div class="services__info-program">
                         <ul class="service__program">
@@ -199,7 +201,7 @@
                 <input type="checkbox" id="conversation" name="services" class="services__radio">
                 <div class="services__container">
                     <div class="services__item-description">
-                        <label for="conversation">переговоры на  иностранном языке</label>
+                        <label for="conversation">переговоры на иностранном языке</label>
                     </div>
                     <div class="services__info-program">
                         <ul class="service__program">
@@ -268,17 +270,34 @@
         </form>
     </div>
     <section class="footer__contact">
-        <div class="footer__contact-item footer__contact-item--whatsapp">
-            <p>Whatsapp</p>
-            <a href="https://wa.me/380962757698">+38 (096) 275 -76 -98 </a>
+        <div class="footer__contact-items">
+            <div class="footer__contact-item footer__contact-item--whatsapp">
+                <p>Whatsapp</p>
+                <a href="https://wa.me/380962757698">+38 (096) 275 -76 -98 </a>
+            </div>
+            <div class="footer__contact-item footer__contact-item--skype">
+                <p>Skype</p>
+                <a>SHO School</a>
+            </div>
+            <div class="footer__contact-item footer__contact-item--email">
+                <p>E-mail </p>
+                <a href="mailto:shoschoooool@gmail.com">shoschoooool@gmail.com</a>
+            </div>
         </div>
-        <div class="footer__contact-item footer__contact-item--skype">
-            <p>Skype</p>
-            <a>SHO School</a>
-        </div>
-        <div class="footer__contact-item footer__contact-item--email">
-            <p>E-mail </p>
-            <a href="mailto:shoschoooool@gmail.com">shoschoooool@gmail.com</a>
+        <div class="footer__social">
+            <div class="social">
+                <a href="#">
+                    <img class='social--fb' src="img/facebook-f.svg" alt="" width="8" height="16">
+                </a>
+                <a href="#">
+                    <img class='social--inst' src="img/instagram.svg" alt="" width="13" height="11">
+                </a>
+                <a href="#">
+                    <img class='social--telegram' src="img/telegram-plane.svg" alt="" width="11"
+                         height="10">
+                </a>
+            </div>
+            <p>SHO school © 2018</p>
         </div>
     </section>
 </footer>

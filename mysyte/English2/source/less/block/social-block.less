@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #222222;
+    text-align: center;
+  }
+  &--active {
+    display: flex;
+  }
+}
+
+.social a:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.social--fb {
+  width: 8px;
+  height: 16px;
+}
+
+.social--inst {
+  width: 13px;
+  height: 11px;
+}
+
+.social--telegram {
+  width: 11px;
+  height: 10px;
+}
