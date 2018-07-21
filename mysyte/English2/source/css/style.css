@@ -29,6 +29,7 @@ input {
   margin-bottom: 10px;
   border: none;
   border-bottom: 1px solid #222;
+  border-radius: 0;
   outline: none;
   background-color: transparent;
 }
