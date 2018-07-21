@@ -22,8 +22,10 @@ document.onscroll = function () {
 
     if (scrolledTop > heightHeaderContainerElement) {
         headerContainerElement.style.backgroundColor = '#ffffff'
+        headerContainerElement.style.boxShadow = '0px 0px 50px 0px rgba(0,0,0,0.75)';
     } else {
         headerContainerElement.style.backgroundColor = 'transparent'
+        headerContainerElement.style.boxShadow = 'none';
     }
 };
 
@@ -49,7 +51,7 @@ addListenerInput();
 var inputCheckBoxElement = document.querySelectorAll('.services__radio');
 var windowWidth = window.innerWidth;
 
-var setAtribute = function () {
+var setTypeElement = function () {
     if (windowWidth < 1024) {
         inputCheckBoxElement.forEach(function (item) {
             item.setAttribute('type', 'checkbox');
@@ -60,9 +62,9 @@ var setAtribute = function () {
         })
     }
 };
-setAtribute();
+setTypeElement();
 window.onresize = function (ev) {
     windowWidth = window.innerWidth;
     console.log(windowWidth);
-    setAtribute();
+    setTypeElement();
 };
