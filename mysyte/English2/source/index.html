@@ -49,7 +49,7 @@
         <div class="header__info">
             <h1>ОНЛАЙН ШКОЛА<br> АНГЛИЙСКОГО ЯЗЫКА</h1>
             <p>РАБОТАЕМ С МОЗГОМ А НЕ С КНИЖКАМИ</p>
-            <button class="button header__button">ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК</button>
+            <button class="button header__button button-ease">ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК</button>
         </div>
         <div class="social header__info-social">
             <a href="#">
@@ -112,7 +112,7 @@
             </div>
         </div>
         <div class="advantages__buttons">
-            <button class="button advantages__button">ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК</button>
+            <button class="button advantages__button button-ease">ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК</button>
             <a href="viber://chat?number=%2B380637869738">Узнать Подробности</a>
         </div>
     </section>
@@ -141,7 +141,7 @@
                             <div class="services__price">
                                 <h3>Индивидуальные уроки по Skype</h3>
                                 <p>4 500<span><span>₴/</span>2 дня</span></p>
-                                <button class="button services__button">Заказать</button>
+                                <button class="button services__button button-mondey">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -169,7 +169,7 @@
                             <div class="services__price">
                                 <h3>Корпоративный интенсив</h3>
                                 <p>3 200<span><span>₴/</span>2 дня</span></p>
-                                <button class="button services__button">Заказать</button>
+                                <button class="button services__button button-mondey">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -197,7 +197,7 @@
                             <div class="services__price">
                                 <h3>Туристический интенсив</h3>
                                 <p>2 500<span><span>₴/</span>2 дня</span></p>
-                                <button class="button services__button">Заказать</button>
+                                <button class="button services__button button-mondey">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -225,7 +225,7 @@
                             <div class="services__price">
                                 <h3>Переговоры на иностранном языке</h3>
                                 <p>3 500<span><span>₴/</span>2 дня</span></p>
-                                <button class="button services__button">Заказать</button>
+                                <button class="button services__button button-mondey">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -243,10 +243,61 @@
             <form action="" class="dispatch__form">
                 <div class="form-item">
                     <input type="email" class="input" id="email-dispatch">
-                    <label for="email-dispatch" class="label">Ваш email</label>
+                    <label for="email-dispatch" class="label" required>Ваш email</label>
                 </div>
                 <input type="submit" value="ОТПРАВИТЬ" class="button dispatch__button">
             </form>
+        </div>
+    </section>
+    <section class='step'>
+        <div class="step_items">
+            <div class="step__caption">
+                <p class="step__number-text step__gradient-text">9</p>
+                <p class='step__description'><span class="step__gradient-text">шагов</span><br> к свободному<br> общению
+                    на английском</p>
+            </div>
+            <ul class="step__container">
+                <li class="step__item step__item--1">
+                    <p class="step__item-number">01</p>
+                    <p>Проводим пробный урок</p>
+                </li>
+                <li class="step__item step__item--2">
+                    <p class="step__item-number">02</p>
+                    <p>Оцениваем уровень</p>
+                </li>
+                <li class="step__item step__item--3">
+                    <p class="step__item-number">03</p>
+                    <p>Составим необходимую программу</p>
+                </li>
+                <li class="step__item step__item--4">
+                    <p class="step__item-number">04</p>
+                    <p>Исправляем ошибки</p>
+                </li>
+                <li class="step__item step__item--5">
+                    <p class="step__item-number">05</p>
+                    <p>Обрабатываем новый материал</p>
+                </li>
+                <li class="step__item step__item--6">
+                    <p class="step__item-number">06</p>
+                    <p>Тренеруем предложения</p>
+                </li>
+                <li class="step__item step__item--7">
+                    <p class="step__item-number">07</p>
+                    <p>Говорим</p>
+                </li>
+                <li class="step__item step__item--8">
+                    <p class="step__item-number">08</p>
+                    <p>Выполняем креативную домашку</p>
+                </li>
+                <li class="step__item step__item--9">
+                    <p class="step__item-number ">09</p>
+                    <p>Говорим легко и правильно</p>
+                </li>
+            </ul>
+        </div>
+        <div class="step__button-container">
+            <h2>ПРОЙДИ БЕСПЛАТНЫЙ УРОК  И УБЕДИСЬ ЧТО АНГЛИЙСКИЙ  ЭТО ЛЕГКО</h2>
+            <button class="button button-ease step__button">ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК</button>
         </div>
     </section>
 </main>
@@ -255,11 +306,11 @@
         <h2>Остались вопросы?<br>Задайте их нам:</h2>
         <form action="" class="footer__form">
             <div class="form-item">
-                <input type="text" class="input" id="name">
+                <input type="text" class="input" id="name" required>
                 <label for="name" class="label">Ваше имя</label>
             </div>
             <div class="form-item">
-                <input type="tel" class="input" id="tel">
+                <input type="tel" class="input" id="tel" required>
                 <label for="tel" class="label">Ваш телефон</label>
             </div>
             <div class="form-item">
@@ -313,6 +364,39 @@
         </div>
     </section>
 </footer>
+<section class="popup">
+    <div class="popup__background"></div>
+    <div class="popup__form-container">
+        <div class="popup__close">
+            <img src="img/close.svg" alt="закрыть окно" width="14" height="14">
+        </div>
+        <h2>заполни форму и убедись<br>что английский это легко</h2>
+        <form action="" class="popup__form">
+            <div class="form-item">
+                <input type="text" class="input" id="name-popup" required>
+                <label for="name-popup" class="label">Ваше имя</label>
+            </div>
+            <div class="form-item">
+                <input type="tel" class="input" id="tel-popup" required>
+                <label for="tel-popup" class="label">Ваш телефон</label>
+            </div>
+            <div class="form-item">
+                <input type="email" class="input" id="email-popup">
+                <label for="email-popup" class="label">Ваш email</label>
+            </div>
+            <div class="form-item form-item--comment">
+                <input type="text" class="input" id="comment-popup">
+                <label for="comment-popup" class="label">Ваш коментарий</label>
+            </div>
+            <div class="popup-submit">
+                <input type="submit" value="ОТПРАВИТЬ" class="button popup__button">
+                <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных в соответствии с
+                    законодательством</p>
+            </div>
+        </form>
+    </div>
+</section>
 <script src="js/main.js"></script>
 </body>
+
 </html>

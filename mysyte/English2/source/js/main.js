@@ -68,3 +68,60 @@ window.onresize = function (ev) {
     console.log(windowWidth);
     setTypeElement();
 };
+
+/*------открытие/закрытие попап и изменение заголовка попапа----------*/
+
+var popupElement = document.querySelector('.popup');
+console.log(popupElement);
+var popupCloseElement = document.querySelector('.popup__close');
+console.log(popupCloseElement);
+var buttonEase= document.querySelectorAll('.button-ease');
+var buttonMondey= document.querySelectorAll('.button-mondey');
+var popupBgElement = document.querySelector('.popup__background');
+const ESK_KEY_CODE = 27;
+var caption = document.querySelector('.popup__form-container > h2');
+
+var easeText = 'заполни форму и убедись<br>что английский это легко';
+var mondeyText = 'заполни форму заказа<br>не откладывай на понедельник';
+
+var closePopup = function () {
+    popupElement.classList.remove('popup-active');
+    popupCloseElement.removeEventListener('click', onPopupCloseElementClick);
+    popupBgElement.removeEventListener('click', onPopupCloseElementClick);
+    window.removeEventListener('keydown', onWindowKey)
+}
+
+var openPopup = function () {
+    popupElement.classList.add('popup-active');
+    popupCloseElement.addEventListener('click', onPopupCloseElementClick);
+    popupBgElement.addEventListener('click', onPopupCloseElementClick);
+    window.addEventListener('keydown', onWindowKey)
+}
+var onPopupCloseElementClick = function () {
+    closePopup()
+};
+
+var onWindowKey = function (evt) {
+    if (evt.keyCode === ESK_KEY_CODE) {
+        closePopup();
+    }
+};
+
+var onButtonEaseClick = function () {
+    caption.innerHTML = easeText;
+    openPopup();
+};
+
+var onButtonMondeyClick = function () {
+    caption.innerHTML = mondeyText;
+    openPopup();
+};
+
+buttonEase.forEach(function (it) {
+    it.addEventListener('click', onButtonEaseClick);
+});
+buttonMondey.forEach(function (it){
+    it.addEventListener('click', onButtonMondeyClick);
+});
+
+popupCloseElement.addEventListener('click', onPopupCloseElementClick);
