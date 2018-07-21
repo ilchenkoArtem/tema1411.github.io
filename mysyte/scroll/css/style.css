@@ -1,0 +1,40 @@
+body {
+    padding: 0 40px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main img {
+    width: 500px;
+    height: auto;
+}
+
+.project_0 img{
+    opacity: 0;
+}
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 700px;
+    margin-right: auto;
+    height: 90vh;   
+}
+
+.project img {
+    width: 400px;
+    height: auto;
+}
+
+.project_2 {
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+}

@@ -33,6 +33,7 @@
   position: relative;
   padding-left: 25px;
   p {
+    margin-top: 0;
     font-size: 10px;
     font-weight: bold;
     margin-bottom: 0;
@@ -73,6 +74,11 @@
     left: 4px;
     background-image: url('../img/mail.svg');
   }
+  &--viber::after {
+    width: 19px;
+    height: 21px;
+    background-image: url('../img/viber.svg');
+  }
 }
 
 .footer__social {
@@ -91,4 +97,114 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    padding: 0 50px;
+  }
 
+  .form-item {
+    width: 30%;
+    input {
+      width: 100%;
+    }
+    &:last-of-type {
+      width: 100%;
+    }
+  }
+
+  .form-item--comment {
+    width: 100%;
+  }
+
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer__contact-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__contact-item {
+    padding-left: 27px;
+    &::after {
+      height: 25px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    a {
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    &--whatsapp::after {
+      width: 27px;
+      height: 27px;
+      left: 3px;
+    }
+    &--skype::after {
+      width: 26px;
+      height: 25px;
+      left: 2px;
+    }
+    &--email::after {
+      width: 30px;
+      height: 23px;
+      left: 4px;
+    }
+    &--viber::after {
+      width: 23px;
+      height: 24px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__form-container {
+    display: flex;
+    h2 {
+      width: 100%;
+      max-width: 237px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .footer__form {
+    max-width: 715px;
+    margin-left: 20px;
+    margin-top: 45px;
+    .form-item {
+      max-width: 180px;
+    }
+    .form-item--comment {
+      width: 64%;
+      max-width: 448px;
+    }
+  }
+
+  .footer-submit {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    p {
+      max-width: 328px;
+    }
+  }
+
+  .footer__button {
+    margin-top: 0;
+    margin-right: 33px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    padding: 0 200px;
+  }
+}

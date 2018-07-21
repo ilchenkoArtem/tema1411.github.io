@@ -34,7 +34,7 @@ var onInputChange = function () {
     var label = this.nextElementSibling;
     if (valueInput !== "") {
         label.classList.add('label--active')
-    } else  {
+    } else {
         label.classList.remove('label--active')
     }
 }
@@ -42,6 +42,27 @@ var addListenerInput = function () {
     for (var i = 0; i < input.length; i++) {
         input[i].addEventListener('change', onInputChange)
     }
-}
+};
+addListenerInput();
 
-addListenerInput()
+/*----Изменение типа input в разеделе НАШИ УСЛУГИ------------*/
+var inputCheckBoxElement = document.querySelectorAll('.services__radio');
+var windowWidth = window.innerWidth;
+
+var setAtribute = function () {
+    if (windowWidth < 1024) {
+        inputCheckBoxElement.forEach(function (item) {
+            item.setAttribute('type', 'checkbox');
+        })
+    } else {
+        inputCheckBoxElement.forEach(function (item) {
+            item.setAttribute('type', 'radio')
+        })
+    }
+};
+setAtribute();
+window.onresize = function (ev) {
+    windowWidth = window.innerWidth;
+    console.log(windowWidth);
+    setAtribute();
+};

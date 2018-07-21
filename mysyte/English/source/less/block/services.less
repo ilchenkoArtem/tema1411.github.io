@@ -1,0 +1,148 @@
+.services {
+  padding: 0 200px;
+  margin-bottom: 130px;
+}
+
+.services__tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service__tab {
+  padding-left: 60px;
+  width: 23%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+  input {
+    display: none;
+  }
+  &--active {
+    border-bottom: 2px solid #f8edc6;
+  }
+}
+
+.service-name-tab {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4d4d4d;
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: -59px;
+    top: 50%;
+    opacity: 0.7;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+  }
+  &--skype::after {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/online.png");
+  }
+  &--intense:after {
+    height: 38px;
+    width: 40px;
+    background-image: url("../img/employee.png");
+  }
+  &--tur:after {
+    height: 38px;
+    width: 38px;
+    background-image: url("../img/world.png");
+  }
+  &--conversation:after {
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/conversation.png");
+  }
+}
+
+.service__info {
+  opacity: 0;
+  transition: 1s opacity ease-out;
+  padding: 80px 90px;
+  box-sizing: border-box;
+  align-items: center;
+  display: none;
+  height: 420px;
+  width: 100%;
+  background: url("../img/servise_bg.png") no-repeat 100% 0,
+  linear-gradient(45deg, rgb(252, 188, 3) 0%, rgb(254, 227, 8) 100%);
+  &--active {
+    opacity: 1;
+    display: flex;
+  }
+}
+
+.service__info-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-bottom: 31px;
+    font-weight: 900;
+  }
+  button {
+    max-width: 178px;
+    font-weight: 900;
+    &:hover {
+      background-color: #f8edc6;
+    }
+  }
+}
+.service__info-price p {
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 24px;
+  span {
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+
+.service__info-param {
+  margin: 0;
+  list-style: none;
+}
+
+.service__info-param li {
+  position: relative;
+  width: 100%;
+  font-weight: bold;
+  line-height: 20px;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  &::before {
+    left: -15px;
+    background-color: #222222;
+    width: 9px;
+    height: 9px;
+  }
+  &::after {
+    left: -12px;
+    background-color: #fdcc05;
+    width: 3px;
+    height: 3px;
+  }
+}
+
+.service__info-param li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+input.skype:checked .service__info {
+  display: none;
+}

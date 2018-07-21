@@ -10,11 +10,13 @@
 }
 
 .header__container {
+  max-width: 1440px;
   width: 100%;
   background-color: transparent;
   position: fixed;
   margin: 0 auto;
   left: 0;
+  right: 0;
   padding: 0 20px;
   box-sizing: border-box;
   display: flex;
@@ -241,5 +243,45 @@ a.header__tel {
     display: flex;
     margin-bottom: 45px;
     align-self: flex-end;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    background-position-x: 89%;
+  }
+  .header__container {
+    padding: 0 70px;
+  }
+  .header__main-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__nav-elements {
+    width: auto;
+    margin-left: auto;
+  }
+  .header__contact-container {
+    margin-top: 0;
+    margin-left: 130px;
+  }
+  a.header__tel {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .header__info {
+    padding-left: 131px;
+    h1 {
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      margin-top: 10px;
+    }
   }
 }

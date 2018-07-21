@@ -1,0 +1,85 @@
+.advantages {
+  padding: 0 200px;
+  padding-bottom: 130px;
+  width: 100%;
+  box-sizing: border-box;
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    max-width: 357px;
+    margin-bottom: 97px;
+    margin-left: 10px;
+  }
+}
+.advantages__items {
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantages__item {
+  max-width: 327px;
+  box-sizing: border-box;
+  padding-left: 60px;
+}
+
+.advantages__caption {
+  position: relative;
+  font-size: 17px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    background-repeat: no-repeat;
+  }
+  &--control::after {
+    background-image: url("../img/goal.svg");
+  }
+  &--effect::after {
+    background-image: url("../img/brainstorm.svg");
+  }
+  &--grammar::after {
+    background-image: url("../img/book.svg");
+  }
+  &--books:after {
+    background-image: url("../img/elearning.svg");
+  }
+  &--logic:after {
+    background-image: url("../img/teamwork.svg");
+  }
+  &--create:after {
+    background-image: url("../img/inspection.svg");
+  }
+}
+.advantages__buttons a {
+  font-size: 12px;
+  font-weight: 900;
+  color: #7d7d7d;
+  text-decoration: none;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/whatsapp.svg);
+    background-repeat: no-repeat;
+    left: -27px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.advantages__button {
+  background-color: #fee308;
+  margin-right: 74px;
+  &:hover {
+    background-color: #fcbc03;
+  }
+}
+

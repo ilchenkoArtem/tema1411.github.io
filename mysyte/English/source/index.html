@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+<header class="header">
+    <div class="header-nav">
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo.svg" alt="logo" width="90" height="35">
+            </a>
+        </div>
+        <div class="header-main-nav">
+            <ul class="header-nav__elements">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Как это работает</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <a class="header__tel" href="tel:+380962757698">+38 (096) 275 -76 -98</a>
+        </div>
+    </div>
+    <div class="header__info">
+        <h1>ОНЛАЙН ШКОЛА<br> АНГЛИЙСКОГО ЯЗЫКА</h1>
+        <p>РАБОТАЕМ С МОЗГОМ А НЕ С КНИЖКАМИ</p>
+        <button class="button header__button">ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК</button>
+    </div>
+    <div class="header__social">
+        <a href="#">
+            <img class='header__social--fb' src="img/facebook-f.svg" alt="" width="8" height="16">
+        </a>
+        <a href="#">
+            <img class='header__social--inst' src="img/instagram.svg" alt="" width="13" height="11">
+        </a>
+        <a href="#">
+            <img class='header__social--telegram' src="img/telegram-plane.svg" alt="" width="11" height="10">
+        </a>
+    </div>
+</header>
+<main class="main">
+    <section class="about">
+        <div class="about__text">
+            <h2>О НАШЕЙ<br>ШКОЛЕ</h2>
+            <p>Мы любим то что мы делаем. Объясняем простыми словами и помогаем понять язык. Осваиваем сложную
+                грамматику, которая делает Вашу речь серьезнее и правильнее.<br>
+                Мы учим слова ассоциациями и используем интересные подходы и методики в своих уроках.</p>
+            <p>Ведь когда вы заговорите на английском языке легко, это сразу заметят окружающие и спросят, кто же Вас
+                так научил.</p>
+        </div>
+        <div class="about__video">
+            <h2>КТО МЫ?</h2>
+            <video src="" poster="img/video__pc.jpg" width="505" height="314"></video>
+        </div>
+    </section>
+    <section class="advantages">
+        <h2>Уроки английского, которые приносят удовольствие и результат.</h2>
+        <div class="advantages__items">
+            <div class="advantages__item">
+                <h3 class="advantages__caption advantages__caption--control">Контроль прогресса</h3>
+                <p>Вы сами ставите цели для изучения, а мы помогаем вам их достигнуть. Каждые 10-е занятие мы проводим
+                    тест по всему, что мы с вами выучили</p>
+            </div>
+            <div class="advantages__item">
+                <h3 class="advantages__caption advantages__caption--effect">Эффективное запоминание</h3>
+                <p>Перед началом изучения мы определяем тип вашего восприятия информации. Работаем со всеми видами
+                    памяти.</p>
+            </div>
+            <div class="advantages__item">
+                <h3 class="advantages__caption advantages__caption--grammar">Простая грамматика</h3>
+                <p>Помогаем понять сложную грамматику на простых примерах и применить ее в жизненных ситуациях.</p>
+            </div>
+            <div class="advantages__item">
+                <h3 class="advantages__caption advantages__caption--books">Минимум книжек</h3>
+                <p>Вы учили английский по книгам 11 лет, а может и больше. Теперь вы снова здесь. Книги не работают для
+                    разговора. А мы практикуем живое общение.</p>
+            </div>
+            <div class="advantages__item">
+                <h3 class="advantages__caption advantages__caption--logic">Понимание логики языка</h3>
+                <p>Английский станет понятным языком, ведь мы объясним вам «почему так»</p>
+            </div>
+            <div class="advantages__item">
+                <h3 class="advantages__caption advantages__caption--create">Креативная домашка</h3>
+                <p>Домашнее задание приносит удовольствие и включает мозг. Для нас это советы, статьи для журнала,
+                    причины глобальных проблем и еще много разных форматов.</p>
+            </div>
+        </div>
+        <div class="advantages__buttons">
+            <button class="button advantages__button">ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК</button>
+            <a href="#">Узнать Подробности</a>
+        </div>
+    </section>
+    <section class="services">
+        <div class="services__tabs">
+            <div class="service__tab service__tab--active">
+                <input type="radio" id="skype" name="service">
+                <label for="skype" class="service-name-tab service-name-tab--skype">Индивидуальные уроки по
+                    Skype</label>
+            </div>
+            <div class="service__tab">
+                <input type="radio" id="intense" name="service">
+                <label for="intense" class="service-name-tab service-name-tab--intense">Корпоративный интенсив</label>
+            </div>
+            <div class="service__tab">
+                <input type="radio" id="tur" name="service">
+                <label for="tur" class="service-name-tab service-name-tab--tur">Туристический интенсив</label>
+            </div>
+            <div class="service__tab">
+                <input type="radio" id="conversation" name="service">
+                <label for="conversation" class="service-name-tab service-name-tab--conversation">Переговоры на
+                    иностранном языке</label>
+            </div>
+        </div>
+        <div class="service__info-container">
+            <div class="service__info service__info--active">
+                <div class="service__info-price">
+                    <h3>Индивидуальные<br>уроки по Skype</h3>
+                    <p>2500 ₴/<span>2 дня</span></p>
+                    <button class="button service__info-button">ЗАКАЗАТЬ</button>
+                </div>
+                <ul class="service__info-param">
+                    <li>Бесплатные пробные занятия</li>
+                    <li>Индивидуальная программа</li>
+                    <li>Работа со всеми типами памяти</li>
+                    <li>Подготовка для работы заграницу</li>
+                    <li>Подготовка для получения визы</li>
+                    <li>Подготовка к прохождению собеседования</li>
+                    <li>IT программа обучения</li>
+                    <li>Разговорные знания</li>
+                    <li>Запоминание методом ассоциации</li>
+                </ul>
+            </div>
+            <div class="service__info">
+                <div class="service__info-price">
+                    <h3>Индивидуальные<br>уроки по Skype</h3>
+                    <p>2500 ₴/<span>2 дня</span></p>
+                    <button class="button service__info-button">ЗАКАЗАТЬ</button>
+                </div>
+                <ul class="service__info-param">
+                    <li>Бесплатные пробные занятия</li>
+                    <li>Индивидуальная программа</li>
+                    <li>Работа со всеми типами памяти</li>
+                    <li>Подготовка для работы заграницу</li>
+                    <li>Подготовка для получения визы</li>
+                    <li>Подготовка к прохождению собеседования</li>
+                    <li>IT программа обучения</li>
+                    <li>Разговорные знания</li>
+                    <li>Запоминание методом ассоциации</li>
+                </ul>
+            </div>
+            <div class="service__info">
+                <div class="service__info-price">
+                    <h3>Индивидуальные<br>уроки по Skype</h3>
+                    <p>2500 ₴/<span>2 дня</span></p>
+                    <button class="button service__info-button">ЗАКАЗАТЬ</button>
+                </div>
+                <ul class="service__info-param">
+                    <li>Бесплатные пробные занятия</li>
+                    <li>Индивидуальная программа</li>
+                    <li>Работа со всеми типами памяти</li>
+                    <li>Подготовка для работы заграницу</li>
+                    <li>Подготовка для получения визы</li>
+                    <li>Подготовка к прохождению собеседования</li>
+                    <li>IT программа обучения</li>
+                    <li>Разговорные знания</li>
+                    <li>Запоминание методом ассоциации</li>
+                </ul>
+            </div>
+            <div class="service__info">
+                <div class="service__info-price">
+                    <h3>Индивидуальные<br>уроки по Skype</h3>
+                    <p>2500 ₴/<span>2 дня</span></p>
+                    <button class="button service__info-button">ЗАКАЗАТЬ</button>
+                </div>
+                <ul class="service__info-param">
+                    <li>Бесплатные пробные занятия</li>
+                    <li>Индивидуальная программа</li>
+                    <li>Работа со всеми типами памяти</li>
+                    <li>Подготовка для работы заграницу</li>
+                    <li>Подготовка для получения визы</li>
+                    <li>Подготовка к прохождению собеседования</li>
+                    <li>IT программа обучения</li>
+                    <li>Разговорные знания</li>
+                    <li>Запоминание методом ассоциации</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="dispatch">
+        <div class="dispatch__container">
+            <div class="dispatch__text">
+                <h3>ИНТЕРЕСНО?</h3>
+                <p>ПОДПИСЫВАЙТЕСЬ НА РАССЫЛКУ<span> SHO SCHOOL</span></p>
+            </div>
+
+            <form action="" class="dispatch__form">
+                <input type="email" placeholder="Ваш email" class="dispatch__email">
+                <input type="submit" value="ОТПРАВИТЬ" class="button dispatch__button">
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <h2>Остались вопросы?<br>Задайте их нам:</h2>
+    <form action="" class="footer__form">
+        <input type="text" placeholder="Ваше имя">
+        <input type="tel" placeholder="Ваш телфон">
+        <input type="email" placeholder="Ваш email">
+        <input type="text" placeholder="Ваш Вопрос" class="question">
+        <div class="footer-submit">
+            <input type="submit" value="ОТПРАВИТЬ" class="button">
+            <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных в соответствии с законодательством</p>
+
+        </div>
+    </form>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
