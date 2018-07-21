@@ -13,6 +13,8 @@
 }
 button,
 input {
+  box-shadow: none;
+
   -webkit-appearance: none;
 }
 .label,
