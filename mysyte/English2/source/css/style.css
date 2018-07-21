@@ -18,6 +18,8 @@
 .input {
   font-size: 14px;
   font-weight: 500;
+
+  -webkit-appearance: none;
 }
 .input {
   box-sizing: border-box;
