@@ -39,7 +39,7 @@
           <file leaf-file-name="footer.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/source/less/block/footer.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="529">
+                <state relative-caret-position="4807">
                   <caret line="209" column="23" lean-forward="false" selection-start-line="209" selection-start-column="23" selection-end-line="209" selection-end-column="23" />
                   <folding />
                 </state>
@@ -105,8 +105,8 @@
           <file leaf-file-name="header.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/source/less/block/header.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="177" column="19" lean-forward="false" selection-start-line="177" selection-start-column="19" selection-end-line="177" selection-end-column="19" />
+                <state relative-caret-position="406">
+                  <caret line="243" column="28" lean-forward="false" selection-start-line="243" selection-start-column="28" selection-end-line="243" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -254,12 +254,12 @@
       <workItem from="1532075060635" duration="32117000" />
       <workItem from="1532120411791" duration="17491000" />
       <workItem from="1532169291433" duration="22463000" />
-      <workItem from="1532199763124" duration="10085000" />
+      <workItem from="1532199763124" duration="10431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106515000" />
+    <option name="totallyTimeSpent" value="106861000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -671,7 +671,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/less/block/footer.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
+        <state relative-caret-position="4807">
           <caret line="209" column="23" lean-forward="false" selection-start-line="209" selection-start-column="23" selection-end-line="209" selection-end-column="23" />
           <folding />
         </state>
@@ -687,8 +687,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/less/block/header.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="177" column="19" lean-forward="false" selection-start-line="177" selection-start-column="19" selection-end-line="177" selection-end-column="19" />
+        <state relative-caret-position="406">
+          <caret line="243" column="28" lean-forward="false" selection-start-line="243" selection-start-column="28" selection-end-line="243" selection-end-column="28" />
           <folding />
         </state>
       </provider>

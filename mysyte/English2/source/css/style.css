@@ -422,6 +422,7 @@ a.header__tel {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   height: 100vh;
   padding: 0 20px;
 }
@@ -501,6 +502,7 @@ a.header__tel {
   }
   .header__info {
     justify-content: center;
+    align-items: flex-start;
     height: auto;
   }
   .header__info h1 {
