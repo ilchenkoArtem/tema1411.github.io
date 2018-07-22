@@ -447,6 +447,9 @@ a.header__tel {
 .header__button:hover {
   background-color: #f8edc6;
 }
+.header__decor {
+  display: none;
+}
 @media (min-width: 768px) {
   .header__container {
     padding: 0 50px;
@@ -515,13 +518,13 @@ a.header__tel {
   .header__info-social {
     display: flex;
     align-self: flex-end;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
   }
 }
 @media (min-width: 1440px) {
   .header {
-    height: 95vh;
-    background-position-x: 89%;
+    background-position-x: 99%;
+    background-size: 985px;
   }
   .header__container {
     padding: 0 70px;
@@ -544,7 +547,7 @@ a.header__tel {
     font-weight: bold;
   }
   .header__info {
-    padding-left: 131px;
+    padding-left: 200px;
   }
   .header__info h1 {
     font-size: 36px;
@@ -554,6 +557,63 @@ a.header__tel {
     margin-top: 10px;
     margin-bottom: 40px;
     font-size: 18px;
+  }
+  .decor {
+    position: absolute;
+    display: block;
+  }
+  .header__info-container {
+    position: relative;
+    height: 95vh;
+  }
+  .header__decor-img {
+    position: absolute;
+  }
+  .header__decor-img--1 {
+    top: -47vh;
+    left: 29vw;
+  }
+  .header__decor-img--2 {
+    top: -29vh;
+    left: -1vw;
+    transform: scale(1.4);
+  }
+  .header__decor-img--3 {
+    top: -4vh;
+    left: 9vw;
+  }
+  .header__decor-img--4 {
+    top: 41vh;
+    left: 1150px;
+  }
+  .header__decor-img--5 {
+    top: -20vh;
+    left: 570px;
+  }
+  .header__decor-img--6 {
+    top: 10vh;
+    left: -32px;
+  }
+  .header__decor-img--7 {
+    top: -25vh;
+    left: 1260px;
+  }
+  .header__decor-img--8 {
+    top: -39vh;
+    left: 694px;
+    transform: scale(0.9);
+  }
+  .header__decor-img--9 {
+    top: 27vh;
+    left: 424px;
+  }
+  .header__decor-img--10 {
+    top: 11vh;
+    left: 1337px;
+  }
+  .header__decor-img--11 {
+    top: 45vh;
+    left: 295px;
   }
 }
 .about {
@@ -1239,6 +1299,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
     margin-bottom: 50px;
     text-align: center;
     font-size: 34px;
+    line-height: 70px;
   }
   .services__items {
     position: relative;

@@ -174,16 +174,22 @@ a.header__tel {
   }
 }
 
+.header__decor {
+  display: none;
+}
+
 @media (min-width: 768px) {
 
   .header__container {
     padding: 0 50px;
   }
+
   .header {
     height: 95vh;
     background-size: auto;
     background-position-x: 28.5vw;
   }
+
   .header__burger {
     display: none
   }
@@ -230,6 +236,7 @@ a.header__tel {
   .header__button {
     margin-bottom: 0;
   }
+
   .header__info-container {
     height: 100vh;
     display: flex;
@@ -238,6 +245,7 @@ a.header__tel {
     padding: 0 50px;
 
   }
+
   .header__info {
     height: auto;
     justify-content: center;
@@ -247,41 +255,49 @@ a.header__tel {
       line-height: 28px;
     }
   }
-  .header__info-social{
+
+  .header__info-social {
     display: flex;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     align-self: flex-end;
   }
 }
 
 @media (min-width: 1440px) {
   .header {
-    height: 95vh;
-    background-position-x: 89%;
+    background-position-x: 99%;
+    background-size: 985px;
+
+
   }
+
   .header__container {
     padding: 0 70px;
   }
+
   .header__main-nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
+
   .header__nav-elements {
     width: auto;
     margin-left: auto;
   }
+
   .header__contact-container {
     margin-top: 0;
     margin-left: 130px;
   }
+
   a.header__tel {
     font-weight: bold;
     font-size: 15px;
   }
 
   .header__info {
-    padding-left: 131px;
+    padding-left: 200px;
     h1 {
       font-size: 36px;
       line-height: 48px;
@@ -291,6 +307,66 @@ a.header__tel {
       font-size: 18px;
       margin-bottom: 40px;
       margin-top: 10px;
+    }
+  }
+
+  .decor {
+    position: absolute;
+    display: block;
+  }
+
+  .header__info-container {
+    position: relative;
+    height: 95vh;
+  }
+
+  .header__decor-img {
+    position: absolute;
+    &--1 {
+      top: -47vh;
+      left: 29vw;
+    }
+    &--2 {
+      top: -29vh;
+      left: -1vw;
+      transform: scale(1.4);
+    }
+    &--3 {
+      top: -4vh;
+      left: 9vw;
+    }
+    &--4 {
+      top: 41vh;
+      left: 1150px;
+    }
+    &--5 {
+      top: -20vh;
+      left: 570px;
+    }
+    &--6 {
+        top: 10vh;
+        left: -32px;
+      }
+    &--7 {
+      top: -25vh;
+      left: 1260px;
+    }
+    &--8 {
+      top: -39vh;
+      left: 694px;
+      transform: scale(0.9);
+    }
+    &--9 {
+      top: 27vh;
+      left: 424px;
+    }
+    &--10 {
+      top: 11vh;
+      left: 1337px;
+    }
+    &--11 {
+      top: 45vh;
+      left: 295px;
     }
   }
 }
