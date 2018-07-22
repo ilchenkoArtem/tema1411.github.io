@@ -28,7 +28,7 @@ document.onscroll = function () {
 
     if (scrolledTop > heightHeaderContainerElement) {
         headerContainerElement.style.backgroundColor = '#ffffff'
-        headerContainerElement.style.boxShadow = '0px 0px 50px 0px rgba(0,0,0,0.75)';
+        headerContainerElement.style.boxShadow = 'rgba(0, 0, 0, 0.25) 0px 0px 45px 0px';
     } else {
         headerContainerElement.style.backgroundColor = 'transparent'
         headerContainerElement.style.boxShadow = 'none';
@@ -56,15 +56,18 @@ addListenerInput();
 /*----Изменение типа input в разеделе НАШИ УСЛУГИ------------*/
 var inputCheckBoxElement = document.querySelectorAll('.services__radio');
 var windowWidth = window.innerWidth;
-
+var skypeElement = document.querySelector('#skype');
+console.log (skypeElement)
 var setTypeElement = function () {
     if (windowWidth < 1024) {
         inputCheckBoxElement.forEach(function (item) {
             item.setAttribute('type', 'checkbox');
+            skypeElement.checked = null;
         })
     } else {
         inputCheckBoxElement.forEach(function (item) {
-            item.setAttribute('type', 'radio')
+            item.setAttribute('type', 'radio');
+            skypeElement.checked = 'checked';
         })
     }
 };

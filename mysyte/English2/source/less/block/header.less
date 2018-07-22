@@ -258,17 +258,18 @@ a.header__tel {
 
   .header__info-social {
     display: flex;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
     align-self: flex-end;
   }
 }
 
 @media (min-width: 1200px) {
+  .header__info-social {
+    margin-bottom: 5vh;
+  }
   .header {
     background-position-x: 99%;
     background-size: 985px;
-
-
   }
 
   .header__container {
@@ -297,7 +298,6 @@ a.header__tel {
   }
 
   .header__info {
-    padding-left: 200px;
     h1 {
       font-size: 36px;
       line-height: 48px;
@@ -344,9 +344,9 @@ a.header__tel {
       left: 570px;
     }
     &--6 {
-        top: 10vh;
-        left: -32px;
-      }
+      top: 10vh;
+      left: -32px;
+    }
     &--7 {
       top: -25vh;
       left: 1260px;
@@ -368,5 +368,11 @@ a.header__tel {
       top: 45vh;
       left: 295px;
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__info {
+    padding-left: 200px;
   }
 }
