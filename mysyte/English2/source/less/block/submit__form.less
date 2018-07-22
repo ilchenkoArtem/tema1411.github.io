@@ -1,0 +1,25 @@
+.success__form {
+  position: fixed;
+  top: 50%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 50%;
+  max-width: 320px;
+  opacity: 1;
+  transition: 1s opacity ease-in-out;
+  background-color: #ffffff;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  p {
+    font-size: 15px;
+  }
+  &--disabled {
+    z-index: -1;
+    opacity: 0;
+    transition: 1s opacity ease-in-out;
+  }
+}

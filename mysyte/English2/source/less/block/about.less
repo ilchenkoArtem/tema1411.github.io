@@ -25,12 +25,83 @@
     color: #f8f8f8;
     margin-bottom: 7px;
   }
-  video {
+  .about__play-container {
+    cursor: pointer;
+    position: relative;
     width: 100%;
     height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    &:hover .about__play-circle1 {
+      background-color: rgb(0, 0, 0);
+    }
   }
 }
 
+.about__play-circle1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s background-color ease-in-out;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.about__play-circle2 {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+}
+
+.about__video-container{
+  iframe{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 95vw;
+    height: 80vh;
+    z-index: 10;
+  }
+  &--close {
+    display: none;
+  }
+}
+.about__video--background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+}
+.about__play-triangle {
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+  &::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 19%;
+    left: 59%;/* Положение треугольника */
+    transform: translate(-50%, -50%);
+    border: 7px solid transparent;
+    border-left: 13px solid #fee308;
+  }
+}
 .advantages__buttons {
   a {
     display: none;
@@ -81,7 +152,7 @@
       line-height: 60px;
     }
 
-    video {
+    .about__play-container {
       width: 505px;
       height: 314px;
     }
