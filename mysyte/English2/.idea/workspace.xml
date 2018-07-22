@@ -106,8 +106,8 @@
           <file leaf-file-name="header.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/source/less/block/header.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="223">
-                  <caret line="314" column="18" lean-forward="false" selection-start-line="314" selection-start-column="18" selection-end-line="314" selection-end-column="18" />
+                <state relative-caret-position="251">
+                  <caret line="320" column="14" lean-forward="false" selection-start-line="320" selection-start-column="14" selection-end-line="320" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -269,12 +269,12 @@
       <workItem from="1532120411791" duration="17491000" />
       <workItem from="1532169291433" duration="22463000" />
       <workItem from="1532199763124" duration="55265000" />
-      <workItem from="1532286610311" duration="3801000" />
+      <workItem from="1532286610311" duration="4404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155496000" />
+    <option name="totallyTimeSpent" value="156099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -727,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/less/block/header.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="314" column="18" lean-forward="false" selection-start-line="314" selection-start-column="18" selection-end-line="314" selection-end-column="18" />
+        <state relative-caret-position="251">
+          <caret line="320" column="14" lean-forward="false" selection-start-line="320" selection-start-column="14" selection-end-line="320" selection-end-column="14" />
           <folding />
         </state>
       </provider>
