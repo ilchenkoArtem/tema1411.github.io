@@ -521,7 +521,7 @@ a.header__tel {
     margin-bottom: 5vh;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .header {
     background-position-x: 99%;
     background-size: 985px;
@@ -736,7 +736,7 @@ a.header__tel {
     margin-bottom: 40px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .about {
     padding: 50px 200px 0 200px;
   }
@@ -881,7 +881,7 @@ a.header__tel {
     margin-left: 75px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .advantages {
     padding: 0 200px;
   }
@@ -974,7 +974,7 @@ a.header__tel {
     padding: 0 150px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .dispatch {
     padding: 0 200px;
   }
@@ -1166,7 +1166,7 @@ a.header__tel {
     margin-right: 33px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .footer {
     padding: 0 200px;
     padding-top: 100px;
@@ -1415,7 +1415,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
     transform: none;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .services {
     padding: 0 200px;
   }
@@ -1655,7 +1655,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
     left: 109px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .step_items {
     height: 1014px;
     padding: 50px 200px 0 200px;
