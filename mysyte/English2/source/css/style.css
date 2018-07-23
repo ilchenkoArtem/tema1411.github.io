@@ -3274,6 +3274,7 @@ th {
   animation-name: slideOutUp;
 }
 .body {
+  overflow-x: hidden;
   box-sizing: border-box;
   min-width: 320px;
   max-width: 1440px;
