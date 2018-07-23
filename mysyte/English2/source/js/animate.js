@@ -20,7 +20,7 @@ $(document).ready(function () {
         };
     })(jQuery);
 
-    var animatesFunction = function () {
+    /*var animatesFunction = function () {
         $('button:not(:first-of-type)').animated('zoomInUp');
         $('.advantages__item, .dispatch__container').animated('rotateInDownRight');
         $('.form-item').animated('zoomIn');
@@ -39,5 +39,5 @@ $(document).ready(function () {
             animatesFunction()
         }
     }
-
+*/
 });
