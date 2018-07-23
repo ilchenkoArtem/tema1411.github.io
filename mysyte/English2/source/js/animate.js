@@ -19,13 +19,14 @@ $(document).ready(function () {
         };
     })(jQuery);
 
-    $('button').animated('zoomInUp');
+    $('button:not(:first-of-type)').animated('zoomInUp');
 
-    $('.advantages__item, .dispatch__container, .advantages__buttons').animated('rotateInDownRight');
+    $('.advantages__item, .dispatch__container, .advantages__buttons, .about__video').animated('rotateInDownRight');
 
     $('.main-caption, .h2').animated('flip');
 
     $('.form-item').animated('zoomIn');
+
 
  $('.step, .step__button-container, footer, .about .services, .advantages, .dispatch' ).animated("slideInUp");
  $('.step__item--1, .step__item--4,.step__item--7, .step__item--9, .step__item--8, .about__text,.services__price').animated("fadeInRight");
