@@ -3839,6 +3839,7 @@ a.header__tel {
   left: 0;
   width: 100vw;
   height: 100vh;
+  transform: translate(-50% -50%);
   background-color: rgba(0, 0, 0, 0.8);
 }
 .about__video--background::after {
@@ -3899,6 +3900,9 @@ a.header__tel {
   }
 }
 @media (min-width: 1024px) {
+  .about__video-container {
+    cursor: pointer;
+  }
   .about__video-container iframe {
     width: 70%;
     height: 60%;

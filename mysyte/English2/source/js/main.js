@@ -79,6 +79,15 @@ window.onresize = function (ev) {
 };
 
 /*------открытие/закрытие попап и изменение заголовка попапа----------*/
+var bodyElement = document.querySelector('body');
+
+var noScrollbodyElement = function () {
+    bodyElement.style.overflow = 'hidden'
+};
+
+var onScrollbodyElement = function () {
+    bodyElement.style.overflow = 'auto'
+};
 
 var popupElement = document.querySelector('.popup');
 console.log(popupElement);
@@ -98,9 +107,11 @@ var closePopup = function () {
     popupCloseElement.removeEventListener('click', onPopupCloseElementClick);
     popupBgElement.removeEventListener('click', onPopupCloseElementClick);
     window.removeEventListener('keydown', onWindowKey)
+    onScrollbodyElement()
 }
 
 var openPopup = function () {
+    noScrollbodyElement();
     popupElement.classList.add('popup-active');
     popupCloseElement.addEventListener('click', onPopupCloseElementClick);
     popupBgElement.addEventListener('click', onPopupCloseElementClick);
@@ -307,7 +318,7 @@ var aboutPlayElement = document.querySelector('.about__play');
 var aboutVideoContainer = document.querySelector('.about__video-container');
 var aboutVideoBackground = document.querySelector('.about__video--background');
 var youtebIframe = aboutVideoContainer.querySelector('iframe');
-console.log(youtebIframe)
+console.log(youtebIframe);
 var onWindowKeyVideo = function (evt) {
     if (evt.keyCode === ESK_KEY_CODE) {
         closeVideo();
@@ -320,6 +331,7 @@ var onAboutVideoBackgroundClick = function () {
 };
 
 var closeVideo = function () {
+    onScrollbodyElement();
     youtebIframe.src = '';
     aboutVideoContainer.classList.add('about__video-container--close');
     window.removeEventListener('keydown', onWindowKeyVideo);
@@ -328,6 +340,7 @@ var closeVideo = function () {
 
 
 aboutPlayElement.onclick = function () {
+    noScrollbodyElement();
     youtebIframe.src = videoLink;
     aboutVideoContainer.classList.remove('about__video-container--close');
     window.addEventListener('keydown', onWindowKeyVideo);
