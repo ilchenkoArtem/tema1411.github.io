@@ -54,7 +54,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="animate.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="animate.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/source/js/animate.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="461">
@@ -116,11 +116,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="header.less" pinned="false" current-in-tab="false">
+          <file leaf-file-name="header.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/source/less/block/header.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="199">
-                  <caret line="216" column="20" lean-forward="false" selection-start-line="216" selection-start-column="20" selection-end-line="216" selection-end-column="20" />
+                <state relative-caret-position="613">
+                  <caret line="477" column="21" lean-forward="false" selection-start-line="477" selection-start-column="21" selection-end-line="477" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -160,10 +160,10 @@
         <option value="$PROJECT_DIR$/source/js/main.js" />
         <option value="$PROJECT_DIR$/source/less/other/animate.min.less" />
         <option value="$PROJECT_DIR$/source/less/block/advantages.less" />
-        <option value="$PROJECT_DIR$/source/less/block/header.less" />
         <option value="$PROJECT_DIR$/source/less/block/services.less" />
         <option value="$PROJECT_DIR$/source/index.html" />
         <option value="$PROJECT_DIR$/source/js/animate.js" />
+        <option value="$PROJECT_DIR$/source/less/block/header.less" />
       </list>
     </option>
   </component>
@@ -289,12 +289,12 @@
       <workItem from="1532120411791" duration="17491000" />
       <workItem from="1532169291433" duration="22463000" />
       <workItem from="1532199763124" duration="55265000" />
-      <workItem from="1532286610311" duration="23008000" />
+      <workItem from="1532286610311" duration="23087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174703000" />
+    <option name="totallyTimeSpent" value="174782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -677,14 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/waypoint.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8863" lean-forward="false" selection-start-line="0" selection-start-column="8863" selection-end-line="0" selection-end-column="8863" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -697,14 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="89" column="13" lean-forward="false" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/less/block/header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="216" column="20" lean-forward="false" selection-start-line="216" selection-start-column="20" selection-end-line="216" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -741,6 +725,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/js/waypoint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8863" lean-forward="false" selection-start-line="0" selection-start-column="8863" selection-end-line="0" selection-end-column="8863" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -756,6 +748,14 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/less/block/header.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="477" column="21" lean-forward="false" selection-start-line="477" selection-start-column="21" selection-end-line="477" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
