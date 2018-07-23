@@ -3324,10 +3324,10 @@ th {
 .header {
   width: 100%;
   height: 100vh;
-  background-color: #ffee01;
-  background-image: url(../img/header_bg.png);
+  background-color: #fee30d;
+  background-image: url(../img/girlmobile.jpg);
   background-repeat: no-repeat;
-  background-position-x: 58%;
+  background-position-x: center;
   background-position-y: bottom;
   background-size: cover;
 }
@@ -3458,9 +3458,9 @@ a.header__tel {
 .header__info {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100vh;
+  justify-content: center;
+  height: 77vh;
+  min-height: 254px;
   padding: 0 20px;
 }
 .header__info h1 {
@@ -3483,6 +3483,9 @@ a.header__tel {
 }
 .header__decor {
   display: none;
+}
+@media (min-width: 740px) {
+  background-image: url(../img/girl740px.jpg);
 }
 @media (min-width: 768px) {
   .header__decor {
@@ -3545,8 +3548,6 @@ a.header__tel {
   }
   .header {
     height: 95vh;
-    background-position-x: 28.5vw;
-    background-size: auto;
   }
   .header__burger {
     display: none;
@@ -3592,7 +3593,6 @@ a.header__tel {
     display: flex;
     overflow: hidden;
     justify-content: space-between;
-    align-items: center;
     height: 100vh;
     padding: 0 50px;
   }
@@ -3600,7 +3600,6 @@ a.header__tel {
     z-index: 2;
     justify-content: center;
     align-items: flex-start;
-    height: auto;
     padding: 0;
   }
   .header__info h1 {
@@ -3618,8 +3617,7 @@ a.header__tel {
     margin-bottom: 5vh;
   }
   .header {
-    background-position-x: 421px;
-    background-size: 985px;
+    background-image: url(../img/girl.jpg);
   }
   .header__container {
     padding: 0 70px;
@@ -3710,6 +3708,9 @@ a.header__tel {
   }
 }
 @media (min-width: 1440px) {
+  .header {
+    background-position-x: -376px;
+  }
   .header__info {
     padding-left: 200px;
   }
@@ -4845,6 +4846,9 @@ input:checked.services__radio + .services__container > .services__item-descripti
   }
 }
 @media (min-width: 1024px) {
+  .step__button-container {
+    padding: 0 50px;
+  }
   .step_items {
     height: 760px;
     background-position: -124px -371px;
@@ -4893,6 +4897,9 @@ input:checked.services__radio + .services__container > .services__item-descripti
   }
 }
 @media (min-width: 1200px) {
+  .step__button-container {
+    padding: 0 200px;
+  }
   .step_items {
     height: 1014px;
     padding: 50px 200px 0 200px;
