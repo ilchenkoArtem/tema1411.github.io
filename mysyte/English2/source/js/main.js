@@ -54,6 +54,7 @@ var addListenerInput = function () {
 addListenerInput();
 
 /*----Изменение типа input в разеделе НАШИ УСЛУГИ------------*/
+
 var inputCheckBoxElement = document.querySelectorAll('.services__radio');
 var windowWidth = window.innerWidth;
 var skypeElement = document.querySelector('#skype');

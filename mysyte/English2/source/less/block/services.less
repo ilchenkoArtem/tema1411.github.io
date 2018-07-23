@@ -151,7 +151,12 @@ input:checked.services__radio + .services__container > .services__item-descripti
     display: block;
   }
 }
-
+@media (min-width: 768px) {
+  .services {
+    padding: 0 50px;
+    padding-top: 20px;
+  }
+}
 @media (min-width: 800px) {
   .services__item-description label br {
     display: none;
@@ -204,7 +209,6 @@ input:checked.services__radio + .services__container > .services__item-descripti
     url("../img/wave_serve.png") no-repeat 46% 53%,
     url("../img/servise_bg.png") right top no-repeat,
     linear-gradient(45deg, rgb(252, 188, 3) 0%, rgb(254, 227, 8) 100%);
-
     width: 100%;
     min-height: 420px;
     padding: 0 50px;
@@ -213,6 +217,8 @@ input:checked.services__radio + .services__container > .services__item-descripti
   .service__program-container {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 80%;
   }
 
   .services__item-description {
@@ -256,7 +262,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
     max-width: 327px;
     h3 {
       display: block;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 900;
       line-height: 36px;
       letter-spacing: 0.05em;
@@ -284,6 +290,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 350px;
     max-height: 100%;
     li::after {
       background-color: #fdcc05;
@@ -308,14 +315,12 @@ input:checked.services__radio + .services__container > .services__item-descripti
   }
 }
 
-@media (min-width: 768px) {
-  .services {
-    padding: 0 50px;
-    padding-top: 20px;
-  }
-}
+
 
 @media (min-width: 1200px) {
+  .services__price h3 br {
+    display: none;
+  }
   .services {
     padding: 0 200px;
     background: url("../img/xabout.png") no-repeat 94% 87%,
@@ -326,11 +331,26 @@ input:checked.services__radio + .services__container > .services__item-descripti
   .services__item-description label {
     max-width: 243px;
   }
+  .service__program {
+    width: content-box;
+    max-width: 372px;
+  }
+
 }
+@media (min-width: 1350px) {
+  .service__program-container {
+    max-width: 833px;
+  }
+}
+
 
 @media (min-width: 1440px) {
   .services__item-description label {
     font-size: 16px;
+  }
+
+  .services__price h3 {
+    font-size: 24px;
   }
 }
 
