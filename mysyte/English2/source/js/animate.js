@@ -19,10 +19,10 @@ $(document).ready(function () {
         };
     })(jQuery);
     $('button').animated('zoomInUp');
-    $('.advantages__item, .dispatch__container').animated('rotateInDownRight');
+    $('.advantages__item, .dispatch__container, .advantages__buttons').animated('rotateInDownRight');
     $('.main-caption, .h2').animated('flip');
-
-    $('.step, .step__button-container, footer, .services, .about, .advantages, .dispatch, .form-item').animated("slideInUp");
+    $('.form-item').animated('zoomIn');
+    $('.step, .step__button-container, footer, .services, .about, .advantages, .dispatch' ).animated("slideInUp");
     $('.step__item--1, .step__item--4,.step__item--7, .step__item--9, .step__item--8, .about__text,.services__price').animated("fadeInRight");
     $('.step__item--2, .step__item--5, .step__item--3, .step__item--6, .step__description, .about__video, .service__program').animated("fadeInLeft");
 });
