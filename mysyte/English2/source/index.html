@@ -159,7 +159,7 @@
                     <div class="services__item-description services__item-description--skype">
                         <label for="skype" class="skype">
                             <p class="service__tab-caption">Индивидуальные<br> уроки по Skype</p>
-                            <p class="services__refinement">(для взрослых и детей)</p>
+                            <p class="services__refinement">для взрослых и детей</p>
                         </label>
                     </div>
                     <div class="services__info-program">
@@ -178,10 +178,10 @@
                             <div class="services__price">
                                 <div>
                                     <h3>Индивидуальные<br> уроки по Skype</h3>
-                                    <p class="services__price-refinement">(для взрослых и детей)</p>
+                                    <p class="services__price-refinement">для взрослых и детей</p>
                                 </div>
                                 <p class="services__price-text">200<span><span>₴/</span>60 минут</span></p>
-                                <button class="button services__button button-mondey">Заказать</button>
+                                <button class="button services__button button-mondey" id="button-skype">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -193,7 +193,7 @@
                     <div class="services__item-description services__item-description--coorp">
                         <label for="coorp">
                             <p class="service__tab-caption">Корпоративный<br> интенсив</p>
-                            <p class="services__refinement">(оффлайн)</p>
+                            <p class="services__refinement">оффлайн</p>
                         </label>
                     </div>
                     <div class="services__info-program">
@@ -214,10 +214,10 @@
                             <div class="services__price">
                                 <div>
                                     <h3>Корпоративный<br> интенсив</h3>
-                                    <p class="services__price-refinement">(оффлайн)</p>
+                                    <p class="services__price-refinement">оффлайн</p>
                                 </div>
                                 <p class="services__price-text">3 500<span><span>₴/</span>2 дня</span></p>
-                                <button class="button services__button button-mondey">Заказать</button>
+                                <button class="button services__button button-mondey" id="button-coorp">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -229,7 +229,7 @@
                     <div class="services__item-description services__item-description--tur">
                         <label for="tore">
                             <p class="service__tab-caption">Туристический<br> интенсив</p>
-                            <p class="services__refinement">(оффлайн)</p>
+                            <p class="services__refinement">оффлайн</p>
                         </label>
                     </div>
                     <div class="services__info-program">
@@ -246,10 +246,10 @@
                             <div class="services__price">
                                 <div>
                                     <h3>Туристический<br> интенсив</h3>
-                                    <p class="services__price-refinement">(оффлайн)</p>
+                                    <p class="services__price-refinement">оффлайн</p>
                                 </div>
                                 <p class="services__price-text">3 500<span><span>₴/</span>2 дня</span></p>
-                                <button class="button services__button button-mondey">Заказать</button>
+                                <button class="button services__button button-mondey" id="button-tur">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -261,7 +261,7 @@
                     <div class="services__item-description services__item-description--conversation">
                         <label for="conversation">
                             <p class="service__tab-caption">Переговоры на<br> иностранном языке</p>
-                            <p class="services__refinement">(оффлайн и онлайн)</p>
+                            <p class="services__refinement">оффлайн и онлайн</p>
                         </label>
                     </div>
                     <div class="services__info-program">
@@ -277,10 +277,10 @@
                             <div class="services__price">
                                 <div>
                                     <h3>Переговоры на<br> иностранном языке</h3>
-                                    <p class="services__price-refinement">(оффлайн и онлайн)</p>
+                                    <p class="services__price-refinement">оффлайн и онлайн</p>
                                 </div>
                                 <p class="services__price-text">3 500<span><span>₴/</span>2 дня</span></p>
-                                <button class="button services__button button-mondey">Заказать</button>
+                                <button class="button services__button button-mondey" id="button-speaking" >Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -295,7 +295,7 @@
                 <p>ПОДПИСЫВАЙТЕСЬ НА РАССЫЛКУ<span> SHO SCHOOL</span></p>
             </div>
 
-            <form class="dispatch__form" method='post' action='https://httpstat.us/200' enctype='multipart/form-data'
+            <form class="dispatch__form" method='post' action='mail.php' enctype='multipart/form-data'
                   autocomplete='off'>
                 <div class="form-item">
                     <input type="email" class="input" id="email-dispatch" name="mail" required>
@@ -360,14 +360,14 @@
 <footer class="footer" id="footer">
     <div class="footer__form-container">
         <h2 class="h2">Остались вопросы?<br>Задайте их нам:</h2>
-        <form action="" class="footer__form" method='post' action='https://httpstat.us/200'
+        <form class="footer__form" method='post' action='mail.php'
               enctype='multipart/form-data' autocomplete='off'>
             <div class="form-item">
                 <input type="text" class="input" name="name" id="name" required>
                 <label for="name" class="label">Ваше имя</label>
             </div>
             <div class="form-item">
-                <input type="tel" class="input" name="tel" id="tel" required>
+                <input type="tel" class="input" name="phone" id="tel" required>
                 <label for="tel" class="label">Ваш телефон</label>
             </div>
             <div class="form-item">
@@ -428,18 +428,19 @@
             <img src="img/close.svg" alt="закрыть окно" width="14" height="14">
         </div>
         <h2>заполни форму и убедись<br>что английский это легко</h2>
-        <form class="popup__form" method='post' action='https://httpstat.us/200' enctype='multipart/form-data'
+        <form class="popup__form" method='post' action='mail.php' enctype='multipart/form-data'
               autocomplete='off'>
+            <input type="text" value="no" id="popup__name-services" name="interesting_service">
             <div class="form-item">
                 <input type="text" class="input" id="name-popup" name="name" required>
                 <label for="name-popup" class="label">Ваше имя</label>
             </div>
             <div class="form-item">
-                <input type="tel" class="input" id="tel-popup" name="tel" required>
+                <input type="tel" class="input" id="tel-popup" name="phone" required>
                 <label for="tel-popup" class="label">Ваш телефон</label>
             </div>
             <div class="form-item">
-                <input type="email" class="input" name='mail' id="email-popup">
+                <input type="email" class="input" name="mail" id="email-popup">
                 <label for="email-popup" class="label">Ваш email</label>
             </div>
             <div class="form-item form-item--comment">

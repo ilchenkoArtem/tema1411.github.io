@@ -11,11 +11,16 @@
 .service__tab-caption {
   margin-bottom: 0;
 }
+.services__price-refinement {
+  display: none;
+}
+
 .services__price-refinement,
 .services__refinement {
   font-weight: 600;
   font-size: 12px;
-  margin-top: 0px;
+  margin-top: 0;
+  color: #808080;
 }
 .services__items {
   padding-left: 20px;
@@ -175,6 +180,10 @@ input:checked.services__radio + .services__container > .services__item-descripti
 @media (min-width: 1024px) {
   .services__refinement {
     display: none;
+  }
+
+  .services__price-refinement {
+    display: block;
   }
 
   .service__tab-caption {

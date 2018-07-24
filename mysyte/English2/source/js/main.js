@@ -1,8 +1,7 @@
 var videoLink = 'https://www.youtube.com/embed/bbkEVJgrBUs';
 videoLink = videoLink + '?rel=0';
 
-var SAVE_URL = 'https://httpstat.us/200';
-
+var SAVE_URL = '../mail.php';
 
 /*Поведние мобильного меню*/
 var burgerElement = document.querySelector('.header__burger');
@@ -78,6 +77,35 @@ window.onresize = function (ev) {
     console.log(windowWidth);
     setTypeElement();
 };
+// ---------------вставка имени вызываемой формы
+var inputNameElement = document.getElementById('popup__name-services');
+
+var buttonSpeaking = document.getElementById('button-speaking');
+var buttonTur = document.getElementById('button-tur');
+var buttonCoorp = document.getElementById('button-coorp');
+var buttonSkype = document.getElementById('button-skype');
+
+var buttonSpeakingName = 'ПЕРЕГОВОРЫ НА ИНОСТРАННОМ ЯЗЫКЕ';
+var buttonTurName = 'ТУРИСТИЧЕСКИЙ ИНТЕНСИВ';
+var buttonCoorpName = 'КОРПОРАТИВНЫЙ ИНТЕНСИВ';
+var buttonSkypeName = 'ИНДИВИДУАЛЬНЫЕ УРОКИ ПО SKYPE';
+
+
+var addNameServices = function (name) {
+    inputNameElement.value = name
+};
+buttonSpeaking.onclick = function () {
+    addNameServices(buttonSpeakingName);
+};
+buttonTur.onclick = function () {
+    addNameServices(buttonTurName);
+};
+buttonCoorp.onclick = function () {
+    addNameServices(buttonCoorpName);
+};
+buttonSkype.onclick = function () {
+    addNameServices(buttonSkypeName);
+};
 
 /*------открытие/закрытие попап и изменение заголовка попапа----------*/
 var bodyElement = document.querySelector('body');
@@ -100,6 +128,7 @@ var popupBgElement = document.querySelector('.popup__background');
 const ESK_KEY_CODE = 27;
 var caption = document.querySelector('.popup__form-container h2');
 
+
 var easeText = 'заполни форму и убедись<br>что английский это легко';
 var mondeyText = 'заполни форму заказа<br>не откладывай на понедельник';
 
@@ -108,8 +137,9 @@ var closePopup = function () {
     popupCloseElement.removeEventListener('click', onPopupCloseElementClick);
     popupBgElement.removeEventListener('click', onPopupCloseElementClick);
     window.removeEventListener('keydown', onWindowKey)
-    onScrollbodyElement()
-}
+    onScrollbodyElement();
+    inputNameElement.value = 'no';
+};
 
 var openPopup = function () {
     noScrollbodyElement();
@@ -117,7 +147,7 @@ var openPopup = function () {
     popupCloseElement.addEventListener('click', onPopupCloseElementClick);
     popupBgElement.addEventListener('click', onPopupCloseElementClick);
     window.addEventListener('keydown', onWindowKey)
-}
+};
 var onPopupCloseElementClick = function () {
     closePopup()
 };
@@ -147,30 +177,8 @@ buttonMondey.forEach(function (it) {
 
 popupCloseElement.addEventListener('click', onPopupCloseElementClick);
 
-// Плавная прокрутка
-/*var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
-    V = 1;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
-for (var i = 0; i < linkNav.length; i++) {
-    linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
-        e.preventDefault(); //отменяем стандартное поведение
-        var w = window.pageYOffset,  // производим прокрутка прокрутка
-            hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
-        t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
-            start = null;
-        requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
-        function step(time) {
-            if (start === null) start = time;
-            var progress = time - start,
-                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
-            window.scrollTo(0,r);
-            if (r != w + t) {
-                requestAnimationFrame(step)
-            } else {
-                location.hash = hash  // URL с хэшем
-            }
-        }
-    }, false);
-}*/
+
+// -------------------плавный скрол
 
 var scrolling = function (links) {
     $(document).ready(function () {

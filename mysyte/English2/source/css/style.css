@@ -4383,9 +4383,13 @@ a.header__tel {
 .service__tab-caption {
   margin-bottom: 0;
 }
+.services__price-refinement {
+  display: none;
+}
 .services__price-refinement,
 .services__refinement {
   margin-top: 0;
+  color: #808080;
   font-size: 12px;
   font-weight: 600;
 }
@@ -4530,6 +4534,9 @@ input:checked.services__radio + .services__container > .services__item-descripti
 @media (min-width: 1024px) {
   .services__refinement {
     display: none;
+  }
+  .services__price-refinement {
+    display: block;
   }
   .service__tab-caption {
     margin: 0;
@@ -5026,20 +5033,6 @@ input:checked.services__radio + .services__container > .services__item-descripti
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.popup__container {
-  position: fixed;
-  z-index: 15;
-  top: 50%;
-  left: 50%;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 90.625%;
-  max-width: 863px;
-  margin: 0 auto;
-  padding-top: 30px;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-}
 .popup__form-container {
   position: fixed;
   z-index: 15;
@@ -5052,8 +5045,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
   height: 100%;
   max-height: fit-content;
   margin: 0 auto;
-  padding: 0 20px 50px 20px;
-  padding-top: 30px;
+  padding: 30px 20px 50px 20px;
   transform: translate(-50%, -50%);
   background-color: #fff;
 }
@@ -5088,6 +5080,9 @@ input:checked.services__radio + .services__container > .services__item-descripti
   font-size: 11px;
   font-weight: 500;
   line-height: 11px;
+}
+#popup__name-services {
+  display: none;
 }
 @media (min-width: 768px) {
   .popup__form-container {
