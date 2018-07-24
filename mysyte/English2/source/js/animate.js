@@ -32,7 +32,6 @@ $(document).ready(function () {
     var inputCheckBoxElement = document.querySelectorAll('.services__radio');
     var windowWidth = window.innerWidth;
     var skypeElement = document.querySelector('#skype');
-    console.log (skypeElement)
     var setTypeElement = function () {
         if (windowWidth < 1024) {
             inputCheckBoxElement.forEach(function (item) {
@@ -50,7 +49,6 @@ $(document).ready(function () {
     setTypeElement();
     window.onresize = function (ev) {
         windowWidth = window.innerWidth;
-        console.log(windowWidth);
         setTypeElement();
 
     };

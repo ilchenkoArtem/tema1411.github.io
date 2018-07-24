@@ -135,7 +135,7 @@ gulp.task("copy", function () {
 });
 
 gulp.task('scripts', function () {
-	return gulp.src(['source/js/slick.js', 'source/js/main.js'])
+	return gulp.src(['source/js/jquery.js', 'source/js/waypoint.js', 'source/js/animate.js', 'source/js/main.js'])
 		.pipe(sizereport())
 		.pipe(concat('script.js'))
 		.pipe(sizereport())

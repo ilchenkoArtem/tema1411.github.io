@@ -52,31 +52,6 @@ var addListenerInput = function () {
 };
 addListenerInput();
 
-/*----Изменение типа input в разеделе НАШИ УСЛУГИ------------*/
-
-var inputCheckBoxElement = document.querySelectorAll('.services__radio');
-var windowWidth = window.innerWidth;
-var skypeElement = document.querySelector('#skype');
-console.log (skypeElement)
-var setTypeElement = function () {
-    if (windowWidth < 1024) {
-        inputCheckBoxElement.forEach(function (item) {
-            item.setAttribute('type', 'checkbox');
-            skypeElement.checked = null;
-        })
-    } else {
-        inputCheckBoxElement.forEach(function (item) {
-            item.setAttribute('type', 'radio');
-            skypeElement.checked = 'checked';
-        })
-    }
-};
-setTypeElement();
-window.onresize = function (ev) {
-    windowWidth = window.innerWidth;
-    console.log(windowWidth);
-    setTypeElement();
-};
 // ---------------вставка имени вызываемой формы
 var inputNameElement = document.getElementById('popup__name-services');
 
@@ -84,6 +59,7 @@ var buttonSpeaking = document.getElementById('button-speaking');
 var buttonTur = document.getElementById('button-tur');
 var buttonCoorp = document.getElementById('button-coorp');
 var buttonSkype = document.getElementById('button-skype');
+
 
 var buttonSpeakingName = 'ПЕРЕГОВОРЫ НА ИНОСТРАННОМ ЯЗЫКЕ';
 var buttonTurName = 'ТУРИСТИЧЕСКИЙ ИНТЕНСИВ';
@@ -119,9 +95,7 @@ var onScrollbodyElement = function () {
 };
 
 var popupElement = document.querySelector('.popup');
-console.log(popupElement);
 var popupCloseElement = document.querySelector('.popup__close');
-console.log(popupCloseElement);
 var buttonEase = document.querySelectorAll('.button-ease');
 var buttonMondey = document.querySelectorAll('.button-mondey');
 var popupBgElement = document.querySelector('.popup__background');
@@ -138,7 +112,7 @@ var closePopup = function () {
     popupBgElement.removeEventListener('click', onPopupCloseElementClick);
     window.removeEventListener('keydown', onWindowKey)
     onScrollbodyElement();
-    inputNameElement.value = 'no';
+    inputNameElement.value = 'Получить бесплатный урок';
 };
 
 var openPopup = function () {
@@ -193,15 +167,13 @@ var scrolling = function (links) {
         });
     });
 };
-scrolling('.header__nav');
+scrolling('.header__nav-elements');
 
 /*-----Валидация форм----*/
 var inputForm = document.querySelectorAll('.form-item input');
-console.log(inputForm);
 var testValid = function () {
     var validity = this.validity.valid;
     var label = this.nextElementSibling;
-    console.log(label);
     if (!validity) {
         label.classList.add('label--error');
         this.style.borderBottomColor = 'red'
@@ -327,7 +299,6 @@ var aboutPlayElement = document.querySelector('.about__play');
 var aboutVideoContainer = document.querySelector('.about__video-container');
 var aboutVideoBackground = document.querySelector('.about__video--background');
 var youtebIframe = aboutVideoContainer.querySelector('iframe');
-console.log(youtebIframe);
 var onWindowKeyVideo = function (evt) {
     if (evt.keyCode === ESK_KEY_CODE) {
         closeVideo();

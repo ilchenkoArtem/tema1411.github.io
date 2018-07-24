@@ -6,7 +6,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>SHO SCHOOL</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style-min.css">
 </head>
@@ -25,16 +26,15 @@
                     <li><a href="#footer">Контакты</a></li>
                 </ul>
                 <div class=".header__contact-container header__contact-container">
-
                     <a class="header__tel" href="tel:+380962757698">+38 (096) 275 -76 -98</a>
                     <div class="social">
-                        <a href="#">
-                            <img class='social--fb' src="img/facebook-f.svg" alt="" width="8" height="16">
+                        <a href="https://www.facebook.com/shoschoooool/" target="_blank">
+                            <img class='social--fb' src="img/facebook-f.svg" alt="" width="8" height="16" >
                         </a>
-                        <a href="#">
+                        <a href="https://www.instagram.com/shoschool/" target="_blank">
                             <img class='social--inst' src="img/instagram.svg" alt="" width="13" height="11">
                         </a>
-                        <a href="#">
+                        <a href="https://t.me/ShoSchool" target="_blank">
                             <img class='social--telegram' src="img/telegram-plane.svg" alt="" width="11"
                                  height="10">
                         </a>
@@ -77,13 +77,13 @@
             <button class="button header__button button-ease">ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК</button>
         </div>
         <div class="social header__info-social">
-            <a href="#">
+            <a href="https://www.facebook.com/shoschoooool/" target="_blank">
                 <img class='social--fb' src="img/facebook-f.svg" alt="" width="8" height="16">
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/shoschool/" target="_blank">
                 <img class='social--inst' src="img/instagram.svg" alt="" width="13" height="11">
             </a>
-            <a href="#">
+            <a href="https://t.me/ShoSchool" target="_blank">
                 <img class='social--telegram' src="img/telegram-plane.svg" alt="" width="11" height="10">
             </a>
         </div>
@@ -147,7 +147,7 @@
         </div>
         <div class="advantages__buttons">
             <button class="button advantages__button button-ease">ПОЛУЧИТЬ БЕСПЛАТНЫЙ УРОК</button>
-            <a href="viber://chat?number=%2B380637869738">Узнать Подробности</a>
+            <a href="https://wa.me/380962757698">Узнать Подробности</a>
         </div>
     </section>
     <section class="services" id="services">
@@ -297,6 +297,7 @@
 
             <form class="dispatch__form" method='post' action='mail.php' enctype='multipart/form-data'
                   autocomplete='off'>
+                <input type="text" value="Подписка на рассылку" name="whence" class="popup__name-services">
                 <div class="form-item">
                     <input type="email" class="input" id="email-dispatch" name="mail" required>
                     <label for="email-dispatch" class="label">Ваш email</label>
@@ -362,6 +363,7 @@
         <h2 class="h2">Остались вопросы?<br>Задайте их нам:</h2>
         <form class="footer__form" method='post' action='mail.php'
               enctype='multipart/form-data' autocomplete='off'>
+            <input type="text" value="Блок: 'Остались вопросы?'" name="whence" class="popup__name-services">
             <div class="form-item">
                 <input type="text" class="input" name="name" id="name" required>
                 <label for="name" class="label">Ваше имя</label>
@@ -389,11 +391,11 @@
         <div class="footer__contact-items">
             <div class="footer__contact-item footer__contact-item--viber">
                 <p>Viber</p>
-                <a href="viber://chat?number=%2B380637869738">+38 (063) 786 -97 -38</a>
+                <a href="viber://chat?number=%2B380637869738" target="_blank">+38 (063) 786 -97 -38</a>
             </div>
             <div class="footer__contact-item footer__contact-item--whatsapp">
                 <p>Whatsapp</p>
-                <a href="https://wa.me/380962757698">+38 (096) 275 -76 -98 </a>
+                <a href="https://wa.me/380962757698" target="_blank">+38 (096) 275 -76 -98 </a>
             </div>
             <div class="footer__contact-item footer__contact-item--skype">
                 <p>Skype</p>
@@ -406,13 +408,13 @@
         </div>
         <div class="footer__social">
             <div class="social">
-                <a href="#">
+                <a href="https://www.facebook.com/shoschoooool/" target="_blank">
                     <img class='social--fb' src="img/facebook-f.svg" alt="" width="8" height="16">
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/shoschool/" target="_blank">
                     <img class='social--inst' src="img/instagram.svg" alt="" width="13" height="11">
                 </a>
-                <a href="#">
+                <a href="https://t.me/ShoSchool" target="_blank">
                     <img class='social--telegram' src="img/telegram-plane.svg" alt="" width="11"
                          height="10">
                 </a>
@@ -430,7 +432,7 @@
         <h2>заполни форму и убедись<br>что английский это легко</h2>
         <form class="popup__form" method='post' action='mail.php' enctype='multipart/form-data'
               autocomplete='off'>
-            <input type="text" value="no" id="popup__name-services" name="interesting_service">
+            <input type="text" value="Получить бесплатный урок" id="popup__name-services" class='popup__name-services' name="whence">
             <div class="form-item">
                 <input type="text" class="input" id="name-popup" name="name" required>
                 <label for="name-popup" class="label">Ваше имя</label>
@@ -464,10 +466,7 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/bbkEVJgrBUs?rel=0"
             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
-<script src="js/jquery.js"></script>
-<script src="js/waypoint.js"></script>
-<script src="js/animate.js"></script>
-<script src="js/main.js"></script>
+<script src="script/script-min.js"></script>
 </body>
 
 </html>

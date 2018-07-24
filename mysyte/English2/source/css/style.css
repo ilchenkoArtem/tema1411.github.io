@@ -4537,6 +4537,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
   }
   .services__price-refinement {
     display: block;
+    color: #222;
   }
   .service__tab-caption {
     margin: 0;
@@ -5081,7 +5082,8 @@ input:checked.services__radio + .services__container > .services__item-descripti
   font-weight: 500;
   line-height: 11px;
 }
-#popup__name-services {
+#popup__name-services,
+.popup__name-services {
   display: none;
 }
 @media (min-width: 768px) {
