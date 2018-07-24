@@ -17,13 +17,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5789845">
+    <splitter split-orientation="horizontal" split-proportion="0.38869566">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/source/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-3064">
+                <state relative-caret-position="-373">
                   <caret line="279" column="92" lean-forward="false" selection-start-line="279" selection-start-column="92" selection-end-line="279" selection-end-column="92" />
                   <folding />
                 </state>
@@ -47,8 +47,8 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/source/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="230">
-                  <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+                <state relative-caret-position="843">
+                  <caret line="350" column="23" lean-forward="false" selection-start-line="350" selection-start-column="23" selection-end-line="350" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -57,8 +57,8 @@
           <file leaf-file-name="animate.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/source/js/animate.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+                <state relative-caret-position="483">
+                  <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -74,11 +74,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="step.less" pinned="false" current-in-tab="true">
+          <file leaf-file-name="step.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/source/less/block/step.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="149" selection-end-column="18" />
+                <state relative-caret-position="846">
+                  <caret line="149" column="18" lean-forward="true" selection-start-line="149" selection-start-column="18" selection-end-line="149" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -124,11 +124,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="popup.less" pinned="false" current-in-tab="false">
+          <file leaf-file-name="popup.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/source/less/block/popup.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
-                  <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+                <state relative-caret-position="483">
+                  <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -175,16 +175,16 @@
         <option value="$PROJECT_DIR$/source/less/other/animate.min.less" />
         <option value="$PROJECT_DIR$/source/less/block/advantages.less" />
         <option value="$PROJECT_DIR$/source/less/block/about.less" />
-        <option value="$PROJECT_DIR$/source/js/main.js" />
         <option value="$PROJECT_DIR$/source/less/block/body.less" />
         <option value="$PROJECT_DIR$/source/less/block/footer.less" />
         <option value="$PROJECT_DIR$/source/less/global.less" />
         <option value="$PROJECT_DIR$/source/js/animate.js" />
         <option value="$PROJECT_DIR$/source/less/block/header.less" />
-        <option value="$PROJECT_DIR$/source/less/block/popup.less" />
         <option value="$PROJECT_DIR$/source/less/block/services.less" />
         <option value="$PROJECT_DIR$/source/index.html" />
         <option value="$PROJECT_DIR$/source/less/block/step.less" />
+        <option value="$PROJECT_DIR$/source/js/main.js" />
+        <option value="$PROJECT_DIR$/source/less/block/popup.less" />
       </list>
     </option>
   </component>
@@ -262,6 +262,13 @@
               <item name="less" type="462c0819:PsiDirectoryNode" />
               <item name="block" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="English2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="English2" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="less" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -278,12 +285,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Documents and Settings" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ilche\OneDrive\Github\tema1411.github.io\mysyte\English2\source\js" />
       <recent name="C:\Users\Ilche\OneDrive\Github\tema1411.github.io\mysyte\English2\source\less\other" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Documents and Settings" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -323,7 +330,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198304000" />
+    <option name="totallyTimeSpent" value="199457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -599,6 +606,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="240" column="16" lean-forward="false" selection-start-line="240" selection-start-column="16" selection-end-line="240" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -705,14 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/waypoint.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8863" lean-forward="false" selection-start-line="0" selection-start-column="8863" selection-end-line="0" selection-end-column="8863" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/less/global.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -721,42 +721,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/animate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/less/block/header.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="180" column="19" lean-forward="false" selection-start-line="180" selection-start-column="19" selection-end-line="180" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/less/block/popup.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3064">
-          <caret line="279" column="92" lean-forward="false" selection-start-line="279" selection-start-column="92" selection-end-line="279" selection-end-column="92" />
           <folding />
         </state>
       </provider>
@@ -771,8 +739,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/less/block/step.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="149" selection-end-column="18" />
+        <state relative-caret-position="846">
+          <caret line="149" column="18" lean-forward="true" selection-start-line="149" selection-start-column="18" selection-end-line="149" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/js/waypoint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8863" lean-forward="false" selection-start-line="0" selection-start-column="8863" selection-end-line="0" selection-end-column="8863" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-373">
+          <caret line="279" column="92" lean-forward="false" selection-start-line="279" selection-start-column="92" selection-end-line="279" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/js/animate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="843">
+          <caret line="350" column="23" lean-forward="false" selection-start-line="350" selection-start-column="23" selection-end-line="350" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/less/block/popup.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
           <folding />
         </state>
       </provider>
