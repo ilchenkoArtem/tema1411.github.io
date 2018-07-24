@@ -423,37 +423,35 @@
 </footer>
 <section class="popup">
     <div class="popup__background"></div>
-    <div class="popup__container">
-        <div class="popup__form-container">
-            <div class="popup__close">
-                <img src="img/close.svg" alt="закрыть окно" width="14" height="14">
-            </div>
-            <h2>заполни форму и убедись<br>что английский это легко</h2>
-            <form class="popup__form" method='post' action='https://httpstat.us/200' enctype='multipart/form-data'
-                  autocomplete='off'>
-                <div class="form-item">
-                    <input type="text" class="input" id="name-popup" name="name" required>
-                    <label for="name-popup" class="label">Ваше имя</label>
-                </div>
-                <div class="form-item">
-                    <input type="tel" class="input" id="tel-popup" name="tel" required>
-                    <label for="tel-popup" class="label">Ваш телефон</label>
-                </div>
-                <div class="form-item">
-                    <input type="email" class="input" name='mail' id="email-popup">
-                    <label for="email-popup" class="label">Ваш email</label>
-                </div>
-                <div class="form-item form-item--comment">
-                    <input type="text" class="input" name="comment" id="comment-popup">
-                    <label for="comment-popup" class="label">Ваш коментарий</label>
-                </div>
-                <div class="popup-submit">
-                    <input type="submit" value="ОТПРАВИТЬ" class="button popup__button">
-                    <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных в соответствии с
-                        законодательством</p>
-                </div>
-            </form>
+    <div class="popup__form-container">
+        <div class="popup__close">
+            <img src="img/close.svg" alt="закрыть окно" width="14" height="14">
         </div>
+        <h2>заполни форму и убедись<br>что английский это легко</h2>
+        <form class="popup__form" method='post' action='https://httpstat.us/200' enctype='multipart/form-data'
+              autocomplete='off'>
+            <div class="form-item">
+                <input type="text" class="input" id="name-popup" name="name" required>
+                <label for="name-popup" class="label">Ваше имя</label>
+            </div>
+            <div class="form-item">
+                <input type="tel" class="input" id="tel-popup" name="tel" required>
+                <label for="tel-popup" class="label">Ваш телефон</label>
+            </div>
+            <div class="form-item">
+                <input type="email" class="input" name='mail' id="email-popup">
+                <label for="email-popup" class="label">Ваш email</label>
+            </div>
+            <div class="form-item form-item--comment">
+                <input type="text" class="input" name="comment" id="comment-popup">
+                <label for="comment-popup" class="label">Ваш коментарий</label>
+            </div>
+            <div class="popup-submit">
+                <input type="submit" value="ОТПРАВИТЬ" class="button popup__button">
+                <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных в соответствии с
+                    законодательством</p>
+            </div>
+        </form>
     </div>
 </section>
 <section class="success__form success__form--disabled">

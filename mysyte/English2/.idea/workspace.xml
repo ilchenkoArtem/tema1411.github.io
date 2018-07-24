@@ -17,14 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.38869566">
+    <splitter split-orientation="horizontal" split-proportion="0.64434785">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/source/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-373">
-                  <caret line="279" column="92" lean-forward="false" selection-start-line="279" selection-start-column="92" selection-end-line="279" selection-end-column="92" />
+                <state relative-caret-position="824">
+                  <caret line="454" column="10" lean-forward="false" selection-start-line="454" selection-start-column="10" selection-end-line="454" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -44,10 +44,10 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/source/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="461">
+                <state relative-caret-position="958">
                   <caret line="349" column="0" lean-forward="true" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
                   <folding />
                 </state>
@@ -124,11 +124,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="popup.less" pinned="false" current-in-tab="false">
+          <file leaf-file-name="popup.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/source/less/block/popup.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+                <state relative-caret-position="184">
+                  <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -181,10 +181,10 @@
         <option value="$PROJECT_DIR$/source/js/animate.js" />
         <option value="$PROJECT_DIR$/source/less/block/header.less" />
         <option value="$PROJECT_DIR$/source/less/block/services.less" />
-        <option value="$PROJECT_DIR$/source/index.html" />
         <option value="$PROJECT_DIR$/source/less/block/step.less" />
-        <option value="$PROJECT_DIR$/source/less/block/popup.less" />
         <option value="$PROJECT_DIR$/source/js/main.js" />
+        <option value="$PROJECT_DIR$/source/index.html" />
+        <option value="$PROJECT_DIR$/source/less/block/popup.less" />
       </list>
     </option>
   </component>
@@ -242,12 +242,6 @@
               <item name="English2" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="English2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="English2" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="English2" type="b2602c69:ProjectViewProjectNode" />
@@ -330,7 +324,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199646000" />
+    <option name="totallyTimeSpent" value="201052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -753,14 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
-          <caret line="279" column="92" lean-forward="false" selection-start-line="279" selection-start-column="92" selection-end-line="279" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/js/animate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -769,18 +755,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/less/block/popup.less">
+    <entry file="file://$PROJECT_DIR$/source/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        <state relative-caret-position="958">
+          <caret line="349" column="0" lean-forward="true" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/main.js">
+    <entry file="file://$PROJECT_DIR$/source/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="349" column="0" lean-forward="true" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
+        <state relative-caret-position="824">
+          <caret line="454" column="10" lean-forward="false" selection-start-line="454" selection-start-column="10" selection-end-line="454" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/less/block/popup.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
           <folding />
         </state>
       </provider>
