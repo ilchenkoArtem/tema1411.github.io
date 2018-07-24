@@ -98,7 +98,7 @@ var buttonEase = document.querySelectorAll('.button-ease');
 var buttonMondey = document.querySelectorAll('.button-mondey');
 var popupBgElement = document.querySelector('.popup__background');
 const ESK_KEY_CODE = 27;
-var caption = document.querySelector('.popup__form-container > h2');
+var caption = document.querySelector('.popup__form-container h2');
 
 var easeText = 'заполни форму и убедись<br>что английский это легко';
 var mondeyText = 'заполни форму заказа<br>не откладывай на понедельник';
