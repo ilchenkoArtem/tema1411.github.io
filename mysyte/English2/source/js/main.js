@@ -347,7 +347,5 @@ aboutPlayElement.onclick = function () {
     window.addEventListener('keydown', onWindowKeyVideo);
     aboutVideoBackground.addEventListener('click', onAboutVideoBackgroundClick);
 };
-document.onresize = function () {
-    if(document.innerHe)
-};
+
 

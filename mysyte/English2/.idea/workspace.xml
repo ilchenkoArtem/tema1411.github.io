@@ -44,11 +44,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/source/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="843">
-                  <caret line="350" column="23" lean-forward="false" selection-start-line="350" selection-start-column="23" selection-end-line="350" selection-end-column="23" />
+                <state relative-caret-position="461">
+                  <caret line="349" column="0" lean-forward="true" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -124,7 +124,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="popup.less" pinned="false" current-in-tab="true">
+          <file leaf-file-name="popup.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/source/less/block/popup.less">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="483">
@@ -183,8 +183,8 @@
         <option value="$PROJECT_DIR$/source/less/block/services.less" />
         <option value="$PROJECT_DIR$/source/index.html" />
         <option value="$PROJECT_DIR$/source/less/block/step.less" />
-        <option value="$PROJECT_DIR$/source/js/main.js" />
         <option value="$PROJECT_DIR$/source/less/block/popup.less" />
+        <option value="$PROJECT_DIR$/source/js/main.js" />
       </list>
     </option>
   </component>
@@ -330,7 +330,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199457000" />
+    <option name="totallyTimeSpent" value="199646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -769,18 +769,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="350" column="23" lean-forward="false" selection-start-line="350" selection-start-column="23" selection-end-line="350" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/less/block/popup.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="349" column="0" lean-forward="true" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
           <folding />
         </state>
       </provider>
