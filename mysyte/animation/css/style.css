@@ -1,0 +1,65 @@
+body {
+    overflow-x: hidden;
+}
+
+.block {
+    height: 100vh;
+    width: 100vw;
+}
+
+.block1 {
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.block2 {
+    background-color: aqua;
+}
+
+.block3 {
+    background-color: brown;
+}
+
+.block4 {
+    background-color: blueviolet;
+}
+
+.block__container {
+    display: flex;
+}
+
+.block1__img {
+    width: 580px;
+    height: 380px;
+}
+
+.block1_container-img {
+    display: flex;
+    overflow: hidden;
+}
+
+.block1__back-ground {
+    width: 580px;
+    height: 380px;
+    background-color: #ededed;
+}
+
+.block1_container-img {
+    margin-left: -494px;
+    margin-top: -70px;
+    width: 580px;
+    height: 380px;
+    position: relative;
+}
+
+.block1__font-ground {
+    position: absolute;
+    left: 0;
+    height: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: #222222;
+}

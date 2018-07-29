@@ -1,0 +1,108 @@
+@import "block/slick.scss";
+@import "block/slick-theme.scss";
+body {
+  overflow-x: hidden;
+}
+
+.block {
+  height: 100vh;
+  width: 100vw;
+}
+.block4,
+.block1 {
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.block2 {
+  background-color: aqua;
+}
+.block2__container-main {
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+}
+.block2__container-main img {
+  height: auto;
+
+}
+.block2__container-prev {
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+}
+.block2__container-prev img {
+  width: 100%;
+  height: auto;
+}
+
+.block3 {
+  background-color: brown;
+}
+
+.block4 {
+  background-color: blueviolet;
+}
+
+.block__container {
+  display: flex;
+}
+
+.block1__img {
+  width: 580px;
+  height: 380px;
+}
+
+.block1_container-img {
+  display: flex;
+  overflow: hidden;
+}
+
+.block1__back-ground {
+  width: 580px;
+  height: 380px;
+  background-color: #ededed;
+}
+
+.block1_container-img {
+  margin-left: -494px;
+  margin-top: -70px;
+  width: 580px;
+  height: 380px;
+  position: relative;
+}
+
+.block1__font-ground {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: #222222;
+}
+
+.trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.block4__cub {
+  width: 150px;
+  height: 150px;
+  background-color: #222222;
+  margin: 0 auto;
+}
+
+.block4 {
+  display: block;
+
+  .block__container{
+    width: 100%;
+  }
+}
+
