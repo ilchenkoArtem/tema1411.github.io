@@ -3820,6 +3820,7 @@ a.header__tel {
   width: 90vw;
   margin: 0 auto;
   transform: translate(-50%, -50%);
+  border: 0;
 }
 .about__video-container--close {
   display: none;
@@ -4393,6 +4394,9 @@ a.header__tel {
   font-size: 12px;
   font-weight: 600;
 }
+.services__refinement {
+  margin-bottom: 10px;
+}
 .services__items {
   padding-left: 20px;
 }
@@ -4485,6 +4489,9 @@ a.header__tel {
 .services__item-description label br {
   display: none;
 }
+.services__item-description span {
+  display: block;
+}
 .services__item-description::after {
   position: absolute;
   top: 0.5%;
@@ -4532,7 +4539,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
   }
 }
 @media (min-width: 1024px) {
-  .services__refinement {
+  span.services__refinement {
     display: none;
   }
   .services__price-refinement {

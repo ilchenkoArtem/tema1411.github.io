@@ -22,6 +22,11 @@
   margin-top: 0;
   color: #808080;
 }
+
+.services__refinement {
+  margin-bottom: 10px;
+}
+
 .services__items {
   padding-left: 20px;
 }
@@ -123,6 +128,9 @@
       display: none;
     }
   }
+  span {
+    display: block;
+  }
   &::after {
     content: '';
     width: 14px;
@@ -178,7 +186,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
 }
 
 @media (min-width: 1024px) {
-  .services__refinement {
+  span.services__refinement {
     display: none;
   }
 
@@ -353,6 +361,8 @@ input:checked.services__radio + .services__container > .services__item-descripti
   .services__price h3 br {
     display: none;
   }
+
+
   .services {
     padding: 0 200px;
     background: url("../img/xabout.png") no-repeat 94% 87%,
