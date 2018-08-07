@@ -28,7 +28,7 @@ gulp.task("serve", ["styles"], function () {
 
 gulp.task('styles', function () {
     return gulp.src("app/scss/style.scss")
-        .pipe(sass({outputStyle: 'expanded'}).on("error", notify.onError()))
+        .pipe(sass({outputStyle: 'expanded'}).on("error", sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(cleancss({level: {1: {specialComments: 0}}})) // Opt., comment out when debugging

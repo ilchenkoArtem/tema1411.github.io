@@ -1,5 +1,5 @@
-var videoLink = 'https://www.youtube.com/embed/bbkEVJgrBUs';
-videoLink = videoLink + '?rel=0';
+var videoLink = 'https://www.youtube.com/embed/Vzsuqp8Rbt4?';
+videoLink = videoLink + '?rel=0&';
 
 var SAVE_URL = '../mail.php';
 

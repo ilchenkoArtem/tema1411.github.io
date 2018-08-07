@@ -1,0 +1,578 @@
+@import "vars" 
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+	.navigation
+		li 
+		> ul
+			> li 
+				a 
+					font-size: 26px
+
+
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+	.navigation
+		li 
+		> ul
+			> li 
+				padding: 15px
+				a 
+					font-size: 18px
+					padding: 0 5px
+
+
+	.main-screen
+		.main-logo-center
+			width: 260px
+
+	
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+
+
+	.main-screen
+		.main-logo-center
+			width: 220px
+
+	.navigation
+		li 
+		> ul
+			> li 
+				padding: 15px
+				height: 20%
+				a 
+					font-size: 14px
+					padding: 0 5px
+
+	.about-section
+		padding: 40px 0 0 0
+		.main-ab-bg
+			margin: 70px 0 60px 0
+		.container
+			padding: 0 36px
+		.h2
+			font-size: 60px
+			&-right
+				&::after
+					top: 55%
+		.h3
+			font-size: 30px
+			line-height: 34px
+		.about-text
+			font-size: 20px
+			line-height: 30px
+			margin-top: 60px
+		.main-about-list
+			margin-top: 60px
+			margin-bottom: 30px
+			li
+				margin-bottom: 30px
+				p
+					font-size: 20px
+					line-height: 30px
+
+	.main-about-bottom
+		.main-about-secbg
+		.form-title
+			font-size: 24px
+
+	.form-bottom
+		margin-top: 35px
+		.container
+			padding: 0 36px
+		.form-control
+			input
+				margin-bottom: 10px
+			label
+				font-size: 14px
+			textarea
+				min-height: 150px
+
+	.main-footer
+		.container
+			padding: 0 36px
+
+
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+
+	.hidden-menu
+		overflow: hidden
+		.hiddennav-wrapp
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			display: block
+			overflow-y: auto
+		.menu-bg
+			background-image: url(../img/mscrmob.jpg)
+		.menu-logo
+			text-align: center
+			margin-top: 30px
+			margin-bottom: 60px
+			margin-right: 0
+			img
+				width: 100px
+
+
+	.burger-vert
+		position: fixed
+		left: 50%
+		right: auto
+		top: 20px
+		transform: translateX(-50%)
+		width: 26px
+		height: 40px
+		overflow: hidden
+		.burger-ico
+			width: 3px
+			left: 12px
+			&::before 
+				width: 3px
+				left: -11px
+			&::after
+				width: 3px
+				left: 11px
+
+	.navigation
+		height: auto
+		margin-bottom: 60px
+		margin-top: 60px
+		li 
+		> ul
+			> li 
+				display: block
+				height: auto
+				width: 100%
+				padding: 5px
+				float: none
+				+mt(.3s)
+				a 
+					overflow-x: hidden
+					padding: 0 5px
+					font-size: 14px
+
+	.main-screen
+		background-image: url(../img/mscrmob.jpg)
+		.main-logo-center
+			width: 240.74px
+
+	.burger
+		top: 30px
+		right: auto
+		left: 50%
+		transform: translateX(-50%)
+		width: 40px
+		height: 40px
+		.burger-ico
+			background-color: #fff
+			height: 3px
+			width: 40px
+			top: 12px
+			&::before 
+				background-color: #fff
+				height: 3px
+				width: 40px
+				top: -11px
+			&::after
+				background-color: #fff
+				height: 3px
+				width: 40px
+				top: 11px
+
+
+	.about-section
+		padding: 40px 0 0 0
+		.container
+			padding: 0 36px
+		.h2
+			font-size: 42px
+			line-height: 44px
+			text-align: center
+			display: block
+			margin-left: 0
+			&::after
+				left: -30%
+				height: 3px
+				width: 200%
+			&.h2-right
+				font-size: 42px
+				line-height: 54px
+				text-align: center
+				display: block
+				margin-left: 0
+				margin-right: 0
+				&::after
+					left: -30%
+					height: 3px
+					width: 200%
+		.h3
+			margin-top: 47px
+			font-weight: 400
+			font-size: 17px
+			line-height: 27px
+			color: #000
+			text-align: center
+			//padding: 0 15px
+			font-family: 'Helvetica-example', helvetica
+			&-right
+		.about-text
+			margin-top: 60px
+			font-size: 14px
+			color: #8D8D8D
+			line-height: 26px
+			letter-spacing: .10px
+			font-family: 'Helvetica-example', helvetica
+			font-weight: 400
+		.main-ab-bg
+			height: 57px
+			margin: 90px 0 46px 0
+			&::after
+				background-color: transparent
+		.main-about-list
+			margin-top: 50px
+			margin-bottom: 50px
+			li
+				margin-bottom: 10px
+				p
+					color: #8D8D8D
+					font-size: 14px
+					line-height: 24px
+					font-family: 'Helvetica-example', helvetica
+					font-weight: 400
+					span
+						display: none
+
+
+	.main-about-bottom
+		min-height: 450px
+		position: relative
+		padding-top: 17px
+		padding: 60px 0
+		.main-about-secbg
+			background-image: url(../img/formmobbg.jpg)
+		.form-title
+			font-size: 21px
+			font-family: 'Helvetica-example', helvetica
+			line-height: 26px
+
+
+	.form-bottom
+		margin-top: 35px
+		.container
+			padding: 0 36px
+		.form-control
+			input
+				margin-bottom: 10px
+			textarea
+				margin-top: 16px
+				min-height: 70px
+				color: #cdcdcd
+			label
+				font-family: 'Helvetica-example', helvetica
+				font-size: 14px
+				font-weight: 400
+				line-height: 0
+				padding: 0
+		button
+			margin-top: 25px
+
+	.main-footer
+		text-align: center
+		.container
+			padding: 0 36px
+		.footer-menu
+			text-align: center
+			margin-top: 10px
+			ul
+				li
+					a
+						margin-right: 10px
+		.privacy-pol
+			text-align: center
+			margin-top: 7px
+		.copy
+			font-size: 10px
+			margin: 10px 0 30px 0
+		.footer-right
+			text-align: center
+			.footer-social
+				.foter-social-link
+					margin: 0 10px
+					svg
+						width: 28px
+			.footer-phone
+				margin-top: 10px
+				margin-bottom: 12px
+				.footer-tel
+					font-size: 12px
+					+mt(.3s)
+					&:hover
+						color: #000
+			.footer-mail
+				margin-top: 20px
+				font-size: 12px
+				color: #9d9d9d
+				line-height: 16px
+				font-weight: 400
+				+mt(.3s)
+				&:hover
+					color: #000
+
+//Extra small: >576px
++media-breakpoint-down(xs)
+
+	.hidden-menu
+		overflow: hidden
+		.hiddennav-wrapp
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			display: block
+			overflow-y: auto
+		.menu-bg
+			background-image: url(../img/mscrmob.jpg)
+		.menu-logo
+			text-align: center
+			margin-top: 30px
+			margin-bottom: 60px
+			margin-right: 0
+			img
+				width: 100px
+
+
+	.burger-vert
+		position: fixed
+		left: 50%
+		right: auto
+		top: 20px
+		transform: translateX(-50%)
+		width: 26px
+		height: 40px
+		overflow: hidden
+		.burger-ico
+			width: 3px
+			left: 12px
+			&::before 
+				width: 3px
+				left: -11px
+			&::after
+				width: 3px
+				left: 11px
+
+	.navigation
+		height: auto
+		margin-bottom: 60px
+		margin-top: 60px
+		li 
+		> ul
+			> li 
+				display: block
+				height: auto
+				width: 100%
+				padding: 5px
+				float: none
+				+mt(.3s)
+				a 
+					overflow-x: hidden
+					padding: 0 5px
+					font-size: 14px
+
+
+	.main-screen
+		background-image: url(../img/mscrmob.jpg)
+		.main-logo-center
+			width: 200.74px
+
+	.burger
+		top: 20px
+		right: auto
+		left: 50%
+		transform: translateX(-50%)
+		width: 40px
+		height: 40px
+		.burger-ico
+			background-color: #fff
+			height: 3px
+			width: 40px
+			top: 12px
+			&::before 
+				background-color: #fff
+				height: 3px
+				width: 40px
+				top: -11px
+			&::after
+				background-color: #fff
+				height: 3px
+				width: 40px
+				top: 11px
+
+
+	.about-section
+		padding: 0
+		.container
+			padding: 0 36px
+		.h2
+			font-size: 42px
+			line-height: 44px
+			text-align: center
+			display: block
+			margin-left: 0
+			&::after
+				left: -36px
+				height: 3px
+			&.h2-right
+				font-size: 42px
+				line-height: 54px
+				text-align: center
+				display: block
+				margin-left: 0
+				margin-right: 0
+				&::after
+					left: -36px
+					height: 3px
+		.h3
+			margin-top: 47px
+			font-weight: 400
+			font-size: 17px
+			line-height: 27px
+			color: #000
+			text-align: center
+			//padding: 0 15px
+			font-family: 'Helvetica-example', helvetica
+			&-right
+		.about-text
+			margin-top: 60px
+			font-size: 14px
+			color: #8D8D8D
+			line-height: 26px
+			letter-spacing: .10px
+			font-family: 'Helvetica-example', helvetica
+			font-weight: 400
+		.main-ab-bg
+			height: 57px
+			margin: 90px 0 46px 0
+			&::after
+				background-color: transparent
+		.main-about-list
+			margin-top: 50px
+			margin-bottom: 50px
+			li
+				margin-bottom: 10px
+				p
+					color: #8D8D8D
+					font-size: 14px
+					line-height: 24px
+					font-family: 'Helvetica-example', helvetica
+					font-weight: 400
+					span
+						display: none
+
+
+	.main-about-bottom
+		min-height: 450px
+		position: relative
+		padding-top: 17px
+		padding-bottom: 60px
+		.main-about-secbg
+			background-image: url(../img/formmobbg.jpg)
+		.form-title
+			font-size: 21px
+			font-family: 'Helvetica-example', helvetica
+			line-height: 26px
+
+
+	.form-bottom
+		margin-top: 35px
+		.container
+			padding: 0 36px
+		.form-control
+			input
+				margin-bottom: 10px
+			textarea
+				margin-top: 16px
+				min-height: 70px
+				color: #cdcdcd
+			label
+				font-family: 'Helvetica-example', helvetica
+				font-size: 14px
+				font-weight: 400
+				line-height: 0
+				padding: 0
+		button
+			margin-top: 25px
+
+	.main-footer
+		text-align: center
+		.container
+			padding: 0 36px
+		.footer-menu
+			text-align: center
+			margin-top: 10px
+			ul
+				li
+					a
+						margin-right: 10px
+		.privacy-pol
+			text-align: center
+			margin-top: 7px
+		.copy
+			font-size: 10px
+			margin: 10px 0 30px 0
+		.footer-right
+			text-align: center
+			.footer-social
+				.foter-social-link
+					margin: 0 10px
+					svg
+						width: 28px
+			.footer-phone
+				margin-top: 10px
+				margin-bottom: 12px
+				.footer-tel
+					font-size: 12px
+					+mt(.3s)
+					&:hover
+						color: #000
+			.footer-mail
+				margin-top: 20px
+				font-size: 12px
+				color: #9d9d9d
+				line-height: 16px
+				font-weight: 400
+				+mt(.3s)
+				&:hover
+					color: #000
+
+
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)

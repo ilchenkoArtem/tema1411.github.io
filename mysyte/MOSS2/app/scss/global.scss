@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  max-width: 1093px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%
+}
+
+//burger
+
+.burger {
+  width: 49px;
+  height: 49px;
+  cursor: pointer;
+  z-index: 2;
+  .burger__el {
+    top: 50%;
+    position: relative;
+    height: 5px;
+    width: 49px;
+    background-color: red;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: red;
+    }
+    &::after {
+      top: -12px;
+    }
+
+    &::before {
+      bottom: -12px;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .burger {
+    width: 40px;
+    height: 40px;
+    .burger__el {
+      width: 40px;
+    }
+  }
+}
+
+
+

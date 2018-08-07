@@ -1,0 +1,41 @@
+.container-fluid--clients {
+  background-color: #BC3131;
+}
+
+.container--clients {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 960px) {
+  .client {
+    width: 33.3%;
+  }
+}
+
+@media (max-width: 750px) {
+  .client {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .client {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
