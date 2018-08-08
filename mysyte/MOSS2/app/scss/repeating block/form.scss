@@ -147,6 +147,10 @@
     textarea {
       height: 69px;
     }
+    textarea,
+    input {
+      font-size: 14px;
+    }
   }
 
   .form__submit {
