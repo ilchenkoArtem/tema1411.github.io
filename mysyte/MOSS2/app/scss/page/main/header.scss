@@ -77,6 +77,10 @@
   }
 }
 @media (max-width: 576px) {
+  .header-index__logo {
+    width: 60vw;
+    height: auto;
+  }
   .header-index__container-items {
     justify-content: center;
   }
