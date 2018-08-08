@@ -1,0 +1,119 @@
+.container--packages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.package-nav__item {
+  text-align: center;
+  padding: 47px 0;
+  width: 23%;
+  text-align: center;
+  background-color: #F7F7F7;
+  transition: 0.4s all ease;
+  &:hover .package-nav__country {
+    color: #FFFFFF;
+  }
+  a {
+    font-family: 'AvenirBook';
+    font-weight: normal;
+    display: block;
+    background-color: #000000;
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 60%;
+    height: 35px;
+    margin:  0 auto;
+    line-height: 35px;
+
+  }
+}
+.package-nav__item {
+  &--basic:hover {
+    background-color: #FFBA00;
+  };
+  &--standard:hover {
+    background-color: #169359;
+  }
+  &--premium:hover {
+    background-color: #00D8FF;
+  }
+  &--luxury:hover {
+    background-color: #FF0000;
+  }
+}
+.package-nav__country {
+  font-family: "AvenirBlack";
+  font-size: 45px;
+  transition: 0.4s all ease;
+}
+
+.package-nav__text {
+  text-align: center;
+  margin-top: 108px;
+  color: #8D8D8D;
+  font-size: 30px;
+}
+
+
+@media (max-width: 1200px){
+  .container--packages {
+    justify-content: space-around;
+  }
+  .package-nav__text {
+    margin-top: 60px;
+    font-size: 20px;
+  }
+  .package-nav__country {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .package-nav__item {
+
+    a {
+      font-size: 12px;
+    }
+  }
+  .package-nav__text {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  .package-nav__country {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container--packages {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .package-nav__item {
+    padding: 15px 0;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width: 100%;
+    a {
+      font-size: 16px;
+      width: 40%;
+      height: 27px;
+      line-height: 27px;
+    }
+  }
+  .container--packages {
+    display: block;
+  }
+
+  .package-nav__country {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .package-nav__text {
+    br {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.index__h2 {
+  position: relative;
+  font-family: "Didot", serif;
+  font-size: 120px;
+  &::after {
+    content: '';
+    background-color: red;
+    width: 100vw;
+    height: 5px;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+
+  }
+}
+
+.index__info {
+  font-family: "AvenirLight", sans-serif;
+  font-size: 40px;
+  color: #777777;
+  margin-bottom: 90px;
+}
+
+.index__main-text {
+  font-family: 'AvenirBook', serif;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.01px;
+}
+
+.index__eyes {
+  background-image: url("../img/eyes.png");
+  background-position: center center;
+  background-size: cover;
+  height: 207px;
+}
+
+.about-index__h2 {
+  padding-left: 40px;
+  &::after {
+    left: 0;
+  }
+}
+
+.about-index__info {
+  font-family: "AvenirLight", sans-serif;
+  font-size: 40px;
+  color: #777777;
+}
+
+.about-index__main-text {
+  font-family: 'AvenirBook', serif;
+  font-size: 30px;
+}
+
+.philosophy-index__h2 {
+  padding-right: 40px;
+  &::after {
+    right: 0;
+  }
+}
+
+.philosophy-index__info,
+.philosophy-index__h2 {
+  text-align: right;
+}
+
+.philosophy-index__main-text {
+  margin-bottom: 40px;
+  span {
+    color: red;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-index,
+  .philosophy-index {
+    box-sizing: border-box;
+    padding: 0 36px;
+  }
+}
+@media (max-width: 960px) {
+  .index__eyes {
+    background-image: url("../img/main_about_bg.jpg");
+  }
+}
+@media (max-width: 992px) {
+  .index__h2 {
+    font-size: 90px;
+  }
+  .index__info {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  .index__main-text {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .index__h2 {
+    font-size: 50px;
+  }
+  .index__main-text ,
+  .index__info {
+    font-size: 16px;
+    text-align: center;
+  }
+
+}
+

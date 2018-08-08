@@ -5,58 +5,72 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clients</title>
+    <title>MOOS</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-<header class="header header-secondaryPage">
-    <div class="burger burger-secondaryPage">
-        <div class="burger__el burger-secondaryPage__el">
+<body class="body-index">
+<header class="header header-index">
+    <div class="header-index__container-items">
+        <div class="header-index__social">
+            <a href="">
+                <img src="img/insta_white.svg" alt="Instagram" width="26.48" height="19">
+            </a>
+            <a href="">
+                <img src="img/fbwhite.svg" alt="Facebook" width="26.48" height="19">
+            </a>
+        </div>
+        <img src="img/mosslogowhite.svg" alt="logo" width="369">
+        <a href="#about" class="header-index__scroll">
+            <p class="header-index__scroll-text">Scroll</p>
+            <img src="img/arr-down.svg" alt="scrollBottom" width="40">
+        </a>
+    </div>
+    <div class="burger header-index__burger">
+        <div class="burger__el">
         </div>
     </div>
-    <h1 class="header-secondaryPage__h1">Clients</h1>
 </header>
-<main class="clients">
-    <div class="container-fluid container-fluid--clients">
-        <div class="container container--clients">
-            <div class="client">
-                <img src="img/four.png" alt="four Seasons" width="234" height="180">
+<main class="index">
+    <div class=" container about-index" id="about">
+        <h2 class="index__h2 about-index__h2">About</h2>
+        <p class="index__info about-index__info">
+            MOSS PRODUCTION IS A FULL-SERVICE  VIDEO AND PHOTO PRODUCTION</p>
+        <p class="index__main-text about-index__main-text">
+            We focus on luxury hotel advertising and editorials in Europe. Our experience, creative approach and ability to follow current trends allow us to produce images and videos, which capture each hotel’s individuality.</p>
+    </div>
+    <div class="container-fluid index__eyes"></div>
+    <div class=" container philosophy-index">
+        <h2 class="index__h2 philosophy-index__h2">Philosophy</h2>
+        <p class="index__info philosophy-index__info">
+            WE DELIVER A TRULY HIGH-QUALITY<br>SERVICE FOR A FAIR PRICE</p>
+        <p class="index__main-text philosophy-index__main-text"><span>•</span> Working with luxury hotel groups we pride ourselves on being able to deliver truly effective production that follows brand guidelines and tells each company’s story.</p>
+        <p class="index__main-text philosophy-index__main-text"><span>•</span> We create high-quality social media marketing content that helps empower guests to become brand ambassadors and help them create their own inspirational travel story.</p>
+        <p class="index__main-text philosophy-index__main-text"><span>•</span> We believe in effective quality design for a reasonable price.</p>
+    </div>
+    <form action="" class="container-fluid form">
+        <h2 class="form__h2">SEND US A MESSAGE</h2>
+        <div class="container form__container">
+            <div class="form__container-items">
+                <div class="form__container-item">
+                    <label for="name">Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form__container-item">
+                    <label for="email">E-mail:</label>
+                    <br>
+                    <input type="email" id="email" name="email">
+                </div>
+                <button type="submit" class="form__submit">SEND</button>
             </div>
-            <div class="client">
-                <img src="img/kempinski.png" alt="Kempinski" width="258" height="180">
-            </div>
-            <div class="client">
-                <img src="img/luxuryColection.png" alt="Luxury Collection" width="203" height="180">
-            </div>
-            <div class="client">
-                <img src="img/hytt.png" alt="Hyatt" width="231" height="180">
-            </div>
-            <div class="client">
-                <img src="img/wilson.png" alt="Hotel Wilson" width="234" height="180">
-            </div>
-            <div class="client">
-                <img src="img/theRitz.png" alt="Ritz" width="258" height="180">
-            </div>
-            <div class="client">
-                <img src="img/louver.png" alt="Louver" width="203" height="180">
-            </div>
-            <div class="client">
-                <img src="img/luxuryColection.png" alt="Luxury Collection" width="203" height="180">
-            </div>
-            <div class="client">
-                <img src="img/dorcbester.png" alt="Dorcbester" width="234" height="180">
-            </div>
-            <div class="client">
-                <img src="img/baglio.png" alt="Baglio" width="258" height="180">
-            </div>
-            <div class="client">
-                <img src="img/bergues.png" alt="Bergues" width="203" height="180">
-            </div>
-            <div class="client">
-                <img src="img/galleria.png" alt="Galleria" width="232" height="160">
+            <div class="form__comment">
+                <label for="comment">You message:</label>
+                <br>
+                <textarea name="coment" id="comment" cols="30" rows="10"></textarea>
+                <button type="submit" class="form__submit">SEND</button>
             </div>
         </div>
-    </div>
+    </form>
 </main>
 <footer class="container footer">
     <div class="footer__desktop-nav">
@@ -115,13 +129,13 @@
         </div>
         <nav class="nav__main-nav-container">
             <ul>
-                <li><a class="nav__link" href="index.html">home</a></li>
-                <li><a href="#" class="nav__link">about</a></li>
-                <li><a href="#" class="nav__link">packages</a></li>
-                <li><a href="" class="nav__link">editorial</a></li>
+                <li><a class="nav__link nav__link--active">home</a></li>
+                <li class="nav__link--about"><a href="#about" class="nav__link">about</a></li>
+                <li><a href="packages.html" class="nav__link">packages</a></li>
+                <li><a href="#" class="nav__link">editorial</a></li>
                 <li><a href="#" class="nav__link">Services</a></li>
                 <li><a href="#" class="nav__link">Video</a></li>
-                <li><a class="nav__link nav__link--active">clients</a></li>
+                <li><a href="clients.html" class="nav__link">clients</a></li>
                 <li><a href="team.html" class="nav__link">Team</a></li>
                 <li><a href="contact.html" class="nav__link">Contact Us</a></li>
             </ul>

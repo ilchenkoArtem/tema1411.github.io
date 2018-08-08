@@ -4,6 +4,21 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "AvenirLight";
+  src: url("../fonts/AvenirLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirBlack";
+  src: url("../fonts/AvenirBlack.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: "AvenirMedium";
   src: url("../fonts/AvenirMedium.woff") format("woff");
@@ -16,12 +31,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "AvenirBlack";
-  src: url("../fonts/AvenirBlack.woff") format("woff");
-  font-weight: normal;
+  font-family: "Didot";
+  src: url("../fonts/Didot-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
 }
+
+
 
 @font-face {
   font-family: "HelveticaNeue";
