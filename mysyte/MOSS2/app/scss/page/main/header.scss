@@ -10,6 +10,14 @@
   box-sizing: border-box;
 }
 
+.header-index__logo {
+  transition: 0.4s opacity ease;
+  &--disabled {
+    opacity: 0;
+  }
+}
+
+
 .header-index__burger {
   position: absolute;
   right: 30px;
