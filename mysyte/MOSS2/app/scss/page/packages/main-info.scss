@@ -1,3 +1,4 @@
+$marginImage: -14px;
 .package__main-item {
   padding: 30px 0;
   align-items: center;
@@ -23,7 +24,7 @@
 }
 
 .package__container-img--basic {
-  margin-left: -14%;
+  margin-left: $marginImage;
   .packages__figure {
     right: -90px;
     top: 60%;
@@ -35,7 +36,7 @@
 }
 
 .package__container-img--standard {
-  margin-right: -14%;
+  margin-right: $marginImage;
   .packages__figure {
     right: 40%;
     top: -10%;
@@ -46,7 +47,7 @@
 }
 
 .package__container-img--premium {
-  margin-left: -14%;
+  margin-left: $marginImage;
   .packages__figure {
     right: -14%;
     top: 55%;
@@ -58,7 +59,7 @@
 }
 
 .package__container-img--luxury {
-  margin-right: -14%;
+  margin-right: $marginImage;
   .packages__figure {
     right: 25%;
     top: 9%;
@@ -69,7 +70,7 @@
 }
 
 .package__container-img--additional {
-  margin-left: -14%;
+  margin-left: $marginImage;
 }
 
 .package__main-info {
@@ -90,7 +91,6 @@
   font-family: "Didot", serif;
   font-weight: bold;
   color: #000;
-
 }
 
 .package__description {
@@ -99,6 +99,7 @@
 }
 
 @media (max-width: 1200px) {
+  $marginImage: 0;
   .package__main-item {
     padding-right: 40px;
     box-sizing: border-box;
@@ -120,7 +121,7 @@
     }
   }
   .package__container-img--basic {
-    margin-left: 0;
+    margin-left: $marginImage;
     .packages__figure {
       right: -14%;
       width: 90%;
@@ -129,7 +130,7 @@
   }
 
   .package__container-img--standard {
-    margin-right: 0;
+    margin-right: $marginImage;
     .packages__figure {
       right: 52%;
       top: -8%;
@@ -139,7 +140,7 @@
     }
   }
   .package__container-img--premium {
-    margin-left: 0;
+    margin-left: $marginImage;
     .packages__figure {
       right: -10%;
       top: 43%;
@@ -151,7 +152,7 @@
   }
 
   .package__container-img--luxury {
-    margin-right: 0;
+    margin-right: $marginImage;
     .packages__figure {
       right: 37%;
       top: 9%;
@@ -162,10 +163,9 @@
   }
 
   .package__container-img--additional {
-    margin-left: 0;
+    margin-left: $marginImage;
   }
 }
-
 
 
 @media (max-width: 768px) {
