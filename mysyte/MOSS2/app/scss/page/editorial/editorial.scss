@@ -5,7 +5,6 @@
   font-size: 40px;
   letter-spacing: 1px;
   font-family: 'AvenirMedium', sans-serif;
-  overflow-x: hidden;
 }
 
 .editorial__img-container1 {
@@ -134,7 +133,7 @@
   }
 }
 
-@media (max-width: 1101px) {
+@media (max-width: 1400px) {
   .editorial {
     font-size: 4.0303030303030303vw;
   }
@@ -151,6 +150,7 @@
   }
 
   .editorial__img-container2 {
+    margin-left: 8vw;
     margin-bottom: 7.424242424242424vw;
     img:first-of-type {
       width: 36.03275705186533vw;
@@ -235,8 +235,8 @@
     img:first-of-type {
       width: 35.46666666666667vw;
       height: 53.06666666666667vw;
-      margin-right: 5.266667vw;
-      margin-left: 11%;
+      margin-right: 12.266667vw;
+      margin-left: 0;
       margin-top: 31.466666666666665vw;
     }
     img:last-of-type {
@@ -252,7 +252,7 @@
       width: 34.666666666666664vw;
       height: 52.266666666666666vw;
       margin-right: 5.066666666666666vw;
-      margin-left: 5.066666666666666vw;
+      margin-left: -5.066666666666666vw;
     }
     img:last-of-type {
       width: 45.6vw;
