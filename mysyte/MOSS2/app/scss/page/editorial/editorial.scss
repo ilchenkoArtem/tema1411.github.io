@@ -1,6 +1,3 @@
-.packages {
-  overflow-x: hidden;
-}
 .editorial {
   display: flex;
   align-items: center;
@@ -8,6 +5,7 @@
   font-size: 40px;
   letter-spacing: 1px;
   font-family: 'AvenirMedium', sans-serif;
+  overflow-x: hidden;
 }
 
 .editorial__img-container1 {
