@@ -1,6 +1,7 @@
 body{
   width: 100vw;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 .body--disabled {
   overflow: hidden;
