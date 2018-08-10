@@ -1,0 +1,23 @@
+.video__container {
+  cursor: pointer;
+  &--full {
+    cursor: nw-resize;
+    z-index: 10;
+  }
+}
+
+.video__main {
+  width: 100%;
+  max-width: 1202px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  video {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+.video__play-button {
+  position: absolute;
+}
