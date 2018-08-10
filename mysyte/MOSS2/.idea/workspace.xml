@@ -16,10 +16,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5008726">
       <split-first>
         <leaf>
-          <file leaf-file-name="services.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="services.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/services.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="222">
+                <state relative-caret-position="2085">
                   <caret line="100" column="80" lean-forward="false" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
                   <folding>
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -38,11 +38,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pakages-nav.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="pakages-nav.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/page/packages/pakages-nav.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="805">
-                  <caret line="47" column="15" lean-forward="false" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
+                <state relative-caret-position="498">
+                  <caret line="117" column="3" lean-forward="true" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -86,7 +86,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="global.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="global.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/global.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="138">
@@ -99,18 +99,18 @@
           <file leaf-file-name="services.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/page/services/services.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="498">
-                  <caret line="205" column="3" lean-forward="false" selection-start-line="205" selection-start-column="3" selection-end-line="205" selection-end-column="3" />
+                <state relative-caret-position="-2323">
+                  <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="services-nav.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="services-nav.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/page/services/services-nav.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="613">
-                  <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
+                <state relative-caret-position="1679">
+                  <caret line="73" column="22" lean-forward="false" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -146,15 +146,15 @@
         <option value="$PROJECT_DIR$/app/scss/page/editorial/editorial.scss" />
         <option value="$PROJECT_DIR$/app/editorial.html" />
         <option value="$PROJECT_DIR$/app/scss/style.scss" />
-        <option value="$PROJECT_DIR$/app/scss/page/packages/pakages-nav.scss" />
         <option value="$PROJECT_DIR$/app/scss/page/packages/main-info.scss" />
         <option value="$PROJECT_DIR$/app/packages.html" />
-        <option value="$PROJECT_DIR$/app/scss/page/services/services-nav.scss" />
         <option value="$PROJECT_DIR$/app/scss/page/services/service-girl.scss" />
         <option value="$PROJECT_DIR$/app/services.html" />
-        <option value="$PROJECT_DIR$/app/scss/page/services/services.scss" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scss/global.scss" />
+        <option value="$PROJECT_DIR$/app/scss/page/services/services.scss" />
+        <option value="$PROJECT_DIR$/app/scss/page/services/services-nav.scss" />
+        <option value="$PROJECT_DIR$/app/scss/page/packages/pakages-nav.scss" />
       </list>
     </option>
   </component>
@@ -366,12 +366,12 @@
       <workItem from="1533584059857" duration="84451000" />
       <workItem from="1533808526960" duration="2091000" />
       <workItem from="1533813007425" duration="858000" />
-      <workItem from="1533816177736" duration="42031000" />
+      <workItem from="1533816177736" duration="42631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141969000" />
+    <option name="totallyTimeSpent" value="142569000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -720,14 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/page/packages/pakages-nav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="47" column="15" lean-forward="false" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/packages.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -744,36 +736,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/page/services/services-nav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/page/services/service-girl.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="100" column="80" lean-forward="false" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/page/services/services.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="205" column="3" lean-forward="false" selection-start-line="205" selection-start-column="3" selection-end-line="205" selection-end-column="3" />
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -794,6 +760,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2085">
+          <caret line="100" column="80" lean-forward="false" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/page/services/services.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2323">
+          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/page/services/services-nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1679">
+          <caret line="73" column="22" lean-forward="false" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/page/packages/pakages-nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="117" column="3" lean-forward="true" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
           <folding />
         </state>
       </provider>
