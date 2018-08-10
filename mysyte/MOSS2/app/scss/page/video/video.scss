@@ -3,6 +3,26 @@
   &--full {
     cursor: nw-resize;
     z-index: 10;
+    .container__full-video--active {
+      display: flex;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      .container__full-video--bg {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: black;
+      }
+      video {
+        margin: auto;
+        z-index: 10;
+      }
+    }
   }
 }
 
