@@ -3,4 +3,19 @@
   height: 615px;
   background-image: url("../img/servmainscrbg.jpg");
   background-repeat: repeat-x;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .services__girl {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 568px) {
+  .services__girl {
+    margin-bottom: 50px;
+    height: 133.6vw;
+    background-size: cover;
+  }
 }

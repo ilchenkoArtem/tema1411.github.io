@@ -1,17 +1,17 @@
-.container--packages {
+.container--services {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 
-.package-nav__item {
+.service-nav__item {
   text-align: center;
   padding: 4% 0;
   width: 23%;
-  text-align: center;
   background-color: #F7F7F7;
   transition: 0.4s all ease;
-  &:hover .package-nav__country {
+  &:hover .service-nav__country {
     color: #FFFFFF;
   }
   a {
@@ -28,28 +28,28 @@
 
   }
 }
-.package-nav__item {
+.service-nav__item {
   &--basic:hover {
-    background-color: #FFBA00;
+    background-color: #FF7676;
   };
   &--standard:hover {
-    background-color: #169359;
+    background-color: #ED5252;
   }
   &--premium:hover {
-    background-color: #00D8FF;
+    background-color: #D83636;
   }
   &--luxury:hover {
-    background-color: #FF0000;
+    background-color: #BC3131;
   }
 }
-.package-nav__country {
+.service-nav__country {
   font-family: "AvenirBlack";
   font-size: 45px;
-  margin-top: 0;
+  margin-bottom: 30%;
   transition: 0.4s all ease;
 }
 
-.package-nav__text {
+.service-nav__text {
   text-align: center;
   margin-top: 108px;
   color: #8D8D8D;
@@ -58,40 +58,44 @@
 
 
 @media (max-width: 1200px){
-  .container--packages {
+  .container--services {
     justify-content: space-around;
   }
-  .package-nav__text {
+  .service-nav__text {
     margin-top: 60px;
     font-size: 20px;
   }
-  .package-nav__country {
+  .service-nav__country {
     font-size: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .package-nav__item {
+  .service-nav__item {
 
     a {
       font-size: 12px;
     }
   }
-  .package-nav__text {
+  .service-nav__text {
     margin-top: 40px;
     font-size: 14px;
   }
-  .package-nav__country {
+  .service-nav__country {
     font-size: 20px;
+  }
+
+  .container--services {
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 576px) {
-  .container--packages {
+  .container--services {
     padding: 0 10px;
     box-sizing: border-box;
   }
-  .package-nav__item {
+  .service-nav__item {
     padding: 15px 0;
     margin: 0 auto;
     margin-bottom: 5px;
@@ -103,16 +107,16 @@
       line-height: 27px;
     }
   }
-  .container--packages {
+  .container--services {
     display: block;
   }
 
-  .package-nav__country {
+  .service-nav__country {
     font-size: 20px;
     margin-top: 0;
   }
 
-  .package-nav__text {
+  .service-nav__text {
     br {
       display: none;
     }

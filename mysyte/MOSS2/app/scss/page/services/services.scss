@@ -1,0 +1,243 @@
+$marginImageServiceLeft: -25%;
+$marginImageServiceRight: -20%;
+$marginImageService: 0;
+.services {
+  overflow-x: hidden;
+}
+.service__main-item {
+  padding: 30px 0;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+  &--video {
+    align-items: flex-end;
+  }
+}
+
+.service__container-img {
+  position: relative;
+}
+
+.services__figure {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.service__container-otherColor {
+  background-color: #F7F7F7;
+}
+
+.service__container-img--photo {
+  margin-left: $marginImageServiceLeft;
+  .services__figure {
+    right: -90px;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 486px;
+    height: 473px;
+    border: 3px solid #FFBA00;
+  }
+}
+
+.service__container-img--video {
+  margin-right: $marginImageServiceRight;
+}
+
+.service__container-img--mobile {
+  margin-left: $marginImageServiceLeft;
+  .services__figure {
+    right: -14%;
+    top: 64%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 648px;
+    border: 3px solid red;
+    z-index: -1;
+  }
+}
+
+.service__container-img--pc {
+  margin-right: -30%;
+  .services__figure {
+    right: 25%;
+    top: 37%;
+    width: 75%;
+    height: 73%;
+    border: 3px solid red;
+  }
+  img {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.service__main-info {
+  width: 100%;
+  font-size: 30px;
+  align-items: flex-start;
+  font-family: 'AvenirBook', serif;
+  color: #8D8D8D;
+  ul {
+    padding: 0;
+  }
+  li:nth-child(2n) {
+    color: #000;
+  }
+  &--photo {
+    padding-top: 177px;
+    border: 3px solid red;
+    border-bottom: 0;
+    box-sizing: border-box;
+  }
+  &--video {
+    border: 3px solid red;
+    border-top: 0;
+    box-sizing: border-box;
+  }
+}
+
+.service__item-country {
+  text-transform: uppercase;
+  font-size: 70px;
+  margin-top: 0;
+  font-family: "Didot", serif;
+  font-weight: bold;
+  color: #000;
+}
+
+.service__description {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1375px) {
+  $marginImageServiceRight: -15%;
+  .service__container-img--video {
+    margin-right: $marginImageServiceRight;
+  }
+  .services {
+    .container {
+      width: 79.49090909090908vw;
+    }
+  }
+
+  .service__main-info {
+    padding-top: 5.745454545454545vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  $marginImageServiceLeft: -12.490909090909092vw;
+  $marginImageServiceRight: -10%;
+  .service__main-item {
+    padding-right: 40px;
+    box-sizing: border-box;
+    &--reverse {
+      padding-right: 0;
+      padding-left: 40px;
+    }
+    &--webserv {
+      align-items: center;
+    }
+  }
+  .service__item-country {
+    font-size: 50px;
+  }
+  .service__main-info {
+    font-size: 20px;
+  }
+  .service__container-img {
+    img {
+      width: 43vw;
+      height: auto;
+    }
+  }
+  .service__container-img--photo {
+    margin-left: $marginImageServiceLeft;
+  }
+
+  .service__container-img--video {
+    margin-right: $marginImageServiceRight;
+    .services__figure {
+      right: 52%;
+      top: -8%;
+      width: 60%;
+      height: 82%;
+      border: 3px solid #169359;
+    }
+  }
+  .service__container-img--mobile {
+    margin-left: -21.49091vw;
+    .services__figure {
+      right: -10%;
+      top: 82%;
+      width: 100%;
+      height: 53%;
+    }
+    img {
+      width: 23vw;
+    }
+  }
+  .service__item-info--mobile {
+    width: 44vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .service__item-country {
+    font-size: 30px;
+  }
+  .service__main-info {
+    font-size: 15px;
+  }
+  .service__container-img {
+    img {
+      width: 41vw;
+    }
+  }
+  .service__container-img--mobile {
+    img {
+      width: 24vw;
+    }
+  }
+  .service__description {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service__container-img--video {
+    img {
+      width: 39.46666666666667vw;
+      height: 105.33333333333333vw;
+    }
+  }
+
+  .service__main-item {
+    padding-right: 10px;
+    box-sizing: border-box;
+    &--reverse {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+  }
+  .service-nav__country {
+    margin-bottom: 5%;
+  }
+  .service__item-country {
+    font-size: 22px;
+
+  }
+  .service__main-info {
+    font-size: 10px;
+  }
+  .service__container-img {
+    img {
+      width: 43vw;
+    }
+  }
+}
