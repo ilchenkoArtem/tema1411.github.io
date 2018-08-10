@@ -42,7 +42,6 @@ gulp.task('js', function () {
     gulp.src([
 
         'app/libs/jquery/dist/jquery.min.js',
-        'app/libs/bigscreen.min.js',
         'app/js/main.js' // Always at the end
     ])
         .pipe(concat('scripts.min.js'))

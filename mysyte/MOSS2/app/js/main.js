@@ -75,13 +75,7 @@ if(videoMain) {
     };
 
     var resizeVideo = function () {
-        if (BigScreen.enabled) {
-            BigScreen.request(this);
-            // You could also use .toggle(element, onEnter, onExit, onError)
-        }
-        else {
-            // fallback for browsers that don't support full screen
-        }
+        BigScreen.toggle(videoMain);
     };
 
     var playVideo = function () {
