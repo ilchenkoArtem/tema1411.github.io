@@ -80,6 +80,7 @@ if ($('.header-index')) {
 }
 
 //video
+//video
 var videoPopup = document.querySelector('.video-popup');
 if (videoPopup) {
 
