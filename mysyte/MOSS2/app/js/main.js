@@ -86,7 +86,6 @@ if (videoPopup) {
     var videoPopupVideo = document.querySelector('.video-popup video');
     var closeBg = videoPopup.querySelector('.video-popup__bg');
     var buttonPlay = document.querySelectorAll('.button__play');
-    console.log(closeBg)
     var bodyElement = $('body');
     var videoSettings = [
         {

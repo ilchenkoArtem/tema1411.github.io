@@ -8,7 +8,7 @@ var noPlayVideo = function () {
 }
 
 var resizeVideo = function () {
-    containerVideo.classList.toggle('bigSize');
+    videoElement.webkitEnterFullscreen();
 }
 
 var onPlayVideo = function () {
