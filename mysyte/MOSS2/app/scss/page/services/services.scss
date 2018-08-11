@@ -119,7 +119,7 @@ $marginImageServiceRight: -20%;
     margin-right: $marginImageServiceRight;
   }
   .services {
-    .container {
+    .service__main-info {
       width: 79.49090909090908vw;
     }
   }
@@ -130,8 +130,8 @@ $marginImageServiceRight: -20%;
 }
 
 @media (max-width: 1200px) {
-  $marginImageServiceLeft: -12.490909090909092vw;
-  $marginImageServiceRight: -10%;
+  $marginImageServiceLeft: -16.49091vw;
+  $marginImageServiceRight: -18%;
   .service__main-item {
     padding-right: 40px;
     box-sizing: border-box;

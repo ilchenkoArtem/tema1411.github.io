@@ -21,6 +21,9 @@
     border-radius: 0;
     font-size: 24px;
     -webkit-appearance: none;
+    &:focus {
+      border-color: red;
+    }
   }
   input {
     width: 90%;

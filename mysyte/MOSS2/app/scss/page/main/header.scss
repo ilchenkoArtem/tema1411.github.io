@@ -48,10 +48,13 @@
   }
 }
   .header-index__scroll {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
   }
 
   .header-index__scroll-text {
