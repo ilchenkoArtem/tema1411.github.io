@@ -55,26 +55,26 @@
             </div>
         </div>
     </div>
-    <form action="" class="container-fluid form">
+    <form class="container-fluid form" method='post' action='mail.php' enctype='multipart/form-data' autocomplete='off'>
         <h2 class="form__h2">SEND US A MESSAGE</h2>
         <div class="container form__container">
             <div class="form__container-items">
                 <div class="form__container-item">
                     <label for="name">Name:</label>
                     <br>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form__container-item">
                     <label for="email">E-mail:</label>
                     <br>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <button type="submit" class="form__submit">SEND</button>
             </div>
             <div class="form__comment">
                 <label for="comment">You message:</label>
                 <br>
-                <textarea name="coment" id="comment" cols="30" rows="10"></textarea>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
                 <button type="submit" class="form__submit">SEND</button>
             </div>
         </div>
@@ -141,7 +141,7 @@
                 <li><a href="packages.html" class="nav__link">packages</a></li>
                 <li><a href="editorial.html" class="nav__link">editorial</a></li>
                 <li><a href="services.html" class="nav__link">Services</a></li>
-                <li><a class="nav__link">Video</a></li>
+                <li><a href="video.html" class="nav__link">Video</a></li>
                 <li><a href="clients.html" class="nav__link">clients</a></li>
                 <li><a href="team.html" class="nav__link nav__link--disabled">Team</a></li>
                 <li><a class="nav__link nav__link--active">Contact Us</a></li>
@@ -157,5 +157,10 @@
         </div>
     </div>
 </div>
+<section class="success__form success__form--disabled">
+    <img src="img/succes.svg" alt="Успешно">
+    <p class="success___form--text"></p>
+</section>
+
 <script src="js/scripts.min.js"></script>
 </body>

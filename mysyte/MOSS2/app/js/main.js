@@ -80,7 +80,6 @@ if ($('.header-index')) {
 }
 
 //video
-//video
 var videoPopup = document.querySelector('.video-popup');
 if (videoPopup) {
 
@@ -90,7 +89,7 @@ if (videoPopup) {
     var bodyElement = $('body');
     var videoSettings = [
         {
-            src: 'video/main_video.webm',
+            src: 'video/main_video.mp4',
             widthVideo: '80vw',
             heightVideo: 'auto'
         },
@@ -134,7 +133,83 @@ if (videoPopup) {
         })
     });
 }
+var form = document.querySelector('form');
+if (form) {
+// Ajax send form
+    var SAVE_URL = '../mail.php';
+    var TIMEOUT_REQUEST = 10000;
+    var SUCCESS_CODE = 200;
+    var setupXHR = function (onLoad, onError) {
+        var xhr = new XMLHttpRequest();
+        xhr.responseType = 'json';
 
+        xhr.timeout = TIMEOUT_REQUEST;
+
+        xhr.addEventListener('load', function () {
+            var errorText;
+            if (xhr.status === SUCCESS_CODE) {
+                onLoad(xhr.response);
+            } else {
+                errorText = 'Cтатус ответа:' + xhr.status + ' ' + xhr.statusText;
+                onError(errorText);
+            }
+        });
+
+        xhr.addEventListener('error', function () {
+            onError('Cтатус ответа:' + xhr.status + ' ' + xhr.statusText);
+        });
+
+        xhr.addEventListener('timeout', function () {
+            onError('Запрос не успел выполниться за ' + xhr.timeout + 'мс');
+        });
+
+        return xhr;
+    };
+
+    var loadData = function (onLoad, onError) {
+        var xhr = setupXHR(onLoad, onError);
+        xhr.open('GET', LOAD_URL);
+        xhr.send();
+    };
+
+    var saveData = function (onLoad, onError, data) {
+        var xhr = setupXHR(onLoad, onError);
+        xhr.open('POST', SAVE_URL);
+        xhr.send(data);
+    };
+
+    var backend = {
+        'load': loadData,
+        'save': saveData
+    };
+
+    var onDeduceErrorText = function () {
+        var successForm = document.querySelector('.success__form');
+        var succesFormImg = successForm.querySelector('img');
+        successForm.classList.remove('success__form--disabled');
+        succesFormImg.setAttribute('src', 'img/error.svg');
+        setTimeout(function () {
+            successForm.classList.add('success__form--disabled');
+        }, 3000);
+    };
+
+    var onSubmitReset = function (form) {
+        var successForm = document.querySelector('.success__form');
+        successForm.classList.remove('success__form--disabled');
+        successForm.setAttribute('src', 'img/succes.svg');
+        setTimeout(function () {
+            successForm.classList.add('success__form--disabled');
+        }, 3000);
+        form.reset();
+    };
+
+    form.addEventListener('submit', function (evt) {
+        window.backend.save(function () {
+            onSubmitReset(form)
+        }, onDeduceErrorText, new FormData(form));
+        evt.preventDefault();
+    });
+}
 
 
 
