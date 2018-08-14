@@ -1,0 +1,155 @@
+.index__catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.index__catalog-country {
+  font-family: 'Montserrat-ExtraBold';
+}
+
+.index-h2 {
+  font-size: 55px;
+}
+
+.index__link-all {
+  font-size: 9px;
+}
+
+.index__slider-item {
+  color: white;
+  width: 257px;
+  height: 432px;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.index__slider-bg-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .4s all ease;
+}
+
+.index__slider-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+}
+
+.index__slide-free {
+  z-index: 1;
+  position: absolute;
+  text-transform: uppercase;
+  right: 0;
+  top: 0;
+  margin: 0;
+  font-family: 'Montserrat-ExtraBold';
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  display: block;
+  background-color: #e9013c;
+  min-width: 49px;
+  max-width: fit-content;
+  max-height: 49px;
+  height: 100%;
+  span {
+    font-size: 20px;
+  }
+}
+
+.index__slide-name {
+  margin-bottom: 0;
+  font-size: 9px;
+  font-family: "Montserrat-Regular";
+}
+
+.index__slider-info {
+  margin-top: auto;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  font-family: 'Montserrat-Bold';
+}
+
+.index__slider-text {
+  z-index: 1;
+  position: relative;
+  padding: 0 21px 45px 21px;
+  margin-top: auto;
+}
+
+.index__slide-country {
+  font-size: 29px;
+  position: relative;
+  padding-bottom: 32px;
+  margin-top: 0;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+
+    background-color: #ffffff;
+    height: 1px;
+    width: 45px;
+  }
+}
+
+.index__slide-price {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.index__slide-hover {
+  margin-top: 20px;
+  font-family: 'Montserrat-ExtraBold';
+}
+
+.button {
+  display: block;
+  background-color: transparent;
+  border: 1px solid #e9013c;
+  color: #e9013c;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  max-width: 167px;
+  height: 33px;
+  line-height: 33px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.index__slide-more {
+  font-size: 9px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: -60px;
+    height: 1px;
+    width: 45px;
+    background-color: white;
+    z-index: 1;
+  }
+}
+
+.index__slider-item:hover {
+  .index__slider-bg-hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.64);
+  }
+}

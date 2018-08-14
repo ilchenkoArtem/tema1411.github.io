@@ -5,7 +5,7 @@
   color: #707070;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -72,6 +72,16 @@
 
 a.footer__mail {
   color: #707070;
+}
+
+.footer__desktop-nav > div {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.footer__concierge {
+  margin-bottom: 0;
 }
 
 @media (max-width: 1360px) {

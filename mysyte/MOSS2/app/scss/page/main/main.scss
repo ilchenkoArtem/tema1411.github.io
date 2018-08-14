@@ -1,6 +1,7 @@
 .index {
   overflow-x: hidden;
 }
+
 .index__h2 {
   position: relative;
   font-family: "Didot", serif;
@@ -9,9 +10,9 @@
     content: '';
     background-color: red;
     width: 100vw;
-    height: 5px;
+    height: 3.5px;
     position: absolute;
-    top: 60%;
+    top: 66%;
     transform: translateY(-50%);
 
   }
@@ -82,15 +83,20 @@
     padding: 0 36px;
   }
 }
+
 @media (max-width: 960px) {
   .index__eyes {
     background-image: url("../img/main_about_bg.jpg");
     height: 18vw;
   }
 }
+
 @media (max-width: 992px) {
   .index__h2 {
     font-size: 90px;
+    &::after {
+      height: 3px;
+    }
   }
   .index__info {
     font-size: 30px;
@@ -106,12 +112,23 @@
 @media (max-width: 768px) {
   .index__h2 {
     font-size: 50px;
+    &::after {
+      height: 2px;
+    }
   }
-  .index__main-text ,
+  .index__main-text,
   .index__info {
     font-size: 16px;
     text-align: center;
   }
+}
 
+@media (max-width: 390px) {
+  .index__h2 {
+    font-size: 40px;
+    &::after {
+      height: 1px;
+    }
+  }
 }
 
