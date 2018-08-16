@@ -40,13 +40,13 @@ gulp.task('styles', function () {
 
 gulp.task('js', function () {
     gulp.src([
-        'app/libs/slick-carousel/slick/slick.min.js',
         'app/libs/jquery/dist/jquery.min.js',
+        'app/libs/slick-carousel/slick/slick.js',
 
         'app/js/main.js' // Always at the end
     ])
         .pipe(concat('scripts.min.js'))
-        .pipe(uglify()) // Mifify js (opt.)
+        //.pipe(uglify()) // Mifify js (opt.)
         .pipe(gulp.dest('app/js'))
         .pipe(sizereport())
         .pipe(browserSync.reload({stream: true}));

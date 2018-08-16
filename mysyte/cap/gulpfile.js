@@ -40,8 +40,9 @@ gulp.task('styles', function () {
 
 gulp.task('js', function () {
     gulp.src([
-        'app/libs/slick-carousel/slick/slick.min.js',
         'app/libs/jquery/dist/jquery.min.js',
+        'app/libs/slick-carousel/slick/slick.min.js',
+
 
         'app/js/main.js' // Always at the end
     ])

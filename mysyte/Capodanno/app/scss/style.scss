@@ -1,5 +1,9 @@
 @import "global";
 @import "other/normalaiz";
 @import "fonts";
+
 @import "page/index/hotel";
 @import "page/index/global";
+@import "page/index/main-block";
+@import "../libs/slick-carousel/slick/slick.scss";
+@import "../libs/slick-carousel/slick/slick-theme.scss";
