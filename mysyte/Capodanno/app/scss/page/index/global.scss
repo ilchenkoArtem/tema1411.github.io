@@ -184,6 +184,11 @@
   margin-bottom: 17px;
   font-weight: normal;
   font-style: normal;
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    background-color: #e9013c;
+    color: #FFFFFF;
+  }
 }
 
 .index__slider-hover-link {
