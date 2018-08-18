@@ -9,7 +9,126 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+<!--начало шапки сайта-->
+<header class="header">
+
+    <div class="header__container"> <!--начало контейнера навигации-->
+        <div>
+            <!--начало блока колличество товара в корзине на мобильной версии-->
+            <div class="header__orders-number-mobile-container">
+                <a href="#" class="header__orders-number-mobile">99</a>
+            </div>
+            <!--конец блока колличество товара в корзине на мобильной версии-->
+
+            <!--начало блока навигации-->
+            <div class="header__nav">
+                <a href="#" class="header__logo">CAPODANNOAMILANO</a>
+                <div class="header__main-nav">
+                    <ul class="header__nav-elements">
+                        <li class="nav__item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Hotels</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Restaurants</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Discos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Ivents</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Contacts</a>
+                        </li>
+                        <li class="nav__item nav__item--orders">
+                            <a href="#">Orders</a>
+                            <div class="nav__number-container">
+                                <p class="nav__item-number">10</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="nav-block__search">
+                        <img src="img/search.svg" alt="search" width="11" height="11" class="nav-block__search-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="header__burger">
+                <div class="header__burger-ico"></div>
+            </div>
+            <!--конец блока навигации-->
+        </div><!--конец контейнера навигации-->
+    </div>
+</header>
+<!--конец шапки сайта-->
+
+
+<!--    <section class="header__container">
+        <p class="header__logo">CAPODANNOAMILANO</p>
+        <nav class="main-block__container-nav">
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="#">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#">Hotels</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#">Restaurants</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#">Discos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#">Ivents</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#">Contacts</a>
+                </li>
+                <li class="nav__item nav__item&#45;&#45;orders">
+                    <a href="#">Orders</a>
+                    <div class="nav__item&#45;&#45;orders-number">
+                        <p class="nav__item-number">10</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="main-block__search">
+                <img src="img/search.svg" alt="search" width="11" height="11" class="main-block__search-icon">
+            </div>
+        </nav>
+
+    </section>
+</header>-->
+
+
 <main class="main index">
+    <div class="main-block">
+        <div class="main-block__container">
+            <div class="main-block__scroll-down-container">
+                <a href="#" class="main-block__scroll-down">Scroll Down</a>
+                <div class="main-block__scroll-decor"></div>
+            </div>
+            <div class="main-block__text-container">
+                <div class="main-block__caption-container">
+                    <div class="main-block__main-text">
+                        <p class="main-block__year">2019</p>
+                        <h1 class="main-block__main-caption">Capodanno<br> a Milano.</h1>
+                        <p class="main-block__subtitle">Create your personal New Year experience</p>
+                    </div>
+                    <div class="main-block__social-container">
+                        <a href="#" class="main-block__social main-block__social--f">Facebook</a>
+                        <a href="#" class="main-block__social main-block__social--i">Instagram</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <!--начало блока с отелями-->
     <div class="index__container-slider-fluid">
         <section class="index__catalog-container ">
@@ -31,7 +150,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/hotel1.png" alt="hotel" width="257" height="432" class="index__slider-img">
+                            <img src="img/hotel1.png" alt="hotel" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -49,7 +169,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/hotel2.png" alt="hotel" width="257" height="432" class="index__slider-img">
+                            <img src="img/hotel2.png" alt="hotel" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -67,7 +188,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/hotel3.png" alt="hotel" width="257" height="432" class="index__slider-img">
+                            <img src="img/hotel3.png" alt="hotel" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -85,7 +207,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/hotel1.png" alt="hotel" width="257" height="432" class="index__slider-img">
+                            <img src="img/hotel1.png" alt="hotel" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -103,7 +226,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/hotel2.png" alt="hotel" width="257" height="432" class="index__slider-img">
+                            <img src="img/hotel2.png" alt="hotel" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -121,7 +245,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/hotel3.png" alt="hotel" width="257" height="432" class="index__slider-img">
+                            <img src="img/hotel3.png" alt="hotel" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -294,7 +419,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/disco1.png" alt="disco" width="257" height="432" class="index__slider-img">
+                            <img src="img/disco1.png" alt="disco" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -312,7 +438,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/disco2.png" alt="disco" width="257" height="432" class="index__slider-img">
+                            <img src="img/disco2.png" alt="disco" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -330,7 +457,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/disco3.png" alt="disco" width="257" height="432" class="index__slider-img">
+                            <img src="img/disco3.png" alt="disco" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -348,7 +476,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/disco1.png" alt="hotel" width="257" height="432" class="index__slider-img">
+                            <img src="img/disco1.png" alt="hotel" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -366,7 +495,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/disco2.png" alt="hotel" width="257" height="432" class="index__slider-img">
+                            <img src="img/disco2.png" alt="hotel" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -384,7 +514,8 @@
                     <!--начало блока слайдера-->
                     <div>
                         <div class="index__slider-item">
-                            <img src="img/disco3.png" alt="hotel" width="257" height="432" class="index__slider-img">
+                            <img src="img/disco3.png" alt="hotel" width="257" height="432"
+                                 class="index__slider-img">
                             <p class="index__slider-free">Free<br><span>14</span></p>
                             <div class="index__slider-text">
                                 <p class="index__slider-capodanno">capodanno 2019</p>
@@ -545,6 +676,7 @@
     <!--конец блока фестивалей-->
 </main>
 
+<!--начало футера-->
 <footer class="footer">
     <div class="footer__container">
         <div class="footer__contact-container">
@@ -592,6 +724,7 @@
         <a href="#" class="footer__BJG" target="_blank">by <span>BlackJamGroup</span></a>
     </div>
 </footer>
+<!--конец футера-->
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

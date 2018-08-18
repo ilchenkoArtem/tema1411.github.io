@@ -65,6 +65,7 @@
 .index__see-all {
   font-size: 9px;
   position: relative;
+  color: #000;
   &::after {
     content: '';
     position: absolute;
@@ -73,6 +74,7 @@
     background-color: black;
     height: 1px;
     width: 45px;
+
   }
 }
 
