@@ -1,0 +1,121 @@
+.main-block__slider-item {
+  display: flex;
+}
+.main-block__slider-container-fluid {
+  margin-top: -162px;
+  display: flex;
+  margin-bottom: 100px;
+
+}
+.main-block__slider-cover {
+  display: flex;
+  margin-left: auto;
+}
+.main-block__slider-container {
+  max-width: 538px;
+}
+.main-block__slider-img-container {
+  max-width: 269px;
+  max-height: 162px;
+  min-width: 269px;
+  min-height: 162px;
+}
+
+.main-block__slider-text-container {
+  position: relative;
+  display: flex;
+  max-width: 269px;
+  max-height: 162px;
+  min-width: 269px;
+  min-height: 162px;
+  background-color: #000000;
+  height: 100%;
+  font-family: "Montserrat-Regular";
+
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 20px 28px;
+  box-sizing: border-box;
+}
+.main-block__slider-main-text-container {
+  margin: auto;
+}
+.main-block__slider-number {
+  margin: 0;
+  position: absolute;
+  left: 28px;
+  top: 20px;
+  font-size: 12px;
+}
+
+.main-block__slider-main-caption {
+  color: #FFFFFF;
+  font-family: "Montserrat-Black";
+}
+
+.main-block__slider-content {
+  font-size: 14px;
+}
+
+.main-block__special {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 185px;
+  height: 162px;
+  background-color: #cdcdcd;
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat-ExtraBold";
+  transition: 0.4s background-color ease-in-out;
+  &:hover {
+    background-color: #EFEFEF;
+  }
+}
+// cтили slick
+.main-block__slider-container {
+  .slick-dots {
+    bottom: 10px;
+    right: 28px;
+    text-align: right;
+    li {
+      width: 0px;
+      &.slick-active button:before {
+        background-color: #FFFFFF;
+        opacity: 1;
+      }
+      button::before {
+        content: '';
+        font-family: inherit;
+        background-color: #7d7d7d;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 815px) {
+  .main-block__slider-container-fluid {
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 740px) {
+  .main-block__slider-cover {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+  .main-block__special {
+    width: 100%;
+    max-width: 550px;
+    margin-top: 60px;
+  }
+  .main-block__slider-container-fluid {
+    margin-bottom: 80px;
+  }
+}
+

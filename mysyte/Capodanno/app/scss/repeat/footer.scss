@@ -56,14 +56,16 @@
 
 .footer__form-email {
   font-family: "Montserrat-Medium";
-  font-size: 10px;
+  font-size: 14px;
   border: 0;
   border-radius: 0;
   width: 239px;
   border-bottom: 1px solid #000000;
   outline: none;
   -webkit-appearance: none;
+  margin-right: 38px;
   &::placeholder {
+    font-size: 10px;
     transition: 0.3s color ease-in-out;
   }
   &:hover::placeholder {

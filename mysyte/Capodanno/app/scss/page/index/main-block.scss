@@ -101,3 +101,33 @@
 .main-block__social--f {
   margin-right: 20%;
 }
+
+@media (max-width: 1190px) {
+  .main-block__social-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .main-block__container {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 815px) {
+  .main-block__social-container {
+    display: flex;
+  }
+
+  .main-block__main-caption {
+    font-size: 9vw;
+  }
+
+  .main-block__year {
+    font-size: 18vw;
+  }
+
+  .main-block__text-container {
+    margin-left: 19.685039370078737vw;
+  }
+}

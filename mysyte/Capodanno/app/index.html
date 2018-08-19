@@ -13,8 +13,8 @@
 <!--начало шапки сайта-->
 <header class="header">
 
-    <div class="header__container"> <!--начало контейнера навигации-->
-        <div>
+    <div class="header__main-container "> <!--начало контейнера навигации-->
+        <div class="header__container">
             <!--начало блока колличество товара в корзине на мобильной версии-->
             <div class="header__orders-number-mobile-container">
                 <a href="#" class="header__orders-number-mobile">99</a>
@@ -22,30 +22,30 @@
             <!--конец блока колличество товара в корзине на мобильной версии-->
 
             <!--начало блока навигации-->
-            <div class="header__nav">
+            <div class="header__nav ">
                 <a href="#" class="header__logo">CAPODANNOAMILANO</a>
                 <div class="header__main-nav">
                     <ul class="header__nav-elements">
                         <li class="nav__item">
-                            <a href="#">About</a>
+                            <a href="#" class="nav__item-link">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">Hotels</a>
+                            <a href="#" class="nav__item-link">Hotels</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">Restaurants</a>
+                            <a href="#" class="nav__item-link">Restaurants</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">Discos</a>
+                            <a href="#" class="nav__item-link">Discos</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">Ivents</a>
+                            <a href="#" class="nav__item-link">Ivents</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">Contacts</a>
+                            <a href="#" class="nav__item-link">Contacts</a>
                         </li>
                         <li class="nav__item nav__item--orders">
-                            <a href="#">Orders</a>
+                            <a href="#" class="nav__item-link">Orders</a>
                             <div class="nav__number-container">
                                 <p class="nav__item-number">10</p>
                             </div>
@@ -66,49 +66,12 @@
 <!--конец шапки сайта-->
 
 
-<!--    <section class="header__container">
-        <p class="header__logo">CAPODANNOAMILANO</p>
-        <nav class="main-block__container-nav">
-            <ul class="nav">
-                <li class="nav__item">
-                    <a href="#">About</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#">Hotels</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#">Restaurants</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#">Discos</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#">Ivents</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#">Contacts</a>
-                </li>
-                <li class="nav__item nav__item&#45;&#45;orders">
-                    <a href="#">Orders</a>
-                    <div class="nav__item&#45;&#45;orders-number">
-                        <p class="nav__item-number">10</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="main-block__search">
-                <img src="img/search.svg" alt="search" width="11" height="11" class="main-block__search-icon">
-            </div>
-        </nav>
-
-    </section>
-</header>-->
-
-
 <main class="main index">
-    <div class="main-block">
+    <!--начало главного экрана-->
+    <section class="main-block">
         <div class="main-block__container">
             <div class="main-block__scroll-down-container">
-                <a href="#" class="main-block__scroll-down">Scroll Down</a>
+                <a href="#home" class="main-block__scroll-down">Scroll Down</a>
                 <div class="main-block__scroll-decor"></div>
             </div>
             <div class="main-block__text-container">
@@ -123,14 +86,266 @@
                         <a href="#" class="main-block__social main-block__social--i">Instagram</a>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
+    </section>
+    <!--конец главного экрана-->
 
+    <!--начало слайдер на главном-->
+    <section class="main-block__slider-container-fluid">
+        <div class="main-block__slider-cover">
+            <div class="main-block__slider-container">
+                <!--начало блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+                <div>
+                    <div class="main-block__slider-item">
+                        <!--начало блока с картинкой-->
+                        <div class="main-block__slider-img-container">
+                            <img src="img/mainBlockSlider.jpeg" alt="special" class="main-block__slider-img" width="269"
+                                 height="162">
+                        </div>
+                        <!--конец блока с картинкой-->
+                        <!--начало блока с текстом -->
+                        <div class="main-block__slider-text-container">
+                            <p class="main-block__slider-number"></p><!--номер слайда прописывать не надо, прописывается автоматически-->
+                            <div class="main-block__slider-main-text-container">
+                                <a href="#" class="main-block__slider-main-caption">Just Cavalli</a>
+                                <p class="main-block__slider-content">Special New Year<br> Night</p>
+                            </div>
+                        </div>
+                        <!--конец блока с текстом-->
+                    </div>
+                </div>
+                <!--конец блока слайдера-->
+            </div>
+            <!--начало блока спец предложение-->
+            <a href="#" class="main-block__special">Special<br>Offers</a>
+            <!--конец блока спец предложение-->
+        </div>
+    </section>
+    <!--конец слайдер на главном-->
 
     <!--начало блока с отелями-->
-    <div class="index__container-slider-fluid">
+    <div class="index__container-slider-fluid" id="home">
         <section class="index__catalog-container ">
             <!--начало блока заголовка-->
             <div class="index__catalog-country-container">
