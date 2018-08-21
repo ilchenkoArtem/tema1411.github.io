@@ -4,9 +4,11 @@
 @import "page/index/big_slider_block";
 @import "page/index/main-block";
 @import "page/index/main-block__slider";
-@import "repeat/footer";
-@import "repeat/header";
-@import "repeat/succes__form";
-@import "repeat/popup_search";
+@import "repeat_block/footer";
+@import "repeat_block/header";
+@import "repeat_block/succes__form";
+@import "repeat_block/popup_search";
+@import "repeat_block/crambs";
+@import "page/About/about";
 @import "../libs/slick-carousel/slick/slick.scss";
 @import "../libs/slick-carousel/slick/slick-theme.scss";

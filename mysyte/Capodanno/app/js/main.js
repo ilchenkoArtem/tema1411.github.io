@@ -1,5 +1,6 @@
 var windowWidth;
 var body = document.querySelector('body');
+var index = document.querySelector('index')
 
 //скролл от начала документа до хедара
 var headerMainContainerElement = document.querySelector('.header__main-container');
@@ -40,27 +41,26 @@ function deleteBodyOverflow() {
     }
 }
 
-//запуск функции при загрузке страницы
+//запуск обработчика ширина экрана при загрузке страницы
 windowSize();
-/*visibleSlide();*/
 //обрабочтик резайза страницы
 window.addEventListener('resize', function () {
     heightTopHeader();
     windowSize();
-/*    visibleSlide();*/
     toggleClassColorTextHeader();
     deleteBodyOverflow()
 });
 //инициализайия СЛАЙДЕРОВ категорий НА ГЛАВНОЙ
 //функция определяет колличество слаайдов в каждом блоке и заносит в массив
 var numberOfSlides = [];
-function  quantityAllSliders() {
+
+function quantityAllSliders() {
     $(".index__slider-container").on("init", function (event, slick) {
         numberOfSlides.push(slick.slideCount);
     });
 }
-quantityAllSliders();
 
+quantityAllSliders();
 
 
 $('.index__slider-container').slick({
@@ -96,6 +96,7 @@ $('.index__slider-container').slick({
         }
     ]
 });
+
 //функция добалвяте колличчество слайдов в счетчик каждого блока
 function quantitySliders() {
     var sliderAll = document.querySelectorAll('.index__slider-all');
@@ -108,6 +109,7 @@ function quantitySliders() {
     })
 
 }
+
 quantitySliders();
 //Инициализация слайдер на главном экране
 $('.main-block__slider-container').slick({
@@ -123,7 +125,7 @@ $('.main-block__slider-container').slick({
                 autoplay: false,
             }
         }
-        ]
+    ]
 });
 
 // функция нумерации маленького слайдера на главной странице
@@ -141,7 +143,8 @@ function addNumberSlider() {
 
 }
 
-addNumberSlider()
+addNumberSlider();
+
 
 //счетчик слайдера
 function currentSlide(parent, nameContainerSlide) {
@@ -159,6 +162,7 @@ function currentSlide(parent, nameContainerSlide) {
             current.textContent = slickCurrentSlide;
         }
     }
+
     sliderCounter();
     quantitySliders();
     $(nameContainerSlide).on('afterChange', function () {
@@ -166,11 +170,14 @@ function currentSlide(parent, nameContainerSlide) {
     });
 }
 
+
 //инициализация счетчиков слайдера на главной странице
-currentSlide('.home__slide-container', '.home__slide');
-currentSlide('.festival__slide-container', '.festival__slide');
-currentSlide('.disco__slide-container', '.disco__slide');
-currentSlide('.restaurant__slide-container', '.restaurant__slide');
+if (index) {
+    currentSlide('.home__slide-container', '.home__slide');
+    currentSlide('.festival__slide-container', '.festival__slide');
+    currentSlide('.disco__slide-container', '.disco__slide');
+    currentSlide('.restaurant__slide-container', '.restaurant__slide');
+}
 
 
 //Поведние мобильного меню
@@ -235,6 +242,7 @@ function closePopupSearch() {
     popupSearchButtonClose.removeEventListener('click', onClickClose)
     window.removeEventListener('keydown', onKeyClose);
 }
+
 function onClickClose() {
     closePopupSearch()
 }
@@ -244,11 +252,13 @@ function onKeyClose(evt) {
         closePopupSearch()
     }
 }
+
 function openPopupSearch() {
     popupSearch.classList.add('popup__search--active');
     popupSearchButtonClose.addEventListener('click', onClickClose)
     window.addEventListener('keydown', onKeyClose);
 }
+
 blockSearchImg.addEventListener('click', openPopupSearch);
 
 // -------------------плавный скрол
@@ -267,7 +277,7 @@ var scrolling = function (links) {
     });
 };
 scrolling('.main-block__scroll-down-container');
-
+///////////////////////////////////////////////////
 var form = document.querySelector('form');
 if (form) {
 // Ajax send form
@@ -344,4 +354,18 @@ if (form) {
         }, onDeduceErrorText, new FormData(form));
         evt.preventDefault();
     });
+}
+/////////////////////////////////////////////////////////////////////////////////////////
+var about = document.querySelector('.about');
+if(about) {
+    var captionElements = about.querySelectorAll(".about__question-container-caption");
+    function onControlVisibilityAnswer() {
+        var clickBlock = this;
+        this.classList.toggle('about__question-container-caption--open');
+    }
+
+    captionElements.forEach(function (item) {
+        item.addEventListener('click', onControlVisibilityAnswer)
+    })
+
 }

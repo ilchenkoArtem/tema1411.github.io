@@ -9221,7 +9221,7 @@ jQuery.extend( {
 			var isSuccess, success, error, response, modified,
 				statusText = nativeStatusText;
 
-			// Ignore repeat invocations
+			// Ignore repeat_block invocations
 			if ( completed ) {
 				return;
 			}

@@ -12,7 +12,6 @@
 
 <!--начало шапки сайта-->
 <header class="header">
-
     <div class="header__main-container "> <!--начало контейнера навигации-->
         <div class="header__container">
             <!--начало блока колличество товара в корзине на мобильной версии-->
@@ -27,7 +26,7 @@
                 <div class="header__main-nav">
                     <ul class="header__nav-elements">
                         <li class="nav__item">
-                            <a href="#" class="nav__item-link">About</a>
+                            <a href="About.html" class="nav__item-link">About</a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__item-link">Hotels</a>
@@ -68,6 +67,13 @@
             <!--конец блока навигации-->
         </div><!--конец контейнера навигации-->
     </div>
+    <!--начало попапа с поиском-->
+    <section class="popup__search">
+        <div class="popup__search-bg"></div>
+        <img src="img/close.svg" alt="close" class="popup__search-button-close" width="25" height="25">
+        <input type="text" class="popup__search-input" placeholder="Search...">
+    </section>
+    <!--конец попапа с поиском-->
 </header>
 <!--конец шапки сайта-->
 
@@ -829,21 +835,16 @@
         </div>
         <a href="#" class="footer__BJG" target="_blank">by <span>BlackJamGroup</span></a>
     </div>
+    <!--начало блока с картинкой показвающая успешна отправка или нет-->
+    <section class="success__form success__form--disabled">
+        <img src="img/succes.svg" alt="Успешно">
+        <p class="success___form--text"></p>
+    </section>
+    <!--конец блока с картинкой показвающая успешна отправка или нет-->
 </footer>
 <!--конец футера-->
-<!--начало попапа с поиском-->
-<section class="popup__search">
-    <div class="popup__search-bg"></div>
-    <img src="img/close.svg" alt="close" class="popup__search-button-close" width="25" height="25">
-    <input type="text" class="popup__search-input" placeholder="Search...">
-</section>
-<!--конец попапа с поиском-->
-<!--начало блока с картинкой показвающая успешна отправка или нет-->
-<section class="success__form success__form--disabled">
-    <img src="img/succes.svg" alt="Успешно">
-    <p class="success___form--text"></p>
-</section>
-<!--конец блока с картинкой показвающая успешна отправка или нет-->
+
+
 <script src="js/scripts.min.js"></script>
 </body>
 </html>
