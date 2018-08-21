@@ -1,6 +1,6 @@
 var windowWidth;
 var body = document.querySelector('body');
-var index = document.querySelector('index')
+var index = document.querySelector('.index');
 
 //скролл от начала документа до хедара
 var headerMainContainerElement = document.querySelector('.header__main-container');
