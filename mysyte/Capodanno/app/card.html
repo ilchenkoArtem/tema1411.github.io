@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CAPODANNOAMILANO</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<!--начало шапки сайта-->
+<header class="header header__secondary-page">
+    <div class="header__main-container "> <!--начало контейнера навигации-->
+        <div class="header__container">
+            <!--начало блока колличество товара в корзине на мобильной версии-->
+            <div class="header__orders-number-mobile-container">
+                <a href="#" class="header__orders-number-mobile">99</a>
+            </div>
+            <!--конец блока колличество товара в корзине на мобильной версии-->
+
+            <!--начало блока навигации-->
+            <div class="header__nav ">
+                <a href="#" class="header__logo">CAPODANNOAMILANO</a>
+                <div class="header__main-nav">
+                    <ul class="header__nav-elements">
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-link">Hotels</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-link">Restaurants</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-link">Discos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-link">Ivents</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-link">Contacts</a>
+                        </li>
+                        <li class="nav__item nav__item--orders">
+                            <a href="#" class="nav__item-link">Orders</a>
+                            <!--начало блока колличество товара в корзине на пк версии-->
+                            <div class="nav__number-container">
+                                <p class="nav__item-number">10</p>
+                            </div>
+                            <!--конец блока колличество товара в корзине на пк версии-->
+                        </li>
+                    </ul>
+                    <div class="nav-block__search">
+                        <input type="text" class="nav-block__search-input" placeholder="Search...">
+                        <div class="nav-block__search-container-img">
+                            <img src="img/search.svg" alt="search" width="11" height="11"
+                                 class="nav-block__search-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__burger">
+                <div class="header__burger-ico"></div>
+            </div>
+            <!--конец блока навигации-->
+        </div><!--конец контейнера навигации-->
+    </div>
+    <!--начало попапа с поиском-->
+    <section class="popup__search">
+        <div class="popup__search-bg"></div>
+        <img src="img/close.svg" alt="close" class="popup__search-button-close" width="25" height="25">
+        <input type="text" class="popup__search-input" placeholder="Search...">
+    </section>
+    <!--конец попапа с поиском-->
+</header>
+<!--конец шапки сайта-->
+
+<!--начало хлебных крошек-->
+<div class="crumbs-container">
+    <ul class="crumbs">
+        <li class="crumbs__container-link"><a href="index.html" class="crumbs__link">Home</a></li>
+        <li class="crumbs__container-link"><a href="index.html" class="crumbs__link">Hotels</a></li>
+        <li class="crumbs__container-link"><a class="crumbs__link crumbs__link__current">Capodanno 2019 Serendepico -
+            Centro Piazza Castello</a></li>
+    </ul>
+</div>
+<!--конец хлебных крошек-->
+<main class="main card">
+    <!--начало главного блока с табами--->
+    <div class="card__container-fluid">
+        <!--начало контейнера с табами--->
+        <div class="card__tabs-container">
+            <p class="card_tab card_tab--active">Book</p>
+            <p class="card_tab">Description</p>
+            <p class="card_tab">Details</p>
+            <p class="card_tab">Menu</p>
+        </div>
+        <!--конец контейнера с табами--->
+        <!--начало контейнера с контентом--->
+        <div class="card__content-container">
+            <!--начало блока book--->
+            <section class="book">
+                <!--начало блока заголовка на моб версии--->
+                <div class="book__caption-mobile">
+                    <p class="book__capadano">capodanno 2019</p>
+                    <h1 class="book__caption">Serendepico - centro<br> Piazza Castello</h1>
+                </div>
+                <!--конец блока заголовка на моб версии--->
+                <div class="book__container-element">
+                    <section class="book__block1">
+                        <div class="book__container-switch">
+                            <button class="button button--gallery book__switch book__switch--active">Gallery&nbsp
+                            </button>
+                            <button class="button button--map book__switch">&nbspMap</button>
+                        </div>
+                        <!--начало блока слайда--->
+                        <div class="book__container-photos book__block-active">
+                            <div class="book__container-photos-slick">
+                                <!--начало элемента слайда-->
+                                <div>
+                                    <div class="book__container-photo">
+                                        <img src="img/img-book.jpg" alt="" class="book__photo" width="534" height="460">
+                                    </div>
+                                </div>
+                                <!--конец элемента слайда-->
+                                <!--начало элемента слайда-->
+                                <div>
+                                    <div class="book__container-photo">
+                                        <img src="img/img-book.jpg" alt="" class="book__photo" width="534" height="460">
+                                    </div>
+                                </div>
+                                <!--конец элемента слайда-->
+                            </div>
+                        </div>
+                        <!--конец блока слайда--->
+                        <div class="book__container-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5080.039136006351!2d30.4903354!3d50.4593603!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce665d233491%3A0x463efea49408fab3!2z0JrQuNC10LLRgdC60LjQuSDQnNGD0LfQtdC5INCQLiDQoS4g0J_Rg9GI0LrQuNC90LA!5e0!3m2!1sru!2sua!4v1534899990793"
+                                    width="534" height="460" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </section>
+                    <section class="book__block2">
+                        <p class="book__capadano">capodanno 2019</p>
+                        <h1 class="book__caption">Serendepico - centro<br> Piazza Castello</h1>
+                        <ul class="book__stars-container book__stars-container-4">
+                            <li class="book__star"></li>
+                            <li class="book__star"></li>
+                            <li class="book__star"></li>
+                            <li class="book__star"></li>
+                            <li class="book__star"></li>
+                        </ul>
+                        <br>
+                        <p class="book__free">Free <span>14</span></p>
+                        <div class="book__calculate">
+                            <!-- начало одного элемента блока-->
+                            <div class="book__calculate__item-container">
+                                <div class="book__calculate__button-container">
+                                    <div class="book__checkbox">
+                                        <input type="checkbox" class="book__input" id="item1">
+                                        <label for="item1" class="book__input-label">Dinner</label>
+                                    </div>
+                                    <div class="book__quantity-container">
+                                        <button class="button book__button-reduce"><</button>
+                                        <p class="book__quantity">3</p>
+                                        <button class="button book__button-enlarge">></button>
+                                    </div>
+                                    <p class="book__price">€<span>20</span></p>
+                                    <img src="img/down.png" alt="open" width="10" height="6" class="book__down">
+                                </div>
+                                <div class="book__text-info-container">
+                                    <p class="book__text-info">Water, wine, coffee and midnight toast included.
+                                        From 11.15 p.m with toast flutes and a drink. Limited
+                                        number of entries.
+                                        From 11.15 p.m with toast flutes and a drink. Limited
+                                        number of entries.</p>
+                                </div>
+                            </div>
+                            <!-- конец одного элемента блока-->
+                            <!-- начало одного элемента блока-->
+                            <div class="book__calculate__item-container">
+                                <div class="book__calculate__button-container">
+                                    <div class="book__checkbox">
+                                        <input type="checkbox" class="book__input" id="item2">
+                                        <label for="item2" class="book__input-label">Woman entry </label>
+                                    </div>
+                                    <div class="book__quantity-container">
+                                        <button class="button book__button-reduce"><</button>
+                                        <p class="book__quantity">2</p>
+                                        <button class="button book__button-enlarge">></button>
+                                    </div>
+                                    <p class="book__price">€<span>20</span></p>
+                                    <img src="img/down.png" alt="open" width="10" height="6" class="book__down">
+                                </div>
+                                <div class="book__text-info-container ">
+                                    <p class="book__text-info">Water, wine, coffee and midnight toast included.
+                                        From 11.15 p.m with toast flutes and a drink. Limited
+                                        number of entries.
+                                        From 11.15 p.m with toast flutes and a drink. Limited
+                                        number of entries.</p>
+                                </div>
+                            </div>
+                            <!-- конец одного элемента блока-->
+                            <!-- начало одного элемента блока-->
+                            <div class="book__calculate__item-container">
+                                <div class="book__calculate__button-container">
+                                    <div class="book__checkbox">
+                                        <input type="checkbox" class="book__input" id="item3">
+                                        <label for="item3" class="book__input-label">Men entry</label>
+                                    </div>
+                                    <div class="book__quantity-container">
+                                        <button class="button book__button-reduce"><</button>
+                                        <p class="book__quantity">2</p>
+                                        <button class="button book__button-enlarge">></button>
+                                    </div>
+                                    <p class="book__price">€<span>20</span></p>
+                                    <img src="img/down.png" alt="open" width="10" height="6" class="book__down">
+                                </div>
+                                <div class="book__text-info-container ">
+                                    <p class="book__text-info">Water, wine, coffee and midnight toast included.
+                                        From 11.15 p.m with toast flutes and a drink. Limited
+                                        number of entries.
+                                        From 11.15 p.m with toast flutes and a drink. Limited
+                                        number of entries.</p>
+                                </div>
+                            </div>
+                            <!-- конец одного элемента блока-->
+                        </div>
+                        <div class="book__calculate-button-container">
+                            <a href="#" class="button book__calculate-button">book now</a>
+                            <p class="book__total-container">Total: <span class="book__total">600</span><sup>€</sup></p>
+                        </div>
+                        <div class="book__socials">
+                            <p class="book__social-text">Share:</p>
+                            <a href="#" class="book__social-link">
+                                <img src="img/facebook.svg" alt="facebook" width="20" height="12">
+                            </a>
+                            <a href="#" class="book__social-link book__social-link--t">
+                                <img src="img/media.svg" alt="twitter" width="20" height="23">
+                            </a>
+                            <a href="#" class="book__social-link book__social-link--google">
+                                <img src="img/google-plus.svg" alt="google" width="5" height="12">
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!--конец блока book--->
+            <!--начало блока description--->
+            <section class="description">
+                <!--начало блока заголовка на моб версии--->
+                <div class="description__caption-mobile">
+                    <p class="description__capadanno">capodanno 2019</p>
+                    <h2 class="description__caption">Serendepico - centro<br> Piazza Castello</h2>
+                </div>
+                <!--конец блока заголовка на моб версии--->
+                <div class="description__container">
+                    <div class="description__container-text">
+                        <p class="description__capadanno">capodanno 2019</p>
+                        <h2 class="description__caption">Serendepico - centro<br> Piazza Castello</h2>
+                        <p class="description__content">Celebrate the end of the year in the magnificent Villa
+                            Castelbarco in Vaprio d’Adda region, in close proximity to Milan!</p>
+                        <p class="description__content">Castelbarco Villa was built in the 18th century and is a popular
+                            choice for New Year’s Eve in Milan, for an evening of luxury in a historic location, with a
+                            wonderful gala dinner and entertainment until the early hours of the next day.</p>
+                        <p class="description__content">A refined menu is proposed. All dishes are prepared with the
+                            finest ingredients. Only the best quality meats and fresh fish are served with the finest
+                            seasonal vegetables. An excellent wine list is proposed with a wide variety of wines and
+                            Champagne to perfectly pair with every dish.</p>
+                        <p class="description__content">Guests can choose to spend the night at Villa Castelbarco’s 4
+                            star hotel. All rooms are comfortable and fully equipped.</p>
+                    </div>
+                    <img src="img/description_main_photo.jpeg" alt="description" width="456" height="556"
+                         class="description__content-img">
+                </div>
+                <div class="description__container-img">
+                    <img src="img/decription__small.jpeg" alt="description" width="280" height="183">
+                </div>
+            </section>
+            <!--конец блока description--->
+            <!--начало блока details--->
+            <section class="details">
+                <div class="details__container">
+                    <!--начало блока заголовка на моб версии--->
+                    <div class="details__caption__mobile">
+                        <p class="description__capadanno">capodanno 2019</p>
+                        <h2 class="description__caption">Serendepico - centro<br> Piazza Castello</h2>
+                    </div>
+                    <!--конец блока заголовка на моб версии--->
+                    <img src="img/details.jpg" alt="girl" width="404" height="554" class="details__img">
+                    <div class="details__container-content">
+                        <p class="description__capadanno">capodanno 2019</p>
+                        <h2 class="description__caption">Serendepico - centro<br> Piazza Castello</h2>
+                        <div class="description__block1">
+                            <p class="description__content"><span>DJ set:</span> srevival, happy music, commercial
+                                house.</p>
+                            <p class="description__content"><span>Beginning of the event:</span> dinner will start at
+                                8pm and just after the count down the dances will last until late at night</p>
+                            <p class="description__content"><span>Dress code of the evening:</span> red passion.</p>
+                        </div>
+                        <div class="description__special">
+                            <h3 class="description__special-caption">Special guest</h3>
+                            <p class="description__content"><span>Franchesca Musnicki:</span> a violin teacher of
+                                classical
+                                training, uses only hand-made electric violins from
+                                unique luthiers of their kind.</p>
+                            <p class="description__content"><span> Dj Herba:</span> will perform in the evening, one of
+                                the most beloved hip hop on the Italian scene and
+                                beyond. Dj Herca is often the exclusive guest of
+                                the most popular hip hop clubs of European
+                                capitals. With great success is also the creator
+                                of the evening "XXL HipHop Finest in Formentera"</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--конец блока details--->
+            <!--начало блока menu--->
+            <section class="menu">
+                <div class="menu__container">
+                    <div class="menu__content-container">
+                        <!--начало блока заголовка на моб версии--->
+                        <h2 class="menu__caption">New Year’s Eve Menu 2019</h2>
+                        <!--конец блока заголовка на моб версии--->
+                        <!--начало самого меню-->
+                        <div class="menu__container-menu">
+                            <h3 class="menu__name">Tris di antipasti</h3>
+                            <!--начало блока с блюдами-->
+                            <div class="menu__items">
+                                <!--начало блока блюда-->
+                                <div class="menu__item">
+                                    <div class="menu__item-container-img">
+                                        <img src="img/photo-menu1.jpeg" alt="Tartare di salmone marinato allo zenzero e
+                                            agrumi di Sicilia" width="116" height="87">
+                                    </div>
+                                    <div class="menu__item-container-text">
+                                        <h4 class="menu__item-caption">Tartare di salmone marinato allo zenzero e
+                                            agrumi di Sicilia</h4>
+                                        <p class="menu__item-main-info">Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit, sed do ei usmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                                <!--начало блока блюда-->
+                                <!--начало блока блюда-->
+                                <div class="menu__item">
+                                    <div class="menu__item-container-img">
+                                        <img src="img/photo-menu2.jpeg" alt="Tartare di salmone marinato allo zenzero e
+                                            agrumi di Sicilia" width="115" height="87">
+                                    </div>
+                                    <div class="menu__item-container-text">
+                                        <h4 class="menu__item-caption">Cappasanta gratinata alla mediterranea</h4>
+                                        <p class="menu__item-main-info">Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit, sed do ei usmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                                <!--начало блока блюда-->
+                                <!--начало блока блюда-->
+                                <div class="menu__item">
+                                    <div class="menu__item-container-img">
+                                        <img src="img/photo-menu1.jpeg" alt="Tartare di salmone marinato allo zenzero e
+                                            agrumi di Sicilia" width="116" height="87">
+                                    </div>
+                                    <div class="menu__item-container-text">
+                                        <h4 class="menu__item-caption">Tartare di salmone marinato allo zenzero e
+                                            agrumi di Sicilia</h4>
+                                        <p class="menu__item-main-info">Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit, sed do ei usmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                                <!--начало блока блюда-->
+                                <!--начало блока блюда-->
+                                <div class="menu__item">
+                                    <div class="menu__item-container-img">
+                                        <img src="img/photo-menu2.jpeg" alt="Tartare di salmone marinato allo zenzero e
+                                            agrumi di Sicilia" width="115" height="87">
+                                    </div>
+                                    <div class="menu__item-container-text">
+                                        <h4 class="menu__item-caption">Sformatino di baccalà su purea di patate alla
+                                            vaniglia</h4>
+                                        <p class="menu__item-main-info">Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit, sed do ei usmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                                <!--начало блока блюда-->
+                            </div>
+                            <!--конец блока с блюдами-->
+                            <a href="#" class="menu__linkAll">Show All Menu</a>
+                        </div>
+                        <!--конец самого меню-->
+                    </div>
+                    <img src="img/rest2.png" alt='restaurant' width="257" height="432" class="menu__img">
+                    <h2 class=" menu__caption-mobile">New Year’s Eve Menu 2019</h2>
+                </div>
+            </section>
+            <!--конец блока menu--->
+        </div>
+        <!--конец контейнера с контентом--->
+    </div>
+    <!--конец главного блока с табами-->
+</main>
+<!--начало футера-->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__contact-container">
+            <div class="footer__phone-container">
+                <p class="footer-label">Phone:</p>
+                <a href="tel:393487890777" class="contact-link">+393487890777</a>
+            </div>
+            <div class="footer__phone-container">
+                <p class="footer-label">Whatsapp:</p>
+                <a href="https://wa.me/393487890777" class="contact-link" target="_blank">+393487890777</a>
+            </div>
+            <div class="footer__phone-container">
+                <p class="footer-label">E-mail:</p>
+                <a href="mailto:capodanno@gmail.com" class="contact-link">capodanno@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer__card-container">
+            <img src="img/mastercard.png" alt="mastercard" width="57" height="37">
+            <img src="img/visa-pay-logo.png" alt="mastercard" width="57" height="37">
+            <img src="img/paypal-logo-in-rectangular-black-card.png" alt="mastercard" width="57" height="37">
+        </div>
+    </div>
+    <div class="footer__container footer__container-row2">
+        <div class="footer__social-container">
+            <p class="footer-label">Social:</p>
+            <div class="footer__social-links">
+                <a href="#" target="_blank" class="footer__social-link">Facebook</a>
+                <a href="#" target="_blank" class="footer__social-link">Instagram</a>
+            </div>
+        </div>
+        <form class="footer__form">
+            <h3 class="footer__form-caption">Subscribe to the newsletter and be aware of all events</h3>
+            <div class="footer__form-input-container">
+                <input type="email" name="email" placeholder="Enter your email" required class="footer__form-email">
+                <button type="submit" class="footer__button">subscribe</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer__container-row3">
+        <p class="footer__year">2018 - 2019 © “CAPODANNOAMILANO”</p>
+        <div class="footer__cookies-container">
+            <a href="#" class="footer__cookies" target="_blank">Cookies</a>
+            <a href="#" class="footer__privacy" target="_blank">Privacy</a>
+        </div>
+        <a href="#" class="footer__BJG" target="_blank">by <span>BlackJamGroup</span></a>
+    </div>
+    <!--начало блока с картинкой показвающая успешна отправка или нет-->
+    <section class="success__form success__form--disabled">
+        <img src="img/succes.svg" alt="Успешно">
+        <p class="success___form--text"></p>
+    </section>
+    <!--конец блока с картинкой показвающая успешна отправка или нет-->
+</footer>
+<!--конец футера-->
+<script src="js/scripts.min.js"></script>
+</body>
+</html>

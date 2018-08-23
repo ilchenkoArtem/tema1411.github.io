@@ -6,7 +6,12 @@ a {
   overflow: hidden;
 }
 
-
+.button {
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
 /*
 
 
