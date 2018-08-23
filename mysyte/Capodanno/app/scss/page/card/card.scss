@@ -65,6 +65,7 @@
 
   .card__tabs-container {
     flex-direction: row;
+    justify-content: space-between;
     height: auto;
     max-width: none;
     width: 100%;
@@ -77,18 +78,19 @@
   }
 
   .card_tab {
-    width: 25%;
     text-align: center;
     margin-bottom: 0;
-    padding: 10px 0;
+    padding: 10px 5px;
     transition: 0.3s all ease;
+    box-sizing: border-box;
+    border-bottom: none;
     &:not(:last-of-type) {
       margin-bottom: 0;
     }
     &--active {
       background-color: black;
       color: #FFFFFF;
-      padding: 10px 0;
+      padding: 10px 5px;
     }
   }
 
@@ -102,6 +104,6 @@
 
 @media (max-width: 576px) {
   .card__tabs-container {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }

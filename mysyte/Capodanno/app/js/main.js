@@ -424,19 +424,27 @@ if (card) {
     });
 
     //Открытие выпадающего текста в book
+    function closeAreOpenText(event, param, block) {
+        var eventTagName = event.target.tagName;
+        if (eventTagName == param) {
+            var text = block.querySelector('.book__text-info-container');
+            var downImg = block.querySelector('.book__down');
+            text.classList.toggle('book__text-info-container--active');
+            downImg.classList.toggle('book__down--upp')
+        }
+    }
     var bookCalculateButtonContainer = document.querySelectorAll('.book__calculate__item-container');
     bookCalculateButtonContainer.forEach(function (item) {
-        var bookCheckboxElements = item.querySelector('.book__checkbox');
-        bookCheckboxElements.addEventListener('click', function (event) {
-            var eventTagName = event.target.tagName;
-            if (eventTagName == 'LABEL') {
-                var text = item.querySelector('.book__text-info-container');
-                var downImg = item.querySelector('.book__down');
-                text.classList.toggle('book__text-info-container--active');
-                downImg.classList.toggle('book__down--upp')
-            }
+    item.addEventListener('click', function (event) {
+        closeAreOpenText(event,'IMG', item);
         })
     });
+/*    bookCalculateButtonContainer.forEach(function (item) {
+        var bookCheckboxElements = item.querySelector('.book__checkbox');
+        bookCheckboxElements.addEventListener('click', function (event) {
+            closeAreOpenText(event,'LABEL', item);
+        })
+    });*/
 
     //Подсчёт суммы
     var bookQuantityElements = document.querySelectorAll('.book__quantity');
@@ -445,6 +453,7 @@ if (card) {
 
     var bookTotalElement = document.querySelector('.book__total');
 
+//функция считает общуюю сумму
     function summPrice() {
         var prices = [];
         var quantity = [];
@@ -470,25 +479,30 @@ if (card) {
 
     //////////////
     var quantityContainer = document.querySelectorAll('.book__quantity-container');
+    //функция прибавляет и уменьшает число товара
     quantityContainer.forEach(function (item) {
         var buttonMinus = item.querySelector('.book__button-reduce');
         var buttonPlus = item.querySelector('.book__button-enlarge');
         var quantity = item.querySelector('.book__quantity');
         var quantityCurrent = quantity.textContent;
         console.log(quantityCurrent);
-        buttonMinus.addEventListener('click', function () {
+
+        function plus() {
+            quantityCurrent = Number(quantityCurrent) + 1;
+            quantity.textContent = quantityCurrent;
+            summPrice()
+        }
+
+        function minus() {
             if (quantityCurrent !== 0) {
                 quantityCurrent = quantityCurrent - 1;
                 quantity.textContent = quantityCurrent;
                 summPrice()
             }
-        });
-        buttonPlus.addEventListener('click', function () {
-            quantityCurrent = Number(quantityCurrent) + 1;
-            quantity.textContent = quantityCurrent;
-            summPrice()
+        }
 
-        })
+        buttonMinus.addEventListener('click', minus);
+        buttonPlus.addEventListener('click', plus);
     })
 }
 

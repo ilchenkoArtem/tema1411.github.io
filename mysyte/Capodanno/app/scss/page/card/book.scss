@@ -297,6 +297,7 @@
 }
 
 .book__down {
+  cursor: pointer;
   transition: 0.3s all ease;
   &--upp {
     transform: rotate(180deg);
