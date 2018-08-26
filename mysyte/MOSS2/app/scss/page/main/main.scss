@@ -55,6 +55,7 @@
 .about-index__main-text {
   font-family: 'AvenirBook', serif;
   font-size: 30px;
+  margin-bottom: 100px;
 }
 
 .philosophy-index__h2 {
@@ -75,7 +76,9 @@
     color: red;
   }
 }
-
+.philosophy-index {
+  margin-bottom: 100px;
+}
 @media (max-width: 1200px) {
   .about-index,
   .philosophy-index {

@@ -13,9 +13,7 @@ var gulp = require('gulp'),
     sizereport = require('gulp-sizereport'),
     rsync = require('gulp-rsync'),
     webp = require('gulp-webp'),
-    imagemin = require('gulp-tinypng'),
-    svgmin = require('gulp-svgmin'),
-    imageop = require('gulp-image-optimization');
+    imagemin = require('gulp-imagemin');
 
 gulp.task("serve", ["styles"], function () {
     browserSync.init({
@@ -43,6 +41,7 @@ gulp.task('js', function () {
     gulp.src([
 
         'app/libs/jquery/dist/jquery.min.js',
+
         'app/js/main.js' // Always at the end
     ])
         .pipe(concat('scripts.min.js'))
@@ -71,13 +70,16 @@ gulp.task('watch', ['styles', 'js', 'serve'], function () {
     gulp.watch('app/' + syntax + '/**/*.' + syntax + '', ['styles']);
     gulp.watch(['libs/**/*.js', 'app/js/main.js'], ['js']);
     gulp.watch('app/*.html', browserSync.reload)
+    gulp.watch('img/*', ['img']);
 });
 
 gulp.task('default', ['watch']);
 
 gulp.task('webp', function () {
     gulp.src('app/img/*.{jpeg,jpg,png}')
-        .pipe(sizereport())
+        .pipe(sizereport({
+            progressive: true
+        }))
         .pipe(webp({
             quality: 90
         }))
@@ -85,29 +87,8 @@ gulp.task('webp', function () {
         .pipe(gulp.dest('app/img'))
 });
 
-gulp.task('tinypng', function () {
-    gulp.src('app/img/*.{png,jpg,jpeg}')
-        .pipe(sizereport())
-        .pipe(imagemin('u4HyNez6ZyoLjUt5o7dF_fAV0p4ptczJ'))
-        .pipe(sizereport())
+gulp.task('img', function() {
+    gulp.src('app/img/*')
+        .pipe(imagemin())
         .pipe(gulp.dest('app/img'))
-
-});
-
-gulp.task('svgm', function () {
-    return gulp.src('app/img/*.svg')
-        .pipe(sizereport())
-        .pipe(svgmin())
-        .pipe(sizereport())
-        .pipe(gulp.dest('source/img'));
-});
-
-gulp.task('images', function (cb) {
-    gulp.src(['app/**/*.png', 'app/**/*.jpg', 'app/**/*.gif', 'app/**/*.jpeg'])
-        .pipe(imageop({
-            optimizationLevel: 5,
-            progressive: true,
-            interlaced: true
-        }))
-        .pipe(gulp.dest('app/img')).on('end', cb).on('error', cb);
 });
