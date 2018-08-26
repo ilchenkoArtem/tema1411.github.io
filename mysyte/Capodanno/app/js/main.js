@@ -199,6 +199,10 @@ document.onscroll = function () {
         headerMainContainerElement.classList.remove('header__main-container--bg-white');
     }
 };
+//добавлятн черное менб кода меню открыто и скролят к верзу документа
+function addBlackColorTextToScrollMenu() {
+    headerContainer.classList.add('header__container--black');
+}
 
 // фукция активации меню
 function activeMenu() {
@@ -207,6 +211,8 @@ function activeMenu() {
     burgerElement.removeEventListener('click', activeMenu);
     burgerElement.addEventListener('click', noActiveMenu);
     burgerIconElement.classList.add('header__burger-ico--active');
+    document.addEventListener("touchmove", addBlackColorTextToScrollMenu, {passive: false});
+    document.addEventListener("scroll", addBlackColorTextToScrollMenu);
     body.classList.add('body--overflow');
     mainNavElements.forEach(function (item) {
         item.addEventListener('click', noActiveMenu);
@@ -214,12 +220,15 @@ function activeMenu() {
 
 }
 
+
 // функция скрытия меню
 function noActiveMenu() {
     var headerContainerBgWhite = document.querySelector('.header__main-container--bg-white');
     if (headerContainerBgWhite == null) {
         headerContainer.classList.remove('header__container--black');
     }
+    document.removeEventListener("touchmove", addBlackColorTextToScrollMenu, {passive: false});
+    document.removeEventListener("scroll", addBlackColorTextToScrollMenu);
     body.classList.remove('body--overflow');
     burgerIconElement.classList.remove('header__burger-ico--active');
     mainNavElement.classList.remove('header__main-nav--active');
@@ -433,18 +442,19 @@ if (card) {
             downImg.classList.toggle('book__down--upp')
         }
     }
+
     var bookCalculateButtonContainer = document.querySelectorAll('.book__calculate__item-container');
     bookCalculateButtonContainer.forEach(function (item) {
-    item.addEventListener('click', function (event) {
-        closeAreOpenText(event,'IMG', item);
+        item.addEventListener('click', function (event) {
+            closeAreOpenText(event, 'IMG', item);
         })
     });
-/*    bookCalculateButtonContainer.forEach(function (item) {
-        var bookCheckboxElements = item.querySelector('.book__checkbox');
-        bookCheckboxElements.addEventListener('click', function (event) {
-            closeAreOpenText(event,'LABEL', item);
-        })
-    });*/
+    /*    bookCalculateButtonContainer.forEach(function (item) {
+            var bookCheckboxElements = item.querySelector('.book__checkbox');
+            bookCheckboxElements.addEventListener('click', function (event) {
+                closeAreOpenText(event,'LABEL', item);
+            })
+        });*/
 
     //Подсчёт суммы
     var bookQuantityElements = document.querySelectorAll('.book__quantity');
