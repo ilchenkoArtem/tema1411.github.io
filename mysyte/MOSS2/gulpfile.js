@@ -14,7 +14,8 @@ var gulp = require('gulp'),
     rsync = require('gulp-rsync'),
     webp = require('gulp-webp'),
     imagemin = require('gulp-tinypng'),
-    svgmin = require('gulp-svgmin');
+    svgmin = require('gulp-svgmin'),
+    imageop = require('gulp-image-optimization');
 
 gulp.task("serve", ["styles"], function () {
     browserSync.init({
@@ -99,4 +100,14 @@ gulp.task('svgm', function () {
         .pipe(svgmin())
         .pipe(sizereport())
         .pipe(gulp.dest('source/img'));
+});
+
+gulp.task('images', function (cb) {
+    gulp.src(['app/**/*.png', 'app/**/*.jpg', 'app/**/*.gif', 'app/**/*.jpeg'])
+        .pipe(imageop({
+            optimizationLevel: 5,
+            progressive: true,
+            interlaced: true
+        }))
+        .pipe(gulp.dest('app/img')).on('end', cb).on('error', cb);
 });
