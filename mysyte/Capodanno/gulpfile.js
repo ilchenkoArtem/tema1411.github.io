@@ -91,5 +91,5 @@ gulp.task('tinypng', function () {
         .pipe(imagemin('u4HyNez6ZyoLjUt5o7dF_fAV0p4ptczJ'))
         .pipe(sizereport())
         .pipe(gulp.dest('app/img'))
-
 });
+

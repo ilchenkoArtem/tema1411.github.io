@@ -89,11 +89,6 @@ if (videoPopup) {
     var bodyElement = $('body');
     var videoSettings = [
         {
-            src: 'video/main_video.mp4',
-            widthVideo: '80vw',
-            heightVideo: 'auto'
-        },
-        {
             src: 'video/video_block1.mp4',
             widthVideo: 'auto',
             heightVideo: '80vh'

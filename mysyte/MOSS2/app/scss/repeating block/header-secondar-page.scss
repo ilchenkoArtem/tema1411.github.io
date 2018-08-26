@@ -52,6 +52,9 @@
     margin-top: 40px;
     margin-bottom: 40px;
     line-height: 80px;
+    &::after {
+      height: 3px;
+    }
   }
 }
 @media (max-width: 450px) {

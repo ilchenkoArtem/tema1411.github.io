@@ -92,3 +92,11 @@ gulp.task('tinypng', function () {
         .pipe(gulp.dest('app/img'))
 
 });
+
+gulp.task('svgm', function () {
+    return gulp.src('app/img/*.svg')
+        .pipe(sizereport())
+        .pipe(svgmin())
+        .pipe(sizereport())
+        .pipe(gulp.dest('source/img'));
+});
