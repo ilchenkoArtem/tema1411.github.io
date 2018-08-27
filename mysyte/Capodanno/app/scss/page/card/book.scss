@@ -189,6 +189,7 @@
   display: block;
   font-size: 14px;
   margin-top: 5px;
+  margin-bottom: 0;
   span {
     font-family: "Montserrat-ExtraBold";
     color: #e9013c;
@@ -290,9 +291,8 @@
 }
 
 .book__calculate__item-container {
-  &:not(:first-of-type) {
-    padding-top: 20px;
-  }
+  position: relative;
+  padding-top: 20px;
 }
 
 .book__down {
@@ -319,6 +319,7 @@
   align-items: center;
   margin-top: 25px;
   justify-content: space-between;
+
 }
 
 .book__calculate-button {
@@ -399,6 +400,20 @@
 .book__down {
   margin: auto;
 }
+
+.book__button-focus:focus {
+  &::after {
+    content: 'для выбора активируйте элемент нажав на название слева';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e9013c;
+    color: white;
+    font-size: 9px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 1439px) {
   .book__container-element {
     align-items: center;

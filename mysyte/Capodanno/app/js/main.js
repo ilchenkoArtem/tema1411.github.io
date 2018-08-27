@@ -465,18 +465,25 @@ if (card) {
         var inputElement = item.querySelector('.book__input');
         var quantity = item.querySelector('.book__quantity');
         var quantityCurrent = quantity.textContent;
+        var button = item.querySelectorAll('.button');
         var buttonMinus = item.querySelector('.book__button-reduce');
         var buttonPlus = item.querySelector('.book__button-enlarge');
         //логика калькулятора
         inputElement.addEventListener('click', function () {
-            if(!inputElement.checked) {
+            if (!inputElement.checked) {
+                /*   button.addClass('book__button-focus');*/
+                button.forEach(function (item) {
+                    item.classList.add('book__button-focus');
+
+                })
                 quantity.textContent = 0;
                 quantityCurrent = 0;
                 summPrice();
             }
         });
+
         function plus() {
-            if(!inputElement.checked) return;
+            if (!inputElement.checked) return;
             quantityCurrent = Number(quantityCurrent) + 1;
             quantity.textContent = quantityCurrent;
             summPrice()
@@ -484,13 +491,28 @@ if (card) {
         }
 
         function minus() {
-            if(!inputElement.checked) return;
+            if (!inputElement.checked) return;
             if (quantityCurrent > 0) {
                 quantityCurrent = quantityCurrent - 1;
                 quantity.textContent = quantityCurrent;
                 summPrice()
             }
         }
+
+        inputElement.addEventListener('input', function () {
+            if (!inputElement.checked) {
+                button.forEach(function (item) {
+                    item.classList.add('book__button-focus');
+
+                })
+            } else {
+                button.forEach(function (item) {
+                    item.classList.remove('book__button-focus');
+                })
+            }
+        });
+
+
         buttonMinus.addEventListener('click', minus);
         buttonPlus.addEventListener('click', plus);
 
@@ -510,6 +532,7 @@ if (card) {
     var bookQuantityElements = document.querySelectorAll('.book__quantity');
     var bookPriceElemenets = document.querySelectorAll('.book__price span');
     var bookTotalElement = document.querySelector('.book__total');
+
     //функция считает общуюю сумму
     function summPrice() {
         var prices = [];
