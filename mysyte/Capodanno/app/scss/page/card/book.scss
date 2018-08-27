@@ -403,7 +403,7 @@
 
 .book__button-focus:focus {
   &::after {
-    content: 'для выбора активируйте элемент нажав на название слева';
+    content: attr(data-title);
     position: absolute;
     top: 0;
     right: 0;
