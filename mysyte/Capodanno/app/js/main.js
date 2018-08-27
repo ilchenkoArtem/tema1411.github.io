@@ -1,4 +1,4 @@
-var windowWidth;
+window.windowWidth;
 var body = document.querySelector('body');
 var index = document.querySelector('.index');
 var about = document.querySelector('.about');
@@ -44,13 +44,7 @@ function deleteBodyOverflow() {
 
 //запуск обработчика ширина экрана при загрузке страницы
 windowSize();
-//обрабочтик резайза страницы
-window.addEventListener('resize', function () {
-    heightTopHeader();
-    windowSize();
-    toggleClassColorTextHeader();
-    deleteBodyOverflow()
-});
+
 //инициализайия СЛАЙДЕРОВ категорий НА ГЛАВНОЙ
 
 //функция определяет колличество слаайдов в каждом блоке и заносит в массив
@@ -556,5 +550,26 @@ if (card) {
     }
 
     summPrice();
+
+    //кастомный скролл в калькуляторе
+    window.CustomScrollbar = function  () {
+        if(windowWidth > 901) {
+            $(".book__calculate").mCustomScrollbar({
+                theme: "dark"
+            })
+        }else {
+            $('.book__calculate').mCustomScrollbar("destroy")
+        }
+    };
+    CustomScrollbar()
 }
+
+//обрабочтик резайза страницы
+window.addEventListener('resize', function () {
+    heightTopHeader();
+    windowSize();
+    toggleClassColorTextHeader();
+    deleteBodyOverflow();
+    CustomScrollbar();
+});
 
