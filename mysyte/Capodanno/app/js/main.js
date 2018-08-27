@@ -462,20 +462,31 @@ if (card) {
         var button = item.querySelectorAll('.button');
         var buttonMinus = item.querySelector('.book__button-reduce');
         var buttonPlus = item.querySelector('.book__button-enlarge');
+        var bookCalculateHint = item.querySelector('.book__calculate-hint')
         //логика калькулятора
+        function visabilityHint() {
+            bookCalculateHint.classList.add('book__calculate-hint--active');
+            setTimeout(function () {
+                bookCalculateHint.classList.remove('book__calculate-hint--active')
+            }, 10000)
+        }
+        button.forEach(function (item) {
+            item.addEventListener('click', visabilityHint)
+        });
         inputElement.addEventListener('click', function () {
             if (!inputElement.checked) {
                 /*   button.addClass('book__button-focus');*/
                 button.forEach(function (item) {
-                    item.classList.add('book__button-focus');
-                })
+                   item.addEventListener('click', visabilityHint)
+                });
                 quantity.textContent = 0;
                 quantityCurrent = 0;
                 summPrice();
             }else {
+                bookCalculateHint.classList.remove('book__calculate-hint--active');
                 button.forEach(function (item) {
-                    item.classList.remove('book__button-focus');
-                })
+                    item.removeEventListener('click', visabilityHint)
+                });
             }
 
         });

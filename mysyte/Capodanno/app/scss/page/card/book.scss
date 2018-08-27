@@ -401,18 +401,22 @@
   margin: auto;
 }
 
-.book__button-focus:focus {
-  &::after {
-    content: attr(data-title);
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #e9013c;
-    color: white;
-    font-size: 9px;
-    width: 100%;
+.book__calculate-hint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 9px;
+  background-color: #e9013c;
+  color: white;
+  margin: 0;
+  text-align: center;
+  display: none;
+  &--active {
+    display: block;
   }
 }
+
 
 @media (max-width: 1439px) {
   .book__container-element {
