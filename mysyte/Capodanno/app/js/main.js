@@ -468,12 +468,16 @@ if (card) {
                 /*   button.addClass('book__button-focus');*/
                 button.forEach(function (item) {
                     item.classList.add('book__button-focus');
-
                 })
                 quantity.textContent = 0;
                 quantityCurrent = 0;
                 summPrice();
+            }else {
+                button.forEach(function (item) {
+                    item.classList.remove('book__button-focus');
+                })
             }
+
         });
 
         function plus() {
@@ -493,7 +497,7 @@ if (card) {
             }
         }
 
-        inputElement.addEventListener('input', function () {
+/*        inputElement.addEventListener('input', function () {
             if (!inputElement.checked) {
                 button.forEach(function (item) {
                     item.classList.add('book__button-focus');
@@ -504,7 +508,7 @@ if (card) {
                     item.classList.remove('book__button-focus');
                 })
             }
-        });
+        });*/
 
 
         buttonMinus.addEventListener('click', minus);
