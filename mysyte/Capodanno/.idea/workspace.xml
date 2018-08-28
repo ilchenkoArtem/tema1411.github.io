@@ -17,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8077945">
+    <splitter split-orientation="horizontal" split-proportion="0.4707792">
       <split-first>
         <leaf>
           <file leaf-file-name="fonts.scss" pinned="false" current-in-tab="false">
@@ -30,7 +30,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="card.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="card.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/card.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="308">
@@ -129,10 +129,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
+                <state relative-caret-position="-13735">
                   <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
                   <folding>
                     <element signature="n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -172,7 +172,7 @@
             <entry file="file://$PROJECT_DIR$/app/scss/page/catalog/catalog__filter.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="406">
-                  <caret line="115" column="20" lean-forward="false" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
+                  <caret line="130" column="20" lean-forward="true" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -281,10 +281,10 @@
         <option value="$PROJECT_DIR$/app/scss/page/catalog/global.scss" />
         <option value="$PROJECT_DIR$/app/scss/page/catalog/catalog__pages.scss" />
         <option value="$PROJECT_DIR$/app/scss/page/catalog/catalog__product.scss" />
-        <option value="$PROJECT_DIR$/app/scss/page/catalog/catalog__filter.scss" />
         <option value="$PROJECT_DIR$/app/catalog.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/card.html" />
+        <option value="$PROJECT_DIR$/app/scss/page/catalog/catalog__filter.scss" />
       </list>
     </option>
   </component>
@@ -430,12 +430,12 @@
       <workItem from="1535253084076" duration="4070000" />
       <workItem from="1535289439545" duration="687000" />
       <workItem from="1535290920886" duration="246000" />
-      <workItem from="1535311228062" duration="62619000" />
+      <workItem from="1535311228062" duration="62915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325363000" />
+    <option name="totallyTimeSpent" value="325659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -762,14 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="38" lean-forward="true" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -834,14 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/page/catalog/catalog__filter.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/catalog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
@@ -872,19 +856,6 @@
             <element signature="n#div#0;n#form#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#2;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding>
-            <element signature="n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#section#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -937,6 +908,35 @@
             <element signature="n#div#0;n#div#2;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="38" lean-forward="true" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13735">
+          <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding>
+            <element signature="n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#section#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/page/catalog/catalog__filter.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="130" column="20" lean-forward="true" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
