@@ -462,27 +462,28 @@ if (card) {
         var button = item.querySelectorAll('.button');
         var buttonMinus = item.querySelector('.book__button-reduce');
         var buttonPlus = item.querySelector('.book__button-enlarge');
-        var bookCalculateHint = item.querySelector('.book__calculate-hint')
+        var bookCalculateHint = item.querySelector('.book__calculate-hint');
         //логика калькулятора
+        //функция показывает скрывает подсказку
         function visabilityHint() {
             bookCalculateHint.classList.add('book__calculate-hint--active');
             setTimeout(function () {
                 bookCalculateHint.classList.remove('book__calculate-hint--active')
             }, 10000)
         }
+
         button.forEach(function (item) {
             item.addEventListener('click', visabilityHint)
         });
         inputElement.addEventListener('click', function () {
             if (!inputElement.checked) {
-                /*   button.addClass('book__button-focus');*/
                 button.forEach(function (item) {
-                   item.addEventListener('click', visabilityHint)
+                    item.addEventListener('click', visabilityHint)
                 });
                 quantity.textContent = 0;
                 quantityCurrent = 0;
                 summPrice();
-            }else {
+            } else {
                 bookCalculateHint.classList.remove('book__calculate-hint--active');
                 button.forEach(function (item) {
                     item.removeEventListener('click', visabilityHint)
@@ -507,20 +508,6 @@ if (card) {
                 summPrice()
             }
         }
-
-/*        inputElement.addEventListener('input', function () {
-            if (!inputElement.checked) {
-                button.forEach(function (item) {
-                    item.classList.add('book__button-focus');
-
-                })
-            } else {
-                button.forEach(function (item) {
-                    item.classList.remove('book__button-focus');
-                })
-            }
-        });*/
-
 
         buttonMinus.addEventListener('click', minus);
         buttonPlus.addEventListener('click', plus);
@@ -567,24 +554,40 @@ if (card) {
     summPrice();
 
     //кастомный скролл в калькуляторе
-    window.CustomScrollbar = function  () {
-        if(windowWidth > 901) {
+    window.CustomScrollbar = function () {
+        if (windowWidth > 901) {
             $(".book__calculate").mCustomScrollbar({
                 theme: "dark"
             })
-        }else {
+        } else {
             $('.book__calculate').mCustomScrollbar("destroy")
         }
     };
     CustomScrollbar()
 }
 
+var catalog = document.querySelector('.catalog');
+if (catalog) {
+    //открытие элементов фильтра каталог
+    var catalogFilterItemsContainer = catalog.querySelectorAll('.catalog__filter-items-container');
+    catalogFilterItemsContainer.forEach(function (item) {
+        var catalogFilterCaption = item.querySelector('.catalog__filter-caption')
+        var catalogFilterInputsContainer = item.querySelector('.catalog__filter-inputs-container');
+        catalogFilterCaption.addEventListener('click', function () {
+            catalogFilterInputsContainer.classList.toggle('catalog__filter-inputs-container--active')
+            this.classList.toggle('catalog__filter-caption--active')
+        })
+
+    })
+}
 //обрабочтик резайза страницы
 window.addEventListener('resize', function () {
     heightTopHeader();
     windowSize();
     toggleClassColorTextHeader();
     deleteBodyOverflow();
-    CustomScrollbar();
+    if (card) {
+        CustomScrollbar();
+    }
 });
 

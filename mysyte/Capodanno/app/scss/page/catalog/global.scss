@@ -1,0 +1,28 @@
+.catalog__container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1068px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.catalog {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding-top: 70px;
+  margin-top: -60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  .catalog {
+    padding:  70px 30px 0 30px;
+    width: 100%;
+  }
+  .catalog__container {
+    flex-direction: column;
+  }
+}
+

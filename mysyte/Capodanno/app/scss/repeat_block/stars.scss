@@ -1,0 +1,42 @@
+.stars-container {
+  display: block;
+  padding: 0;
+  margin: 0;
+  min-width: 100px;
+  &-1 {
+    .star:first-of-type {
+      background-image: url("../img/star_active.png");
+    }
+  }
+  &-2 {
+    .star:nth-child(-n + 2) {
+      background-image: url("../img/star_active.png");
+    }
+  }
+  &-3 {
+    .star:nth-child(-n + 3) {
+      background-image: url("../img/star_active.png");
+    }
+  }
+  &-4 {
+    .star:nth-child(-n + 4) {
+      background-image: url("../img/star_active.png");
+    }
+  }
+  &-5 {
+    .star:nth-child(-n + 5) {
+      background-image: url("../img/star_active.png");
+    }
+  }
+}
+
+.star {
+  float: left;
+  width: 15px;
+  height: 14px;
+  background-image: url("../img/star.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  list-style: none;
+  margin-right: 5px;
+}

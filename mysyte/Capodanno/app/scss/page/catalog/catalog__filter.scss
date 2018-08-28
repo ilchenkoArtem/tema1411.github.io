@@ -1,0 +1,136 @@
+.catalog__filter {
+  max-width: 163px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 33px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  margin-right: 40px;
+  background-color: white;
+}
+
+.catalog__filter-caption {
+  position: relative;
+  font-family: "Montserrat-Bold";
+  font-size: 16px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 5px;
+  cursor: pointer;
+  margin-bottom: 0;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 9px;
+    height: 5px;
+    transform: translateY(-50%);
+    background-image: url('../img/down.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: .6s all ease;
+  }
+  &--active {
+    &::after {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+}
+
+.catalog__label {
+  font-family: "Montserrat-Medium";
+  font-size: 12px;
+  padding-left: 18px;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    bottom: 5px;
+    width: 6px;
+    height: 6px;
+    box-sizing: border-box;
+    background-color: rgba(345, 99, 91, 0);
+    transition: 0.5s background-color ease;
+
+  }
+  &:hover::before {
+    background-color: rgba(345, 99, 91, 0.4);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+  }
+}
+
+.catalog__input {
+  display: none;
+  &:checked {
+    + .catalog__label::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      bottom: 5px;
+      width: 6px;
+      height: 6px;
+      box-sizing: border-box;
+      background-color: #e9013c;
+    }
+  }
+}
+
+.catalog__filter-inputs-container {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.5s all ease;
+  &--active {
+    position: static;
+    transform: scaleY(1);
+    clip: auto;
+    transition: 0.6s all ease;
+  }
+}
+
+@media (max-width: 991px) {
+  .catalog__filter-caption {
+    font-size: 14px;
+  }
+  .catalog__filter {
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .catalog__filter-inputs-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .catalog__label {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .catalog__filter-inputs-container {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .catalog__input {
+    font-size: 12px;
+  }
+  .catalog__label {
+    font-size: 10px;
+  }
+}
