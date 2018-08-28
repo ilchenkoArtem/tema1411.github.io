@@ -87,16 +87,15 @@
 }
 
 .catalog__filter-inputs-container {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  transform: scaleY(0);
+  height: 0;
   transform-origin: top;
-  transition: 0.5s all ease;
+  transform: scaleY(0);
+  transition: 0.6s all ease;
+  opacity: 0;
   &--active {
-    position: static;
+    opacity: 1;
+    height: calc(100% - 1px);
     transform: scaleY(1);
-    clip: auto;
-    transition: 0.6s all ease;
   }
 }
 
