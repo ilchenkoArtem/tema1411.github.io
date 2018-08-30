@@ -9,7 +9,7 @@ var heightHeaderContainerElement;
 var scrolledTop;
 
 function heightTopHeader() {
-    heightHeaderContainerElement = headerMainContainerElement.clientHeight;
+    heightHeaderContainerElement = headerMainContainerElement.clientHeight - 40;
     scrolledTop = window.pageYOffset || document.documentElement.scrollTop;
 }
 

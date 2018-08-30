@@ -23,6 +23,11 @@
 @import "page/catalog/catalog__pages";
 @import "page/contact/contact";
 @import "page/contact/contact__modal";
+@import "page/order/order";
+@import "page/order/order__steps-content";
+@import "page/order/step-events";
+@import "page/order/step-contact";
+@import "page/order/step-completion";
 @import "../libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
 @import "../libs/slick-carousel/slick/slick.scss";
 @import "../libs/slick-carousel/slick/slick-theme.scss";

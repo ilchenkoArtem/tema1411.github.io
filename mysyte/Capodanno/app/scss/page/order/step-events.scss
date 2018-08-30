@@ -1,0 +1,158 @@
+
+
+.step-event {
+  font-family: "Montserrat-Bold";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px;
+  padding-right: 0;
+  background-color: #f9f9f9;
+  &:nth-of-type(2n) {
+    background-color: white;
+  }
+}
+
+.step-events__container-block-caption {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+  padding: 0 20px;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+.step-events__block-caption {
+  font-size: 10px;
+  margin-bottom: 10px;
+  &--event {
+    padding-left: 28px;
+    box-sizing: border-box;
+    width: 40.262172284644194%;
+  }
+  &--total,
+  &--quantity,
+  &--price {
+    width: 11.142322097378278%;
+    text-align: center;
+  }
+  &--close {
+    width: 6.928838951310861%;
+  }
+}
+
+.step-event__container-main-info {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 40.262172284644194%;
+}
+
+.step-event__img {
+  object-fit: cover;
+  width: 87px;
+  height: 87px;
+}
+
+.step-event__container-name {
+  max-width: 326px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.step-event__name {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.step-event__type {
+  font-family: "Montserrat-Regular";
+  font-size: 10px;
+  color: #9d9d9d;
+  margin-top: 5px;
+}
+
+
+.step-event__price {
+  width: 11.142322097378278%;
+  text-align: center;
+  font-size: 14px;
+  min-width: 60px;
+  height: 20px;
+}
+
+
+.step-event__quantity-container {
+  width: 11.142322097378278%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: baseline;
+}
+
+.step-event__quantity {
+  font-size: 14px;
+  margin: 0;
+  height: 20px;
+}
+
+.step-event__button{
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  position: relative;
+  bottom: -4px;
+}
+.step-event__calculate-button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  justify-content: space-between;
+
+}
+.step-event__button{
+  &-enlarge {
+    img {
+      transform: rotate(-180deg);
+      margin-bottom: -1.075px;
+    }
+
+  }
+  img {
+    display: block;
+  }
+}
+.step-event__calculate-button {
+  color: #e9013c;
+  max-width: 167px;
+  width: 100%;
+  min-height: 33px;
+  display: block;
+  text-align: center;
+  line-height: 33px;
+  border: 1px solid #e9013c;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat-ExtraBold";
+  transition: 0.3s all ease;
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+}
+
+.step-event__total {
+  text-align: center;
+  margin: 0;
+  width: 11.142322097378278%;
+  font-size: 14px;
+}
+
+.step-event__delete-button {
+  width: 6.928838951310861%;
+  padding: 0;
+}
