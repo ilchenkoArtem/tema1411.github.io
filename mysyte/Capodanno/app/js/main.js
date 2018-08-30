@@ -276,83 +276,84 @@ var scrolling = function (links) {
 };
 scrolling('.main-block__scroll-down-container');
 ///////////////////////////////////////////////////
-var form = document.querySelector('form');
-if (form) {
-// Ajax send form
-    var SAVE_URL = '../mail.php';
-    var TIMEOUT_REQUEST = 10000;
-    var SUCCESS_CODE = 200;
-    var setupXHR = function (onLoad, onError) {
-        var xhr = new XMLHttpRequest();
-        xhr.responseType = 'json';
 
-        xhr.timeout = TIMEOUT_REQUEST;
+var SAVE_URL = 'https://httpstat.us/200';
+var TIMEOUT_REQUEST = 10000;
+var SUCCESS_CODE = 200;
+var setupXHR = function (onLoad, onError) {
+    var xhr = new XMLHttpRequest();
+    xhr.responseType = 'json';
 
-        xhr.addEventListener('load', function () {
-            var errorText;
-            if (xhr.status === SUCCESS_CODE) {
-                onLoad(xhr.response);
-            } else {
-                errorText = 'Cтатус ответа:' + xhr.status + ' ' + xhr.statusText;
-                onError(errorText);
-            }
-        });
+    xhr.timeout = TIMEOUT_REQUEST;
 
-        xhr.addEventListener('error', function () {
-            onError('Cтатус ответа:' + xhr.status + ' ' + xhr.statusText);
-        });
+    xhr.addEventListener('load', function () {
+        var errorText;
+        if (xhr.status === SUCCESS_CODE) {
+            onLoad(xhr.response);
+        } else {
+            errorText = 'Cтатус ответа:' + xhr.status + ' ' + xhr.statusText;
+            onError(errorText);
+        }
+    });
 
-        xhr.addEventListener('timeout', function () {
-            onError('Запрос не успел выполниться за ' + xhr.timeout + 'мс');
-        });
+    xhr.addEventListener('error', function () {
+        onError('Cтатус ответа:' + xhr.status + ' ' + xhr.statusText);
+    });
 
-        return xhr;
-    };
+    xhr.addEventListener('timeout', function () {
+        onError('Запрос не успел выполниться за ' + xhr.timeout + 'мс');
+    });
 
-    var loadData = function (onLoad, onError) {
-        var xhr = setupXHR(onLoad, onError);
-        xhr.open('GET', LOAD_URL);
-        xhr.send();
-    };
+    return xhr;
+};
 
-    var saveData = function (onLoad, onError, data) {
-        var xhr = setupXHR(onLoad, onError);
-        xhr.open('POST', SAVE_URL);
-        xhr.send(data);
-    };
+var loadData = function (onLoad, onError) {
+    var xhr = setupXHR(onLoad, onError);
+    xhr.open('GET', LOAD_URL);
+    xhr.send();
+};
 
-    var backend = {
-        'load': loadData,
-        'save': saveData
-    };
+var saveData = function (onLoad, onError, data) {
+    var xhr = setupXHR(onLoad, onError);
+    xhr.open('POST', SAVE_URL);
+    xhr.send(data);
+};
 
-    var onDeduceErrorText = function () {
-        var successForm = document.querySelector('.success__form');
-        var succesFormImg = successForm.querySelector('img');
-        successForm.classList.remove('success__form--disabled');
-        succesFormImg.setAttribute('src', 'img/error.svg');
-        setTimeout(function () {
-            successForm.classList.add('success__form--disabled');
-        }, 3000);
-    };
+var backend = {
+    'load': loadData,
+    'save': saveData
+};
 
-    var onSubmitReset = function (form) {
-        var successForm = document.querySelector('.success__form');
-        successForm.classList.remove('success__form--disabled');
-        successForm.setAttribute('src', 'img/succes.svg');
-        setTimeout(function () {
-            successForm.classList.add('success__form--disabled');
-        }, 3000);
-        form.reset();
-    };
+var onDeduceErrorText = function () {
+    var successForm = document.querySelector('.success__form');
+    var succesFormImg = successForm.querySelector('img');
+    successForm.classList.remove('success__form--disabled');
+    succesFormImg.setAttribute('src', 'img/error.svg');
+    setTimeout(function () {
+        successForm.classList.add('success__form--disabled');
+    }, 3000);
+};
 
-    form.addEventListener('submit', function (evt) {
+var onSubmitReset = function (form) {
+    var successForm = document.querySelector('.success__form');
+    successForm.classList.remove('success__form--disabled');
+    successForm.setAttribute('src', 'img/succes.svg');
+    setTimeout(function () {
+        successForm.classList.add('success__form--disabled');
+    }, 3000);
+    form.reset();
+};
+
+//Ajax отправка формы футера
+var footerForm = document.querySelectorAll('.footer__form');
+footerForm.forEach(function (item) {
+    item.addEventListener('submit', function (evt) {
         window.backend.save(function () {
-            onSubmitReset(form)
-        }, onDeduceErrorText, new FormData(form));
+            onSubmitReset(item)
+        }, onDeduceErrorText, new FormData(item));
         evt.preventDefault();
     });
-}
+});
 /////////////////////////////////////////////////////////////////////////////////////////
 //ракрытие ответов на странице о нас
 if (about) {
@@ -579,6 +580,38 @@ if (catalog) {
         })
 
     })
+}
+
+var contact = document.querySelector('.contact');
+if (contact) {
+    //открытие/закртыие попапа
+    $('.contact__button').on('click', function () {
+        $('.contact__modal').removeClass('contact__modal--disabled')
+    });
+    $('.contact__modal-bg').on('click', function () {
+        $('.contact__modal').addClass('contact__modal--disabled')
+    });
+
+
+    //отправка формы без перезагрузки
+    var contactForm = document.querySelector('.contact__form');
+    contactForm.addEventListener('submit', function (evt) {
+        window.backend.save(function () {
+            onSubmitContact(contactForm)
+        }, onDeduceErrorText, new FormData(contactForm));
+        evt.preventDefault();
+    });
+
+    var onSubmitContact = function (form) {
+        var successForm = document.querySelector('.success__form');
+        successForm.classList.remove('success__form--disabled');
+        successForm.setAttribute('src', 'img/succes.svg');
+        $('.contact__modal').addClass('contact__modal--disabled');
+        setTimeout(function () {
+            successForm.classList.add('success__form--disabled');
+        }, 3000);
+        form.reset();
+    };
 }
 //обрабочтик резайза страницы
 window.addEventListener('resize', function () {

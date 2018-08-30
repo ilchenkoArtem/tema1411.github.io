@@ -1,0 +1,151 @@
+.contact {
+  min-height: 249px;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 130px;
+  position: relative;
+  display: flex;
+}
+
+.contact__main-container {
+  height: 100%;
+
+}
+
+.contact__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: -1;
+}
+
+.contact__background-element {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  &--right {
+    background-color: #f9f9f9;
+  }
+}
+
+.contact__caption {
+  margin: auto;
+  margin-top: -24px;
+  font-family: "Montserrat-ExtraBold";
+  font-size: 140px;
+  position: relative;
+  &--left {
+    margin-right: -248px;
+    color: #f9f9f9;
+  }
+  &--right {
+    margin-left: -545px;
+    color: white;
+  }
+}
+.contact__main-container {
+  width: 100%;
+  padding: 0 60px;
+  max-width: 1068px;
+  margin: auto;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.contact__issues {
+  font-family: "Montserrat-Regular";
+  font-size: 9px;
+  margin-bottom: 0;
+}
+
+.contact__send-text {
+  font-family: "Montserrat-Bold";
+  font-size: 29px;
+  margin-top: 0;
+}
+
+.contact__button {
+  color: #e9013c;
+  max-width: 167px;
+  width: 100%;
+  min-height: 33px;
+  display: block;
+  text-align: center;
+  line-height: 33px;
+  border: 1px solid #e9013c;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat-ExtraBold";
+  transition: 0.3s all ease;
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+}
+
+@media (max-width: 1199px) {
+  .contact__caption {
+    &--left {
+      margin-right: -369px;
+    }
+    &--right {
+      margin-left: -419px;
+    }
+  }
+}
+
+@media (max-width: 996px) {
+  .contact__send-text {
+    font-size: 4vw;
+  }
+  .contact__caption {
+    margin-top: 5px;
+    font-size: 95px;
+    &--left {
+      margin-right: -169px;
+    }
+    &--right {
+      margin-left: -365px;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .contact__main-container {
+    padding: 0 30px;
+  }
+
+  .contact__send-text {
+    font-size: 4.2vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact__send-text {
+    font-size: 6.2vw;
+  }
+  .contact__caption {
+    margin-top: 0;
+    font-size: 50px;
+    &--left {
+      margin-right: -143px;
+    }
+    &--right {
+      margin-left: -141px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .contact__container-button {
+    margin-top: 70px;
+  }
+}
+
