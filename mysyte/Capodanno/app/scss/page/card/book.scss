@@ -211,16 +211,12 @@
   }
 }
 
-.book__quantity,
 .book__quantity-container {
   align-items: baseline;
   display: flex;
 }
 
-.book__quantity {
-  margin: 0;
-  font-size: 14px;
-}
+
 
 .book__price {
   font-size: 14px;
@@ -270,8 +266,21 @@
   width: 13.015873015873016%;
   justify-content: center;
   text-align: center;
+  align-items: baseline;
 }
 
+.book__quantity {
+  font-size: 14px;
+  margin: 0;
+}
+
+.book__button{
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  position: relative;
+  bottom: -4px;
+}
 .book__calculate-button-container {
   display: flex;
   align-items: center;
@@ -279,7 +288,18 @@
   justify-content: space-between;
 
 }
+.book__button{
+  &-enlarge {
+    img {
+      transform: rotate(-180deg);
+      margin-bottom: -1.075px;
+    }
 
+  }
+  img {
+    display: block;
+  }
+}
 .book__calculate-button {
   color: #e9013c;
   max-width: 167px;
