@@ -1,8 +1,10 @@
+.step-event-main-container {
+  flex-direction: column;
+  display: none;
+}
 .step-event-container {
   width: 100%;
   overflow-x: auto;
-  display: none;
-  flex-direction: column;
 }
 
 .step-events {

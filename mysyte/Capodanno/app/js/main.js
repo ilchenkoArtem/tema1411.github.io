@@ -718,7 +718,7 @@ if (order) {
     var allStepName = $('.order__step');
     var allStep = $('.step');
     var stepContact = $('.step-contact');
-    var stepEventContainer = $('.step-event-container');
+    var stepEventContainer = $('.step-event-main-container');
     var stepCompletion = $('.step-completion');
 
     function deletClass(evt) {
@@ -752,7 +752,7 @@ if (order) {
         })
     });
 
-    //валидация формы
+    //валидация формы и переход следующий шаг
     var stepContactForm = order.querySelector('.step-contact__form');
     var stepContactInputFirstName = order.querySelector('.step-contact__input--first-name');
     var stepContactInputLastName = order.querySelector('.step-contact__input--last-name');
@@ -793,8 +793,17 @@ if (order) {
         evt.preventDefault();
         toStepThree()
     });
-    $('.step-contact__button').on('click', toStepThree)
 
+    $('.step-contact__button').on('click', toStepThree);
+    window.CustomScrollbar = function () {
+        if (windowWidth > 901) {
+            $(".book__calculate").mCustomScrollbar({
+                theme: "dark"
+            })
+        } else {
+            $('.book__calculate').mCustomScrollbar("destroy")
+        }
+    };
 }
 //обрабочтик резайза страницы
 window.addEventListener('resize', function () {

@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/index.html" line="204" />
     <bookmark url="file://$PROJECT_DIR$/app/card.html" line="432" />
     <bookmark url="file://$PROJECT_DIR$/../../../../Github/375383-keksobooking/js/offer.js" line="55" />
-    <bookmark url="file://$PROJECT_DIR$/app/order.html" line="243" />
+    <bookmark url="file://$PROJECT_DIR$/app/order.html" line="250" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edf8deb5-33be-4521-85ce-1cc43551edb1" name="Default" comment="" />
@@ -19,14 +19,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.34978843">
+    <splitter split-orientation="horizontal" split-proportion="0.5352609">
       <split-first>
         <leaf>
           <file leaf-file-name="order.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/order.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="265">
-                  <caret line="243" column="82" lean-forward="false" selection-start-line="243" selection-start-column="82" selection-end-line="243" selection-end-column="82" />
+                <state relative-caret-position="320">
+                  <caret line="97" column="53" lean-forward="false" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="53" />
                   <folding>
                     <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#meta#1;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -38,9 +38,9 @@
                     <element signature="n#div#2;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#section#1;n#section#1;n#section#0;n#div#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#section#2;n#section#1;n#section#0;n#div#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#section#1;n#section#1;n#section#0;n#div#0;n#div#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#section#2;n#section#1;n#section#0;n#div#0;n#div#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#section#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#section#1;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -78,7 +78,7 @@
                 <state relative-caret-position="-874">
                   <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
                   <folding>
-                    <marker date="1535750415995" expanded="true" signature="25282:26036" ph="{...}" />
+                    <marker date="1535751593169" expanded="true" signature="25287:26041" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -193,14 +193,14 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="419">
-                  <caret line="779" column="30" lean-forward="false" selection-start-line="779" selection-start-column="30" selection-end-line="779" selection-end-column="30" />
+                <state relative-caret-position="-37">
+                  <caret line="720" column="25" lean-forward="false" selection-start-line="720" selection-start-column="25" selection-end-line="720" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="order.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="order.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/page/order/order.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="60">
@@ -210,11 +210,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="step-events.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="step-events.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/page/order/step-events.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+                <state relative-caret-position="46">
+                  <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -295,11 +295,11 @@
         <option value="$PROJECT_DIR$/app/scss/page/order/step-completion.scss" />
         <option value="$PROJECT_DIR$/app/scss/style.scss" />
         <option value="$PROJECT_DIR$/app/scss/page/order/order__steps-content.scss" />
-        <option value="$PROJECT_DIR$/app/scss/page/order/step-events.scss" />
-        <option value="$PROJECT_DIR$/app/order.html" />
         <option value="$PROJECT_DIR$/app/scss/page/order/step-contact.scss" />
-        <option value="$PROJECT_DIR$/app/js/main.js" />
         <option value="$PROJECT_DIR$/app/scss/page/order/order.scss" />
+        <option value="$PROJECT_DIR$/app/order.html" />
+        <option value="$PROJECT_DIR$/app/js/main.js" />
+        <option value="$PROJECT_DIR$/app/scss/page/order/step-events.scss" />
       </list>
     </option>
   </component>
@@ -444,12 +444,12 @@
       <workItem from="1535289439545" duration="687000" />
       <workItem from="1535290920886" duration="246000" />
       <workItem from="1535311228062" duration="65243000" />
-      <workItem from="1535544055842" duration="81215000" />
+      <workItem from="1535544055842" duration="82040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="409202000" />
+    <option name="totallyTimeSpent" value="410027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -924,14 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/page/order/step-events.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Github/375383-keksobooking/js/form.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -940,10 +932,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/page/order/step-completion.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/page/order/step-contact.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="243" column="82" lean-forward="false" selection-start-line="243" selection-start-column="82" selection-end-line="243" selection-end-column="82" />
+        <state relative-caret-position="320">
+          <caret line="97" column="53" lean-forward="false" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="53" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#meta#1;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -955,9 +963,9 @@
             <element signature="n#div#2;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#section#1;n#section#0;n#div#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#section#1;n#section#0;n#div#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#section#1;n#section#0;n#div#0;n#div#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#section#1;n#section#0;n#div#0;n#div#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#1;n#section#1;n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -978,26 +986,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/page/order/step-completion.scss">
+    <entry file="file://$PROJECT_DIR$/app/scss/page/order/order.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/page/order/step-contact.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="779" column="30" lean-forward="false" selection-start-line="779" selection-start-column="30" selection-end-line="779" selection-end-column="30" />
+        <state relative-caret-position="-37">
+          <caret line="720" column="25" lean-forward="false" selection-start-line="720" selection-start-column="25" selection-end-line="720" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1010,10 +1010,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/page/order/order.scss">
+    <entry file="file://$PROJECT_DIR$/app/scss/page/order/step-events.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="46">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding />
         </state>
       </provider>
