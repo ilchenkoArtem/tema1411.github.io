@@ -527,14 +527,14 @@ if (card) {
 
     //Подсчёт суммы
     var bookQuantityElements = document.querySelectorAll('.book__quantity');
-    var bookPriceElemenets = document.querySelectorAll('.book__price span');
+    var bookPriceElements = document.querySelectorAll('.book__price span');
     var bookTotalElement = document.querySelector('.book__total');
 
     //функция считает общуюю сумму
     function summPrice() {
         var prices = [];
         var quantity = [];
-        bookPriceElemenets.forEach(function (item) {
+        bookPriceElements.forEach(function (item) {
             prices.push(item.textContent)
         });
 
@@ -613,6 +613,134 @@ if (contact) {
         form.reset();
     };
 }
+
+var order = document.querySelector('.order');
+if (order) {
+    var stepEvent = $('.step-event');
+    //логика калькулятора
+    stepEvent.each(function () {
+        var quantityElement = $('.step-event__quantity', this);
+        var stepEventTotalElement = $('.step-event__total span', this);
+        var stepEventPriceElement = $('.step-event__price span', this);
+        var presentValue = quantityElement.text();
+        quantityElement.text(presentValue);
+
+        //считает сумму по одному событию
+        function eventTotal(presentValue) {
+            stepEventTotalElement.text(presentValue * stepEventPriceElement.text())
+        };
+        //считает сумму по одному событию при загрузке страницы
+        eventTotal(presentValue);
+        // изменение колличества товара на одном событии
+        $('.step-event__button-reduce', this).on('click', function () {
+            var presentValue = quantityElement.text();
+            if (presentValue > 0) {
+                presentValue = presentValue - 1;
+                quantityElement.text(presentValue)
+            }
+            eventTotal(presentValue)
+        });
+
+        $('.step-event__button-enlarge', this).on('click', function () {
+            var presentValue = Number(quantityElement.text());
+            presentValue = presentValue + 1;
+            quantityElement.text(presentValue);
+            eventTotal(presentValue)
+        });
+    });
+
+    var stepEventTotalElements = $('.step-event__total span');
+
+    //функция сумирует общие суммы са события и показывает сумарную
+    function allSumm() {
+        var summ = 0;
+        stepEventTotalElements.each(function () {
+            summ += Number($(this).text());
+            $('.step-event__all-total span').text(summ)
+        })
+    }
+
+    //выводит общую сумму при загрузке страницы
+    allSumm();
+    $(stepEventTotalElements).bind("DOMSubtreeModified", function () {
+        allSumm()
+    });
+
+
+    //генерация содержимого таблицы на 3-м шаге
+    var eventCompletionTemplate = document.querySelector('template').content.querySelector('.step-completion__event');
+
+    function getEventCompletion(event) {
+        var eventCompletionElement = eventCompletionTemplate.cloneNode(true);
+
+        var stepCompletionName = eventCompletionElement.querySelector('.step-completion__name');
+        var stepCompletionType = eventCompletionElement.querySelector('.step-completion__type');
+        var stepCompletionPrice = eventCompletionElement.querySelector('.step-completion__price span');
+        var stepCompletionQuantity = eventCompletionElement.querySelector('.step-completion__quantity span');
+        var stepCompletionTotal = eventCompletionElement.querySelector('.step-completion__total span');
+
+        var stepEventName = event.querySelector('.step-event__name');
+        var stepEventType = event.querySelector('.step-event__type');
+        var stepEventPrice = event.querySelector('.step-event__price span');
+        var stepEventQuantity = event.querySelector('.step-event__quantity');
+        var stepEventTotal = event.querySelector('.step-event__total span');
+
+
+        stepCompletionName.textContent = stepEventName.textContent;
+        stepCompletionType.textContent = stepEventType.textContent;
+        stepCompletionPrice.textContent = stepEventPrice.textContent;
+        stepCompletionQuantity.textContent = stepEventQuantity.textContent;
+        stepCompletionTotal.textContent = stepEventTotal.textContent;
+        return (eventCompletionElement)
+    }
+
+    //генерация фрагментов событий
+    function getEventsCompletion(events) {
+        var eventsCompletionElement = document.createDocumentFragment();
+        events.forEach(function (item) {
+            eventsCompletionElement.appendChild(getEventCompletion(item))
+        });
+        console.log(eventsCompletionElement);
+        return eventsCompletionElement;
+    }
+
+    //добавление фрагментов событий в разметку
+    function renderEvent(array) {
+        var stepCompletionTableElement = document.getElementById('step-completion__table');
+        console.log(stepCompletionTableElement);
+        var eventElements = getEventsCompletion(array);
+        stepCompletionTableElement.appendChild(eventElements)
+    }
+
+    //генерация таблицы по клику на кнопку next на первом шаге
+    $('.step-event__next-step').on('click', function () {
+        var stepEventsElements = order.querySelectorAll('.step-event');
+        var stepCompletionEvent = order.querySelectorAll('.step-completion__event');
+        var stepEventAllTotal = order.querySelector('.step-event__all-total span');
+        var stepCompletionAllTotal = order.querySelector('.step-completion__all-total span');
+        if (stepCompletionEvent) {
+            stepCompletionEvent.forEach(function (item) {
+                item.remove()
+            })
+        }
+        renderEvent(stepEventsElements);
+        stepCompletionAllTotal.textContent = stepEventAllTotal.textContent
+    })
+
+    //валидация формы
+    $('.step-contact__form').on('submit', function (evt) {
+        evt.preventDefault()
+    });
+
+    function toStepThree() {
+        $('.personal-info__item--name span').text($('.step-contact__input--first-name').val() + ' ' + $('.step-contact__input--last-name').val());
+        $('.personal-info__item--phone span').text($('.step-contact__input--phone').val());
+        $('.personal-info__item--email span').text($('.step-contact__input--email').val());
+    }
+
+    $('.step-contact__button').on('click', toStepThree)
+
+}
 //обрабочтик резайза страницы
 window.addEventListener('resize', function () {
     heightTopHeader();
@@ -623,4 +751,5 @@ window.addEventListener('resize', function () {
         CustomScrollbar();
     }
 });
+
 

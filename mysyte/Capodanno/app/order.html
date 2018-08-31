@@ -186,8 +186,8 @@
             <section class="step-event__control">
                 <button class="button order__button order__button--black">Clear card</button>
                 <div class="step-event__next-container">
-                    <button class="button order__button">next step</button>
-                    <p class="order__total step-event__all-total">Total: <span>160</span><sup>€</sup></p>
+                    <button class="button order__button step-event__next-step">next step</button>
+                    <p class="order__total step-event__all-total">Total: <span>0</span><sup>€</sup></p>
                 </div>
             </section>
         </section>
@@ -195,11 +195,11 @@
         <!--начало второго шага-->
         <section class="step-contact">
             <form class="step-contact__form">
-                <input type="text" class="button step-contact__input" placeholder="First Name" name="First Name"
+                <input type="text" class="button step-contact__input step-contact__input--first-name" placeholder="First Name" name="First Name"
                        required>
-                <input type="text" class="button step-contact__input" placeholder="Last Name" name="Last Name" required>
-                <input type="tel" class="button step-contact__input" placeholder="Phone" name="Phone" required>
-                <input type="email" class="button step-contact__input" placeholder="E-mail" name="E-mail" required>
+                <input type="text" class="button step-contact__input step-contact__input--last-name" placeholder="Last Name" name="Last Name" required>
+                <input type="tel" class="button step-contact__input step-contact__input--phone" placeholder="Phone" name="Phone" required>
+                <input type="email" class="button step-contact__input step-contact__input--email" placeholder="E-mail" name="E-mail" required>
                 <textarea class="button step-contact__input step-contact__textarea" placeholder="Message" name="Message"></textarea>
 
                 <div class="step-contact__container-button">
@@ -213,65 +213,14 @@
         <section class="step-completion">
             <section class="step-table-container">
                 <h3 class="step-completion__order-caption">Your Order</h3>
-                <table class="step-completion__table">
+                <table class="step-completion__table" id="step-completion__table">
                     <tr class="step-completion__container-caption">
                         <th class="step-completion__caption step-completion__caption--event">Event</th>
                         <th class="step-completion__caption step-completion__caption--price">Price</th>
                         <th class="step-completion__caption step-completion__caption--quantity">Quantity</th>
                         <th class="step-completion__caption step-completion__caption--total">Total</th>
                     </tr>
-
-                    <!--начало карточки одного события-->
-                    <tr class="step-completion__event">
-                        <td class="step-completion__container-name">
-                            <h2 class="step-completion__name">Capodanno 2019 Serendepico - Centro Piazza Castello</h2>
-                            <p class="step-completion__type">Dinner</p>
-                        </td>
-                        <td class="step-completion__container-price">
-                            <p class="step-completion__price">€<span>20</span></p>
-                        </td>
-                        <td class="step-completion__container-quantity">
-                            <p class="step-completion__quantity">×<span>5</span></p>
-                        </td>
-                        <td class="step-completion__container-total">
-                            <p class="step-completion__total">€<span>100</span></p>
-                        </td>
-                    </tr>
-                    <!--конец карточки одного события-->
-                    <!--начало карточки одного события-->
-                    <tr class="step-completion__event">
-                        <td class="step-completion__container-name">
-                            <h2 class="step-completion__name">Capodanno 2019 Serendepico - Centro Piazza Castello</h2>
-                            <p class="step-completion__type">Dinner</p>
-                        </td>
-                        <td class="step-completion__container-price">
-                            <p class="step-completion__price">€<span>20</span></p>
-                        </td>
-                        <td class="step-completion__container-quantity">
-                            <p class="step-completion__quantity">×<span>5</span></p>
-                        </td>
-                        <td class="step-completion__container-total">
-                            <p class="step-completion__total">€<span>100</span></p>
-                        </td>
-                    </tr>
-                    <!--конец карточки одного события-->
-                    <!--начало карточки одного события-->
-                    <tr class="step-completion__event">
-                        <td class="step-completion__container-name">
-                            <h2 class="step-completion__name">Capodanno 2019 Serendepico - Centro Piazza Castello</h2>
-                            <p class="step-completion__type">Dinner</p>
-                        </td>
-                        <td class="step-completion__container-price">
-                            <p class="step-completion__price">€<span>20</span></p>
-                        </td>
-                        <td class="step-completion__container-quantity">
-                            <p class="step-completion__quantity">×<span>5</span></p>
-                        </td>
-                        <td class="step-completion__container-total">
-                            <p class="step-completion__total">€<span>100</span></p>
-                        </td>
-                    </tr>
-                    <!--конец карточки одного события-->
+                    <!--тут будут размещены карточки событий-->
                 </table>
                 <div class="step-completion__container-button">
                     <button class="button order__button step-completion__button">Place order</button>
@@ -281,9 +230,9 @@
             <section class="personal-info">
                 <h3 class="personal-info__caption">Personal Information</h3>
                 <ul class="personal-info__items">
-                    <li class="personal-info__item">Full name: <span>Paolo Conte</span></li>
-                    <li class="personal-info__item">Phone: <span>+393487890777</span></li>
-                    <li class="personal-info__item">E-mail: <span>capodanno@gmail.com</span></li>
+                    <li class="personal-info__item personal-info__item--name">Full name: <span></span></li>
+                    <li class="personal-info__item personal-info__item--phone">Phone: <span></span></li>
+                    <li class="personal-info__item personal-info__item--email">E-mail: <span></span></li>
                 </ul>
                 <h3 class="personal-info__payment-caption">Payment method</h3>
                 <div class="personal-info__payment-container">
@@ -306,6 +255,25 @@
         <!--конец третьего шага-->
 
     </main>
+    <template id="template__event-completion">
+        <!--начало карточки одного события-->
+        <tr class="step-completion__event">
+            <td class="step-completion__container-name">
+                <h2 class="step-completion__name"></h2>
+                <p class="step-completion__type"></p>
+            </td>
+            <td class="step-completion__container-price">
+                <p class="step-completion__price">€<span></span></p>
+            </td>
+            <td class="step-completion__container-quantity">
+                <p class="step-completion__quantity">×<span></span></p>
+            </td>
+            <td class="step-completion__container-total">
+                <p class="step-completion__total">€<span></span></p>
+            </td>
+        </tr>
+        <!--конец карточки одного события-->
+    </template>
 </div>
 
 <!--начало футера-->
