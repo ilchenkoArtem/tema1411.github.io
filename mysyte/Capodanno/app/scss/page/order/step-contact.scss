@@ -27,3 +27,74 @@
   }
 }
 
+.step-contact__checkbox--input {
+  display: none;
+}
+
+.step-contact__checkbox--label {
+  display: block;
+  padding-left: 18px;
+  position: relative;
+  font-size: 14px;
+  transition: .5s background-color ease;
+  font-size: 14px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    bottom: 5px;
+    width: 6px;
+    height: 6px;
+    box-sizing: border-box;
+    transition: .5s background-color ease;
+  }
+  &:hover::before {
+    background-color: rgba(255, 99, 91, .4);
+  }
+}
+
+.step-contact__checkbox--input:checked + .step-contact__checkbox--label::before {
+  background-color: #e9013c;
+}
+
+.step-contact__checkbox--label {
+  font-family: "Montserrat-Medium";
+  font-size: 16px;
+}
+
+@media (max-width: 1199px) {
+  .step-contact {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .step-contact {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .step-contact__container-button {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .step-contact__button {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+

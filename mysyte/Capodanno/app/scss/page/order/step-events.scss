@@ -1,4 +1,11 @@
+.step-event-container {
+  width: 100%;
+  overflow-x: auto;
+}
 
+.step-events {
+  min-width: 560px;
+}
 
 .step-event {
   font-family: "Montserrat-Bold";
@@ -74,7 +81,6 @@
   margin-top: 5px;
 }
 
-
 .step-event__price {
   width: 11.142322097378278%;
   text-align: center;
@@ -82,7 +88,6 @@
   min-width: 60px;
   height: 20px;
 }
-
 
 .step-event__quantity-container {
   width: 11.142322097378278%;
@@ -98,13 +103,14 @@
   height: 20px;
 }
 
-.step-event__button{
+.step-event__button {
   width: 20px;
   height: 20px;
   padding: 0;
   position: relative;
   bottom: -4px;
 }
+
 .step-event__calculate-button-container {
   display: flex;
   align-items: center;
@@ -112,7 +118,8 @@
   justify-content: space-between;
 
 }
-.step-event__button{
+
+.step-event__button {
   &-enlarge {
     img {
       transform: rotate(-180deg);
@@ -124,6 +131,7 @@
     display: block;
   }
 }
+
 .step-event__calculate-button {
   color: #e9013c;
   max-width: 167px;
@@ -155,4 +163,64 @@
 .step-event__delete-button {
   width: 6.928838951310861%;
   padding: 0;
+}
+
+.step-event__next-container,
+.step-event__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-event__control {
+  margin-top: 39px;
+}
+
+.step-event__next-container {
+  min-width: 290px;
+}
+
+.step-event__all-total {
+  font-family: "Montserrat-Medium";
+  font-size: 16px;
+  span {
+    font-family: "Montserrat-ExtraBold";
+    font-size: 20px;
+  }
+  sup {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .step-event__control,
+  .step-events {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .step-event__control,
+  .step-events {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .step-event__next-container,
+  .step-event__control {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .step-event__next-container {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .step-event__control {
+    margin-top: 10px;
+    button {
+      max-width: 90%;
+    }
+  }
+
 }

@@ -75,7 +75,7 @@
   background-color: white;
   flex-grow: 1;
   margin-left: 30px;
-  max-width: 341px;
+  min-width: 341px;
   padding: 15px;
   box-sizing: border-box;
 }
@@ -177,4 +177,66 @@
 
 .step-completion__button {
   margin-right: 30px;
+}
+
+@media (max-width: 1199px) {
+  .step-completion {
+    padding: 0 60px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1050px) {
+  .step-completion {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .step-completion {
+    flex-direction: column-reverse;
+  }
+  .personal-info {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    > div {
+      width: 50%;
+    }
+  }
+  .step-completion__table,
+  .step-table-container {
+    max-width: 100%;
+  }
+  .personal-info__items {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 597px) {
+  .personal-info {
+    min-width: auto;
+    flex-direction: column;
+    > div {
+      width: 100%;
+    }
+  }
+  .personal-info__payment-container {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .step-completion__container-button {
+    flex-direction: column-reverse;
+
+  }
+  .step-completion__button {
+    margin-right: 0;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
 }
