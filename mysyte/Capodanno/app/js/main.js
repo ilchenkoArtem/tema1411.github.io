@@ -712,6 +712,21 @@ if (order) {
         stepCompletionTableElement.appendChild(eventElements)
     }
 
+    var step1 = $('.order__step--1');
+    var step2 = $('.order__step--2');
+    var step3 = $('.order__step--3');
+    var allStepName = $('.order__step');
+    var allStep = $('.step');
+    var stepContact = $('.step-contact');
+    var stepEventContainer = $('.step-event-container');
+    var stepCompletion = $('.step-completion');
+
+    function deletClass(evt) {
+        evt.preventDefault();
+        allStepName.removeClass('order__step--active');
+        allStep.removeClass('order-visible');
+    }
+
     //генерация таблицы по клику на кнопку next на первом шаге
     $('.step-event__next-step').on('click', function () {
         var stepEventsElements = order.querySelectorAll('.step-event');
@@ -724,20 +739,60 @@ if (order) {
             })
         }
         renderEvent(stepEventsElements);
-        stepCompletionAllTotal.textContent = stepEventAllTotal.textContent
-    })
-
-    //валидация формы
-    $('.step-contact__form').on('submit', function (evt) {
-        evt.preventDefault()
+        stepCompletionAllTotal.textContent = stepEventAllTotal.textContent;
+        stepEventContainer.removeClass('order-visible');
+        stepContact.addClass('order-visible');
+        step1.removeClass('order__step--active');
+        step2.addClass('order__step--active');
+        step1.on('click', function (evt) {
+            deletClass(evt);
+            step1.addClass('order__step--active');
+            stepEventContainer.addClass('order-visible');
+            step1.off('click');
+        })
     });
 
+    //валидация формы
+    var stepContactForm = order.querySelector('.step-contact__form');
+    var stepContactInputFirstName = order.querySelector('.step-contact__input--first-name');
+    var stepContactInputLastName = order.querySelector('.step-contact__input--last-name');
+    var stepContactInputPhone = order.querySelector('.step-contact__input--phone');
+    var stepContactInputEmail = order.querySelector('.step-contact__input--email');
+    var stepContactInputCheckbox = order.querySelector('.step-contact__checkbox--input');
+    function activeFirstStep() {
+        step1.on('click', function (evt) {
+            deletClass(evt);
+            step1.addClass('order__step--active');
+            stepEventContainer.addClass('order-visible');
+            step1.off('click');
+            step2.off('click');
+        });
+    }
     function toStepThree() {
-        $('.personal-info__item--name span').text($('.step-contact__input--first-name').val() + ' ' + $('.step-contact__input--last-name').val());
-        $('.personal-info__item--phone span').text($('.step-contact__input--phone').val());
-        $('.personal-info__item--email span').text($('.step-contact__input--email').val());
+        if (stepContactInputFirstName.validity.valid && stepContactInputLastName.validity.valid && stepContactInputPhone.validity.valid && stepContactInputEmail.validity.valid && stepContactInputCheckbox.validity.valid) {
+            $('.personal-info__item--name span').text($('.step-contact__input--first-name').val() + ' ' + $('.step-contact__input--last-name').val());
+            $('.personal-info__item--phone span').text($('.step-contact__input--phone').val());
+            $('.personal-info__item--email span').text($('.step-contact__input--email').val());
+            step2.removeClass('order__step--active');
+            step3.addClass('order__step--active');
+            stepContact.removeClass('order-visible');
+            stepCompletion.addClass('order-visible');
+            activeFirstStep();
+            step2.on('click', function (evt) {
+                deletClass(evt);
+                step2.addClass('order__step--active');
+                stepContact.addClass('order-visible');
+                activeFirstStep();
+                step2.off('click');
+
+            })
+        }
     }
 
+    stepContactForm.addEventListener('submit', function (evt) {
+        evt.preventDefault();
+        toStepThree()
+    });
     $('.step-contact__button').on('click', toStepThree)
 
 }

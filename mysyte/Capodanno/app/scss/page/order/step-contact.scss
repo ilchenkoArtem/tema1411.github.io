@@ -1,3 +1,6 @@
+.step-contact {
+  display: none;
+}
 .step-contact__input {
   max-width: 538px;
   width: 100%;
@@ -26,9 +29,14 @@
     font-family: "Montserrat-Regular";
   }
 }
-
+.step-contact__checkbox-container {
+  position: relative;
+}
 .step-contact__checkbox--input {
-  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .step-contact__checkbox--label {
@@ -40,6 +48,7 @@
   font-size: 14px;
   margin-bottom: 14px;
   cursor: pointer;
+  max-width: max-content;
   &::after {
     content: '';
     position: absolute;
