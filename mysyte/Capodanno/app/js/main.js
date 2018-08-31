@@ -1,4 +1,4 @@
-window.windowWidth;
+var windowWidth;
 var body = document.querySelector('body');
 var index = document.querySelector('.index');
 var about = document.querySelector('.about');
@@ -670,6 +670,7 @@ if (order) {
     //генерация содержимого таблицы на 3-м шаге
     var eventCompletionTemplate = document.querySelector('template').content.querySelector('.step-completion__event');
 
+    //Генерация контента в шаг 3
     function getEventCompletion(event) {
         var eventCompletionElement = eventCompletionTemplate.cloneNode(true);
 
@@ -759,6 +760,7 @@ if (order) {
     var stepContactInputPhone = order.querySelector('.step-contact__input--phone');
     var stepContactInputEmail = order.querySelector('.step-contact__input--email');
     var stepContactInputCheckbox = order.querySelector('.step-contact__checkbox--input');
+
     function activeFirstStep() {
         step1.on('click', function (evt) {
             deletClass(evt);
@@ -768,6 +770,7 @@ if (order) {
             step2.off('click');
         });
     }
+
     function toStepThree() {
         if (stepContactInputFirstName.validity.valid && stepContactInputLastName.validity.valid && stepContactInputPhone.validity.valid && stepContactInputEmail.validity.valid && stepContactInputCheckbox.validity.valid) {
             $('.personal-info__item--name span').text($('.step-contact__input--first-name').val() + ' ' + $('.step-contact__input--last-name').val());
@@ -799,7 +802,7 @@ if (order) {
     window.CustomScrollbarOrder = function () {
         if (windowWidth < 560) {
             $(".step-event-container").mCustomScrollbar({
-                axis:"x",
+                axis: "x",
                 theme: "dark"
             })
         } else {
@@ -817,7 +820,7 @@ window.addEventListener('resize', function () {
     if (card) {
         CustomScrollbar();
     }
-    if(order){
+    if (order) {
         CustomScrollbarOrder()
     }
 });

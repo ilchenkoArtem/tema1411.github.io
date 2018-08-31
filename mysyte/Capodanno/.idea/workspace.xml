@@ -19,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5352609">
+    <splitter split-orientation="horizontal" split-proportion="0.2877292">
       <split-first>
         <leaf>
           <file leaf-file-name="order.html" pinned="false" current-in-tab="true">
@@ -78,7 +78,7 @@
                 <state relative-caret-position="-874">
                   <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
                   <folding>
-                    <marker date="1535752214918" expanded="true" signature="25287:26041" ph="{...}" />
+                    <marker date="1535754000655" expanded="true" signature="25317:26071" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -190,21 +190,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="131">
-                  <caret line="799" column="32" lean-forward="true" selection-start-line="799" selection-start-column="32" selection-end-line="799" selection-end-column="32" />
+                <state relative-caret-position="-18892">
+                  <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="order.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="order.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/page/order/order.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+                <state relative-caret-position="120">
+                  <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -296,10 +296,10 @@
         <option value="$PROJECT_DIR$/app/scss/style.scss" />
         <option value="$PROJECT_DIR$/app/scss/page/order/order__steps-content.scss" />
         <option value="$PROJECT_DIR$/app/scss/page/order/step-contact.scss" />
-        <option value="$PROJECT_DIR$/app/scss/page/order/order.scss" />
         <option value="$PROJECT_DIR$/app/order.html" />
         <option value="$PROJECT_DIR$/app/scss/page/order/step-events.scss" />
         <option value="$PROJECT_DIR$/app/js/main.js" />
+        <option value="$PROJECT_DIR$/app/scss/page/order/order.scss" />
       </list>
     </option>
   </component>
@@ -444,12 +444,12 @@
       <workItem from="1535289439545" duration="687000" />
       <workItem from="1535290920886" duration="246000" />
       <workItem from="1535311228062" duration="65243000" />
-      <workItem from="1535544055842" duration="82592000" />
+      <workItem from="1535544055842" duration="84308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="410579000" />
+    <option name="totallyTimeSpent" value="412295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -1002,18 +1002,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/page/order/order.scss">
+    <entry file="file://$PROJECT_DIR$/app/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="-18892">
+          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+    <entry file="file://$PROJECT_DIR$/app/scss/page/order/order.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="799" column="32" lean-forward="true" selection-start-line="799" selection-start-column="32" selection-end-line="799" selection-end-column="32" />
+        <state relative-caret-position="120">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding />
         </state>
       </provider>
