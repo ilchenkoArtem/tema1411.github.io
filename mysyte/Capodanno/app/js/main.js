@@ -485,6 +485,9 @@ if (card) {
                 quantityCurrent = 0;
                 summPrice();
             } else {
+                quantity.textContent = 1;
+                quantityCurrent = 1;
+                summPrice()
                 bookCalculateHint.classList.remove('book__calculate-hint--active');
                 button.forEach(function (item) {
                     item.removeEventListener('click', visabilityHint)
@@ -614,7 +617,7 @@ if (contact) {
     };
 }
 
-var order = document.querySelector('.order');
+/*var order = document.querySelector('.order');
 if (order) {
     var stepEvent = $('.step-event');
     //логика калькулятора
@@ -799,7 +802,7 @@ if (order) {
 
     $('.step-contact__button').on('click', toStepThree);
 
-}
+}*/
 //обрабочтик резайза страницы
 window.addEventListener('resize', function () {
     heightTopHeader();
