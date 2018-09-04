@@ -14,4 +14,8 @@
 Активная страница имеет класс: catalog__pages-link--active;
 Неактивная стрелочка(переключатель) имеет класс: catalog__pages-button--disabled
 
+//Корзина
+Активная навигация шага(order__step) имеет класс (order__step--active);
+Активный блок с шагом(step) имеет класс (order-visible)
+
 

@@ -799,17 +799,6 @@ if (order) {
 
     $('.step-contact__button').on('click', toStepThree);
 
-    window.CustomScrollbarOrder = function () {
-        if (windowWidth < 560) {
-            $(".step-event-container").mCustomScrollbar({
-                axis: "x",
-                theme: "dark"
-            })
-        } else {
-            $('.step-event-container').mCustomScrollbar("destroy")
-        }
-    };
-    CustomScrollbarOrder()
 }
 //обрабочтик резайза страницы
 window.addEventListener('resize', function () {
@@ -819,9 +808,6 @@ window.addEventListener('resize', function () {
     deleteBodyOverflow();
     if (card) {
         CustomScrollbar();
-    }
-    if (order) {
-        CustomScrollbarOrder()
     }
 });
 
