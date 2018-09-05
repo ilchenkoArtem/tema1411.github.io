@@ -393,7 +393,6 @@ if (card) {
         item.addEventListener('click', function () {
             removeClassActiveCard();
             noVisabilityCardElement();
-            console.log('клик');
             item.classList.add('card_tab--active');
             cardElement[i].style.display = 'flex'
         })
