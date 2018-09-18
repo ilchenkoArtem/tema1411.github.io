@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        label {
+            color:black;
+            transition: 0.4s color ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction:column-reverse">
+        <input type="text" id="name" class="inputEl">
+        <label for="name" class="labelEl">Имя</label>
+
+    </div>
+    <div style="display: flex; flex-direction:column-reverse">
+        <input type="text" id="surname" class="inputEl">
+        <label for="surname" class="labelEl">Фамилия</label>
+
+    </div>
+    <div style="display: flex; flex-direction:column-reverse">
+        <input type="tel" id="tel" class="inputEl">
+        <label for="phone" class="labelEl">Телефон</label>
+    </div>
+
+    <script>
+        var divEl = document.querySelectorAll('div');
+        console.log(divEl)
+        divEl.forEach(function (item) {
+            var inputEl = item.querySelector('.inputEl')
+            console.log(inputEl)
+            var labelEl = item.querySelector('.labelEl')
+            console.log(labelEl)
+            inputEl.addEventListener('input', function () {
+                var valueInput = this.value;
+                var valueInputLength = valueInput.length;
+                if (valueInputLength < 2) {
+                    labelEl.style.color = 'red'
+                } else if (valueInputLength >= 2 && valueInputLength <= 4) {
+                    labelEl.style.color = 'orange'
+                } else if (valueInputLength > 4) {
+                    labelEl.style.color = 'green'
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

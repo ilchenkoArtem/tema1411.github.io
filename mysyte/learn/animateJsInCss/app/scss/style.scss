@@ -184,11 +184,12 @@ polygon(74.05% 30.4%, 69.7% 29.85%, 73.05% 36.02%);
 .css {
   @include render($css)
 }
-.canvas {
+.nojs {
   position: relative;
   width: 800px;
   height: 600px;
   border: 1px solid green;
+  margin-bottom: 30px;
 }
 
 .t {
@@ -196,4 +197,9 @@ polygon(74.05% 30.4%, 69.7% 29.85%, 73.05% 36.02%);
   width: 800px;
   height: 600px;
   transition: 0.4s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+////////////////
+canvas {
+  border: 1px solid #ffff00;
 }
