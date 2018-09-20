@@ -18,13 +18,18 @@
   flex-grow: 1;
 }
 
-.burger {
-  width: 20px;
-  height: 20px;
-  background-color: black;
-
+.burger-wrapper {
+  width: 24px;
+  height: 24px;
+  position: relative;
 }
 
+.square {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+}
 .social {
   margin-top: 10px;
   margin-bottom: 7vh;

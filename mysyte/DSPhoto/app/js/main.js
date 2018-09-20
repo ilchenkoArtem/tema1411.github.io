@@ -55,7 +55,7 @@ function changeColorForElementsSlide(slickContainer) {
     });
 }
 changeColorForElementsSlide('.main-home__slide');
-
+//скролл главной галереи по колёсику мыши
 function switchingСontrol(slickContainer) {
     $(slickContainer).bind('mousewheel DOMMouseScroll', function(event){
         if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
