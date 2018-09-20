@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 90px;
+  align-items: center;
+  padding: 36px 0;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: #ffffff;
+}
+
+.burger-container {
+  flex-grow: 1;
+}
+
+.burger {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+
+}
+
+.social {
+  margin-top: 10px;
+  margin-bottom: 7vh;
+}
+
+.social__link {
+  display: block;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  margin: 0;
+  margin-bottom: 26px;
+  font-family: "Montserrat-ExtraBold", sans-serif;
+  text-decoration: none;
+  font-size: 9px;
+  color: #000;
+  transition: .4s opacity ease;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.pdf-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.pdf-download_text {
+  margin: 0;
+  font-size: 10px;
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+.pf {
+
+}
