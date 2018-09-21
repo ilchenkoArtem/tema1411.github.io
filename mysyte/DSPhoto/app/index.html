@@ -11,27 +11,70 @@
 </head>
 
 <body class="body body-home">
-<header class="header">
-    <section class="burger-container">
-        <div class="burger-wrapper">
-            <div class="square square1"></div>
-            <div class="square square2"></div>
-            <div class="square square3"></div>
-            <div class="square square4"></div>
-            <div class="square square5"></div>
-            <div class="square square6"></div>
-            <div class="square square7"></div>
-            <div class="square square8"></div>
-            <div class="square square9"></div>
-        </div>
+<header>
+    <div class="header">
+        <section class="burger-container">
+            <div class="burger-wrapper">
+                <div class="square square1"></div>
+                <div class="square square2"></div>
+                <div class="square square3"></div>
+                <div class="square square4"></div>
+                <div class="square square5"></div>
+                <div class="square square6"></div>
+                <div class="square square7"></div>
+                <div class="square square8"></div>
+                <div class="square square9"></div>
+            </div>
+        </section>
+        <section class="social">
+            <a href="#" class="social__link">INSTAGRAM</a>
+            <a href="#" class="social__link">FACEBOOK</a>
+        </section>
+        <section class="pdf-download">
+            <p class="pdf-download_text">PDF</p>
+            <img src="img/pdfDown.svg" alt="pdf download" width="20" height="20" class="pdf-download_img">
+        </section>
+    </div>
+    <section class="nav main-nav">
+        <div class="nav__bg"></div>
+        <section class="nav-container">
+            <nav class="nav__links">
+                <a href="#" class="nav__link">Home.</a>
+                <a href="#" class="nav__link">Portfolio.</a>
+                <a href="#" class="nav__link">News and Blogs.</a>
+                <a href="#" class="nav__link">About and Contacts.</a>
+            </nav>
+            <section class="nav__socials">
+                <p class="nav__socials-text">Have questions?<br><span>Write now.</span></p>
+                <div class="nav__socials">
+                    <a href="#" class="nav__social" target="_blank">
+                        <img src="img/viber.svg" class="nav__social-img" alt="viber" width="25" height="25">
+                    </a>
+                    <a href="#" class="nav__social" target="_blank">
+                        <img src="img/whatsapp.svg" class="nav__social-img" alt="whatsapp" width="25" height="25">
+                    </a>
+                    <a href="#" class="nav__social" target="_blank">
+                        <img src="img/telegram.svg" class="nav__social-img" alt="viber" width="28" height="24">
+                    </a>
+                </div>
+            </section>
+        </section>
     </section>
-    <section class="social">
-        <a href="#" class="social__link">INSTAGRAM</a>
-        <a href="#" class="social__link">FACEBOOK</a>
-    </section>
-    <section class="pdf-download">
-        <p class="pdf-download_text">PDF</p>
-        <img src="img/pdfDown.svg" alt="pdf download" width="20" height="20" class="pdf-download_img">
+    <section class="nav pdf-nav">
+        <div class="nav__bg"></div>
+        <section class="nav-container">
+            <nav class="nav__links">
+                <a href="file/резюме%20Ильченко%20Артём.pdf" class="nav__link">All.</a>
+                <a href="file/резюме%20Ильченко%20Артём.pdf" class="nav__link">Beauty.</a>
+                <a href="file/резюме%20Ильченко%20Артём.pdf" class="nav__link">Fashion.</a>
+                <a href="file/резюме%20Ильченко%20Артём.pdf" class="nav__link">Magazines.</a>
+                <a href="file/резюме%20Ильченко%20Артём.pdf" class="nav__link">Advertising.</a>
+            </nav>
+            <section class="pdf-nav__text-container">
+                <p class="pdf-nav__text">To download the portfolio in PDF format, click on the link of the required
+                    category.</p>
+            </section>
+        </section>
     </section>
 </header>
 <main class="main-home">
@@ -51,10 +94,13 @@
             <img src="img/home3.jpg" alt="" width="1350" height="740" class="main__main__img">
         </div>
     </section>
-    <section class="index__slider-counter">
-        <p class="index__slider-current">01</p>
-        <div class="index__slider-counter-decor">/</div>
-        <p class="index__slider-all">00</p>
+    <section class="main-home__text-slide-bottom">
+        <section class="index__slider-counter">
+            <p class="index__slider-current">01</p>
+            <div class="index__slider-counter-decor">/</div>
+            <p class="index__slider-all">00</p>
+        </section>
+        <p class="main-scroll">SCROLL</p>
     </section>
 </main>
 <script src="js/scripts.min.js"></script>

@@ -41,3 +41,15 @@
     margin-top: -50px;
 }
 
+
+@media (max-width: 1000px) {
+    .block0,
+    .block1,
+    .block2,
+    .block3,
+    .block4 {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

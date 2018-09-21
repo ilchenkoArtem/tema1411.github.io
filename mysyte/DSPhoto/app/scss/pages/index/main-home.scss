@@ -12,7 +12,7 @@
   position: fixed;
   right: 50px;
   top: 36px;
-  z-index: 5;
+  z-index: 3;
   width: 169px;
   height: 32px;
 }
@@ -69,15 +69,13 @@
 .index__slider-counter {
   font-family: "Prata-Regular";
   font-size: 10px;
-  position: absolute;
-  bottom: 48px;
-  left: 130px;
   display: flex;
   line-height: 9px;
   align-items: baseline;
   color: #fff;
-  z-index: 5;
+  z-index: 3;
   transition: 0.3s all ease;
+  margin-right: 8vw;
   p {
     margin: 0;
   }
@@ -88,3 +86,46 @@
   margin-right: 5px;
 }
 
+.main-home__text-slide-bottom {
+  position: absolute;
+  bottom: 48px;
+  left: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.main-scroll {
+  position: relative;
+  top: -1px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 9px;
+  font-family: "Montserrat-Bold", sans-serif;
+  padding-right: 5vw;
+  cursor: pointer;
+  letter-spacing: 4px;
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -0.5px;
+    width: 12px;
+    height: 11px;
+    background-image: url('../img/Arrow-Right-white.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: bounceInLeft 2s infinite ease;
+  }
+  &--black {
+    color: #000;
+    &::before {
+      background-image: url('../img/Arrow-Right.svg');
+    }
+  }
+}
+
+@keyframes bounceInLeft {
+  from{right: 0;}
+  50%{right: 1vw;}
+  to{right: 0;}
+}
