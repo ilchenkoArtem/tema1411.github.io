@@ -117,6 +117,8 @@
 }
 
 .social {
+  display: flex;
+  flex-direction: column;
   margin-top: 10px;
   margin-bottom: 2vh;
 }
