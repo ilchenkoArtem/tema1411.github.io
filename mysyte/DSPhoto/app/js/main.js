@@ -38,29 +38,45 @@ function currentSlide(parent, nameContainerSlide) {
 }
 
 quantityAllSliders(".main-home__slide");
+//инициализация работы главного слайдера
 $('.main-home__slide').slick({
     speed: 1000,
-    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
+    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+    responsive: [
+        {
+            breakpoint: 601,
+            settings: {
+               arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000
+
+            }
+        }
+    ]
 });
 currentSlide('.main-home', '.main-home__slide');
 
 //функция меняет цвет лого и счетчика взависимости от дата атрибута
-function changeColorForElementsSlide(slickContainer) {
+function changeColorForElementsSlide(){
+    var currentColour = $('.slick-active').attr('data-color');
+    if (currentColour === 'white') {
+        $('.main-home__logo-img, .main-home__mobile-social').css({'fill': '#fff'});
+        $('.index__slider-counter').css({'color': '#fff'});
+        $('.main-scroll').removeClass('main-scroll--black')
+    } else {
+        $('.main-home__logo-img, .main-home__mobile-social').css({'fill': '#000'});
+        $('.index__slider-counter').css({'color': '#000'});
+        $('.main-scroll').addClass('main-scroll--black')
+    }
+}
+// функция меняет цвет лого и счетчика  после переключения слайдера
+function changeColorForElementsSlideOnAfterChange(slickContainer) {
     $(slickContainer).on('afterChange ', function (event, slick, currentSlide, nextSlide) {
-        var currentColour = $('.slick-active').attr('data-color');
-        if (currentColour === 'white') {
-            $('.main-home__logo-img').css({'fill': '#fff'});
-            $('.index__slider-counter').css({'color': '#fff'});
-            $('.main-scroll').removeClass('main-scroll--black')
-        } else {
-            $('.main-home__logo-img').css({'fill': '#000'});
-            $('.index__slider-counter').css({'color': '#000'});
-            $('.main-scroll').addClass('main-scroll--black')
-        }
+        changeColorForElementsSlide()
     });
 }
-
-changeColorForElementsSlide('.main-home__slide');
+changeColorForElementsSlide();
+changeColorForElementsSlideOnAfterChange('.main-home__slide');
 
 //скролл главной галереи по колёсику мыши
 function switchingСontrol(slickContainer) {
@@ -76,9 +92,9 @@ function switchingСontrol(slickContainer) {
 
 switchingСontrol('.main-home__slide');
 //переключение слайдра по нажатию на надпись scroll
-$('.main-scroll').on ('click', function () {
+$('.main-scroll').on('click', function () {
     $('.main-home__slide').slick('slickNext');
-})
+});
 //Управление меню
 //Управление главным меню
 //функция закрытия меню
@@ -129,6 +145,7 @@ function closeMainMenu() {
 function closeMainMenuEsc(e) {
     closeESC(e, closeMainMenu)
 }
+
 //инициализация работы  меню с pdf
 function closePdfMenu() {
     closeMenu('.pdf-nav', '.pdf-nav .nav__links, .pdf-nav__text', openPdfMenu, closePdfMenu, '.pdf-nav .nav__bg, .pdf-nav .nav__link', '.pdf-download', closePdfMenuEsc);
