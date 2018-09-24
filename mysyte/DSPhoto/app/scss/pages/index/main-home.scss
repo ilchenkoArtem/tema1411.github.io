@@ -21,6 +21,7 @@
   width: 169px;
   height: 32px;
 }
+
 .main-home__mobile-social,
 .main-home__logo-img {
   transition: 0.3s all ease;
@@ -86,6 +87,7 @@
   margin-right: 8vw;
   p {
     margin: 0;
+    min-width: 14px;
   }
 }
 
@@ -96,7 +98,7 @@
 
 .main-home__text-slide-bottom {
   position: absolute;
-  bottom: 48px;
+  bottom: 38px;
   left: 130px;
   display: flex;
   align-items: center;
@@ -134,10 +136,6 @@
   }
 }
 
-.main-home__mobile-socials {
-  display: none;
-}
-
 @keyframes bounceInLeft {
   from {
     right: 0;
@@ -150,10 +148,15 @@
   }
 }
 
+.pdf-download--mobile {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .main-home {
-    padding: 48px 0 0 0;
+    padding: 0;
     box-sizing: border-box;
+    height: 100vh;
 
   }
   .main-scroll,
@@ -163,25 +166,26 @@
 
   .main-home__text-slide-bottom {
     right: 0;
-    padding: 0 30px 30px 30px;
+    padding: 0 20px;
     left: auto;
     width: 100%;
     justify-content: space-between;
     box-sizing: border-box;
-    align-items: baseline;
+    align-items: flex-end;
+    bottom: 20px;
 
   }
-
+  .pdf-download--mobile {
+    display: flex;
+    position: relative;
+    color: white;
+    height: auto;
+    width: auto;
+    border: none;
+  }
   .index__slider-counter {
     margin-right: 0;
     font-size: 12px;
     line-height: 12px;
-  }
-
-  .main-home__mobile-socials {
-    display: flex;
-  }
-  .main-home__mobile-social:first-of-type {
-    margin-right: 10px;
   }
 }

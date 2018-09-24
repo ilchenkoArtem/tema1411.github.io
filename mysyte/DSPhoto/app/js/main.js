@@ -1,3 +1,10 @@
+var widthWindow;
+
+function onWidthWindow() {
+    widthWindow = $(window).width()
+}
+onWidthWindow();
+
 //функция определяет колличество слаайдов в каждом блоке и заносит в массив
 function quantityAllSliders(container) {
     var numberOfSlides = [];
@@ -46,7 +53,7 @@ $('.main-home__slide').slick({
         {
             breakpoint: 601,
             settings: {
-               arrows: false,
+                arrows: false,
                 autoplay: true,
                 autoplaySpeed: 2000
 
@@ -56,25 +63,42 @@ $('.main-home__slide').slick({
 });
 currentSlide('.main-home', '.main-home__slide');
 
+
 //функция меняет цвет лого и счетчика взависимости от дата атрибута
-function changeColorForElementsSlide(){
+function changeColorForElementsSlide() {
     var currentColour = $('.slick-active').attr('data-color');
     if (currentColour === 'white') {
-        $('.main-home__logo-img, .main-home__mobile-social').css({'fill': '#fff'});
-        $('.index__slider-counter').css({'color': '#fff'});
-        $('.main-scroll').removeClass('main-scroll--black')
+        $('.main-home__logo-img, .main-home__mobile-social, .header__mobile-log-img').css({'fill': '#fff'});
+        $('.pdf-download_img--mobile').css({'stroke': '#fff'});
+        $('.index__slider-counter, .pdf-download_text--mobile').css({'color': '#fff'});
+        $('.main-scroll').removeClass('main-scroll--black');
+        if (widthWindow <= '600') {
+            $('.square').css({'background-color': '#fff'})
+        } else {
+            $('.square').css({'background-color': '#000'})
+        }
+
     } else {
-        $('.main-home__logo-img, .main-home__mobile-social').css({'fill': '#000'});
-        $('.index__slider-counter').css({'color': '#000'});
-        $('.main-scroll').addClass('main-scroll--black')
+        $('.main-home__logo-img, .main-home__mobile-social, .header__mobile-log-img').css({'fill': '#000'});
+        $('.pdf-download_img--mobile').css({'stroke': '#000'});
+        $('.index__slider-counter, .pdf-download_text--mobile').css({'color': '#000'});
+        $('.main-scroll').addClass('main-scroll--black');
+        if (widthWindow <= '600') {
+            $('.square').css({'background-color': '#000'})
+        } else {
+            $('.square').css({'background-color': '#000'})
+        }
     }
+
 }
+
 // функция меняет цвет лого и счетчика  после переключения слайдера
 function changeColorForElementsSlideOnAfterChange(slickContainer) {
     $(slickContainer).on('afterChange ', function (event, slick, currentSlide, nextSlide) {
         changeColorForElementsSlide()
     });
 }
+
 changeColorForElementsSlide();
 changeColorForElementsSlideOnAfterChange('.main-home__slide');
 
@@ -95,6 +119,7 @@ switchingСontrol('.main-home__slide');
 $('.main-scroll').on('click', function () {
     $('.main-home__slide').slick('slickNext');
 });
+
 //Управление меню
 //Управление главным меню
 //функция закрытия меню
@@ -108,6 +133,11 @@ function closeMenu(mainBlock, hiddenElement, openFunction, closeFunction, otherE
     $(clickMainElement).off('click', closeFunction).on('click', openFunction);
     $(otherElementForClose).off('click', closeMainMenu);
     $(document).off('keydown', closeEscFunction);
+    if (widthWindow <= '600') {
+        changeColorForElementsSlide();
+        $('.main-home__slide').slick('slickPlay');
+    }
+
 }
 
 //функция открытия меню
@@ -121,6 +151,14 @@ function openMenu(mainBlock, hiddenElement, openFunction, closeFunction, otherEl
     $(otherElementForClose).on('click', closeFunction);
     $(document).on('keydown', closeEscFunction);
     $(clickMainElement).off('click', openFunction).on('click', closeFunction);
+    console.log(widthWindow);
+    if (widthWindow <= '600') {
+        $('.main-home__slide').slick('slickPause');
+        $('.header__mobile-log-img').css({'fill': '#fff'});
+        $('.square').css({'background-color': '#fff'});
+
+
+    }
 }
 
 //функция закрытия по нажатию ESC
@@ -134,12 +172,12 @@ function closeESC(e, closeFunction) {
 function openMainMenu() {
     $('.burger-wrapper').addClass('burger-wrapper-close');
     closePdfMenu();
-    openMenu('.main-nav', '.main-nav .nav__links, .nav__socials', openMainMenu, closeMainMenu, '.main-nav .nav__bg, .main-nav .nav__link', '.burger-container', closeMainMenuEsc);
+    openMenu('.main-nav', '.main-nav .nav__links, .nav__socials, .header-home__mobile-social', openMainMenu, closeMainMenu, '.main-nav .nav__bg, .main-nav .nav__link', '.burger-container', closeMainMenuEsc);
 }
 
 function closeMainMenu() {
     $('.burger-wrapper').removeClass('burger-wrapper-close');
-    closeMenu('.main-nav', '.main-nav .nav__links, .nav__socials', openMainMenu, closeMainMenu, '.main-nav .nav__bg, .main-nav .nav__link', '.burger-container', closeMainMenuEsc);
+    closeMenu('.main-nav', '.main-nav .nav__links, .nav__socials, .header-home__mobile-social', openMainMenu, closeMainMenu, '.main-nav .nav__bg, .main-nav .nav__link', '.burger-container', closeMainMenuEsc);
 }
 
 function closeMainMenuEsc(e) {
@@ -148,11 +186,15 @@ function closeMainMenuEsc(e) {
 
 //инициализация работы  меню с pdf
 function closePdfMenu() {
+    changeColorForElementsSlide();
     closeMenu('.pdf-nav', '.pdf-nav .nav__links, .pdf-nav__text', openPdfMenu, closePdfMenu, '.pdf-nav .nav__bg, .pdf-nav .nav__link', '.pdf-download', closePdfMenuEsc);
 }
 
 function openPdfMenu() {
     closeMainMenu();
+    $('.pdf-download--mobile').css({'z-index': '6'});
+    $('.pdf-download_text--mobile').css({'color': 'white'});
+    $('.pdf-download_img--mobile').css({'stroke': 'white'});
     openMenu('.pdf-nav', '.pdf-nav .nav__links, .pdf-nav__text', openPdfMenu, closePdfMenu, '.pdf-nav .nav__bg', '.pdf-download', closePdfMenuEsc);
 }
 
@@ -160,5 +202,7 @@ function closePdfMenuEsc(e) {
     closeESC(e, closePdfMenu)
 }
 
+
+$(window).on('resize', onWidthWindow);
 $('.pdf-download').on('click', openPdfMenu);
 $('.burger-container').on('click', openMainMenu);
