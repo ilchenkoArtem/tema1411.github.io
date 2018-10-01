@@ -1,0 +1,53 @@
+.body-portfolio {
+  overflow-y: scroll;
+}
+
+.main-portfolio {
+  padding-left: 90px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+.gallery__photo {
+  display: block;
+  box-sizing: border-box;
+  width: 25%;
+  height: auto;
+  padding: 0.25vw;
+}
+
+.gallery__photo--horizontal {
+  width: 50%;
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.gallery__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.filter-button-open {
+  position: fixed;
+  right: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: flex;
+  cursor: pointer;
+  img {
+    margin: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery__photo--horizontal {
+  }
+}

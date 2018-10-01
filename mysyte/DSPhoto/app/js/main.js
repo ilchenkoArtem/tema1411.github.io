@@ -232,31 +232,65 @@ if (portfolioPage) {
         $('.filter-container').addClass('filter-container--open');
     });
     $('.filter__button').on('click', closeFilter);
-//----------------------------------------------------------
-    //поппап галереи
-    $('.gallery__photo').magnificPopup({
+
+    // упралением окном фильтров
+
+/*    function fff() {
+        var windowHeight = $(window).height();
+        var photos = document.querySelectorAll('.gallery__photo');
+        photos.forEach(function (item, index) {
+                if (item.style.display !== 'none') {
+                    var height = Math.ceil($(item).height());
+                    console.log(height);
+                    if (height === windowHeight) {
+                        var img = item.querySelector('.gallery__img');
+                        img.classList.add('edit');
+                    } else {
+                        var img = item.querySelector('.gallery__img');
+                        img.classList.remove('edit');
+                    }
+                }
+            }
+        );
+    }*/
+
+    function addClassActive() {
+        $(".gallery__photo").addClass("active");
+    }
+
+    addClassActive();
+
+    $('.gallery__photo.active').magnificPopup({
         type: 'image',
         gallery: {
             enabled: true
-        },
-        callbacks: {
-            elementParse: function (item) {
-             /*   if (item.el.attr('data-visible') === 'visible') {
-                    return item
-                }*/
-                // Function will fire for each target element
-                // "item.el" is a target DOM element (if present)
-                // "item.src" is a source that you may modify
-
-                console.log('Parsing content. Item object that is being parsed:', item);
-            }
         }
     });
 
 
-    /*    $('.fashion').on('click', function () {
-            $('.beauty, .magazines, .advertising').removeClass('mix');
-            gallery()
-        })*/
+    $(".filter").click(function () {
+        addClassActive();
+        setTimeout(function () {
+            $(".gallery__photo").each(function () {
+                if ($(this).css('display') == 'none') {
+                    $(this).removeClass("active");
+                }
+            });
+            $('.gallery__photo.active').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }, 700);
+
+    });
+
+/*    $('.container').on('mixEnd', function () {
+        fff();
+    })*/
+//----------------------------------------------------------
+
+
 }
 
