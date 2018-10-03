@@ -45,7 +45,6 @@
     width: auto;
   }
   .mfp-close {
-    width: auto;
     padding-right: 0;
     width: 20px;
     height: 20px;
@@ -58,5 +57,35 @@
   }
   .mfp-bg {
     opacity: 1;
+  }
+  .mfp-counter {
+    font-size: 8px;
+    font-family: "Prata-Regular";
+    position: fixed;
+    left: 3.4027777777777777vw;
+    top: 3.194444444444444vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .body-portfolio {
+    button.mfp-arrow {
+      width: 35px;
+      height: 34px;
+      bottom: 3.194444444444444vw;
+    }
+    .mfp-arrow-left {
+      left: 3.40278vw;
+      right: auto;
+      bottom: 7.083333333333333vw;
+      top: auto;
+    }
+
+    .mfp-arrow-right {
+      left: auto;
+      right: 3.40278vw;;
+      bottom: 7.083333333333333vw;
+      top: auto;
+    }
   }
 }

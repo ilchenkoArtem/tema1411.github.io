@@ -346,11 +346,12 @@ function activePopup() {
         closeMarkup: '<button title="close" type="button" class="mfp-close"></button>',
         gallery: {
             enabled: true,
-            tCounter: '%curr% of %total%'
+            tCounter: '%curr% / %total%'
         }
     });
 }
 activePopup();
+
 $(".filter").click(function () {
     addClassActive();
     setTimeout(function () {
@@ -361,7 +362,6 @@ $(".filter").click(function () {
         });
         activePopup();
     },700);
-
 });
 
 

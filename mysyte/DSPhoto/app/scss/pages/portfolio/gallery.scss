@@ -6,10 +6,10 @@
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  padding: 0.25vw;
+  padding: 0.25px;
   padding-top: 0;
   padding-left: 90px;
-
+  min-height: calc(100vh - 90px);
 }
 
 .gallery__photo {

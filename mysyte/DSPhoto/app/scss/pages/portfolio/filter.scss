@@ -78,21 +78,24 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px), (orientation: landscape) and (max-height: 545px ){
   .filter-container {
     position: fixed;
     width: 100%;
     height: 100%;
     align-items: center;
     box-sizing: border-box;
+    background-color: black;
+    .filter__button {
+      color: #FFFFFF;
+      opacity: 0;
+      width: auto;
+      min-height: auto;
+      border: none;
+    }
     &--open {
       background-color: black;
       color: #FFFFFF;
-      .filter__button {
-        width: auto;
-        min-height: auto;
-        border: none;
-      }
     }
 
   }
