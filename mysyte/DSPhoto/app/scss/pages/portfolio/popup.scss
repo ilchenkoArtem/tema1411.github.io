@@ -1,0 +1,62 @@
+.body-portfolio {
+  &.mfp-zoom-out-cur {
+    height: 100vh;
+    overflow: hidden;
+  }
+  button.mfp-arrow,
+  button.mfp-close {
+    &::before,
+    &::after {
+      display: none;
+      right: 49px;
+    }
+  }
+  button.mfp-arrow {
+    width: 18px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 0;
+
+    opacity: 1;
+  }
+  .mfp-close,
+  .mfp-arrow {
+    position: fixed;
+    right: 3.4027777777777777vw;
+  }
+  .mfp-arrow-right {
+    top: auto;
+    bottom: 3.194444444444444vw;
+    background-image: url("../img/Arrow-Right-white.svg");
+  }
+  .mfp-arrow-left {
+    left: auto;
+    bottom: 7.083333333333333vw;
+    top: auto;
+    background-image: url("../img/Arrow-LEft-white.svg");
+  }
+  .mfp-bottom-bar {
+    position: fixed;
+    right: auto;
+    left: 36px;
+    top: 46px;
+    width: auto;
+  }
+  .mfp-close {
+    width: auto;
+    padding-right: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/close__popup.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 1;
+    top: 3.194444444444444vw;
+    cursor: pointer;
+  }
+  .mfp-bg {
+    opacity: 1;
+  }
+}

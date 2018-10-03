@@ -42,10 +42,13 @@ gulp.task('js', function () {
     gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/slick-carousel/slick/slick.min.js',
-        'app/libs/mixitup/dist/mixitup.min.js',
         'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
         'app/libs/imagesloaded/imagesloaded.pkgd.js',
         'app/libs/masonry-layout/dist/masonry.pkgd.min.js',
+        'app/libs/isotope-layout/dist/isotope.pkgd.min.js',
+        'app/libs/jquery-lazy/jquery.lazy.min.js',
+        'app/libs/hammerjs/hammer.min.js',
+        'app/libs/jquery-hammerjs/jquery.hammer.js',
         'app/js/main.js' // Always at the end
     ])
         .pipe(concat('scripts.min.js'))

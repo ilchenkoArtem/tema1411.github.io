@@ -6,6 +6,7 @@ function onWidthWindow() {
 
 onWidthWindow();
 
+
 //Управление меню
 //Управление главным меню
 //функция закрытия меню
@@ -22,6 +23,7 @@ function closeMenu(mainBlock, hiddenElement, openFunction, closeFunction, otherE
     if (widthWindow <= '600') {
         changeColorForElementsSlide();
         $('.main-home__slide').slick('slickPlay');
+        $('.header__portfolio').attr('style', '');
     }
 
 }
@@ -42,9 +44,9 @@ function openMenu(mainBlock, hiddenElement, openFunction, closeFunction, otherEl
         $('.main-home__slide').slick('slickPause');
         $('.header__mobile-log-img').css({'fill': '#fff'});
         $('.square').css({'background-color': '#fff'});
-
-
+        $('.header__portfolio').css({'background-color': 'transparent'});
     }
+
 }
 
 //функция закрытия по нажатию ESC
@@ -62,6 +64,7 @@ function changeColorForElementsSlide() {
         $('.pdf-download_img--mobile').css({'stroke': '#fff'});
         $('.index__slider-counter, .pdf-download_text--mobile').css({'color': '#fff'});
         $('.main-scroll').removeClass('main-scroll--black');
+
         if (widthWindow <= '600') {
             $('.square').css({'background-color': '#fff'})
         } else {
@@ -123,6 +126,7 @@ $('.burger-container').on('click', openMainMenu);
 
 
 var homePage = document.querySelector('.main-home');
+//функции запускаемые при ресайзе
 
 if (homePage) {
 //функция определяет колличество слаайдов в каждом блоке и заносит в массив
@@ -215,82 +219,149 @@ if (homePage) {
 
 var portfolioPage = document.querySelector('.main-portfolio');
 if (portfolioPage) {
-    //фильтрация галереи
-    var mixer = mixitup('.container', {
-        controls: {
-            toggleDefault: 'none'
-        }
-    });
-
 // упралением окном фильтров
+//закрытие фильтра
+    var mainButton = $('.filter-button-open');
+
     function closeFilter() {
         $('.filter-container').removeClass('filter-container--open');
-    }
-
-    var mainButton = $('.filter-button-open');
-    mainButton.on('click', function () {
-        $('.filter-container').addClass('filter-container--open');
-    });
-    $('.filter__button').on('click', closeFilter);
-
-    // упралением окном фильтров
-
-/*    function fff() {
-        var windowHeight = $(window).height();
-        var photos = document.querySelectorAll('.gallery__photo');
-        photos.forEach(function (item, index) {
-                if (item.style.display !== 'none') {
-                    var height = Math.ceil($(item).height());
-                    console.log(height);
-                    if (height === windowHeight) {
-                        var img = item.querySelector('.gallery__img');
-                        img.classList.add('edit');
-                    } else {
-                        var img = item.querySelector('.gallery__img');
-                        img.classList.remove('edit');
-                    }
-                }
-            }
-        );
-    }*/
-
-    function addClassActive() {
-        $(".gallery__photo").addClass("active");
-    }
-
-    addClassActive();
-
-    $('.gallery__photo.active').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
+        if (widthWindow <= '600') {
+            $('.header__mobile-log-img').css({'fill': '#000'});
+            $('.header__portfolio').css({'background-color': ''});
         }
-    });
+        mainButton.removeClass('filter-button-open--open');
+        mainButton.on('click', openFilter);
+    }
 
 
-    $(".filter").click(function () {
-        addClassActive();
-        setTimeout(function () {
-            $(".gallery__photo").each(function () {
-                if ($(this).css('display') == 'none') {
-                    $(this).removeClass("active");
-                }
-            });
-            $('.gallery__photo.active').magnificPopup({
-                type: 'image',
-                gallery: {
-                    enabled: true
-                }
-            });
-        }, 700);
+    //открытие фильтра
+    function openFilter() {
+        $('.filter-container').addClass('filter-container--open');
+        if (widthWindow <= '600') {
+            $('.header__mobile-log-img').css({'fill': '#fff'});
+            $('.header__portfolio').css({'background-color': 'transparent'});
+            mainButton.addClass('filter-button-open--open');
+        }
 
-    });
+        mainButton.off('click', openFilter);
+        $('.filter-button-open').on('click', closeFilter);
+    }
 
-/*    $('.container').on('mixEnd', function () {
-        fff();
-    })*/
+    mainButton.on('click', openFilter);
+
 //----------------------------------------------------------
+// with Masonry & jQuery
+// init Masonry
+    var $grid = $('.grid').masonry({
+        // Masonry options...
+        itemSelector: '.gallery__photo'
+    });
+
+    /*// get Masonry instance
+        var msnry = $grid.data('masonry');
+
+    // init Infinite Scroll
+        $grid.infiniteScroll({
+            // Infinite Scroll options...
+            append: '.gallery__photo',
+            outlayer: msnry
+        });*/
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress(function () {
+        $grid.masonry('layout');
+
+    });
+    /*    $(function () {
+            $('.gallery__img').lazy({
+                threshold: 0,
+                afterLoad: function() {
+                    // called after an element was successfully handled
+                    $grid.masonry('layout');
+                }
+            });
+
+        });*/
+    //фильтр галереи
+    $('.grid').isotope({
+        // options
+        itemSelector: '.gallery__photo',
+        masonry: {}
+    });
 
 
+    $('.filter.beauty').on('click', function () {
+        $grid.isotope({filter: '.beauty'});
+    });
+    $('.filter.magazines').on('click', function () {
+        $grid.isotope({filter: '.magazines'});
+    });
+    $('.filter.fashion').on('click', function () {
+        $grid.isotope({filter: '.fashion'});
+    });
+    $('.filter.advertising').on('click', function () {
+        $grid.isotope({filter: '.advertising'});
+    })
+
+    $('.filter.all').on('click', function () {
+        $grid.isotope({filter: '.gallery__photo'});
+    });
+
+    //--------------------------------------------
+    //активация при клике на фильтр + закрытие попапа по нажатию на категории
+    $('.filter').on('click', function () {
+        $('.filter').removeClass('filter--active');
+        $(this).addClass('filter--active');
+        closeFilter();
+    })
 }
 
+function addClassActive() {
+    $(".gallery__photo").addClass("active");
+}
+
+addClassActive();
+
+/*function numberImagesPopup(current, total) {
+    console.log(current);
+    var currentImg;
+    var totalImg;
+
+    if (Number(current) < 10) {
+        currentImg = '0' + String(current);
+        console.log(currentImg)
+    } else {
+        currentImg = current
+    }
+    if (Number(total) < 10) {
+        totalImg = '0' + String(total);
+    } else {
+        totalImg = total
+    }
+    var numberAll = currentImg + '/' + totalImg;
+    return(numberAll)
+}*/
+function activePopup() {
+    $('.gallery__photo.active').magnificPopup({
+        type: 'image',
+        closeMarkup: '<button title="close" type="button" class="mfp-close"></button>',
+        gallery: {
+            enabled: true,
+            tCounter: '%curr% / %total%'
+        }
+    });
+}
+
+activePopup()
+
+$(".filter").click(function () {
+    addClassActive();
+    setTimeout(function () {
+        activePopup()
+    }, 700);
+});
+
+
+//функции запускаемые при ресайзе
+$(window).on('resize', function () {
+    onWidthWindow();
+});

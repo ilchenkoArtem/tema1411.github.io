@@ -12,7 +12,7 @@
 
 <body class="body body-portfolio">
 <header>
-    <div class="header">
+    <div class="header header__portfolio">
         <section class="burger-container">
             <div class="burger-wrapper">
                 <div class="square square1"></div>
@@ -131,60 +131,79 @@
     </section>
 </header>
 <main class="main-portfolio">
+    <section class="logo-portfolio"></section>
     <section class="filter-button-open">
-        <img src="img/filter__icon.svg" alt="" width="17" height="23">
+      <!--  <img src="img/filter__icon.svg" alt="" width="17" height="23">-->
     </section>
-    <section class="filter-container">
+    <section class="filter-container filter-container__open">
         <section class="filter__buttons">
             <p class="filter__tags">TAGS:</p>
-            <a class="filter all" data-filter="all">#All</a>
-            <a class="filter fashion" data-filter=".fashion">#FASHION</a>
-            <a class="filter beauty" data-filter=".beauty">#BEAUTY</a>
-            <a class="filter magazines" data-filter=".magazines">#MAGAZINES</a>
-            <a class="filter advertising" data-filter=".advertising">#ADVERTISING</a>
+            <a class="filter filter--active all" >#All</a>
+            <a class="filter fashion">#FASHION</a>
+            <a class="filter beauty" >#BEAUTY</a>
+            <a class="filter magazines" >#MAGAZINES</a>
+            <a class="filter advertising">#ADVERTISING</a>
         </section>
         <section class="filter__button">
-            <img src="img/filter__icon.svg" alt="" width="17" height="23">
+           <!-- <img src="img/filter__icon.svg" alt="" width="17" height="23">-->
         </section>
     </section>
-    <section class="gallery container">
-        <a href="img/mobile-home1.jpg" class="gallery__photo gallery__photo--vertical mix fashion">
+    <section class="gallery container grid">
+        <a href="img/mobile-home1.jpg" class="gallery__photo gallery__photo--vertical mix fashion" data-visible="">
             <img src="img/mobile-home1.jpg" alt="" class="gallery__img">
         </a>
-        <a href="img/mobile-home1.jpg" class="gallery__photo gallery__photo--vertical mix fashion">
-            <img src="img/mobile-home1.jpg" alt="" class="gallery__img">
-        </a>
-        <a href="img/home3.jpg" class="gallery__photo gallery__photo--horizontal mix beauty">
-            <img src="img/home3.jpg" alt="" class="gallery__img">
-        </a>
-        <a href="img/home3.jpg" class="gallery__photo gallery__photo--horizontal mix fashion" data-visible="visible">
-            <img src="img/home3.jpg" alt="" class="gallery__img">
-        </a>
-        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix fashion"
-           data-visible="visible">
+        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix beauty" data-visible="visible">
             <img src="img/mobile-home2.jpg" alt="" class="gallery__img">
         </a>
-        <a href="img/home3.jpg" class="gallery__photo gallery__photo--horizontal mix fashion" data-visible="visible">
-            <img src="img/home3.jpg" alt="" class="gallery__img">
-        </a>
-        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix magazines"
-           data-visible="visible">
-            <img src="img/mobile-home2.jpg" alt="" class="gallery__img">
-        </a>
-        <a href="img/mobile-home1.jpg" class="gallery__photo gallery__photo--vertical mix advertising"
-           data-visible="visible">
-            <img src="img/mobile-home1.jpg" alt="" class="gallery__img">
-        </a>
-        <a href="img/home3.jpg" class="gallery__photo gallery__photo--horizontal mix advertising"
-           data-visible="visible">
-            <img src="img/home3.jpg" alt="" class="gallery__img">
-        </a>
-        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix advertising"
-           data-visible="visible">
-            <img src="img/mobile-home2.jpg" alt="" class="gallery__img">
-        </a>
-
         <a href="img/home3.jpg" class="gallery__photo gallery__photo--horizontal mix beauty" data-visible="visible">
+            <img src="img/home3.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix fashion" data-visible="visible">
+            <img src="img/mobile-home2.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix magazines" data-visible="visible">
+            <img src="img/mobile-home2.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/home3.jpg" class="gallery__photo gallery__photo--horizontal mix fashion" data-visible="visible">
+            <img src="img/home3.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/mobile-home1.jpg" class="gallery__photo gallery__photo--vertical mix advertising" data-visible="visible">
+            <img src="img/mobile-home1.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix advertising" data-visible="visible">
+            <img src="img/mobile-home2.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/home3.jpg" class="gallery__photo gallery__photo--horizontal mix beauty" data-visible="visible">
+            <img src="img/home3.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix magazines" data-visible="visible">
+            <img src="img/mobile-home2.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/mobile-home1.jpg" class="gallery__photo gallery__photo--vertical mix advertising" data-visible="visible">
+            <img src="img/mobile-home1.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix advertising" data-visible="visible">
+            <img src="img/mobile-home2.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/home3.jpg" class="gallery__photo gallery__photo--horizontal mix fashion" data-visible="visible">
+            <img src="img/home3.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix magazines" data-visible="visible">
+            <img src="img/mobile-home2.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/home3.jpg" class="gallery__photo gallery__photo--horizontal mix fashion" data-visible="visible">
+            <img src="img/home3.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/mobile-home1.jpg" class="gallery__photo gallery__photo--vertical mix advertising" data-visible="visible">
+            <img src="img/mobile-home1.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix advertising" data-visible="visible">
+            <img src="img/mobile-home2.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/mobile-home2.jpg" class="gallery__photo gallery__photo--vertical mix advertising" data-visible="visible">
+            <img src="img/mobile-home2.jpg" alt="" class="gallery__img">
+        </a>
+        <a href="img/home3.jpg" class="gallery__photo gallery__photo--horizontal mix fashion" data-visible="visible">
             <img src="img/home3.jpg" alt="" class="gallery__img">
         </a>
     </section>

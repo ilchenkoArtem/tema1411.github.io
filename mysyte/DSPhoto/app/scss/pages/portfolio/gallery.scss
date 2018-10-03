@@ -3,98 +3,97 @@
 }
 
 .main-portfolio {
-  padding-left: 90px;
-  padding-right: 0.25vw;
   box-sizing: border-box;
   width: 100%;
   height: auto;
-}
-
-.gallery {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.gallery__photo,
-.gallery,
-.main-portfolio {
-  width: 100%;
+  padding: 0.25vw;
+  padding-top: 0;
+  padding-left: 90px;
 
 }
-
 
 .gallery__photo {
   display: block;
-  padding: 0.25vw;
   box-sizing: border-box;
-  text-align: center;
-
+  width: 25%;
+  height: auto;
+  padding: 0.25vw;
 }
 
-
-.gallery__photo--vertical {
-  width: 23%;
-  max-width: 23%;
-  flex-grow: 1;
-  flex-shrink: 0.25;
-}
-
-.gallery__photo--horizontal {
-  width: 54%;
-  max-width: 100%;
-  flex-grow: 1;
-  flex-shrink: 0.5;
+.grid {
+  margin: 0 auto;
 }
 
 .gallery__img {
-  height: 100%;
   width: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
 .filter-button-open {
   position: fixed;
-  right: 42px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 25px;
+  bottom: 25px;
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   display: flex;
   cursor: pointer;
-  img {
-    margin: auto;
+  background-image: url("../img/filter__icon.svg");
+  background-size: 17px 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3;
+  transition: 0.4s all ease;
+  &--open {
+    background-image: url("../img/close_white.svg");
+    background-color: black;
   }
 }
 
+.logo-portfolio {
+  position: fixed;
+  right: 25px;
+  top: 36px;
+  width: 172px;
+  height: 36px;
+  background-image: url("../img/logo_black.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 2;
+  transition: 0.4s all ease;
 
-/*@media (max-width: 900px) {
-  .gallery__photo--vertical {
-    min-width: 25%;
-    max-width: 50%;
-    flex-shrink: 0.25;
+}
+
+@media (max-width: 900px) {
+  .gallery__photo {
+    width: 33.33%;
   }
+}
 
-  .main-portfolio {
-    padding-left: 0;
+@media (max-width: 700px) {
+  .gallery__photo {
+    width: 50%;
   }
-}*/
-
+}
 
 @media (max-width: 600px) {
+  .logo-portfolio {
+    display: none;
+  }
   .main-portfolio {
     padding-left: 0;
   }
+
+  .filter-button-open {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
   .gallery__photo {
     width: 100%;
-    min-width: auto;
-    max-width: none;
-    img {
-      object-fit: contain;
-      height: auto;
-    }
   }
 }
