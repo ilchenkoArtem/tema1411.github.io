@@ -7,7 +7,7 @@ function onWidthWindow() { //определение ширина окна
 onWidthWindow();
 
 //-----------------------ПЛАВНЫЙ СКРОЛЛ К якорной ссылке---------------------------
-function smoothScroll(containerLinks) {
+function smoothScroll(containerLinks, time) {
     $(containerLinks).on("click", "a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
 
@@ -20,7 +20,7 @@ function smoothScroll(containerLinks) {
             top = $(id).offset().top;
 
         //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 1500);
+        $('body,html').animate({scrollTop: top}, time);
     });
 }
 
@@ -306,7 +306,13 @@ if (portfolioPage) {
         itemSelector: '.gallery__photo',
         masonry: {}
     });
+    //функция скрлорит страницу в начало после работы фильтра
+    function onArrange() {
+        console.log('arrange done');
+        document.location.href = '#top'
 
+    }
+    $grid.on( 'arrangeComplete', onArrange );
     //Настройки фильтра
     $('.filter.beauty').on('click', function () {
         $grid.isotope({filter: '.beauty'});
@@ -366,7 +372,7 @@ if (portfolioPage) {
     });
 
     //-------плавный скролл к верху страницы
-    smoothScroll(".footer__scroll-top-container")
+    smoothScroll(".footer__scroll-top-container", 500)
 }
 
 //функции запускаемые при ресайзе
