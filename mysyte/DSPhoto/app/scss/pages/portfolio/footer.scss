@@ -1,4 +1,4 @@
-.footer-portfolio {
+.footer-main-container {
   background-color: #f5f5f5;
   min-height: 90px;
   width: 100%;
@@ -7,6 +7,20 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.footer__scroll-top {
+  width: 100%;
+  display: block;
+  padding-left: 90px;
+  height: 80px;
+  font-family: "Montserrat-Black";
+  text-decoration: none;
+  color: #000;
+  font-size: 9px;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 80px;
 }
 
 .footer__socials-container {
@@ -44,6 +58,7 @@
 
 .footer__year {
   font-size: 9px;
+  margin-left: -3%;
   font-family: "Montserrat-Medium";
   color: #7d7d7d;
 }
@@ -61,7 +76,7 @@
 }
 
 @media (max-width: 753px) {
-  .footer-portfolio {
+  .footer-main-container {
     align-items: center;
     padding: 0 90px 0 120px;
   }
@@ -79,11 +94,15 @@
     flex-direction: column;
   }
 
+  .footer__scroll-top {
+    padding: 0;
+  }
+
   .footer__logo-container-text {
     margin-right: 0;
     margin-bottom: 5px;
   }
-  .footer-portfolio {
+  .footer-main-container {
     padding: 10px 80px 0 30px;
   }
 
@@ -93,7 +112,7 @@
 }
 
 @media (max-width: 452px) {
-  .footer-portfolio {
+  .footer-main-container {
     flex-direction: column;
     padding: 10px 0;
   }
@@ -101,7 +120,7 @@
     flex-direction: column;
   }
   .footer__socials-text {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .footer__logo-container {
     flex-direction: row;
@@ -109,5 +128,4 @@
   .footer__logo-container-text {
     margin-right: 10px;
   }
-
 }

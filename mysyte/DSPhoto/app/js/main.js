@@ -1,11 +1,30 @@
-var widthWindow;
+var widthWindow; //ширина окна
 
-function onWidthWindow() {
+function onWidthWindow() { //определение ширина окна
     widthWindow = $(window).width()
 }
 
 onWidthWindow();
 
+//-----------------------ПЛАВНЫЙ СКРОЛЛ К якорной ссылке---------------------------
+function smoothScroll(containerLinks) {
+    $(containerLinks).on("click", "a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+
+        event.preventDefault();
+
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+}
+
+//--------------------------------------------------------------------------------
 
 //Управление меню
 //Управление главным меню
@@ -288,7 +307,7 @@ if (portfolioPage) {
         masonry: {}
     });
 
-
+    //Настройки фильтра
     $('.filter.beauty').on('click', function () {
         $grid.isotope({filter: '.beauty'});
     });
@@ -300,7 +319,7 @@ if (portfolioPage) {
     });
     $('.filter.advertising').on('click', function () {
         $grid.isotope({filter: '.advertising'});
-    })
+    });
 
     $('.filter.all').on('click', function () {
         $grid.isotope({filter: '.gallery__photo'});
@@ -312,58 +331,43 @@ if (portfolioPage) {
         $('.filter').removeClass('filter--active');
         $(this).addClass('filter--active');
         closeFilter();
-    })
-}
-
-function addClassActive() {
-    $(".gallery__photo").addClass("active");
-}
-
-addClassActive();
-
-/*function numberImagesPopup(current, total) {
-    console.log(current);
-    var currentImg;
-    var totalImg;
-
-    if (Number(current) < 10) {
-        currentImg = '0' + String(current);
-        console.log(currentImg)
-    } else {
-        currentImg = current
-    }
-    if (Number(total) < 10) {
-        totalImg = '0' + String(total);
-    } else {
-        totalImg = total
-    }
-    var numberAll = currentImg + '/' + totalImg;
-    return(numberAll)
-}*/
-function activePopup() {
-    $('.gallery__photo.active').magnificPopup({
-        type: 'image',
-        closeMarkup: '<button title="close" type="button" class="mfp-close"></button>',
-        gallery: {
-            enabled: true,
-            tCounter: '%curr% / %total%'
-        }
     });
-}
-activePopup();
 
-$(".filter").click(function () {
+
+    function addClassActive() {
+        $(".gallery__photo").addClass("active");
+    }
+
     addClassActive();
-    setTimeout(function () {
-        $(".gallery__photo").each(function () {
-            if ($(this).css('display') == 'none'){
-                $(this).removeClass("active");
+
+    function activePopup() {
+        $('.gallery__photo.active').magnificPopup({
+            type: 'image',
+            closeMarkup: '<button title="close" type="button" class="mfp-close"></button>',
+            gallery: {
+                enabled: true,
+                tCounter: '%curr% / %total%'
             }
         });
-        activePopup();
-    },700);
-});
+    }
 
+    activePopup();
+
+    $(".filter").click(function () {
+        addClassActive();
+        setTimeout(function () {
+            $(".gallery__photo").each(function () {
+                if ($(this).css('display') == 'none') {
+                    $(this).removeClass("active");
+                }
+            });
+            activePopup();
+        }, 700);
+    });
+
+    //-------плавный скролл к верху страницы
+    smoothScroll(".footer__scroll-top-container")
+}
 
 //функции запускаемые при ресайзе
 $(window).on('resize', function () {
