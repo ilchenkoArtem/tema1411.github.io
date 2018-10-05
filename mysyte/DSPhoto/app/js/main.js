@@ -10,15 +10,11 @@ onWidthWindow();
 function smoothScroll(containerLinks, time) {
     $(containerLinks).on("click", "a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
-
         event.preventDefault();
-
         //забираем идентификатор бока с атрибута href
         var id = $(this).attr('href'),
-
             //узнаем высоту от начала страницы до блока на который ссылается якорь
             top = $(id).offset().top;
-
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, time);
     });
@@ -124,7 +120,17 @@ function closeMainMenuEsc(e) {
 function closePdfMenu() {
     changeColorForElementsSlide();
     closeMenu('.pdf-nav', '.pdf-nav .nav__links, .pdf-nav__text', openPdfMenu, closePdfMenu, '.pdf-nav .nav__bg, .pdf-nav .nav__link', '.pdf-download', closePdfMenuEsc);
+    if (widthWindow <= '600') {
+
+        pdfButtonMobilePortfolio.off('click', closePdfMenu);
+        pdfButtonMobilePortfolio.on('click', openPdfMenu);
+        setTimeout(function () {
+            pdfButtonMobilePortfolio.removeClass('pdf-download-portfolio--mobile--open');
+        }, 800)
+    }
 }
+
+var pdfButtonMobilePortfolio = $('.pdf-download-portfolio--mobile')
 
 function openPdfMenu() {
     closeMainMenu();
@@ -132,6 +138,12 @@ function openPdfMenu() {
     $('.pdf-download_text--mobile').css({'color': 'white'});
     $('.pdf-download_img--mobile').css({'stroke': 'white'});
     openMenu('.pdf-nav', '.pdf-nav .nav__links, .pdf-nav__text', openPdfMenu, closePdfMenu, '.pdf-nav .nav__bg', '.pdf-download', closePdfMenuEsc);
+    if (widthWindow <= '600') {
+        pdfButtonMobilePortfolio.addClass('pdf-download-portfolio--mobile--open');
+        pdfButtonMobilePortfolio.off('click', openPdfMenu);
+        pdfButtonMobilePortfolio.on('click', closePdfMenu)
+    }
+
 }
 
 function closePdfMenuEsc(e) {
@@ -140,7 +152,7 @@ function closePdfMenuEsc(e) {
 
 
 $(window).on('resize', onWidthWindow);
-$('.pdf-download').on('click', openPdfMenu);
+$('.pdf-download, .pdf-download-portfolio--mobile').on('click', openPdfMenu);
 $('.burger-container').on('click', openMainMenu);
 
 
@@ -306,13 +318,15 @@ if (portfolioPage) {
         itemSelector: '.gallery__photo',
         masonry: {}
     });
+
     //функция скрлорит страницу в начало после работы фильтра
     function onArrange() {
         console.log('arrange done');
         document.location.href = '#top'
 
     }
-    $grid.on( 'arrangeComplete', onArrange );
+
+    $grid.on('arrangeComplete', onArrange);
     //Настройки фильтра
     $('.filter.beauty').on('click', function () {
         $grid.isotope({filter: '.beauty'});
