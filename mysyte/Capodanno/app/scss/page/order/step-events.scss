@@ -219,11 +219,12 @@
   .step-event__next-container {
     margin-bottom: 10px;
     width: 100%;
+    min-width: auto;
   }
   .step-event__control {
     margin-top: 10px;
     button {
-      max-width: 90%;
+      max-width: 100%;
     }
   }
 
