@@ -165,7 +165,7 @@
   top: 0;
   width: 100%;
   height: 100vh;
-  z-index: 4;
+  z-index: 5;
   margin-left: 90px;
   transform: translateX(-100%);
   transition: transform .5s cubic-bezier(1, 0, 0, 1) 0s
@@ -213,6 +213,10 @@
   transition: 0.4s all ease;
   &:hover {
     opacity: 0.6;
+  }
+  &--active {
+    text-decoration: underline;
+    opacity: .6;
   }
 }
 

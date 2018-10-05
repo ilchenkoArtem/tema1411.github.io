@@ -71,6 +71,8 @@ function closeESC(e, closeFunction) {
     }
 }
 
+
+
 //функция меняет цвет лого и счетчика взависимости от дата атрибута
 function changeColorForElementsSlide() {
     var currentColour = $('.slick-active').attr('data-color');
@@ -100,39 +102,29 @@ function changeColorForElementsSlide() {
 
 }
 
-//Инициализация работы главного меню
+
+//открытие главного меню
 function openMainMenu() {
     $('.burger-wrapper').addClass('burger-wrapper-close');
     closePdfMenu();
+    closeFilter();
     openMenu('.main-nav', '.main-nav .nav__links, .nav__socials, .header-home__mobile-social', openMainMenu, closeMainMenu, '.main-nav .nav__bg, .main-nav .nav__link', '.burger-container', closeMainMenuEsc);
 }
-
+//закртие главного меню
 function closeMainMenu() {
     $('.burger-wrapper').removeClass('burger-wrapper-close');
     closeMenu('.main-nav', '.main-nav .nav__links, .nav__socials, .header-home__mobile-social', openMainMenu, closeMainMenu, '.main-nav .nav__bg, .main-nav .nav__link', '.burger-container', closeMainMenuEsc);
 }
-
+//закртие главного меню по нажатию
 function closeMainMenuEsc(e) {
     closeESC(e, closeMainMenu)
 }
 
 //инициализация работы  меню с pdf
-function closePdfMenu() {
-    changeColorForElementsSlide();
-    closeMenu('.pdf-nav', '.pdf-nav .nav__links, .pdf-nav__text', openPdfMenu, closePdfMenu, '.pdf-nav .nav__bg, .pdf-nav .nav__link', '.pdf-download', closePdfMenuEsc);
-    if (widthWindow <= '600') {
-
-        pdfButtonMobilePortfolio.off('click', closePdfMenu);
-        pdfButtonMobilePortfolio.on('click', openPdfMenu);
-        setTimeout(function () {
-            pdfButtonMobilePortfolio.removeClass('pdf-download-portfolio--mobile--open');
-        }, 800)
-    }
-}
-
-var pdfButtonMobilePortfolio = $('.pdf-download-portfolio--mobile')
-
+var pdfButtonMobilePortfolio = $('.pdf-download-portfolio--mobile');//кнопка pdf мобильной версии страницы порфтолио
+//открытие меню pdf
 function openPdfMenu() {
+    closeFilter();
     closeMainMenu();
     $('.pdf-download--mobile').css({'z-index': '6'});
     $('.pdf-download_text--mobile').css({'color': 'white'});
@@ -143,13 +135,61 @@ function openPdfMenu() {
         pdfButtonMobilePortfolio.off('click', openPdfMenu);
         pdfButtonMobilePortfolio.on('click', closePdfMenu)
     }
-
+    $(window).on('keydown', closePdfMenuEsc);
 }
 
+//закрытие меню pdf
+function closePdfMenu() {
+    changeColorForElementsSlide();
+    closeMenu('.pdf-nav', '.pdf-nav .nav__links, .pdf-nav__text', openPdfMenu, closePdfMenu, '.pdf-nav .nav__bg, .pdf-nav .nav__link', '.pdf-download', closePdfMenuEsc);
+    if (widthWindow <= '600') {
+
+        pdfButtonMobilePortfolio.off('click', closePdfMenu);
+        pdfButtonMobilePortfolio.on('click', openPdfMenu);
+        setTimeout(function () {
+            pdfButtonMobilePortfolio.removeClass('pdf-download-portfolio--mobile--open');
+        }, 800)
+        $(window).off('keydown', closePdfMenuEsc);
+    }
+}
+
+//закрытие меню pdf по esc
 function closePdfMenuEsc(e) {
     closeESC(e, closePdfMenu)
 }
 
+// упралением окном фильтров
+var mainButton = $('.filter-button-open');//кнопка фильтра в на странце портфолио
+//открытие фильтра
+function openFilter() {
+    closePdfMenu();
+    closeMainMenu();
+    $('.filter-container').addClass('filter-container--open');
+    if (widthWindow <= '600') {
+        $('.header__mobile-log-img').css({'fill': '#fff'});
+        $('.header__portfolio').css({'background-color': 'transparent'});
+        mainButton.addClass('filter-button-open--open');
+    }
+
+    mainButton.off('click', openFilter);
+    $('.filter-button-open').on('click', closeFilter);
+    $(window).on('keydown', closeFilterEsc);
+}
+//закрытие фильтра
+function closeFilter() {
+    $('.filter-container').removeClass('filter-container--open');
+    if (widthWindow <= '600') {
+        $('.header__mobile-log-img').css({'fill': '#000'});
+        $('.header__portfolio').css({'background-color': ''});
+    }
+    mainButton.removeClass('filter-button-open--open');
+    $(window).off('keydown', closeFilterEsc);
+    mainButton.on('click', openFilter);
+}
+//закртыие фильтра по ESC
+function closeFilterEsc(e) {
+    closeESC(e, closeFilter)
+}
 
 $(window).on('resize', onWidthWindow);
 $('.pdf-download, .pdf-download-portfolio--mobile').on('click', openPdfMenu);
@@ -250,34 +290,6 @@ if (homePage) {
 
 var portfolioPage = document.querySelector('.main-portfolio');
 if (portfolioPage) {
-// упралением окном фильтров
-//закрытие фильтра
-    var mainButton = $('.filter-button-open');
-
-    function closeFilter() {
-        $('.filter-container').removeClass('filter-container--open');
-        if (widthWindow <= '600') {
-            $('.header__mobile-log-img').css({'fill': '#000'});
-            $('.header__portfolio').css({'background-color': ''});
-        }
-        mainButton.removeClass('filter-button-open--open');
-        mainButton.on('click', openFilter);
-    }
-
-
-    //открытие фильтра
-    function openFilter() {
-        $('.filter-container').addClass('filter-container--open');
-        if (widthWindow <= '600') {
-            $('.header__mobile-log-img').css({'fill': '#fff'});
-            $('.header__portfolio').css({'background-color': 'transparent'});
-            mainButton.addClass('filter-button-open--open');
-        }
-
-        mainButton.off('click', openFilter);
-        $('.filter-button-open').on('click', closeFilter);
-    }
-
     mainButton.on('click', openFilter);
 
 //----------------------------------------------------------
