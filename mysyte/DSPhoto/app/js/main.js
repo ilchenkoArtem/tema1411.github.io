@@ -102,7 +102,6 @@ function changeColorForElementsSlide() {
 
 }
 
-
 //открытие главного меню
 function openMainMenu() {
     $('.burger-wrapper').addClass('burger-wrapper-close');
