@@ -213,7 +213,7 @@
             <task-name>webp</task-name>
           </GulpTaskState>
           <GulpTaskState>
-            <task-name>tinypng</task-name>
+            <task-name>img</task-name>
           </GulpTaskState>
         </tasks>
       </GulpfileState>
@@ -223,7 +223,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="734" />
@@ -401,12 +401,12 @@
       <workItem from="1535291170368" duration="4259000" />
       <workItem from="1535301396617" duration="7558000" />
       <workItem from="1539255079079" duration="6295000" />
-      <workItem from="1539360213436" duration="41000" />
+      <workItem from="1539360213436" duration="481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220094000" />
+    <option name="totallyTimeSpent" value="220534000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -418,7 +418,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <layout>
       <window_info id="Gulp" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12552892" sideWeight="0.5213793" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12552892" sideWeight="0.47862068" order="0" side_tool="false" content_ui="combo" />
