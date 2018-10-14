@@ -84,6 +84,7 @@ a.footer__mail {
   margin-bottom: 0;
 }
 
+
 @media (max-width: 1360px) {
   .footer {
     padding: 0 30px;
@@ -138,5 +139,8 @@ a.footer__mail {
 @media (max-width: 750px) {
   .footer {
     font-size: 10px;
+  }
+  .footer__links-mobile-nav li:not(:last-of-type) {
+    margin-right: 10px;
   }
 }

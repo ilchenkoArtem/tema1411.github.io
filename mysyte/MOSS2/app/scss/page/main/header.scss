@@ -1,12 +1,12 @@
 .header-index {
   height: 100vh;
   width: 100%;
-/*  background-image: url("../img/main_bg.jpg");*/
+  /*  background-image: url("../img/main_bg.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-/*  padding: 28px 20px 15px 20px;*/
+  /*  padding: 28px 20px 15px 20px;*/
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -17,7 +17,6 @@
     opacity: 0;
   }
 }
-
 
 .header-index__burger {
   position: absolute;
@@ -50,42 +49,61 @@
     text-transform: uppercase;
   }
 }
-  .header-index__scroll {
-    a {
-      font-family: AvenirLight,sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      letter-spacing: 0.2em;
-    }
 
+.header-index__scroll {
+  a {
+    font-family: AvenirLight, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.2em;
   }
 
-  .header-index__scroll-text {
-    margin-bottom: 10px;
-  }
+}
 
-  .header-index__social {
-    align-self: flex-start;
-    transition: 0.4s opacity ease ;
-    a {
-      display: block;
-      margin-bottom: 25px;
-    }
-    img {
-      width: 26.48px;
-      height: auto;
-    }
-    &--disabled {
-      opacity: 0;
-    }
+.header-index__scroll-text {
+  margin-bottom: 10px;
+}
+
+.header-index__social {
+  align-self: flex-start;
+  transition: 0.4s opacity ease;
+  a {
+    display: block;
+    margin-bottom: 25px;
   }
+  img {
+    width: 26.48px;
+    height: auto;
+  }
+  &--disabled {
+    opacity: 0;
+  }
+}
+
+.header__value-button {
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/volume-off-indicator.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  &--mute {
+    background-image: url("../img/volume-up-indicator.svg");
+
+  }
+}
+
 @media (max-width: 992px) {
   .header-index__logo {
     width: 200px;
   }
 }
+
 @media (max-width: 768px) {
   .header-index__burger {
     .burger__el {
@@ -104,7 +122,7 @@
     justify-content: center;
   }
   .header-index {
-/*    background-image: url("../img/mscrmob.jpg");*/
+    /*    background-image: url("../img/mscrmob.jpg");*/
   }
   .header-index__burger {
     top: 10px;
