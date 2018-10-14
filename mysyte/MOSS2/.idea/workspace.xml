@@ -73,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="31" column="87" lean-forward="true" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="87" />
+              <caret line="31" column="138" lean-forward="false" selection-start-line="31" selection-start-column="138" selection-end-line="31" selection-end-column="138" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -171,8 +171,8 @@
         <option value="$PROJECT_DIR$/app/scss/page/contacts/contacts.scss" />
         <option value="$PROJECT_DIR$/app/scss/repeating block/nav-popup.scss" />
         <option value="$PROJECT_DIR$/app/scss/page/main/header.scss" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/js/main.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
   </component>
@@ -408,12 +408,12 @@
       <workItem from="1535301396617" duration="7558000" />
       <workItem from="1539255079079" duration="6295000" />
       <workItem from="1539360213436" duration="14839000" />
-      <workItem from="1539521253975" duration="2346000" />
+      <workItem from="1539521253975" duration="2404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237238000" />
+    <option name="totallyTimeSpent" value="237296000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -795,7 +795,7 @@
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="31" column="87" lean-forward="true" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="87" />
+          <caret line="31" column="138" lean-forward="false" selection-start-line="31" selection-start-column="138" selection-end-line="31" selection-end-column="138" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
