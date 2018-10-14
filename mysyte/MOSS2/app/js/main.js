@@ -1,5 +1,7 @@
+
 //Воспроизведение фонового видео на сафари
 var fullScreenVideo = document.querySelector('.fullscreen-bg__video');
+fullScreenVideo.play();
 if (fullScreenVideo) {
     var valueButton = document.querySelector('.header__value-button');
 
@@ -15,7 +17,6 @@ if (fullScreenVideo) {
         valueButton.classList.add('header__value-button--mute');
         valueButton.addEventListener("click", mute);
     }
-
     valueButton.addEventListener("click", unmute);
 }
 
