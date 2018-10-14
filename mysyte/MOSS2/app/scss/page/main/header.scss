@@ -1,12 +1,10 @@
 .header-index {
   height: 100vh;
   width: 100%;
-  /*  background-image: url("../img/main_bg.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /*  padding: 28px 20px 15px 20px;*/
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -92,6 +90,7 @@
   position: absolute;
   bottom: 15px;
   left: 20px;
+  cursor: pointer;
   &--mute {
     background-image: url("../img/volume-up-indicator.svg");
 

@@ -3,17 +3,17 @@ var fullScreenVideo = document.querySelector('.fullscreen-bg__video');
 if (fullScreenVideo) {
     var valueButton = document.querySelector('.header__value-button');
 
-    function unmute() {
-        fullScreenVideo.muted = false;
-        valueButton.classList.add('header__value-button--mute');
-        valueButton.removeEventListener("click", unmute);
-        valueButton.addEventListener("click", mute);
-    }
-
     function mute() {
         fullScreenVideo.muted = true;
         valueButton.classList.remove('header__value-button--mute');
+        valueButton.removeEventListener("click", mute);
         valueButton.addEventListener("click", unmute);
+    }
+
+    function unmute() {
+        fullScreenVideo.muted = false;
+        valueButton.classList.add('header__value-button--mute');
+        valueButton.addEventListener("click", mute);
     }
 
     valueButton.addEventListener("click", unmute);
