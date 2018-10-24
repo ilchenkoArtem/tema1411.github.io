@@ -1,0 +1,11 @@
+body,
+main,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@function vw($target) {
+  $vw-context: (1003 * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}

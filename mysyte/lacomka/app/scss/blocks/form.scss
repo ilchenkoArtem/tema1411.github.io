@@ -1,0 +1,55 @@
+.form {
+  color: $text-color;
+  width: 400px;
+  height: auto;
+  background-color: $bg-color;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: $text-family;
+
+  .first__form-h3 {
+    font-size: $h3-size;
+    font-family: $h-font-family;
+    text-transform: uppercase;
+    letter-spacing: $h3-letterSp;
+    margin-bottom: 5px;
+
+  }
+  input {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    display: block;
+    height: 50px;
+    width: 100%;
+    &:not(:last-of-type){
+      margin-bottom: 20px;
+    }
+  }
+  .input {
+    border-bottom: 1px solid #fff;
+    color: $text-color;
+    &::placeholder {
+      font-size: $main-size-text;
+      color: $text-color;
+    }
+  }
+
+  p {
+    margin-top: 2px;
+    font-size: 14px;
+    font-family: $text-family;
+  }
+  .button {
+    background-color: transparent;
+    font-family: $button-family;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+
+    &:hover {
+      background-color: white;
+      color: #000;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.map {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+  &--active {
+    transform: translateX(0);
+  }
+}
+
+.map__main-wrapper {
+  position: relative;
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
+}
+.map__bg {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(40, 44, 100, 0.7);
+}
+
+.map__container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.map__close {
+  position: absolute;
+  top: 0;
+  right: -33px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  cursor: pointer;
+}
+//условия использования карт скрыл
+.gm-style-cc {
+  display: none;
+}
+//---------------------------------------
+@media (max-width: 440px) {
+  .map__close {
+    top: -30px;
+    right: 0;
+  }
+}

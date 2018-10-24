@@ -1,0 +1,131 @@
+.header {
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 96px;
+  background-color: #6771FF;
+}
+
+.header__empty-block {
+  width: 100%;
+  height: 96px;
+  background-color: #23369C;
+}
+
+.header__main-nav {
+  height: calc(100% - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__nav-items {
+  padding: 0;
+  margin: 0;
+
+}
+
+.header__nav-item {
+  list-style: none;
+  width: 100%;
+  min-height: 96px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  border-top: 1px solid #202BBC;
+  &:last-of-type {
+    border-bottom: 1px solid #202BBC;
+  }
+}
+
+.header__log-out {
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+  height: 96px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-top: 1px solid #202BBC;
+}
+
+.header__nav-link {
+  color: white;
+  font-size: 9.6px;
+  line-height: 11px;
+  text-decoration: none;
+  margin: auto;
+
+}
+
+.header__nav-circle {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #BCC1FF;
+}
+
+.header__nav-text {
+  text-decoration: none;
+  font-size: 9.6px;
+  line-height: 11px;
+  color: #BCC1FF;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+@media (max-width: 560px) {
+  .header {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    top: auto;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 5px;
+  }
+  .header__empty-block {
+    display: none;
+  }
+  .header__nav-items,
+  .header__main-nav {
+    display: flex;
+    min-height: auto;
+    align-items: baseline;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
+
+  .header__main-nav {
+    justify-content: space-between;
+  }
+  .header__nav-items {
+    width: 75%;
+    justify-content: space-between;
+  }
+
+  .header__nav-item {
+    width: 33.3%;
+    min-height: auto;
+    height: 100%;
+  }
+  .header__log-out {
+    width: 25%;
+    height: 100%;
+  }
+  .header__log-out,
+  .header__nav-item,
+  .header__nav-item:last-of-type {
+    border: none;
+  }
+}
+

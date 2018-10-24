@@ -1,0 +1,48 @@
+.advantages {
+  background-color: $bg-color;
+  padding: $padding-desktop-top-bottom $padding-desktop;
+  color: $text-color;
+  .wrapper {
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.advantages__headline{
+  margin-top: 0;
+  color: $text-color;
+}
+.advantages__list-items {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.advantages__list-item {
+  width: 30.33%;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: justify;
+  &::after {
+    content:  attr(data-number);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    color: $text-color-dark;
+    left: 0;
+    top: 0;
+    background-color: $text-color;
+  }
+}

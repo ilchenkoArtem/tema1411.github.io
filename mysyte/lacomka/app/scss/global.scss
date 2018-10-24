@@ -1,0 +1,108 @@
+main,
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+$padding-desktop: 80px;
+$padding-desktop-top-bottom: 50px;
+
+$nav-color: #fff;
+
+$main-size-text: 14px;
+$text-color: #fff;
+$text-color-dark: #3f4246;
+
+$bg-color-main: #F0F2FB;
+$bg-color: rgba(210, 0, 98, 0.8);
+$button-color: #8CE800;
+
+$h-font-family: 'ZopaCyr';
+$button-family: "OpenSans-ExtraBold";
+$text-family: "OpenSans-Semibold";
+
+$h3-size: 20px;
+$h3-letterSp: 0.1em;
+
+.main {
+  color: $text-color-dark;
+  font-family: $text-family;
+  width: 100%;
+  width: 100%;
+  background-color: $bg-color-main;
+  background-image: url("../img/bg-repeat.jpg");
+}
+
+.h2 {
+  font-family: $h-font-family;
+  font-size: 40px;
+  letter-spacing: $h3-letterSp;
+  text-transform: uppercase;
+  color: $bg-color;
+}
+
+.button {
+  background-color: transparent;
+  font-family: $button-family;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  transition: all 0.4s ease;
+  animation: button alternate ease-in-out 2s infinite;
+  letter-spacing: 0.2em;
+  min-height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  &:hover {
+    animation: none;
+    background-color: white;
+    color: $text-color-dark;
+  }
+  &--red {
+    border-color: $bg-color;
+    color: $bg-color;
+    animation: button-red alternate ease-in-out 2s infinite;
+    &:hover {
+      background-color: $bg-color;
+      color: white;
+    }
+  }
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@keyframes button {
+  0% {
+    background-color: transparent;
+    color: white;
+  }
+
+  50% {
+    background-color: white;
+    color: $text-color-dark;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes button-red {
+  0% {
+    background-color: transparent;
+  }
+
+  50% {
+    background-color: $bg-color;
+    color: white;
+    border-color: $bg-color;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header">
+    <section class="header__empty-block"></section>
+    <nav class="header__main-nav">
+        <ul class="header__nav-items">
+            <li class="header__nav-item">
+                <a href="#" class="header__nav-link">
+                    <img src="img/board.svg" alt="board" width="24" height="22">
+                    <p class="header__nav-text">Dashboard</p>
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#" class="header__nav-link">
+                    <span class="header__nav-circle"></span>
+                    <p class="header__nav-text">Settings</p>
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#" class="header__nav-link">
+                    <img src="img/basket.svg" alt="basket" width="30" height="26">
+                    <p class="header__nav-text">MY PLAN</p>
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="header__log-out">
+            <img src="img/exit.svg" alt="exit" width="27" height="27">
+            <p class="header__nav-text">Log out</p>
+        </a>
+    </nav>
+</header>
+<main class="main">
+    <div class="main-wrapper">
+        <section class="address">
+            <section class="address__input-items">
+                <label for="address" class="address__label">LOCATION</label>
+                <section class="address__input-wrapper">
+                    <input type="text" class="address__input" id="address" autocomplete="off" placeholder="Enter you address">
+                    <div class="address__input-bottom-border"></div>
+                </section>
+            </section>
+            <p class="address__text-or">OR</p>
+            <button class="address__button"></button>
+            <section class="map">
+                <div class="map__bg"></div>
+                <div class="map__main-wrapper">
+                    <div class="map__close"></div>
+                    <section class="map__container"></section>
+                </div>
+            </section>
+        </section>
+        <section class="range">
+            <p class="range__text">Size</p>
+            <div class="range__wrapper">
+                <section id="range" class="range__input">
+                    <div class="range__circle range__circle--left"></div>
+                    <div class="range__circle range__circle--right"></div>
+                </section>
+                <section class="range__max-min">
+                    <p class="range__value range__value--min">100 m<sup>2</sup></p>
+                    <p class="range__value range__value--max">1000 m<sup>2</sup></p>
+                </section>
+            </div>
+        </section>
+    </div>
+</main>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9Qve0qedMEX1jtJSWCxqzoMuYW72HVOM&libraries=places&callback=initAutocomplete"
+        async defer></script>
+<script src="js/scripts.min.js"></script>
+</body>
+</html>

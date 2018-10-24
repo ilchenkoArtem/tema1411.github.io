@@ -1,0 +1,42 @@
+.components {
+  text-align: center;
+  padding: $padding-desktop-top-bottom;
+  .wrapper {
+    padding: 0 $padding-desktop;
+  }
+}
+.components__headline {
+  margin-top: 0;
+}
+.components__list-items {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.components__list-item {
+  width: 30%;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: justify;
+  &::after {
+    content:  attr(data-number);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    color: $text-color;
+    left: 0;
+    top: 0;
+    background-color: $bg-color;
+  }
+}

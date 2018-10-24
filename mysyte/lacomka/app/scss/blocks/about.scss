@@ -1,0 +1,43 @@
+.about {
+  width: 100%;
+  padding: $padding-desktop-top-bottom 0;
+  box-sizing: border-box;
+  background-color: $bg-color-main;
+  background-image: url("../img/bg-repeat.jpg");
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0 $padding-desktop;
+    box-sizing: border-box;
+  }
+}
+
+.about__headline {
+  text-align: center;
+}
+
+.about__text-wrapper {
+  width: 40%;
+  float: right;
+}
+
+.about__img {
+  transform: rotate(-6deg);
+  width: 50%;
+  margin: 20px 0;
+}
+
+.about__text {
+  font-family: $text-family;
+  color: $text-color-dark;
+  text-indent: 10%;
+  text-align: justify;
+
+}
+
+.about__button {
+  margin: 0 auto;
+  display: block;
+}

@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  padding-left: 96px;
+  box-sizing: border-box;
+  font-family: Aria, sans-serif;
+}
+
+.main-wrapper {
+  margin: auto;
+}
+
+@media (max-width: 560px) {
+  .main {
+    padding: 0 20px;
+  }
+}

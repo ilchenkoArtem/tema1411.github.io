@@ -1,0 +1,147 @@
+.range {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 7px;
+  box-sizing: border-box;
+}
+
+.range__max-min {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range__input {
+  max-width: 605px;
+  width: vw(605px);
+  height: 4px;
+  background-color: #BEC3FE;
+  cursor: pointer;
+}
+
+.range__circle {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #A2A8EE;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &--left {
+    left: -8px;
+  }
+  &--right {
+    right: -7px;
+  }
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 28px;
+  height: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #5560F1;
+  box-shadow: 0 12px 24px rgba(10, 22, 87, 0.224949);
+  cursor: pointer;
+  border: none;
+  &::after,
+  &::before {
+    display: none;
+  }
+}
+
+.noUi-target {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.noUi-connect {
+  background: linear-gradient(90deg, #FFE8A0 0%, #FE7D07 99.86%);
+  outline: none;
+}
+
+.noUi-origin {
+  outline: none;
+}
+
+.noUi-horizontal .noUi-tooltip {
+  bottom: 136%;
+  width: 77px;
+  height: 39.27px;
+  background: #FD991E;
+  border-radius: 24px;
+  line-height: 39.27px;
+  font-size: 16px;
+  padding: 0;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 29px solid transparent;
+    border-top: 18px solid #FD991E;
+  }
+}
+
+.range__text {
+  margin: 0;
+  margin-right: 40px;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: #ABAFE6;
+  text-transform: uppercase;
+  margin-top: -1%;
+}
+
+.range__value {
+  font-size: 16px;
+  color: #D8D9E5;
+  &--min {
+    margin-left: -8px;
+  }
+  &--max {
+    margin-right: -8px;
+  }
+}
+
+@media (max-width: 698px) {
+  .range {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .range__text {
+    align-self: flex-start;
+    margin-bottom: 70px;
+  }
+  .range__input {
+    width: 67vw;
+  }
+}
+
+@media (max-width: 560px) {
+  .range__input {
+    width: 76vw;
+  }
+}
+
+@media (max-width: 440px) {
+  .range {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .range__input {
+    width: 70vw;
+  }
+}

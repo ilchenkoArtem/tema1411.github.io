@@ -41,7 +41,7 @@ gulp.task('js', function () {
     gulp.src([
 
         'app/libs/jquery/dist/jquery.min.js',
-
+        'app/libs/waypoints/lib/jquery.waypoints.min.js',
         'app/js/main.js' // Always at the end
     ])
         .pipe(concat('scripts.min.js'))

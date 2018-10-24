@@ -1,7 +1,5 @@
-
 //Воспроизведение фонового видео на сафари
 var fullScreenVideo = document.querySelector('.fullscreen-bg__video');
-fullScreenVideo.play();
 if (fullScreenVideo) {
     var valueButton = document.querySelector('.header__value-button');
 
@@ -17,6 +15,7 @@ if (fullScreenVideo) {
         valueButton.classList.add('header__value-button--mute');
         valueButton.addEventListener("click", mute);
     }
+
     valueButton.addEventListener("click", unmute);
 }
 
@@ -228,6 +227,32 @@ if (form) {
         evt.preventDefault();
     });
 }
+
+// Управление анимацией
+//Animate CSS + WayPoints javaScript Plugin
+//Example: $(".element").animated("zoomInUp");
+//Author URL: http://webdesign-mas
+(function ($) {
+    $.fn.animated = function (inEffect) {
+        $(this).each(function () {
+            var ths = $(this);
+            ths.css("opacity", "0").addClass("animated").waypoint(function (dir) {
+                if (dir === "down") {
+                    ths.addClass(inEffect).css("opacity", "1");
+                }
+                ;
+            }, {
+                offset: "90%"
+            });
+
+        });
+    };
+})(jQuery);
+
+var animatesFunction = function () {
+    $('.header-secondaryPage__h1, .video__block1, .video__block2, .about-index, .index__eyes, .philosophy-index, .form__container, .container--packages, .package__main-item, img[alt="moss"], .services__girl, .container--services, .service__main-info, .video__block1, .video__block2, .team__container, .contact-info__photo, .contact-container-text, .form').animated('fadeIn');
+};
+animatesFunction();
 
 
 
