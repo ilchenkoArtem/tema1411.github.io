@@ -66,7 +66,7 @@
             <img src="img/lacomka.jpg" alt="Лакомка" width="500" height="" class="about__img">
         </div>
     </section>
-    <section class="assortment" id="assortement">
+    <section class="assortment" id="assortment">
         <h2 class="h2">ассортимент</h2>
         <div class="wrapper">
             <section class="assortment__items">
@@ -124,93 +124,250 @@
         </div>
     </section>
     <section class="franchise-wrapper">
-
         <section class="price">
             <div class="wrapper">
                 <h2 class="h2 price__headline">О франшизе &#171;Лакомка&#187;</h2>
                 <section class="price__price-tag-items">
-                    <p class="price__price-tag">120 000 <span>руб.</span></p>
-                    <p class="price__price-tag-text">стоимость франшизы</p>
+                    <section class="price__franchise">
+                        <p class="price__price-tag-old"><span>208 000</span> руб.</p>
+                        <p class="price__price-tag">178 000 <span>руб.</span></p>
+                        <p class="price__price-tag-text">стоимость франшизы</p>
+                    </section>
+                    <section class="price__other">
+                        <p class="price__price-tag">от 70 000 <span>руб.</span></p>
+                        <p class="price__price-tag-text">другие расходы</p>
+                    </section>
                 </section>
-                <p class="price__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-                    asperiores autem corporis debitis dolore dolorum earum harum itaque iure neque officia pariatur quas
-                    qui, quia, rem sint veritatis, vitae. Adipisci fugit inventore laboriosam molestiae quos reiciendis
-                    veniam? Accusantium assumenda at eos ipsa ipsam, porro possimus praesentium soluta. Autem cumque
-                    illum minus placeat praesentium provident quasi tenetur voluptatum. Ad asperiores, eaque eligendi id
-                    ipsam labore maiores modi molestiae sequi voluptatibus. A dignissimos doloremque doloribus eveniet
-                    fugiat ipsa iusto laudantium maiores, minima odit quidem quis repudiandae rerum vel voluptas.
-                    Consequatur, harum sint!</p>
+                <p class="price__description">В стоимость франшизы уже входит всё необходимое оборудование для
+                    приготовления основных десертов, начиная от мелочей вроде гастроёмкостей для хранения, заканчивая
+                    специализированным фирменным оборудованием. С полным составом франшизного пакета можно ознакомиться
+                    ниже.</p>
                 <button class="button price__button">Получить презентацию франшизы</button>
+            </div>
+        </section>
+        <section class="payback wrapper">
+            <div class="wrapper">
+                <h2 class="h2 payback__headline">Пример окупаемости</h2>
+                <section class="payback__items">
+                    <section class="payback__table-items">
+                        <h5 class="payback__table-headline"> затраты на открытие</h5>
+                        <section class="payback__calculations">
+                            <div>
+                                <div class="payback__table-item-wrapper">
+                                    <p>Первоначальный взнос</p>
+                                    <p>178 000</p>
+                                </div>
+                                <div class="payback__table-item-wrapper">
+                                    <p>Дополнительные расходы</p>
+                                    <p>70 000</p>
+                                </div>
+                            </div>
+                            <div class="payback__table-item-wrapper payback__sum ">
+                                <p>Итого</p>
+                                <p class="payback__sum">248 000 руб.</p>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="payback__table-items">
+                        <h5 class="payback__table-headline">ВЫРУЧКА В МЕСЯЦ</h5>
+                        <section class="payback__calculations">
+                            <div>
+                                <div class="payback__table-item-wrapper">
+                                    <p>Средний чек</p>
+                                    <p>290</p>
+                                </div>
+                                <div class="payback__table-item-wrapper">
+                                    <p>Кол-во чеков в день</p>
+                                    <p>30</p>
+                                </div>
+                                <div class="payback__table-item-wrapper">
+                                    <p>Количество дней</p>
+                                    <p>30</p>
+                                </div>
+                            </div>
+                            <div class="payback__table-item-wrapper payback__sum ">
+                                <p>Итого оборот:</p>
+                                <p class="payback__sum">261 000 руб./мес.</p>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="payback__table-items">
+                        <h5 class="payback__table-headline">ЕЖЕМЕСЯЧНЫЕ РАСХОДЫ</h5>
+                        <section class="payback__calculations">
+                            <div>
+                                <div class="payback__table-item-wrapper">
+                                    <p>Аренда</p>
+                                    <p>20 000</p>
+                                </div>
+                                <div class="payback__table-item-wrapper">
+                                    <p>Закуп сырья</p>
+                                    <p>50 000</p>
+                                </div>
+                                <div class="payback__table-item-wrapper">
+                                    <p>Налоги и прочие расходы</p>
+                                    <p>15 000</p>
+                                </div>
+                            </div>
+                            <div class="payback__table-item-wrapper payback__sum ">
+                                <p>Итого:</p>
+                                <p class="payback__sum">119 000 руб./мес.</p>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+                <p class="payback__clear-sum">Итого прибыль: <span>142 000 руб./мес.</span></p>
+                <p>При всего 30 продажах в день, Ваши вложения окупятся менее чем за 2 месяца!</p>
+                <button class="button button--red payback__button">Получить полную фин. модель</button>
+                <p class="payback__warning">ПОЛУЧИТЬ ПОЛНУЮ ФИН. МОДЕЛЬ
+                    Представленные выше расчёты являются примером окупаемости и составлены на основе данных по
+                    Екатеринбургу. Финансовые показатели могут меняться в зависимости от города и условий на рынке. Для
+                    Москвы и Санкт-Петербурга общие дополнительные вложения выше, приведённых в данном расчёте.</p>
             </div>
         </section>
         <section class="components">
             <div class="wrapper">
                 <h2 class="h2 components__headline">Что входит в франшизу?</h2>
                 <ul class="components__list-items">
-                    <li class="components__list-item" data-number="1">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
+                    <li class="components__list-item components__list-item--advertising">
+                        <h5 class="components__list--headline">РЕКЛАМНЫЕ МАТЕРИАЛЫ, БРЕНДБУК</h5>
+                        <p>Руководство по использованию фирменного стиля, визитки, бейджи, флаеры и многое другое.</p>
                     </li>
-                    <li class="components__list-item" data-number="2">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
+                    <li class="components__list-item components__list-item--help">
+                        <h5 class="components__list--headline">ПОМОЩЬ С РЕГИСТРАЦИЕЙ</h5>
+                        <p>Подготовим документы для регистрации в качестве ИП (при необходимости), поможем выбрать
+                            налоговый режим, оформить разрешительную документацию и многое другое.</p>
                     </li>
-                    <li class="components__list-item" data-number="3">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
+                    <li class="components__list-item components__list-item--exclusive">
+                        <h5 class="components__list--headline">УНИКАЛЬНЫЕ РЕЦЕПТЫ ДЕСЕРТОВ</h5>
+                        <p>Мы поделимся с вами оригинальными неповторимыми рецептами десертов, собранными со всего
+                            мира.</p>
                     </li>
-                    <li class="components__list-item" data-number="4">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
+                    <li class="components__list-item components__list-item--decor">
+                        <h5 class="components__list--headline">ОФОРМЛЕНИЕ ТОРГОВОЙ ТОЧКИ</h5>
+                        <p>Каждая торговая точка будет оформлена, согласно фирменному стилю. Дизайн торговой точки
+                            привлечет внимание прохожих своей яркостью.</p>
                     </li>
-                    <li class="components__list-item" data-number="5">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
+                    <li class="components__list-item components__list-item--instruction">
+                        <h5 class="components__list--headline">ИНСТРУКЦИЯ ПО ОТКРЫТИЮ И УПРАВЛЕНИЮ ВАШЕЙ ТОЧКИ</h5>
+                        <p>В руководстве вы найдете ответы на популярные вопросы: где взять деньги на открытие и
+                            развитие, как открыть ИП, где эффективнее размещать рекламу и многое другое.</p>
                     </li>
-                    <li class="components__list-item" data-number="6">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
+                    <li class="components__list-item components__list-item--crane">
+                        <h5 class="components__list--headline">НЕОБХОДИМОЕ ОБОРУДОВАНИЕ И ИНВЕНТАРЬ</h5>
+                        <p>Мы включили в пакет все необходимое оборудование для приготовления десертов: контейнеры для
+                            хранения ингредиентов, две специализированные вафельницы, миксеры, блендеры и другое.</p>
+                    </li>
+                    <li class="components__list-item components__list-item--inventory">
+                        <h5 class="components__list--headline">ОБУЧЕНИЕ И КОНСУЛЬТАЦИИ</h5>
+                        <p>Мы раскроем вам все секреты и «фишки» данного бизнеса, обучим ваших сотрудников, дадим
+                            ежедневную поддержку и консультацию.</p>
+                    </li>
+                    <li class="components__list-item components__list-item--rent">
+                        <h5 class="components__list--headline">ПОМОЩЬ В ВЫБОРЕ И АРЕНДЕ МЕСТА</h5>
+                        <p>Мы поможем выбрать оптимальное место для открытия бизнеса в вашем городе с высокой
+                            проходимостью и приемлемой арендной платой.</p>
+                    </li>
+                    <li class="components__list-item components__list-item--speak">
+                        <h5 class="components__list--headline">РЕКЛАМНЫЕ МАТЕРИАЛЫ, БРЕНДБУК</h5>
+                        <p>Руководство по использованию фирменного стиля, визитки, бейджи, флаеры и многое другое.</p>
+                    </li>
+                    <li class="components__list-item components__list-item--card">
+                        <h5 class="components__list--headline">ОБУЧАЮЩИЕ ВИДЕОУРОКИ</h5>
+                        <p>Видеоуроки, в которых детально описан процесс приготовления продукции, управления бизнесом,
+                            найма персонала и др.</p>
+                    </li>
+                    <li class="components__list-item components__list-item--dress">
+                        <h5 class="components__list--headline">ФИРМЕННАЯ СПЕЦОДЕЖДА</h5>
+                        <p>Вы получите 4 комплекта фирменной одежды для сотрудников: кухонные фартуки и футболки.</p>
+                    </li>
+                    <li class="components__list-item components__list-item--contact">
+                        <h5 class="components__list--headline">КОНТАКТЫ ПОСТАВЩИКОВ</h5>
+                        <p>Предоставим актуальные контакты поставщиков, действующих в вашем городе или организуем
+                            доставку до вашего местоположения.</p>
                     </li>
                 </ul>
-                <button class="button button--red components__button">Получить презентацию франшизы</button>
+                <button class="button components__button">Что ещё входит во франшизу</button>
             </div>
+        </section>
+        <section class="reviews wrapper">
+            <h2 class="h2 reviews__headline">ОТЗЫВЫ ДЕЙСТВУЮЩИХ ПАРТНЁРОВ</h2>
+            <section class="reviews__items">
+                <div class="reviews__item--wrapper">
+                    <img src="img/photo__review.jpg" alt="artem" width="50" height="50px">
+                    <div class="reviews__info-wrapper">
+                        <p class="reviews__info-name">Артём Ильчнко, г. Днепр</p>
+                        <p class="reviews__review">Поддержка колоссальная! Я всем это говорю – они особенные люди и они
+                            все – команда! Я попал в эту команду, и мне очень нравится, я чувствую себя совсем
+                            по-другому!</p>
+                    </div>
+                </div>
+            </section>
         </section>
         <section class="advantages" id="advantages">
             <div class="wrapper">
                 <h2 class="h2 advantages__headline">Почему мы?</h2>
                 <ul class="advantages__list-items">
-                    <li class="advantages__list-item" data-number="1">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
-                    </li>
-                    <li class="advantages__list-item" data-number="2">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
-                    </li>
-                    <li class="advantages__list-item" data-number="3">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
-                    </li>
-                    <li class="advantages__list-item" data-number="4">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
-                    </li>
-                    <li class="advantages__list-item" data-number="5">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
-                    </li>
-                    <li class="advantages__list-item" data-number="6">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Itaque, neque?
+                    <li class="advantages__list-item" data-number="1">ПРОДУКТ УНИКАЛЕН ДЛЯ РОССИЙСКОГО РЫНКА</li>
+                    <li class="advantages__list-item" data-number="2">ИНВЕСТИЦИИ ОКУПАЮТСЯ ЗА 1-3 МЕСЯЦА</li>
+                    <li class="advantages__list-item" data-number="3">НИЗКАЯ КОНКУРЕНЦИЯ В ДАННОЙ СФЕРЕ</li>
+                    <li class="advantages__list-item" data-number="4">ВСЁ ОБОРУДОВАНИЕ ВХОДИТ В СОСТАВ ФРАНШИЗЫ</li>
+                    <li class="advantages__list-item" data-number="5">НЕ ТРЕБУЕТСЯ БОЛЬШИХ ВЛОЖЕНИЙ В РЕКЛАМУ</li>
+                    <li class="advantages__list-item" data-number="6">НЕТ ЗАВИСИМОСТИ ОТ ВРЕМЕНИ ГОДА И ПОГОДНЫХ
+                        УСЛОВИЙ
                     </li>
                 </ul>
-                <button class="button">Узнать больше!</button>
             </div>
         </section>
+        <section class="scheme wrapper">
+            <h2 class="h2 scheme__headline">СХЕМА РАБОТЫ С НАМИ</h2>
+            <section class="scheme__items-wrapper">
+                <ul class="scheme__items">
+                    <li class="scheme__item" data-number="1">
+                        <h5 class="scheme__item-headline">СВЯЗЫВАЕТЕСЬ С НАМИ</h5>
+                        <p class="scheme__item-description">Мы проведем консультацию по всем интересующим вас вопросам,
+                            расскажем подробнее о бизнесе и нюансах работы</p>
+                    </li>
+                    <li class="scheme__item" data-number="2">
+                        <h5 class="scheme__item-headline">ЗАКЛЮЧАЕМ ДОГОВОР</h5>
+                        <p class="scheme__item-description">С помощью договора мы зафиксируем все обязательства сторон,
+                            исполнение которых гарантируем</p>
+                    </li>
+                    <li class="scheme__item" data-number="3">
+                        <h5 class="scheme__item-headline">ПРОИЗВОДИТЕ ОПЛАТУ</h5>
+                        <p class="scheme__item-description">После подписания договора мы выставляем вам официальный
+                            счет,
+                            который можно оплатить в кассе любого банка</p>
+                    </li>
+                    <li class="scheme__item" data-number="4">
+                        <h5 class="scheme__item-headline">ПЕРЕДАЁМ ВАМ ФРАНШИЗНЫЙ ПАКЕТ</h5>
+                        <p class="scheme__item-description">Проводим теоретическое обучение, открываем все секреты и
+                            тонкости бизнеса, даем доступ к документам</p>
+                    </li>
+                    <li class="scheme__item" data-number="5">
+                        <h5 class="scheme__item-headline">АРЕНДА И ОБОРУДОВАНИЕ</h5>
+                        <p class="scheme__item-description">Отправляем всё необходимое оборудование транспортной
+                            компанией,
+                            после чего помогаем найти лучшие условия для аренды в вашем городе, и подготовить
+                            оборудование
+                            для работы</p>
+                    </li>
+                    <li class="scheme__item" data-number="6">
+                        <h5 class="scheme__item-headline">ЗАПУСК И НАЧАЛО РАБОТЫ</h5>
+                        <p class="scheme__item-description">Проконтролируем ваш успешный запуск от начала до конца. Для
+                            вашего удобства будем осуществлять регулярные консультации по любым бизнес вопросам</p>
+                    </li>
+                </ul>
+                <section class="scheme__beatify">
+                    <img src="img/лакомка2.jpg" alt="пример дизайна точки" width="1280" height="853">
+                    <p class="scheme__beatify-text">Яркий, интересный и привлекательный дизайн — очень важная деталь данного бизнеса. Поэтому мы уделили достаточно много внимания проработке дизайна торговой точки и меню, которое будут видеть клиенты.</p>
+                    <button class="button button--red">Получить больше информации</button>
+                </section>
+            </section>
+        </section>
     </section>
-
-
 </main>
+<footer class="footer">
+</footer>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

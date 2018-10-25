@@ -1,6 +1,6 @@
 .advantages {
   background-color: $bg-color;
-  padding: $padding-desktop-top-bottom $padding-desktop;
+  padding: $padding-desktop-top-bottom 20%;
   color: $text-color;
   .wrapper {
     text-align: center;
@@ -26,19 +26,21 @@
 }
 
 .advantages__list-item {
-  width: 30.33%;
+  width: 47%;
   margin-bottom: 30px;
-  padding-left: 40px;
+  padding-left: 69px;
   box-sizing: border-box;
   position: relative;
-  text-align: justify;
+  text-align: left;
+  font-size: 19px;
   &::after {
     content:  attr(data-number);
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     text-align: center;
-    line-height: 30px;
+    line-height: 50px;
     border-radius: 50%;
+    font-family: $button-family;
     position: absolute;
     color: $text-color-dark;
     left: 0;

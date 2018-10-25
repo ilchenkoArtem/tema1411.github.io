@@ -7,7 +7,10 @@
 }
 
 .price__price-tag-items {
-
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-end;
 }
 
 .price__headline {
@@ -15,10 +18,30 @@
   margin-top: 0;
 }
 
+.price__price-tag-old {
+  margin: 0;
+  text-align: right;
+
+  span {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $text-color;
+      transform: rotate(7deg);
+      bottom: 50%;
+      left: 0;
+
+    }
+  }
+}
+
 .price__price-tag {
   font-family: $button-family;
   font-size: 40px;
-  margin-bottom: 0;
+  margin: 0;
   span {
     font-size: 20px;
   }
@@ -30,4 +53,13 @@
 
 .price__button {
   margin-top: 30px;
+}
+
+.price__franchise {
+  margin-right: 100px;
+}
+
+.price__description {
+  max-width: 70%;
+  margin: 0 auto;
 }

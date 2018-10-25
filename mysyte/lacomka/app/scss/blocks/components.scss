@@ -1,5 +1,7 @@
 .components {
+  background-color: $bg-color;
   text-align: center;
+  color: $text-color;
   padding: $padding-desktop-top-bottom;
   .wrapper {
     padding: 0 $padding-desktop;
@@ -7,6 +9,7 @@
 }
 .components__headline {
   margin-top: 0;
+  color: $text-color;
 }
 .components__list-items {
   text-align: left;
@@ -20,23 +23,79 @@
 }
 
 .components__list-item {
-  width: 30%;
+  width: 42%;
   margin-bottom: 30px;
-  padding-left: 40px;
+  padding-left: 120px;
   box-sizing: border-box;
   position: relative;
   text-align: justify;
   &::after {
-    content:  attr(data-number);
-    width: 30px;
-    height: 30px;
+    content: '';
     text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
     position: absolute;
-    color: $text-color;
     left: 0;
     top: 0;
-    background-color: $bg-color;
+    width: 93px;
+    height: 113px;
+    background-image: url("../img/sprite_1.png");
+    background-repeat: no-repeat;
   }
+  &--advertising::after {
+    background-position: -16px -2px;
+  }
+  &--help::after {
+    background-position: -135px 1px;
+  }
+  &--exclusive::after {
+    background-position: -255px -13px;
+    height: 80px;
+  }
+  &--decor::after {
+    background-position: -372px -9px;
+    height: 96px;
+  }
+  &--decor::after {
+    background-position: -372px -9px;
+    height: 96px;
+  }
+  &--instruction::after {
+    background-position: -492px 0;
+    height: 108px;
+  }
+  &--inventory::after {
+    background-position: -728px -8px;
+    height: 100px;
+  }
+  &--rent::after {
+    background-position: -848px 0;
+    height: 108px;
+  }
+  &--crane::after {
+    background-position: -613px 0;
+    height: 106px;
+  }
+  &--speak::after {
+    background-position: -970px -2px;
+    height: 102px;
+  }
+  &--card::after {
+    background-position: -1090px -14px;
+    height: 94px;
+  }
+  &--contact::after {
+    background-position: -1210px -12px;
+    height: 86px;
+  }
+  &--dress::after {
+    background-position: -1330px -2px;
+    height: 103px;
+  }
+}
+
+.components__list--headline {
+  font-size: 18px;
+  margin-bottom: 0;
+  text-align: left;
+  font-family: $button-family;
+  letter-spacing: 0.1em;
 }
