@@ -7,9 +7,9 @@
   border-radius: 15px;
   text-align: center;
   font-family: $text-family;
-
+  box-shadow: 0 0 12px 2px #000;
   .first__form-h3 {
-    font-size: $h3-size;
+    font-size: 29px;
     font-family: $h-font-family;
     text-transform: uppercase;
     letter-spacing: $h3-letterSp;
@@ -23,7 +23,7 @@
     display: block;
     height: 50px;
     width: 100%;
-    &:not(:last-of-type){
+    &:not(:last-of-type) {
       margin-bottom: 20px;
     }
   }
@@ -46,10 +46,16 @@
     font-family: $button-family;
     text-transform: uppercase;
     border: 1px solid #fff;
-
     &:hover {
       background-color: white;
       color: #000;
     }
+    &--red {
+      border-color: $bg-color;
+    }
+  }
+  .form__name {
+    display: none;
   }
 }
+

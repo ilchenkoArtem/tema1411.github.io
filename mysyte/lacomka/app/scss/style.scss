@@ -1,6 +1,8 @@
 @import "other/normalaiz";
 @import "global";
 @import "fonts";
+@import "../libs/slick-carousel/slick/slick.scss";
+@import "../libs/slick-carousel/slick/slick-theme.scss";
 @import "blocks/header";
 @import "blocks/first";
 @import "blocks/form";
@@ -14,3 +16,11 @@
 @import "blocks/reviews";
 @import "blocks/sheme";
 @import "blocks/footer";
+@import "blocks/foryou";
+@import "blocks/bottom-form";
+@import "blocks/form-popup";
+@import "blocks/slick-my-style";
+@import "blocks/button-calback";
+@import "blocks/callback";
+@import "other/animate.css";
+@import "blocks/succes__form";

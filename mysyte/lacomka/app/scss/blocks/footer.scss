@@ -1,6 +1,68 @@
-/*
 .footer {
-  background-image: url('../img/Screenshot_2.png');
-  height: 900px;
   width: 100%;
-}*/
+  padding: $padding-desktop-top-bottom $padding-desktop;
+  box-sizing: border-box;
+  background-color: $bg-color;
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+}
+
+.footer__headline {
+  margin-top: 0;
+  color: $text-color;
+}
+
+.footer__map {
+  width: 45%;
+  height: 400px;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer__contact {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer__contact-email,
+.footer__contact-phone,
+.footer__contact-address {
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  color: $text-color;
+  span {
+    font-family: $h-font-family;
+  }
+}
+
+.footer__contact-social {
+  display: flex;
+
+  margin-top: 30px;
+}
+
+a.footer__contact-social-item {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  &--vk {
+    background-image: url('../img/vk-social-logotype.svg');
+  }
+  &--inst {
+    background-image: url('../img/instagram-logo.svg');
+  }
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,29 @@
+.foryou {
+  text-align: center;
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding-desktop-top-bottom $padding-desktop;
+  > p {
+    font-family: $h-font-family;
+    color: $button-color;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+}
+
+.foryou__headline {
+  color: $button-color;
+  margin-top: 0;
+}
+
+.foryou__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.foryou__item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+

@@ -5,17 +5,21 @@
   box-sizing: border-box;
   background-color: $bg-color-main;
   .wrapper {
-    padding: $padding-desktop;
-    margin: 20px auto;
+    padding: 0 $padding-desktop;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
   }
 }
 
+.assortment__headline {
+  margin-top: 0;
+}
+
 .assortment__items {
   width: 30%;
   margin-bottom: 3%;
-  background-color:$bg-color;
+  background-color: $bg-color;
   border-radius: 20px;
   padding: 10px;
   box-sizing: border-box;
@@ -24,8 +28,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 0 12px 2px #000;
   &:not(:nth-child(3n)) {
-    margin-right: calc((100% - 90%)/2);
+    margin-right: calc((100% - 90%) / 2);
   }
 }
 
@@ -62,4 +67,3 @@
 .assortment__description {
   font-size: 13px;
 }
-

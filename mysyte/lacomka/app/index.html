@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,7 +12,7 @@
 <body>
 <header class="header">
     <nav class="header__nav">
-        <a href="#" class="header__logo">
+        <a href="#first" class="header__logo">
             <img src="img/logo.png" alt="logo">
         </a>
         <ul class="header__main-nav">
@@ -19,30 +20,31 @@
                 <a href="#about" class="header__main-nav-link">о нас</a>
             </li>
             <li class="header__main-nav-item">
-                <a href="#assortement" class="header__main-nav-link">ассортимент</a>
+                <a href="#franchise" class="header__main-nav-link">Франшиза</a>
             </li>
             <li class="header__main-nav-item">
-                <a href="#advantages" class="header__main-nav-link">преймущества</a>
+                <a href="#assortment" class="header__main-nav-link">Асортимент</a>
             </li>
             <li class="header__main-nav-item">
-                <a href="#" class="header__main-nav-link">преймущества</a>
+                <a href="#reviews" class="header__main-nav-link">преймущества</a>
             </li>
             <li class="header__main-nav-item">
-                <a href="#" class="header__main-nav-link">франшиза</a>
+                <a href="#contacts" class="header__main-nav-link">Контакты</a>
             </li>
         </ul>
     </nav>
 </header>
 <main class="main">
-    <section class="first">
+    <section class="first" id="first">
         <div class="wrapper">
             <img src="img/logo.png" alt="logo" width="464" height="346" class="first__logo">
             <form action="#" class="form first__form">
                 <h3 class="first__form-h3">Бизнес на уникальных десертах со всего света!</h3>
                 <p>Получите подробный расчёт франшизы заполнив форму</p>
-                <input type="text" class="input name" placeholder="Ваше имя" required>
-                <input type="tel" class="input tel" placeholder="Ваш телефон" required>
-                <input type="email" class="input email" placeholder="Ваш email" required>
+                <input type="text" value="Получите подробный расчёт франшизы" name="Блок" class="form__name">
+                <input type="text" class="input name" name="Имя" placeholder="Ваше имя" required>
+                <input type="tel" class="input tel" name="Телефон" placeholder="Ваш телефон" required>
+                <input type="email" class="input email" name="Email" placeholder="Ваш email" required>
                 <input type="submit" class="button submit" value="получить">
             </form>
             <a href="#about" class="first__button-bottom"></a>
@@ -67,7 +69,7 @@
         </div>
     </section>
     <section class="assortment" id="assortment">
-        <h2 class="h2">ассортимент</h2>
+        <h2 class="h2 assortment__headline">ассортимент</h2>
         <div class="wrapper">
             <section class="assortment__items">
                 <section class="assortment__img-wrapper">
@@ -123,7 +125,7 @@
             </section>
         </div>
     </section>
-    <section class="franchise-wrapper">
+    <section class="franchise-wrapper" id="franchise">
         <section class="price">
             <div class="wrapper">
                 <h2 class="h2 price__headline">О франшизе &#171;Лакомка&#187;</h2>
@@ -162,7 +164,7 @@
                                     <p>70 000</p>
                                 </div>
                             </div>
-                            <div class="payback__table-item-wrapper payback__sum ">
+                            <div class="payback__table-item-wrapper payback__all-sum ">
                                 <p>Итого</p>
                                 <p class="payback__sum">248 000 руб.</p>
                             </div>
@@ -185,7 +187,7 @@
                                     <p>30</p>
                                 </div>
                             </div>
-                            <div class="payback__table-item-wrapper payback__sum ">
+                            <div class="payback__table-item-wrapper payback__all-sum ">
                                 <p>Итого оборот:</p>
                                 <p class="payback__sum">261 000 руб./мес.</p>
                             </div>
@@ -208,7 +210,7 @@
                                     <p>15 000</p>
                                 </div>
                             </div>
-                            <div class="payback__table-item-wrapper payback__sum ">
+                            <div class="payback__table-item-wrapper payback__all-sum ">
                                 <p>Итого:</p>
                                 <p class="payback__sum">119 000 руб./мес.</p>
                             </div>
@@ -289,16 +291,43 @@
                 <button class="button components__button">Что ещё входит во франшизу</button>
             </div>
         </section>
-        <section class="reviews wrapper">
+        <section class="reviews wrapper" id="reviews">
             <h2 class="h2 reviews__headline">ОТЗЫВЫ ДЕЙСТВУЮЩИХ ПАРТНЁРОВ</h2>
             <section class="reviews__items">
-                <div class="reviews__item--wrapper">
-                    <img src="img/photo__review.jpg" alt="artem" width="50" height="50px">
-                    <div class="reviews__info-wrapper">
-                        <p class="reviews__info-name">Артём Ильчнко, г. Днепр</p>
-                        <p class="reviews__review">Поддержка колоссальная! Я всем это говорю – они особенные люди и они
-                            все – команда! Я попал в эту команду, и мне очень нравится, я чувствую себя совсем
-                            по-другому!</p>
+                <div>
+                    <div class="reviews__item--wrapper">
+                        <img src="img/photo__review.jpg" alt="artem" width="50" height="50px">
+                        <div class="reviews__info-wrapper">
+                            <p class="reviews__info-name">Артём Ильчнко, г. Днепр</p>
+                            <p class="reviews__review">Поддержка колоссальная! Я всем это говорю – они особенные люди и
+                                они
+                                все – команда! Я попал в эту команду, и мне очень нравится, я чувствую себя совсем
+                                по-другому!</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="reviews__item--wrapper">
+                        <img src="img/photo__review.jpg" alt="artem" width="50" height="50px">
+                        <div class="reviews__info-wrapper">
+                            <p class="reviews__info-name">Артём Ильчнко, г. Днепр</p>
+                            <p class="reviews__review">Поддержка колоссальная! Я всем это говорю – они особенные люди и
+                                они
+                                все – команда! Я попал в эту команду, и мне очень нравится, я чувствую себя совсем
+                                по-другому!</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="reviews__item--wrapper">
+                        <img src="img/photo__review.jpg" alt="artem" width="50" height="50px">
+                        <div class="reviews__info-wrapper">
+                            <p class="reviews__info-name">Артём Ильчнко, г. Днепр</p>
+                            <p class="reviews__review">Поддержка колоссальная! Я всем это говорю – они особенные люди и
+                                они
+                                все – команда! Я попал в эту команду, и мне очень нравится, я чувствую себя совсем
+                                по-другому!</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -358,16 +387,91 @@
                     </li>
                 </ul>
                 <section class="scheme__beatify">
-                    <img src="img/лакомка2.jpg" alt="пример дизайна точки" width="1280" height="853">
-                    <p class="scheme__beatify-text">Яркий, интересный и привлекательный дизайн — очень важная деталь данного бизнеса. Поэтому мы уделили достаточно много внимания проработке дизайна торговой точки и меню, которое будут видеть клиенты.</p>
+                    <section class="scheme__img">
+                        <img src="img/лакомка2.jpg" alt="пример дизайна точки" width="1280" height="853">
+                        <img src="img/лакомка2.jpg" alt="пример дизайна точки" width="1280" height="853">
+                    </section>
+
+                    <p class="scheme__beatify-text">Яркий, интересный и привлекательный дизайн — очень важная деталь
+                        данного бизнеса. Поэтому мы уделили достаточно много внимания проработке дизайна торговой точки
+                        и меню, которое будут видеть клиенты.</p>
                     <button class="button button--red">Получить больше информации</button>
                 </section>
             </section>
         </section>
+        <section class="foryou">
+            <h2 class="h2 foryou__headline">ЭТА ФРАНШИЗА ДЛЯ ВАС, ЕСЛИ…</h2>
+            <ul class="foryou__items">
+                <li class="foryou__item">Вы готовы заниматься собственным бизнесом;</li>
+                <li class="foryou__item">Вы предпочитаете идти проверенным путём;</li>
+                <li class="foryou__item">Вы любите сладости и особенно вафли;</li>
+                <li class="foryou__item">Вы владеете бизнесом и хотите попробовать что-то новое;</li>
+                <li class="foryou__item">Вы любите дарить людям радость и восторг;</li>
+            </ul>
+            <p>Вы увидели себя в одном из этих «если», то скорее оставляйте заявку.</p>
+        </section>
+        <section class="bottom-form">
+            <form action="#" class="form bottom-form__form">
+                <h3 class="first__form-h3">Не упусти шанс стать первым в своём городе!</h3>
+                <p>Заполните форму — сделай первый шаг на пути к своему прибыльному бизнесу!</p>
+                <input type="text" class="input name" placeholder="Ваше имя" required>
+                <input type="tel" class="input tel" placeholder="Ваш телефон" required>
+                <input type="email" class="input email" placeholder="Ваш email" required>
+                <input type="submit" class="button button--red submit" value="получить">
+            </form>
+        </section>
     </section>
 </main>
-<footer class="footer">
+<footer class="footer" id="contacts">
+    <div class="wrapper">
+        <section class="footer__contact">
+            <h2 class="h2 footer__headline">Наши контакты</h2>
+            <p class="footer__contact-address"><span>Адресс:</span><br>г. Иваново ТЦ "Серебряный город" на 2 уровне
+                (напротив магазина "Детский мир")</p>
+            <a href="tel:+79158439305" class="footer__contact-phone"><span>Телефон:</span><br>+7 915 843-93-05</a>
+            <a href="mailto: example@mail.ru" class="footer__contact-email"><span>Почта:</span><br>example@mail.ru</a>
+            <section class="footer__contact-social">
+                <a href="https://vk.com/lakomka_silvercity" target="_blank"
+                   class="footer__contact-social-item footer__contact-social-item--vk"></a>
+                <a href="https://www.instagram.com/lakomka_silvercity" target="_blank"
+                   class="footer__contact-social-item footer__contact-social-item--inst"></a>
+            </section>
+        </section>
+        <section class="footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d543.1644235242418!2d40.98498382925209!3d57.006045998806684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d1447238bb1c1%3A0xd6d3f38ba0ed047a!2z0KLQpiAi0KHQtdGA0LXQsdGA0Y_QvdGL0Lkg0LPQvtGA0L7QtCI!5e0!3m2!1sru!2sua!4v1540553219291"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+    </div>
 </footer>
+<section class="form-popup form-popup--close">
+    <div class="form-popup__bg"></div>
+    <form action="#" class="form form-popup__form">
+        <section class="form-popup__close-button"></section>
+        <h3 class="first__form-h3">Бизнес на уникальных десертах со всего света!</h3>
+        <input type="text" value="Получите подробный расчёт франшизы" name="Блок" class="form__name">
+        <input type="text" class="input name" placeholder="Ваше имя" required>
+        <input type="tel" class="input tel" placeholder="Ваш телефон" required>
+        <input type="email" class="input email" placeholder="Ваш email" required>
+        <input type="submit" class="button submit" value="получить">
+    </form>
+</section>
+<section class="callback callback--close">
+    <div class="callback__bg"></div>
+    <form action="#" class="form callback__form">
+        <section class="callback__close-button"></section>
+        <h3 class="first__form-h3">Заказ обратного звонка</h3>
+        <p>Наши менеджеры свяжутся с вами в близжайшее время</p>
+        <input type="text" value="Заказ обратного звонка" name="Блок" class="form__name">
+        <input type="text" class="input name" placeholder="Ваше имя" name="Имя" required>
+        <input type="tel" class="input tel" name='Телефон' placeholder="Ваш телефон: +79158439305" required>
+        <input type="submit" class="button submit" value="Жду звонка!">
+    </form>
+</section>
+<section class="success__form success__form--disabled">
+    <img src="img/succes.svg" alt="Успешно">
+    <p class="success___form--text"></p>
+</section>
+<button class="button-callback"></button>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

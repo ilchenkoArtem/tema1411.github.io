@@ -4,12 +4,8 @@ body {
   height: 100%;
 }
 
-body {
-  background-image: url("../img/bg-repeat.jpg");
-}
-
 $padding-desktop: 80px;
-$padding-desktop-top-bottom: 50px;
+$padding-desktop-top-bottom: 70px;
 
 $nav-color: #fff;
 
@@ -17,9 +13,9 @@ $main-size-text: 14px;
 $text-color: #fff;
 $text-color-dark: #3f4246;
 
-$bg-color-main: rgba(190, 245, 116, 0.8);
-$bg-color: /*rgba(210, 0, 98, 0.8)*//*#E34D90 */rgba(235, 132, 178, 0.94);
-$button-color: /*#8CE800;*/rgba(190, 245, 116, 0.8);
+$bg-color-main: #fff;
+$bg-color: /*rgba(210, 0, 98, 0.8)*//*#E34D90 */ rgb(229,21,99);
+$button-color: /*#8CE800;*/#fff;
 
 $h-font-family: 'ZopaCyr';
 $button-family: 'ZopaCyr';
@@ -34,7 +30,6 @@ $h3-letterSp: 0.1em;
   width: 100%;
   width: 100%;
   background-color: $bg-color-main;
-  background-image: url("../img/bg-repeat.jpg");
 }
 
 .h2 {
@@ -56,6 +51,7 @@ $h3-letterSp: 0.1em;
   min-height: 50px;
   padding: 0 20px;
   box-sizing: border-box;
+  cursor: pointer;
   &:hover {
     animation: none;
     background-color: white;
