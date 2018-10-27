@@ -55,6 +55,7 @@ $h3-letterSp: 0.1em;
   padding: 0 20px;
   box-sizing: border-box;
   cursor: pointer;
+  -webkit-appearance: none;
   &:hover {
     animation: none;
     background-color: white;
