@@ -46,7 +46,6 @@
   }
   &-description {
     margin: 0;
-    text-align: justify;
   }
 }
 
@@ -58,4 +57,35 @@
     border-radius: 15px;
     height: auto;
   }
+}
+
+@media (max-width: 900px) {
+  .scheme__items-wrapper {
+    display: block;
+  }
+  .scheme__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .scheme__item {
+    width: 45%;
+  }
+  .scheme__beatify {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .scheme__item {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 660px) {
+  .scheme__item {
+    width: 100%;
+  }
+
 }

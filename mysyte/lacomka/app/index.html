@@ -6,10 +6,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Лакомка</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="body">
 <header class="header">
     <nav class="header__nav">
         <a href="#first" class="header__logo">
@@ -32,6 +32,7 @@
                 <a href="#contacts" class="header__main-nav-link">Контакты</a>
             </li>
         </ul>
+        <a href="tel:+79158439305" class="header__tel">+7 915 843 93 05</a>
     </nav>
 </header>
 <main class="main">
@@ -54,6 +55,7 @@
         <div class="wrapper">
             <div class="about__text-wrapper">
                 <h2 class="h2 about__headline">Что же такое &#171;Лакомка&#187;?</h2>
+                <img src="img/lacomka.jpg" alt="Лакомка" width="500" height="" class="about__img-mobile">
                 <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, molestiae.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur aut dolorum in modi nam
                     odio praesentium quo recusandae sit!</p>
@@ -295,7 +297,7 @@
             <h2 class="h2 reviews__headline">ОТЗЫВЫ ДЕЙСТВУЮЩИХ ПАРТНЁРОВ</h2>
             <section class="reviews__items">
                 <div>
-                    <div class="reviews__item--wrapper">
+                    <div class="reviews__item-wrapper">
                         <img src="img/photo__review.jpg" alt="artem" width="50" height="50px">
                         <div class="reviews__info-wrapper">
                             <p class="reviews__info-name">Артём Ильчнко, г. Днепр</p>
@@ -307,8 +309,8 @@
                     </div>
                 </div>
                 <div>
-                    <div class="reviews__item--wrapper">
-                        <img src="img/photo__review.jpg" alt="artem" width="50" height="50px">
+                    <div class="reviews__item-wrapper">
+                        <img src="img/photo__review.jpg" alt="artem" width="200" height="200">
                         <div class="reviews__info-wrapper">
                             <p class="reviews__info-name">Артём Ильчнко, г. Днепр</p>
                             <p class="reviews__review">Поддержка колоссальная! Я всем это говорю – они особенные люди и
@@ -319,7 +321,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="reviews__item--wrapper">
+                    <div class="reviews__item-wrapper">
                         <img src="img/photo__review.jpg" alt="artem" width="50" height="50px">
                         <div class="reviews__info-wrapper">
                             <p class="reviews__info-name">Артём Ильчнко, г. Днепр</p>
@@ -330,6 +332,40 @@
                         </div>
                     </div>
                 </div>
+            </section>
+        </section>
+        <section class="control wrapper">
+            <h2 class="h2 control__headline">В НОГУ СО ВРЕМЕНЕМ</h2>
+            <section class="control__main-info">
+                <img src="img/devices.jpg" alt="Удобная CRM система" class="control__img">
+                <section class="control__info">
+                    <h3>Предоставляем уникальные инструменты для контроля и управления вашим бизнесом:</h3>
+                    <img src="img/devices.jpg" alt="Удобная CRM система" class="control__img-mobile">
+                    <ul class="control__items">
+                        <li class="control__subtitle">Система учёта</li>
+                        <li class="control__item-wrapper">
+                            <p>С помощью этой программы вы сможете (в режиме онлайн):</p>
+                            <ul class="control__item-online">
+                                <li>осуществлять контроль за своей торговой точкой;</li>
+                                <li>отслеживать время открытия и закрытия смены;</li>
+                                <li>мониторить количество продаж;</li>
+                                <li>контролировать остатки сырья на складе;</li>
+                                <li>составлять аналитические отчеты (средний чек, выручка за день и т.д.)
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="control__subtitle">Система видеонаблюдения</p>
+                            <p>На точке устанавливается камера видеонаблюдения, которая позволяет следить в режиме
+                                реального времени за рабочим процессом.</p>
+                        </li>
+                        <li>
+                            <p class="control__subtitle">Счетчик посетителей</p>
+                            <p>Отслеживает количество посетителей торговой точки для расчета конверсии, что позволяет
+                                эффективно управлять бизнес-процессом.</p>
+                        </li>
+                    </ul>
+                </section>
             </section>
         </section>
         <section class="advantages" id="advantages">
@@ -417,7 +453,7 @@
                 <input type="text" class="input name" placeholder="Ваше имя" required>
                 <input type="tel" class="input tel" placeholder="Ваш телефон" required>
                 <input type="email" class="input email" placeholder="Ваш email" required>
-                <input type="submit" class="button button--red submit" value="получить">
+                <input type="submit" class="button submit" value="получить">
             </form>
         </section>
     </section>
@@ -436,11 +472,12 @@
                 <a href="https://www.instagram.com/lakomka_silvercity" target="_blank"
                    class="footer__contact-social-item footer__contact-social-item--inst"></a>
             </section>
+            <section class="footer__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d543.1644235242418!2d40.98498382925209!3d57.006045998806684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d1447238bb1c1%3A0xd6d3f38ba0ed047a!2z0KLQpiAi0KHQtdGA0LXQsdGA0Y_QvdGL0Lkg0LPQvtGA0L7QtCI!5e0!3m2!1sru!2sua!4v1540553219291"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
         </section>
-        <section class="footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d543.1644235242418!2d40.98498382925209!3d57.006045998806684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d1447238bb1c1%3A0xd6d3f38ba0ed047a!2z0KLQpiAi0KHQtdGA0LXQsdGA0Y_QvdGL0Lkg0LPQvtGA0L7QtCI!5e0!3m2!1sru!2sua!4v1540553219291"
-                    frameborder="0" style="border:0" allowfullscreen></iframe>
-        </section>
+
     </div>
 </footer>
 <section class="form-popup form-popup--close">

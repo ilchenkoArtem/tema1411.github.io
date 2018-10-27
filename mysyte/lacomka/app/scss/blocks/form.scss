@@ -1,6 +1,6 @@
 .form {
   color: $text-color;
-  width: 400px;
+  max-width: 400px;
   height: auto;
   background-color: $bg-color;
   padding: 20px;
@@ -59,3 +59,18 @@
   }
 }
 
+@media (max-width: 700px) {
+  .form {
+    .first__form-h3 {
+      font-size: 17px;
+    }
+    p {
+      font-size: $text-size-mobile;
+    }
+    .input::placeholder,
+    .input {
+      font-size: $text-size-mobile;
+      height: 25px;
+    }
+  }
+}

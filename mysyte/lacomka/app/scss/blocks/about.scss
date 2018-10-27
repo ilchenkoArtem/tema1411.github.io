@@ -27,6 +27,7 @@
   transform: rotate(-6deg);
   width: 50%;
   margin: 20px 0;
+  border-radius: 15px;
 }
 
 .about__text {
@@ -40,4 +41,22 @@
 .about__button {
   margin: 0 auto;
   display: block;
+}
+
+.about__img-mobile {
+  display: none;
+  border-radius: 15px;
+}
+@media (max-width: 880px) {
+  .about__img-mobile {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .about__img {
+    display: none;
+  }
+  .about__text-wrapper {
+    width: 100%;
+  }
 }

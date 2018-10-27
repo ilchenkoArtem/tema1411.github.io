@@ -63,3 +63,18 @@
   max-width: 70%;
   margin: 0 auto;
 }
+
+@media (max-width: 600px) {
+  .price__price-tag-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price__franchise {
+    margin-right: 0;
+  }
+}
+@media (max-width: 750px) {
+  .price__description {
+    max-width: 100%;
+  }
+}

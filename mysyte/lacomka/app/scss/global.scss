@@ -1,10 +1,12 @@
-html,
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
-
-$padding-desktop: 80px;
+html {
+  height: 100%;
+}
+$padding-desktop: 5.5%;
 $padding-desktop-top-bottom: 70px;
 
 $nav-color: #fff;
@@ -21,6 +23,7 @@ $h-font-family: 'ZopaCyr';
 $button-family: 'ZopaCyr';
 $text-family: "OpenSans-Semibold";
 
+$text-size-mobile: 12px;
 $h3-size: 20px;
 $h3-letterSp: 0.1em;
 
@@ -68,6 +71,9 @@ $h3-letterSp: 0.1em;
   }
 }
 
+.body {
+  font-size: 16px;
+}
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -104,4 +110,27 @@ $h3-letterSp: 0.1em;
     background-color: transparent;
   }
 }
+
+@media (max-width: 1000px) {
+  .h2 {
+    font-size: 30px;
+  }
+  .body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .h2 {
+    font-size: 20px;
+  }
+  h2.h2 {
+    font-size: 25px;
+  }
+  .body {
+    font-size: 14px;
+  }
+}
+
+
 

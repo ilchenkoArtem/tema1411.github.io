@@ -85,6 +85,8 @@ function switchingСontrol(slickContainer) {
 
 switchingСontrol('.reviews__items, .scheme__img');
 
+
+//ajax отправка форм
 var form = document.querySelectorAll('.form');
 var SAVE_URL = 'https://httpstat.us/200';
 var TIMEOUT_REQUEST = 10000;
@@ -159,4 +161,27 @@ form.forEach(function (item) {
         }, onDeduceErrorText, new FormData(item));
         evt.preventDefault();
     });
-})
+});
+
+(function ($) {
+    $.fn.animated = function (inEffect) {
+        $(this).each(function () {
+            var ths = $(this);
+            ths.css("opacity", "0").addClass("animated").waypoint(function (dir) {
+                if (dir === "down") {
+                    ths.addClass(inEffect).css("opacity", "1");
+                }
+                ;
+            }, {
+                offset: "90%"
+            });
+
+        });
+    };
+})(jQuery);
+
+var animatesFunction = function () {
+    $('.about, .assortment, .price, .payback, .components, .reviews, .advantages, .scheme, .foryou, .bottom-form, .footer').animated('fadeIn');
+};
+
+animatesFunction();

@@ -7,10 +7,12 @@
     padding: 0 $padding-desktop;
   }
 }
+
 .components__headline {
   margin-top: 0;
   color: $text-color;
 }
+
 .components__list-items {
   text-align: left;
   padding: 0;
@@ -98,4 +100,68 @@
   text-align: left;
   font-family: $button-family;
   letter-spacing: 0.1em;
+}
+
+@media (max-width: 1000px) {
+  .components .wrapper {
+    padding: 0;
+  }
+  .components__list-item {
+    width: 47%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .components {
+    padding: $padding-desktop-top-bottom $padding-desktop;
+  }
+
+  .components__list-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .components__list--headline {
+    text-align: center;
+  }
+  .components__list-item {
+    margin-bottom: 15px;
+    padding-left: 0;
+    padding-top: 80px;
+    text-align: center;
+    &::after {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &--advertising {
+      padding-top: 80px;
+    }
+    &--help {
+      padding-top: 86px;
+    }
+    &--exclusive {
+      padding-top: 56px;
+    }
+    &--decor {
+      padding-top: 65px;
+    }
+    &--decor {
+      padding-top: 62px;
+    }
+    &--instruction {
+      padding-top: 83px;
+    }
+    &--inventory {
+      padding-top: 65px;
+    }
+    &--card{
+      padding-top: 54px;
+    }
+    &--contact {
+      padding-top: 58px;
+    }
+
+  }
 }

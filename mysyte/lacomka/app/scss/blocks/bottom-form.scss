@@ -2,22 +2,10 @@
   width: 100%;
   padding: $padding-desktop-top-bottom $padding-desktop;
   box-sizing: border-box;
-
-  background-image: url("../img/template.jpg");
-  color: $text-color-dark;
 }
 
 .bottom-form__form {
-  background-color: $text-color;
-  width: 400px;
+  background-color: $bg-color;
   margin: 0 auto;
-  p,
-  .input,
-  .input::placeholder,
-  .first__form-h3 {
-    color: $text-color-dark;
-  }
-  .input {
-    border-color: $text-color-dark;
-  }
 }
+
