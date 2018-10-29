@@ -72,7 +72,6 @@ function closeESC(e, closeFunction) {
 }
 
 
-
 //функция меняет цвет лого и счетчика взависимости от дата атрибута
 function changeColorForElementsSlide() {
     var currentColour = $('.slick-active').attr('data-color');
@@ -109,11 +108,13 @@ function openMainMenu() {
     closeFilter();
     openMenu('.main-nav', '.main-nav .nav__links, .nav__socials, .header-home__mobile-social', openMainMenu, closeMainMenu, '.main-nav .nav__bg, .main-nav .nav__link', '.burger-container', closeMainMenuEsc);
 }
+
 //закртие главного меню
 function closeMainMenu() {
     $('.burger-wrapper').removeClass('burger-wrapper-close');
     closeMenu('.main-nav', '.main-nav .nav__links, .nav__socials, .header-home__mobile-social', openMainMenu, closeMainMenu, '.main-nav .nav__bg, .main-nav .nav__link', '.burger-container', closeMainMenuEsc);
 }
+
 //закртие главного меню по нажатию
 function closeMainMenuEsc(e) {
     closeESC(e, closeMainMenu)
@@ -148,7 +149,7 @@ function closePdfMenu() {
         setTimeout(function () {
             pdfButtonMobilePortfolio.removeClass('pdf-download-portfolio--mobile--open');
         }, 800)
-        $(window).off('keydown', closePdfMenuEsc);
+        $(window).off('', closePdfMenuEsc);
     }
 }
 
@@ -174,6 +175,7 @@ function openFilter() {
     $('.filter-button-open').on('click', closeFilter);
     $(window).on('keydown', closeFilterEsc);
 }
+
 //закрытие фильтра
 function closeFilter() {
     $('.filter-container').removeClass('filter-container--open');
@@ -185,6 +187,7 @@ function closeFilter() {
     $(window).off('keydown', closeFilterEsc);
     mainButton.on('click', openFilter);
 }
+
 //закртыие фильтра по ESC
 function closeFilterEsc(e) {
     closeESC(e, closeFilter)
@@ -196,9 +199,9 @@ $('.burger-container').on('click', openMainMenu);
 
 
 var homePage = document.querySelector('.main-home');
-//функции запускаемые при ресайзе
-
 if (homePage) {
+    $('.main-home__slide img').focus();
+
 //функция определяет колличество слаайдов в каждом блоке и заносит в массив
     function quantityAllSliders(container) {
         var numberOfSlides = [];
@@ -268,6 +271,16 @@ if (homePage) {
     changeColorForElementsSlide();
     changeColorForElementsSlideOnAfterChange('.main-home__slide');
 
+    //скролл галереи по нажатию на стрелочки на клавиатуры
+    /*   $(window).on('keydown', function (e) {
+           console.log(e.which);
+           if (e.which == 39) {
+               $(slickContainer).slick('slickNext');
+           } else if (e.which == 37) {
+               $(slickContainer).slick('slickNext');
+           }
+       });*/
+
 //скролл главной галереи по колёсику мыши
     function switchingСontrol(slickContainer) {
         $(slickContainer).bind('mousewheel DOMMouseScroll', function (event) {
@@ -299,30 +312,11 @@ if (portfolioPage) {
         itemSelector: '.gallery__photo'
     });
 
-    /*// get Masonry instance
-        var msnry = $grid.data('masonry');
-
-    // init Infinite Scroll
-        $grid.infiniteScroll({
-            // Infinite Scroll options...
-            append: '.gallery__photo',
-            outlayer: msnry
-        });*/
     // layout Masonry after each image loads
     $grid.imagesLoaded().progress(function () {
         $grid.masonry('layout');
 
     });
-    /*    $(function () {
-            $('.gallery__img').lazy({
-                threshold: 0,
-                afterLoad: function() {
-                    // called after an element was successfully handled
-                    $grid.masonry('layout');
-                }
-            });
-
-        });*/
     //фильтр галереи
     $('.grid').isotope({
         // options
@@ -334,11 +328,10 @@ if (portfolioPage) {
     function onArrange() {
         console.log('arrange done');
         document.location.href = '#top'
-
     }
 
     $grid.on('arrangeComplete', onArrange);
-    //Настройки фильтра
+    //Настройки фильтра на странице пртофолио
     $('.filter.beauty').on('click', function () {
         $grid.isotope({filter: '.beauty'});
     });
@@ -404,3 +397,93 @@ if (portfolioPage) {
 $(window).on('resize', function () {
     onWidthWindow();
 });
+
+var newsPage = document.querySelector('.main-news');
+if (newsPage) {
+
+    mainButton.on('click', openFilter);
+
+
+    var $blog = $('.blog').masonry({
+        // Masonry options...
+        itemSelector: '.blog__item-wrapper',
+        percentPosition: true,
+        gutter: '.blog__gutter-sizer'
+    });
+
+    //Настройки фильтра на странице новстей
+    $blog.isotope({
+        itemSelector: '.blog__item-wrapper',
+        masonry: {
+            itemSelector: '.blog__item-wrapper',
+            percentPosition: true,
+            gutter: '.blog__gutter-sizer'
+        }
+    });
+
+    $('.main-header__filter-item.backstage, .main-news .backstage').on('click', function () {
+        $blog.isotope({filter: '.backstage'});
+        closeFilter()
+
+    });
+    $('.main-header__filter-item.video, .main-news .video').on('click', function () {
+        $blog.isotope({filter: '.video'});
+        closeFilter()
+    });
+    $('.main-header__filter-item.publications, .main-news .publications ').on('click', function () {
+        $blog.isotope({filter: '.publications'});
+        closeFilter()
+    });
+
+    $('.main-header__filter-item.all, .main-news .all').on('click', function () {
+        $blog.isotope({filter: '.blog__item-wrapper'});
+    });
+
+    //добавление класс при клике на фильтр вверху страницы
+    function removeActiveClassFilter() {
+        $('.main-header__filter-item').removeClass('main-header__filter-item--active');
+        $('.filter').removeClass('filter--active');
+    }
+
+    //синхронизация активации ссылок филтров на двух фильтрах
+    $('.main-header__filter-item').on('click', function () {
+        removeActiveClassFilter();
+        $(this).addClass('main-header__filter-item--active');
+        if ($(this).hasClass('publications')) {
+            $('.filter.publications').addClass('filter--active')
+        } else if ($(this).hasClass('backstage')) {
+            $('.filter.backstage').addClass('filter--active')
+        } else if ($(this).hasClass('video')) {
+            $('.filter.video').addClass('filter--active')
+        } else if ($(this).hasClass('all')) {
+            $('.filter.all').addClass('filter--active')
+        }
+    });
+
+    $('.filter').on('click', function () {
+        removeActiveClassFilter();
+        $(this).addClass('filter--active');
+        if ($(this).hasClass('publications')) {
+            $('.main-header__filter-item.publications').addClass('main-header__filter-item--active')
+        } else if ($(this).hasClass('backstage')) {
+            $('.main-header__filter-item.backstage').addClass('main-header__filter-item--active')
+        } else if ($(this).hasClass('video')) {
+            $('.main-header__filter-item.video').addClass('main-header__filter-item--active')
+        } else if ($(this).hasClass('all')) {
+            $('.main-header__filter-item.all').addClass('main-header__filter-item--active')
+        }
+    });
+    //-----------------------------
+    smoothScroll('.footer__scroll-top-container', 500);
+
+    var positionBlog = $(".blog-wrapper").offset().top;
+
+    window.onscroll = function() {
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrolled >= positionBlog) {
+            $('.filter-button-open').removeClass('filter-button-open--hidden')
+        } else {
+            $('.filter-button-open').addClass('filter-button-open--hidden')
+        }
+    }
+}
