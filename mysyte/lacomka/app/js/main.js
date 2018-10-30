@@ -1,5 +1,15 @@
+
+$('.first__main-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: false,
+    arrows: false,
+    fade: true
+})
 //управлеие попапом с формой заявки
 //функция закрытие попапа
+
+
 function closePopup() {
     $('.form-popup').addClass('form-popup--close');
     $('.form-popup__close-button').off('click', closePopup);

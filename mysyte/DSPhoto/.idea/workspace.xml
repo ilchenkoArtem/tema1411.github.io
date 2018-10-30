@@ -21,14 +21,14 @@
     <favorites_list name="DSPhoto" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49915826">
+    <splitter split-orientation="horizontal" split-proportion="0.6973899">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="main-home.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/pages/index/main-home.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1035">
-                  <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+                <state relative-caret-position="276">
+                  <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -37,7 +37,7 @@
           <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/portfolio.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="254">
+                <state relative-caret-position="-919">
                   <caret line="90" column="73" lean-forward="false" selection-start-line="90" selection-start-column="73" selection-end-line="90" selection-end-column="73" />
                   <folding>
                     <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -49,7 +49,7 @@
           <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/news.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
+                <state relative-caret-position="2047">
                   <caret line="89" column="39" lean-forward="false" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
                   <folding>
                     <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -74,7 +74,7 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="452">
+                <state relative-caret-position="1058">
                   <caret line="90" column="28" lean-forward="false" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
                   <folding>
                     <element signature="n#section#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -86,7 +86,7 @@
           <file leaf-file-name="filter.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/repeat/filter.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-620">
+                <state relative-caret-position="1334">
                   <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
                   <folding />
                 </state>
@@ -110,7 +110,7 @@
           <file leaf-file-name="blog.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/pages/news/blog.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-759">
+                <state relative-caret-position="414">
                   <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
                   <folding />
                 </state>
@@ -140,7 +140,7 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="415">
+                <state relative-caret-position="11132">
                   <caret line="484" column="8" lean-forward="false" selection-start-line="484" selection-start-column="8" selection-end-line="484" selection-end-column="8" />
                   <folding />
                 </state>
@@ -180,7 +180,7 @@
           <file leaf-file-name="gallery.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/pages/portfolio/gallery.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="521">
+                <state relative-caret-position="3243">
                   <caret line="141" column="1" lean-forward="true" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
                   <folding />
                 </state>
@@ -308,7 +308,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -367,6 +366,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -436,28 +436,28 @@
       <workItem from="1538845383743" duration="2506000" />
       <workItem from="1539254146282" duration="583000" />
       <workItem from="1540737597199" duration="5528000" />
-      <workItem from="1540805776454" duration="16120000" />
+      <workItem from="1540805776454" duration="16207000" />
+      <workItem from="1540896505544" duration="323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224121000" />
+    <option name="totallyTimeSpent" value="224531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24330042" sideWeight="0.50482756" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13540198" sideWeight="0.4951724" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24330042" sideWeight="0.50482756" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16220029" sideWeight="0.4951724" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496474" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293371" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -465,6 +465,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -557,7 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5014">
           <caret line="218" column="16" lean-forward="false" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -565,7 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -573,7 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -581,7 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1495">
           <caret line="65" column="29" lean-forward="false" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,7 +600,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/pages/news/blog.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-759">
+        <state relative-caret-position="414">
           <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding />
         </state>
@@ -619,7 +616,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/pages/portfolio/gallery.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
+        <state relative-caret-position="3243">
           <caret line="141" column="1" lean-forward="true" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
           <folding />
         </state>
@@ -627,15 +624,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/pages/index/main-home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1035">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="276">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/repeat/filter.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-620">
+        <state relative-caret-position="1334">
           <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
           <folding />
         </state>
@@ -651,7 +648,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
+        <state relative-caret-position="11132">
           <caret line="484" column="8" lean-forward="false" selection-start-line="484" selection-start-column="8" selection-end-line="484" selection-end-column="8" />
           <folding />
         </state>
@@ -659,7 +656,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
+        <state relative-caret-position="1058">
           <caret line="90" column="28" lean-forward="false" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
           <folding>
             <element signature="n#section#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -669,7 +666,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="2047">
           <caret line="89" column="39" lean-forward="false" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
           <folding>
             <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -682,7 +679,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
+        <state relative-caret-position="-919">
           <caret line="90" column="73" lean-forward="false" selection-start-line="90" selection-start-column="73" selection-end-line="90" selection-end-column="73" />
           <folding>
             <element signature="n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
