@@ -32,25 +32,38 @@
                 <a href="#contacts" class="header__main-nav-link">Контакты</a>
             </li>
         </ul>
-        <a href="tel:+79158439305" class="header__tel">+7 915 843 93 05</a>
+        <a href="tel:+84932214504" class="header__tel">8 (4932) 21-45-04</a>
     </nav>
 </header>
 <main class="main">
     <section class="first" id="first">
         <section class="first__main-slider">
-            <img src="img/IMG_8849.jpg" alt="">
-            <img src="img/IMG_8851.jpg" alt="">
+            <picture>
+                <source media="(max-width: 1100px)" srcset="img/stub.png">
+                <img src="img/IMG_8849.jpg" alt="">
+            </picture>
+            <picture>
+                <source media="(max-width: 1100px)" srcset="img/stub.png">
+                <img src="img/IMG_8851.jpg" alt="">
+            </picture>
+
         </section>
         <div class="wrapper">
             <img src="img/logo.png" alt="logo" width="464" height="346" class="first__logo">
             <form action="#" class="form first__form">
-                <h3 class="first__form-h3">Бизнес на уникальных десертах со всего света!</h3>
+                <h3 class="first__form-h3">Бизнес на десертах, вкус которых знаком с детства</h3>
                 <p>Получите подробный расчёт франшизы заполнив форму</p>
                 <input type="text" value="Получите подробный расчёт франшизы" name="Блок" class="form__name">
                 <input type="text" class="input name" name="Имя" placeholder="Ваше имя" required>
-                <input type="tel" class="input tel" name="Телефон" placeholder="Ваш телефон" required>
-                <input type="email" class="input email" name="Email" placeholder="Ваш email" required>
+                <input type="tel" class="input tel" name="Телефон" placeholder="Телефон" required>
+                <input type="email" class="input email" name="Email" placeholder="E-mail" required>
                 <input type="submit" class="button submit" value="получить">
+                <section class="form__checkbox-wrapper">
+                    <input type="checkbox" class="form__checkbox" required checked>
+                    <p class="form__checkbox-label">Информация на сайте не является публичной офертой. Я согласен с <a href="#" class="form__politic">политикой
+                        конфиденциальности</a> персональных данных и даю свое согласие на их обработку.</p>
+                </section>
+
             </form>
             <a href="#about" class="first__button-bottom"></a>
         </div>
@@ -60,28 +73,23 @@
             <div class="about__text-wrapper">
                 <h2 class="h2 about__headline">Что же такое &#171;Лакомка&#187;?</h2>
                 <img src="img/1.jpg" alt="Лакомка" width="500" height="" class="about__img-mobile">
-                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, molestiae.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur aut dolorum in modi nam
-                    odio praesentium quo recusandae sit!</p>
-                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque eligendi
-                    incidunt ipsam molestias. Doloribus labore mollitia neque odio praesentium quis quisquam veritatis
-                    voluptas. A ad commodi dignissimos, excepturi fugiat inventore laboriosam magni maxime mollitia nisi
-                    non obcaecati odio omnis perspiciatis placeat porro quas quis ratione repellat soluta ullam
-                    voluptatem.
-                </p>
-                <button class="button button--red about__button">Больше подробностей!</button>
+                <p class="about__text">“Лакомка” – это кафе, в котором реализуются натуральные десерты и сладости,
+                    исключительно отечественных производителей. Ассортимент составляют: натуральный пломбир (порядка 20
+                    вкусов), молочные и кислородные коктейли, сахарная вата, вкуснейшие пирожные, зерновой кофе, яблочки
+                    в карамели, поп-корн, пряники ручной работы, леденцы и сладости, и многое другое.</p>
+                <button class="button button--red about__button">Хочу больше информации</button>
             </div>
             <img src="img/1.jpg" alt="Лакомка" width="500" height="" class="about__img">
         </div>
     </section>
     <section class="assortment" id="assortment">
-        <h2 class="h2 assortment__headline">ассортимент</h2>
+        <h2 class="h2 assortment__headline">Наш ассортимет</h2>
         <div class="wrapper">
             <section class="assortment__items">
                 <section class="assortment__img-wrapper">
-                    <img src="img/assortment.png" alt="мороженое шариками" class="assortment__img">
+                    <img src="img/assortment.png" alt="Вкуснейший пломбир" class="assortment__img">
                 </section>
-                <h3 class="assortment__name">БАНАНЫ В ШОКОЛАДЕ</h3>
+                <h3 class="assortment__name">Вкуснейший пломбир</h3>
                 <p class="assortment__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Aspernatur assumenda, at consequuntur delectus ea fuga fugit porro provident quidem vel.</p>
             </section>
@@ -99,9 +107,9 @@
 
             <section class="assortment__items">
                 <section class="assortment__img-wrapper">
-                    <img src="img/wafl2.png" alt="ВЕНСКИЕ ВАФЛИ" class="assortment__img">
+                    <img src="img/assortment.png" alt="Зерновой кофе" class="assortment__img">
                 </section>
-                <h3 class="assortment__name">ВЕНСКИЕ ВАФЛИ</h3>
+                <h3 class="assortment__name">Зерновой кофе</h3>
                 <p class="assortment__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Aspernatur assumenda, at consequuntur delectus ea fuga fugit porro provident quidem vel.</p>
             </section>
@@ -109,7 +117,7 @@
                 <section class="assortment__img-wrapper">
                     <img src="img/assortment.png" alt="мороженое шариками" class="assortment__img">
                 </section>
-                <h3 class="assortment__name">БАНАНЫ В ШОКОЛАДЕ</h3>
+                <h3 class="assortment__name">Пряники ручной работы</h3>
                 <p class="assortment__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Aspernatur assumenda, at consequuntur delectus ea fuga fugit porro provident quidem vel.</p>
             </section>
@@ -117,18 +125,43 @@
                 <section class="assortment__img-wrapper">
                     <img src="img/assortment.png" alt="мороженое шариками" class="assortment__img">
                 </section>
-                <h3 class="assortment__name">БАНАНЫ В ШОКОЛАДЕ</h3>
+                <h3 class="assortment__name">Яблочки в карамели</h3>
                 <p class="assortment__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Aspernatur assumenda, at consequuntur delectus ea fuga fugit porro provident quidem vel.</p>
             </section>
             <section class="assortment__items">
                 <section class="assortment__img-wrapper">
-                    <img src="img/assortment.png" alt="мороженое шариками" class="assortment__img">
+                    <img src="img/assortment.png" alt="Кислородные коктейли" class="assortment__img">
                 </section>
-                <h3 class="assortment__name">БАНАНЫ В ШОКОЛАДЕ</h3>
+                <h3 class="assortment__name">Кислородные коктейли</h3>
                 <p class="assortment__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Aspernatur assumenda, at consequuntur delectus ea fuga fugit porro provident quidem vel.</p>
             </section>
+            <section class="assortment__items">
+                <section class="assortment__img-wrapper">
+                    <img src="img/assortment.png" alt="Поп-корн" class="assortment__img">
+                </section>
+                <h3 class="assortment__name">Поп-корн</h3>
+                <p class="assortment__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aspernatur assumenda, at consequuntur delectus ea fuga fugit porro provident quidem vel.</p>
+            </section>
+            <section class="assortment__items">
+                <section class="assortment__img-wrapper">
+                    <img src="img/assortment.png" alt="Гонконгские вафли" class="assortment__img">
+                </section>
+                <h3 class="assortment__name">Гонконгские вафли</h3>
+                <p class="assortment__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aspernatur assumenda, at consequuntur delectus ea fuga fugit porro provident quidem vel.</p>
+            </section>
+            <section class="assortment__items">
+                <section class="assortment__img-wrapper">
+                    <img src="img/assortment.png" alt="Стимеры" class="assortment__img">
+                </section>
+                <h3 class="assortment__name">Стимеры</h3>
+                <p class="assortment__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aspernatur assumenda, at consequuntur delectus ea fuga fugit porro provident quidem vel.</p>
+            </section>
+
         </div>
     </section>
     <section class="franchise-wrapper" id="franchise">
@@ -137,19 +170,18 @@
                 <h2 class="h2 price__headline">О франшизе &#171;Лакомка&#187;</h2>
                 <section class="price__price-tag-items">
                     <section class="price__franchise">
-                        <p class="price__price-tag-old"><span>208 000</span> руб.</p>
-                        <p class="price__price-tag">178 000 <span>руб.</span></p>
+                        <p class="price__price-tag-old"><span>250 000</span> руб.</p>
+                        <p class="price__price-tag">149 000 <span>руб.</span></p>
                         <p class="price__price-tag-text">стоимость франшизы</p>
                     </section>
                     <section class="price__other">
-                        <p class="price__price-tag">от 70 000 <span>руб.</span></p>
+                        <p class="price__price-tag">от 99 000 <span>руб.</span></p>
                         <p class="price__price-tag-text">другие расходы</p>
                     </section>
                 </section>
-                <p class="price__description">В стоимость франшизы уже входит всё необходимое оборудование для
-                    приготовления основных десертов, начиная от мелочей вроде гастроёмкостей для хранения, заканчивая
-                    специализированным фирменным оборудованием. С полным составом франшизного пакета можно ознакомиться
-                    ниже.</p>
+                <p class="price__description">Каждая франшиза индивидуальна. Мы подбираем максимально выгодные условия
+                    для наших партнеров, добиваемся наилучших скидок от поставщиков, и реализуем проекты в кратчайшие
+                    сроки. Ознакомиться с франшизным пакетом можно ниже.</p>
                 <button class="button price__button">Получить презентацию франшизы</button>
             </div>
         </section>
@@ -163,16 +195,16 @@
                             <div>
                                 <div class="payback__table-item-wrapper">
                                     <p>Первоначальный взнос</p>
-                                    <p>178 000</p>
+                                    <p>149 000</p>
                                 </div>
                                 <div class="payback__table-item-wrapper">
                                     <p>Дополнительные расходы</p>
-                                    <p>70 000</p>
+                                    <p>99 000</p>
                                 </div>
                             </div>
                             <div class="payback__table-item-wrapper payback__all-sum ">
                                 <p>Итого</p>
-                                <p class="payback__sum">248 000 руб.</p>
+                                <p class="payback__sum">249 000 руб.</p>
                             </div>
                         </section>
                     </section>
@@ -182,11 +214,11 @@
                             <div>
                                 <div class="payback__table-item-wrapper">
                                     <p>Средний чек</p>
-                                    <p>290</p>
+                                    <p>250</p>
                                 </div>
                                 <div class="payback__table-item-wrapper">
                                     <p>Кол-во чеков в день</p>
-                                    <p>30</p>
+                                    <p>35</p>
                                 </div>
                                 <div class="payback__table-item-wrapper">
                                     <p>Количество дней</p>
@@ -195,7 +227,7 @@
                             </div>
                             <div class="payback__table-item-wrapper payback__all-sum ">
                                 <p>Итого оборот:</p>
-                                <p class="payback__sum">261 000 руб./мес.</p>
+                                <p class="payback__sum">262 500 руб./мес.</p>
                             </div>
                         </section>
                     </section>
@@ -205,45 +237,49 @@
                             <div>
                                 <div class="payback__table-item-wrapper">
                                     <p>Аренда</p>
-                                    <p>20 000</p>
-                                </div>
-                                <div class="payback__table-item-wrapper">
-                                    <p>Закуп сырья</p>
-                                    <p>50 000</p>
-                                </div>
-                                <div class="payback__table-item-wrapper">
-                                    <p>Налоги и прочие расходы</p>
                                     <p>15 000</p>
+                                </div>
+                                <div class="payback__table-item-wrapper">
+                                    <p>Ингридиенты</p>
+                                    <p>60 000</p>
+                                </div>
+                                <div class="payback__table-item-wrapper">
+                                    <p>Оплата труда</p>
+                                    <p>30 000</p>
+                                </div>
+                                <div class="payback__table-item-wrapper">
+                                    <p>Налоги</p>
+                                    <p>12 000</p>
                                 </div>
                             </div>
                             <div class="payback__table-item-wrapper payback__all-sum ">
                                 <p>Итого:</p>
-                                <p class="payback__sum">119 000 руб./мес.</p>
+                                <p class="payback__sum">117 000 руб./мес.</p>
                             </div>
                         </section>
                     </section>
                 </section>
-                <p class="payback__clear-sum">Итого прибыль: <span>142 000 руб./мес.</span></p>
-                <p>При всего 30 продажах в день, Ваши вложения окупятся менее чем за 2 месяца!</p>
-                <button class="button button--red payback__button">Получить полную фин. модель</button>
-                <p class="payback__warning">ПОЛУЧИТЬ ПОЛНУЮ ФИН. МОДЕЛЬ
-                    Представленные выше расчёты являются примером окупаемости и составлены на основе данных по
-                    Екатеринбургу. Финансовые показатели могут меняться в зависимости от города и условий на рынке. Для
-                    Москвы и Санкт-Петербурга общие дополнительные вложения выше, приведённых в данном расчёте.</p>
+                <p class="payback__clear-sum">Итого прибыль: <span>145 500 руб./мес.</span></p>
+                <p>При всего 35 продажах в день, Ваши вложения окупятся менее чем за 2 месяца!</p>
+                <button class="button button--red payback__button">Получить фин. модель</button>
+                <p class="payback__warning">Расчёты, сделанные выше являются примером окупаемости и сделаны на основании
+                    данных по городу Иваново. Показатели могут изменяться в зависимости от города и условий. Для
+                    Санкт-Петербурга и Москвы, дополнительные вложения выше, чем приведённые в этом расчёте</p>
             </div>
         </section>
         <section class="components">
             <div class="wrapper">
-                <h2 class="h2 components__headline">Что входит в франшизу?</h2>
+                <h2 class="h2 components__headline">Что включает франшизный пакет</h2>
                 <ul class="components__list-items">
                     <li class="components__list-item components__list-item--advertising">
-                        <h5 class="components__list--headline">РЕКЛАМНЫЕ МАТЕРИАЛЫ, БРЕНДБУК</h5>
-                        <p>Руководство по использованию фирменного стиля, визитки, бейджи, флаеры и многое другое.</p>
+                        <h5 class="components__list--headline">Брендбук и рекламные материалы</h5>
+                        <p>Брендбук и рекламные материалы. Руководство по использованию фирменного стиля, визитки,
+                            бейджи, флаеры и многое другое.</p>
                     </li>
                     <li class="components__list-item components__list-item--help">
-                        <h5 class="components__list--headline">ПОМОЩЬ С РЕГИСТРАЦИЕЙ</h5>
-                        <p>Подготовим документы для регистрации в качестве ИП (при необходимости), поможем выбрать
-                            налоговый режим, оформить разрешительную документацию и многое другое.</p>
+                        <h5 class="components__list--headline">Инструкция по открытию и управление вашей торговой
+                            точкой</h5>
+                        <p>Пошаговый план открытия, начиная с регистрации ип, заканчивая наймом сотрудников</p>
                     </li>
                     <li class="components__list-item components__list-item--exclusive">
                         <h5 class="components__list--headline">УНИКАЛЬНЫЕ РЕЦЕПТЫ ДЕСЕРТОВ</h5>
@@ -339,29 +375,28 @@
             </section>
         </section>
         <section class="control wrapper">
-            <h2 class="h2 control__headline">В НОГУ СО ВРЕМЕНЕМ</h2>
+            <h2 class="h2 control__headline">Современные технологии</h2>
             <section class="control__main-info">
                 <img src="img/devices.jpg" alt="Удобная CRM система" class="control__img">
                 <section class="control__info">
-                    <h3>Предоставляем уникальные инструменты для контроля и управления вашим бизнесом:</h3>
+                    <h3>Предоставляем инструменты для контроля и управления бизнесом:</h3>
                     <img src="img/devices.jpg" alt="Удобная CRM система" class="control__img-mobile">
                     <ul class="control__items">
-                        <li class="control__subtitle">Система учёта</li>
+                        <li class="control__subtitle">Система учёта (CRM)</li>
                         <li class="control__item-wrapper">
-                            <p>С помощью этой программы вы сможете (в режиме онлайн):</p>
+                            <p>Система учёта (CRM)</p>
                             <ul class="control__item-online">
-                                <li>осуществлять контроль за своей торговой точкой;</li>
-                                <li>отслеживать время открытия и закрытия смены;</li>
-                                <li>мониторить количество продаж;</li>
-                                <li>контролировать остатки сырья на складе;</li>
-                                <li>составлять аналитические отчеты (средний чек, выручка за день и т.д.)
-                                </li>
+                                <li>контролировать свою торговую точку;</li>
+                                <li>следить за временем начала и окончания смены;</li>
+                                <li>видеть количество продаж;</li>
+                                <li>вести контроль склада</li>
+                                <li>анализировать работу (средний чек, выручка за день и т.д.)</li>
                             </ul>
                         </li>
                         <li>
                             <p class="control__subtitle">Система видеонаблюдения</p>
-                            <p>На точке устанавливается камера видеонаблюдения, которая позволяет следить в режиме
-                                реального времени за рабочим процессом.</p>
+                            <p>Устанавливается камера, которая позволяет вести онлайн наблюдение за работой вашей
+                                торговой точки.</p>
                         </li>
                         <li>
                             <p class="control__subtitle">Счетчик посетителей</p>
@@ -371,19 +406,20 @@
                     </ul>
                 </section>
             </section>
+            <button class="button button--red components__button">Хочу больше информации</button>
         </section>
         <section class="advantages" id="advantages">
             <div class="wrapper">
-                <h2 class="h2 advantages__headline">Почему мы?</h2>
+                <h2 class="h2 advantages__headline">Восемь причин открыть &#171;Лакомку&#187;</h2>
                 <ul class="advantages__list-items">
-                    <li class="advantages__list-item" data-number="1">ПРОДУКТ УНИКАЛЕН ДЛЯ РОССИЙСКОГО РЫНКА</li>
-                    <li class="advantages__list-item" data-number="2">ИНВЕСТИЦИИ ОКУПАЮТСЯ ЗА 1-3 МЕСЯЦА</li>
-                    <li class="advantages__list-item" data-number="3">НИЗКАЯ КОНКУРЕНЦИЯ В ДАННОЙ СФЕРЕ</li>
-                    <li class="advantages__list-item" data-number="4">ВСЁ ОБОРУДОВАНИЕ ВХОДИТ В СОСТАВ ФРАНШИЗЫ</li>
-                    <li class="advantages__list-item" data-number="5">НЕ ТРЕБУЕТСЯ БОЛЬШИХ ВЛОЖЕНИЙ В РЕКЛАМУ</li>
-                    <li class="advantages__list-item" data-number="6">НЕТ ЗАВИСИМОСТИ ОТ ВРЕМЕНИ ГОДА И ПОГОДНЫХ
-                        УСЛОВИЙ
-                    </li>
+                    <li class="advantages__list-item" data-number="1">Только отечественные ингредиенты</li>
+                    <li class="advantages__list-item" data-number="2">Минимум затрат на логистику</li>
+                    <li class="advantages__list-item" data-number="3">Нет зависимости от санкций</li>
+                    <li class="advantages__list-item" data-number="4">Подберем уникальные условия сотрудничества</li>
+                    <li class="advantages__list-item" data-number="5">Целый год без роялти</li>
+                    <li class="advantages__list-item" data-number="6">Инвестиции окупаются за 1-6 месяцев</li>
+                    <li class="advantages__list-item" data-number="7">Почти нет конкуренции</li>
+                    <li class="advantages__list-item" data-number="8">Высокомаржинальные товары</li>
                 </ul>
             </div>
         </section>
@@ -428,8 +464,8 @@
                 </ul>
                 <section class="scheme__beatify">
                     <section class="scheme__img">
-                        <img src="img/1.jpg" alt="пример дизайна точки" width="1280" height="853">
-                        <img src="img/2.jpg" alt="пример дизайна точки" width="1280" height="853">
+                        <img src="img/1.jpg" alt="пример дизайна точки" width="" height="">
+                        <img src="img/2.jpg" alt="пример дизайна точки" width="" height="">
                     </section>
 
                     <p class="scheme__beatify-text">Яркий, интересный и привлекательный дизайн — очень важная деталь
@@ -458,6 +494,11 @@
                 <input type="tel" class="input tel" placeholder="Ваш телефон" required>
                 <input type="email" class="input email" placeholder="Ваш email" required>
                 <input type="submit" class="button submit" value="получить">
+                <section class="form__checkbox-wrapper">
+                    <input type="checkbox" class="form__checkbox" required checked>
+                    <p class="form__checkbox-label">Информация на сайте не является публичной офертой. Я согласен с <a href="#" class="form__politic">политикой
+                        конфиденциальности</a> персональных данных и даю свое согласие на их обработку.</p>
+                </section>
             </form>
         </section>
     </section>
@@ -494,6 +535,11 @@
         <input type="tel" class="input tel" placeholder="Ваш телефон" required>
         <input type="email" class="input email" placeholder="Ваш email" required>
         <input type="submit" class="button submit" value="получить">
+        <section class="form__checkbox-wrapper">
+            <input type="checkbox" class="form__checkbox" required checked>
+            <p class="form__checkbox-label">Информация на сайте не является публичной офертой. Я согласен с <a href="#" class="form__politic">политикой
+                конфиденциальности</a> персональных данных и даю свое согласие на их обработку.</p>
+        </section>
     </form>
 </section>
 <section class="callback callback--close">
@@ -506,6 +552,11 @@
         <input type="text" class="input name" placeholder="Ваше имя" name="Имя" required>
         <input type="tel" class="input tel" name='Телефон' placeholder="Ваш телефон: +79158439305" required>
         <input type="submit" class="button submit" value="Жду звонка!">
+        <section class="form__checkbox-wrapper">
+            <input type="checkbox" class="form__checkbox" required checked>
+            <p class="form__checkbox-label">Информация на сайте не является публичной офертой. Я согласен с <a href="#" class="form__politic">политикой
+                конфиденциальности</a> персональных данных и даю свое согласие на их обработку.</p>
+        </section>
     </form>
 </section>
 <section class="success__form success__form--disabled">

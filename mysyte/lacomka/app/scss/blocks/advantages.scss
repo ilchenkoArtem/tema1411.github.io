@@ -45,7 +45,8 @@
     position: absolute;
     color: $text-color-dark;
     left: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: $text-color;
   }
 }

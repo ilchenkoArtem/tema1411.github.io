@@ -9,14 +9,14 @@
   font-family: $text-family;
   box-shadow: 0 0 12px 2px #000;
   .first__form-h3 {
-    font-size: 29px;
+    font-size: 25px;
     font-family: $h-font-family;
     text-transform: uppercase;
     letter-spacing: $h3-letterSp;
     margin-bottom: 5px;
-
   }
-  input {
+  .submit,
+  .input {
     background-color: transparent;
     border: none;
     border-radius: 0;
@@ -36,9 +36,9 @@
     }
   }
 
-  p {
+  > p {
     margin-top: 2px;
-    font-size: 14px;
+    font-size: 13px;
     font-family: $text-family;
   }
   .button {
@@ -57,6 +57,25 @@
   .form__name {
     display: none;
   }
+}
+
+.form__checkbox-wrapper {
+  margin-top: 5px;
+  text-align: left;
+  a {
+    color: black;
+  }
+}
+
+.form__checkbox {
+  display: inline;
+  width: auto;
+  height: auto;
+}
+
+.form__checkbox-label {
+  display: inline;
+  font-size: 9px;
 }
 
 @media (max-width: 700px) {
