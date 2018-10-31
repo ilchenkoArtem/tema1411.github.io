@@ -63,7 +63,7 @@
   margin-top: 5px;
   text-align: left;
   a {
-    color: black;
+    color: $text-color;
   }
 }
 
@@ -76,9 +76,12 @@
 .form__checkbox-label {
   display: inline;
   font-size: 9px;
+  margin: 0;
+  line-height: 9px;
 }
 
 @media (max-width: 700px) {
+
   .form {
     .first__form-h3 {
       font-size: 17px;
@@ -91,5 +94,10 @@
       font-size: $text-size-mobile;
       height: 25px;
     }
+    .form__checkbox-label {
+      font-size: 9px;
+    }
   }
+
 }
+

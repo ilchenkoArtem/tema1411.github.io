@@ -11,6 +11,7 @@
 .components__headline {
   margin-top: 0;
   color: $text-color;
+
 }
 
 .components__list-items {
@@ -30,7 +31,6 @@
   padding-left: 120px;
   box-sizing: border-box;
   position: relative;
-  text-align: justify;
   &::after {
     content: '';
     text-align: center;
@@ -100,6 +100,7 @@
   text-align: left;
   font-family: $button-family;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1000px) {

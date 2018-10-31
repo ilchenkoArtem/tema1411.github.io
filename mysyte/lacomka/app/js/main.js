@@ -1,4 +1,3 @@
-
 $('.first__main-slider').slick({
     autoplay: true,
     autoplaySpeed: 3000,
@@ -190,6 +189,7 @@ form.forEach(function (item) {
     };
 })(jQuery);
 
+//анимации
 var animatesFunction = function () {
     $('.about, .assortment, .price, .payback, .components, .reviews, .advantages, .scheme, .foryou, .bottom-form, .footer').animated('fadeIn');
 };

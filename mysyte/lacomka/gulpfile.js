@@ -28,9 +28,11 @@ gulp.task("serve", ["styles"], function () {
 gulp.task('styles', function () {
     return gulp.src("app/scss/style.scss")
         .pipe(sass({outputStyle: 'expanded'}).on("error", sass.logError))
-        .pipe(rename({suffix: '.min', prefix: ''}))
+        .pipe(rename({suffix: '.full', prefix: ''}))
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(cleancss({level: {1: {specialComments: 0}}})) // Opt., comment out when debugging
+        .pipe(gulp.dest('app/css'))
+        .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(sizereport())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.stream());

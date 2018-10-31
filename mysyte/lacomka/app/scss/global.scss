@@ -16,8 +16,8 @@ $text-color: #fff;
 $text-color-dark: #3f4246;
 
 $bg-color-main: #fff;
-$bg-color: /*rgba(210, 0, 98, 0.8)*//*#E34D90 */ rgb(229,21,99);
-$button-color: /*#8CE800;*/#fff;
+$bg-color: rgb(229,21,99);
+$button-color:#fff;
 
 $h-font-family: 'ZopaCyr';
 $button-family: 'ZopaCyr';
@@ -50,7 +50,7 @@ $h3-letterSp: 0.1em;
   border: 1px solid #fff;
   transition: all 0.4s ease;
   animation: button alternate ease-in-out 2s infinite;
-  letter-spacing: 0.2em;
+  letter-spacing: 1px;
   min-height: 50px;
   padding: 0 20px;
   box-sizing: border-box;

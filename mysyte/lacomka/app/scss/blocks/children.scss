@@ -1,0 +1,31 @@
+.children {
+  width: 100%;
+  height: 30vw;
+  background-color: $bg-color;
+  padding: 0 $padding-desktop;
+  box-sizing: border-box;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/girl.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: 120% 0;
+  }
+}
+
+.children__text {
+  width: 40%;
+  margin: 0;
+  color: $text-color;
+  font-family: $h-font-family;
+  font-size: 70px;
+}
+
+@media (max-width: 1150px) {
+  .children__text {
+    font-size: 6vw;
+  }
+}
