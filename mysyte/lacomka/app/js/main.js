@@ -80,9 +80,33 @@ $('.scheme__img').slick({
 });
 $('.reviews__items').slick({
     dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000
+});
+
+$('.components__list-items').slick({
     arrows: true,
-    //autoplay: true,
-    //autoplaySpeed: 2000
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 1150,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
 });
 
 //ajax отправка форм

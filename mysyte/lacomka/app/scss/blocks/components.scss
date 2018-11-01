@@ -2,10 +2,7 @@
   background-color: $bg-color;
   text-align: center;
   color: $text-color;
-  padding: $padding-desktop-top-bottom;
-  .wrapper {
-    padding: 0 $padding-desktop;
-  }
+  padding: $padding-desktop-top-bottom $padding-desktop;
 }
 
 .components__headline {
@@ -15,7 +12,7 @@
 }
 
 .components__list-items {
-  text-align: left;
+  text-align: center;
   padding: 0;
   margin: 0;
   display: flex;
@@ -26,17 +23,17 @@
 }
 
 .components__list-item {
-  width: 42%;
-  margin-bottom: 30px;
-  padding-left: 120px;
   box-sizing: border-box;
   position: relative;
+  padding: 80px 10px;
+  padding-bottom: 0;
   &::after {
     content: '';
     text-align: center;
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 0;
+    transform: translateX(-50%);
     width: 93px;
     height: 113px;
     background-image: url("../img/sprite_1.png");
@@ -92,6 +89,9 @@
     background-position: -1330px -2px;
     height: 103px;
   }
+  p {
+    margin-top: 0;
+  }
 }
 
 .components__list--headline {
@@ -101,32 +101,62 @@
   font-family: $button-family;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-align: center;
 }
 
-@media (max-width: 1000px) {
+.components {
+  .slick-arrow {
+    width: 40px;
+    height: 40px;
+    background-color: $button-color;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    &::before {
+      content: '';
+      font-family: sans-serif;
+    }
+  }
+  .slick-prev {
+    left: -3%;
+  }
+  .slick-next {
+    right: -3%;
+  }
+}
+
+/*@media (max-width: 1000px) {
   .components .wrapper {
     padding: 0;
   }
   .components__list-item {
     width: 47%;
   }
-}
+}*/
 
-@media (max-width: 1000px) {
-  .components {
-    padding: $padding-desktop-top-bottom $padding-desktop;
-  }
-
+@media (max-width: 1149px) {
   .components__list-item {
-    width: 100%;
+    padding: 80px 0;
+    padding-bottom: 0;
   }
+
+  .components {
+    .slick-arrow {
+      top: 50px;
+    }
+  }
+
+  /*  .components__list-item {
+      width: 100%;
+    }*/
 }
 
-@media (max-width: 400px) {
+/*@media (max-width: 400px) {
   .components__list--headline {
     text-align: center;
-  }
-  .components__list-item {
+  }*/
+/*  .components__list-item {
     margin-bottom: 15px;
     padding-left: 0;
     padding-top: 80px;
@@ -163,6 +193,6 @@
     &--contact {
       padding-top: 58px;
     }
-
   }
-}
+}*/
+

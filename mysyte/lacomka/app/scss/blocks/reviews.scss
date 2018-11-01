@@ -39,29 +39,7 @@
   font-size: 19px;
 }
 
-.reviews {
-  .slick-arrow {
-    width: 40px;
-    height: 40px;
-    background-color: $button-color;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: center;
-    &::before {
-      content: '';
-      font-family: sans-serif;
-    }
-  }
-  .slick-prev {
-    left: 25px;
-    background-image: url("../img/Arrow-LEft.svg");
-  }
-  .slick-next {
-    right: 25px;
-    background-image: url("../img/Arrow-Right.svg");
-  }
-}
+
 
 @media (max-width: 900px) {
   .reviews {
@@ -69,11 +47,6 @@
   }
   .reviews__item-wrapper {
     padding: 0;
-  }
-  .reviews {
-    .slick-arrow {
-      display: none;
-    }
   }
 }
 
