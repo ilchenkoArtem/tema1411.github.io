@@ -72,28 +72,18 @@ $(".header__main-nav-item, .first .wrapper, .header__nav").on("click", "a", func
     $('body,html').animate({scrollTop: top}, 1500);
 });
 
-$('.reviews__items, .scheme__img').slick({
+$('.scheme__img').slick({
     dots: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000
 });
-
-function switchingСontrol(slickContainer) {
-    $(slickContainer).bind('mousewheel DOMMouseScroll', function (event) {
-        if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-            event.preventDefault();
-            $(slickContainer).slick('slickPrev');
-        }
-        else {
-            event.preventDefault();
-            $(slickContainer).slick('slickNext');
-        }
-    });
-}
-
-switchingСontrol('.reviews__items, .scheme__img');
-
+$('.reviews__items').slick({
+    dots: true,
+    arrows: true,
+    //autoplay: true,
+    //autoplaySpeed: 2000
+});
 
 //ajax отправка форм
 var form = document.querySelectorAll('.form');

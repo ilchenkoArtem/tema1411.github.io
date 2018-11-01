@@ -1,11 +1,19 @@
+.foryou-main-wrapper {
+  background-color: $bg-color;
+  .wrapper {
+    display: flex;
+    padding: 0 $padding-desktop;
+  }
+}
+
 .foryou {
   text-align: center;
   background-color: $bg-color;
   color: $text-color;
-  padding: $padding-desktop-top-bottom $padding-desktop;
+  padding: $padding-desktop-top-bottom 0;
   > p {
     font-family: $h-font-family;
-    color: $button-color;
+    color: $text-color;
     font-size: 16px;
     margin-bottom: 0;
     margin-top: 40px;
@@ -13,7 +21,7 @@
 }
 
 .foryou__headline {
-  color: $button-color;
+  color: $text-color;
   margin-top: 0;
 }
 
@@ -25,5 +33,16 @@
 
 .foryou__item:not(:last-of-type) {
   margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+  .foryou-main-wrapper {
+    background-color: white;
+    .wrapper {
+      display: block;
+      max-width: none;
+      padding: 0;
+    }
+  }
 }
 

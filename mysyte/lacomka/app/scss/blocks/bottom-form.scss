@@ -1,11 +1,79 @@
 .bottom-form {
   width: 100%;
-  padding: $padding-desktop-top-bottom $padding-desktop;
+  padding: $padding-desktop-top-bottom 0;
   box-sizing: border-box;
+  background-color: $bg-color;
 }
 
 .bottom-form__form {
-  background-color: $bg-color;
-  margin: 0 auto;
+  margin-left: auto;
+  background-color: $text-color;
+  color: $text-color-dark;
+  border-color: $text-color-dark;
+  .input::placeholder,
+  .input {
+    color: $text-color-dark;
+  }
+  .input {
+    border-bottom: 1px solid $text-color-dark;
+  }
+  .first__form-h3 {
+    color: $bg-color;
+  }
+  .button--red {
+    border-color: $text-color-dark;
+  }
+  .button:hover {
+    background-color: $button-color;
+    color: $text-color-dark;
+  }
+  .form__checkbox-wrapper {
+    a {
+      color: $text-color-dark;
+    }
+  }
+
+}
+
+@media (max-width: 1100px) {
+  .bottom-form__form {
+    margin-left: auto;
+    background-color: $bg-color;
+    color: $text-color;
+    .input::placeholder,
+    .input {
+      color: $text-color;
+    }
+    .input {
+      border-bottom: 1px solid $text-color;
+    }
+    .first__form-h3 {
+      color: $text-color;
+    }
+    .button--red {
+      animation: button alternate ease-in-out 2s infinite;
+      border-color: $text-color;
+      color: $text-color;
+      &:hover {
+        animation: none;
+        background-color: $button-color;
+        color: $text-color-dark;
+      }
+    }
+    .form__checkbox-wrapper {
+      a {
+        color: $text-color;
+      }
+    }
+  }
+
+  .bottom-form {
+    background-color: transparent;
+    padding: $padding-desktop-top-bottom $padding-desktop;
+  }
+
+  .bottom-form__form {
+    margin: 0 auto;
+  }
 }
 

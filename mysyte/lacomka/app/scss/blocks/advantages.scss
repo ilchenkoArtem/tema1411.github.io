@@ -1,12 +1,13 @@
 .advantages {
   background-color: $bg-color;
-  padding: $padding-desktop-top-bottom 20%;
+  padding: $padding-desktop-top-bottom $padding-desktop;
   color: $text-color;
   .wrapper {
     text-align: center;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    max-width: 1133px;
   }
 }
 
@@ -20,7 +21,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   list-style: none;
   flex-wrap: wrap;

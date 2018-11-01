@@ -3,9 +3,15 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
+
 html {
   height: 100%;
 }
+
+input:focus {
+  outline: none;
+}
+
 $padding-desktop: 5.5%;
 $padding-desktop-top-bottom: 70px;
 
@@ -16,8 +22,8 @@ $text-color: #fff;
 $text-color-dark: #3f4246;
 
 $bg-color-main: #fff;
-$bg-color: rgb(229,21,99);
-$button-color:#fff;
+$bg-color: rgb(229, 21, 99);
+$button-color: #bef574;
 
 $h-font-family: 'ZopaCyr';
 $button-family: 'ZopaCyr';
@@ -47,7 +53,7 @@ $h3-letterSp: 0.1em;
   background-color: transparent;
   font-family: $button-family;
   text-transform: uppercase;
-  border: 1px solid #fff;
+  border: 1px solid $text-color;
   transition: all 0.4s ease;
   animation: button alternate ease-in-out 2s infinite;
   letter-spacing: 1px;
@@ -56,18 +62,18 @@ $h3-letterSp: 0.1em;
   box-sizing: border-box;
   cursor: pointer;
   -webkit-appearance: none;
+  min-width: 340px;
   &:hover {
     animation: none;
-    background-color: white;
+    background-color: $button-color;
     color: $text-color-dark;
   }
   &--red {
-    border-color: $bg-color;
-    color: $bg-color;
+    border-color: $text-color-dark;
+    color: $text-color-dark;
     animation: button-red alternate ease-in-out 2s infinite;
     &:hover {
-      background-color: $bg-color;
-      color: white;
+      background-color: $button-color;
     }
   }
 }
@@ -75,6 +81,7 @@ $h3-letterSp: 0.1em;
 .body {
   font-size: 16px;
 }
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -102,9 +109,9 @@ $h3-letterSp: 0.1em;
   }
 
   50% {
-    background-color: $bg-color;
-    color: white;
-    border-color: $bg-color;
+    background-color: $button-color;
+    color: $text-color-dark;
+    border-color: $button-color;
   }
 
   100% {
@@ -133,5 +140,11 @@ $h3-letterSp: 0.1em;
   }
 }
 
+@media (max-width: 700px) {
+  .button {
+    min-width: auto;
+  }
+
+}
 
 
