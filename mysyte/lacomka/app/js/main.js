@@ -61,7 +61,7 @@ $('.button-callback').on('click', function () {
 });
 //--------------------------------------------------------------------
 //плавный скролл к якорной ссылке
-$(".header__main-nav-item, .first .wrapper, .header__nav").on("click", "a", function (event) {
+$(".header__main-nav-item, .header__nav").on("click", "a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
     //забираем идентификатор бока с атрибута href

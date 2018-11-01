@@ -120,8 +120,10 @@
   }
   .slick-prev {
     left: -3%;
+    background-image: url("../img/Arrow-LEft.svg");
   }
   .slick-next {
+    background-image: url("../img/Arrow-Right.svg");
     right: -3%;
   }
 }
