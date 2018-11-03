@@ -2,7 +2,6 @@
   width: 100%;
   padding: $padding-desktop-top-bottom $padding-desktop;
   box-sizing: border-box;
-  background-color: $bg-color;
   padding-bottom: 100px;
   .wrapper {
   }
@@ -10,7 +9,7 @@
 
 .footer__headline {
   margin-top: 0;
-  color: $text-color;
+  color: $bg-color;
 }
 
 .footer__map {
@@ -20,6 +19,7 @@
   iframe {
     width: 100%;
     height: 100%;
+    border: 2px solid $bg-color;
   }
 }
 
@@ -38,7 +38,7 @@
   font-size: 20px;
   display: block;
   text-decoration: none;
-  color: $text-color;
+  color: $text-color-dark;
   span {
     font-family: $h-font-family;
   }
@@ -55,28 +55,22 @@ a.footer__contact-social-item {
   background-size: 100%;
   width: 40px;
   height: 40px;
-  &--vk {
-    background-image: url('../img/vk-social-logotype.svg');
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: $text-color-dark;
   }
-  &--inst {
-    background-image: url('../img/instagram-logo.svg');
-  }
+
   &:not(:last-of-type) {
     margin-right: 20px;
   }
 }
 
-@media (max-width: 700px) {
-  .footer__contact-address, .footer__contact-email, .footer__contact-phone {
-    font-size: 15px;
-  }
-  .footer__contact {
-    height: 300px;
-
-  }
-}
-
 @media (max-width: 1100px) {
+  .footer {
+    padding-bottom: 10px;
+    background-color: $bg-color;
+  }
   .footer__contact {
     flex-wrap: nowrap;
     height: auto;
@@ -92,6 +86,7 @@ a.footer__contact-social-item {
   }
   .footer__headline {
     order: -3;
+    color: $text-color;
   }
 
   .footer__contact-address {
@@ -101,21 +96,26 @@ a.footer__contact-social-item {
   .footer__contact-phone,
   .footer__contact-address {
     width: 100%;
+    color: $text-color;
     br {
       display: none;
     }
   }
   .footer__contact-social {
     justify-content: center;
+
+  }
+  a.footer__contact-social-item {
+    svg {
+      fill: $text-color
+    }
   }
 }
 
-@media (max-width: 1100px) {
-  .footer {
-    padding-bottom: 10px;
-
+@media (max-width: 700px) {
+  .footer__contact-address, .footer__contact-email, .footer__contact-phone {
+    font-size: 15px;
   }
-
 }
 
 @media (max-width: 500px) {
