@@ -34,7 +34,10 @@
     }
     &:hover .about_play-button {
       &::after {
-        transform: rotateX(180deg);
+        transform: translate(-50%, -50%) rotate(180deg) ;
+      }
+      &::before {
+        transform: translate(-50%, -50%) rotate(-180deg) ;
       }
     }
   }
@@ -59,7 +62,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transform-origin: center;
     background-repeat: no-repeat;
+    transition: 0.4s all ease-in-out;
   }
   &::after {
     width: 73px;
@@ -111,22 +116,6 @@
   }
 }
 
-.about__play-triangle {
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-  color: #fff;
-  &::after {
-    content: '';
-    position: absolute; /* Абсолютное позиционирование */
-    bottom: 19%;
-    left: 59%; /* Положение треугольника */
-    transform: translate(-50%, -50%);
-    border: 7px solid transparent;
-    border-left: 13px solid #fee308;
-  }
-}
-
 .advantages__buttons {
   a {
     display: none;
@@ -135,7 +124,6 @@
 
 @media (min-width: 768px) {
   .about {
-
     background: url("../img/roundabout.png") no-repeat 94% 100%,
     url("../img/xabout.png") no-repeat 48% 22%,
     url("../img/triangle_about.png") no-repeat 17% 78%;

@@ -518,7 +518,7 @@ a.header__service-link:hover {
 @media (min-width: 992px) {
   .header {
     background-position-x: -22vh;
-    background-image: url(../img/girl.jpg);
+    background-image: url(../img/girl.jpeg);
   }
   .header__decor-img {
     &--8 {
@@ -528,7 +528,7 @@ a.header__service-link:hover {
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .header {
       background-position-x: -22vh;
-      background-image: url(../img/girlforretina.jpg);
+      background-image: url(../img/girlforretina.jpeg);
       background-size: 1440px auto;
     }
   }
