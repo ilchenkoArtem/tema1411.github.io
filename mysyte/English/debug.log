@@ -1,0 +1,6 @@
+[1201/150912.327:ERROR:process_info.cc(359)] UncheckedAllocate
+[1201/151002.175:ERROR:process_info.cc(329)] VirtualQueryEx: Отказано в доступе. (0x5)
+[1201/151002.176:ERROR:process_info.cc(550)] ReadMemoryInfo failed
+[1201/151002.176:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7ffc4a9754d0 of 12 bytes failed: Запрос ReadProcessMemory или WriteProcessMemory был выполнен только частично. (0x12B)
+[1201/151002.176:WARNING:process_snapshot_win.cc(69)] ReadMemory ExceptionInformation failed
+[1201/151002.176:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Попытка доступа к процессу, выполняющему процедуру завершения. (0xc000010a)

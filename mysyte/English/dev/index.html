@@ -11,7 +11,6 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
     <title>SHO SCHOOL</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="../../../../../../Desktop/gulppack-scss-master/gulp/tasks/watch.js"></script>
 </head>
 <body class="body">
 
@@ -23,7 +22,7 @@
                     <img src="img/logo.svg" alt="logo" width="56" height="23">
                 </a>
                 <nav class="header__main-nav">
-                    <div>
+                    <div class="header__main-container">
                         <ul class="header__nav-elements">
                             <li>
                                 <a href="#about">О нас</a>
@@ -31,31 +30,34 @@
                             <li>
                                 <a class="header__services">Услуги</a>
                                 <section class="header__services-wrapper">
-                                    <div class="header__service-bg"></div>
                                     <div class="header__service-items-wrapper">
                                         <ul class="header__service-items">
                                             <li class="header__service-item ">
-                                                <a class="header__service-link header__service-link&#45;&#45;eng"
+                                                <a class="header__service-link header__service-link--eng"
                                                    href=""><span>Индивидуальные</span>
-                                                    уроки английского <span>языка</span></a>
+                                                    уроки<br> английского <span>языка</span>
+                                                </a>
                                             </li>
                                             <li class="header__service-item"><a
-                                                    class="header__service-link header__service-link&#45;&#45;nem"
+                                                    class="header__service-link header__service-link--nem"
                                                     href=""><span>Индивидуальные</span>
-                                                уроки немецкого <span>Иязыка</span></a>
+                                                уроки<br> немецкого <span>языка</span>
+                                            </a>
                                             </li>
                                             <li class="header__service-item">
-                                                <a class="header__service-link header__service-link&#45;&#45;pol"
+                                                <a class="header__service-link header__service-link--pol"
                                                    href=""><span>Индивидуальные</span>
-                                                    уроки польского <span>Иязыка</a>
+                                                    уроки<br> польского <span>языка</span>
+                                                </a>
                                             </li>
                                             <li class="header__service-item">
-                                                <a class="header__service-link header__service&#45;&#45;fr"
+                                                <a class="header__service-link header__service-link--fr"
                                                    href=""><span>Индивидуальные</span>
-                                                    уроки французкого <span>Иязыка</span></a>
+                                                    уроки<br> французкого <span>языка</span></a>
                                             </li>
                                         </ul>
                                     </div>
+                                    <div class="header__service-bg"></div>
                                 </section>
                             </li>
                             <li>
@@ -157,10 +159,8 @@
                 <div class="about__play-container">
                     <div class="about__play">
                         <img src="img/video__pc.jpg" alt="" width="507" height="316">
-                        <div class="about__play-circle1">
-                            <div class="about__play-circle2">
-                                <div class="about__play-triangle"></div>
-                            </div>
+                        <div class="about_play-button">
+                            <img src="img/play.png" alt="Play" class="about_play-img" width="19">
                         </div>
                     </div>
                 </div>

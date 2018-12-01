@@ -68,7 +68,7 @@ var SAVE_URL = '../mail.php';
 var burgerElement = document.querySelector('.header__burger');
 var burgerIconElement = document.querySelector('.header__burger-ico');
 var mainNavElement = document.querySelector('.header__main-nav');
-var mainNavElements = document.querySelectorAll('.header__nav-elements a');
+var mainNavElements = document.querySelectorAll('.header__nav-elements a:not(.header__services)');
 
 var onBurgerElementClick = function () {
     burgerIconElement.classList.toggle('header__burger-ico--active');
