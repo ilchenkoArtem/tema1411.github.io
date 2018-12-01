@@ -1,0 +1,9 @@
+//для вставки шрифта использовать конструкцию @include font('name', 'format')
+// где name имя файла шрифта в папке fonts(без учета формата), format - формат шрифта(woff, ttf ...)
+//например
+// @include font('Montserrat-Black', 'woff')
+//Вызвать шрифт в css
+// .div {
+//      font-family: 'Montserrat-Black';
+//  }
+

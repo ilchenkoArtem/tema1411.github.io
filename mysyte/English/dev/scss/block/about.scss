@@ -1,0 +1,201 @@
+.about {
+  padding: 50px 20px 100px 20px;
+  box-sizing: border-box;
+}
+
+.about__text {
+  h2 {
+    margin-top: 0;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 900;
+    br {
+      display: none;
+    }
+  }
+}
+
+.about__video {
+  text-align: right;
+  h2 {
+    font-weight: 900;
+    font-size: 34px;
+    color: #f8f8f8;
+    margin-bottom: 7px;
+  }
+  .about__play-container {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    &:hover .about__play-circle1 {
+      background-color: rgb(0, 0, 0);
+    }
+  }
+}
+
+.about__play-circle1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s background-color ease-in-out;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.about__play-circle2 {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+}
+
+.about__video-container {
+  iframe {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 90vw;
+    z-index: 10;
+    border: 0px;
+  }
+  &--close {
+    display: none;
+  }
+}
+
+.about__video--background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translate(-50% -50%);
+  z-index: 9;
+  &::after {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 20;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/close__video.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.about__play-triangle {
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  color: #fff;
+  &::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 19%;
+    left: 59%; /* Положение треугольника */
+    transform: translate(-50%, -50%);
+    border: 7px solid transparent;
+    border-left: 13px solid #fee308;
+  }
+}
+
+.advantages__buttons {
+  a {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+
+    background: url("../img/roundabout.png") no-repeat 94% 100%,
+    url("../img/xabout.png") no-repeat 48% 22%,
+    url("../img/triangle_about.png") no-repeat 17% 78%;
+    background-size: 72px;
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 50px 50px 100px 50px;
+      box-sizing: border-box;
+    }
+  }
+
+  .about__text {
+    width: 45%;
+    max-width: 416px
+  }
+
+  .about__video {
+    width: 45%;
+    h2 {
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .about__video--background::after {
+    right: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .about__video-container {
+    cursor: pointer;
+    iframe {
+      width: 70%;
+      height: 60%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    padding: 50px 200px 100px 200px;
+  }
+
+  .about__text {
+    h2 {
+      font-size: 34px;
+      line-height: 40px;
+      margin-bottom: 60px;
+      br {
+        display: block;
+      }
+    }
+    width: 416px;
+  }
+
+  .about__video {
+    h2 {
+      font-size: 68px;
+      line-height: 60px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .about__play-container {
+      width: 505px;
+      height: 314px;
+    }
+  }
+}

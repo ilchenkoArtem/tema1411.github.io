@@ -1,0 +1,159 @@
+.advantages {
+  padding: 0 20px 100px 20px;
+  box-sizing: border-box;
+  h2 {
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 18px;
+    padding-top: 5px;
+  }
+}
+
+.advantages__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.advantages__item {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.advantages__caption {
+  padding-left: 50px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 900;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    background-repeat: no-repeat;
+  }
+  &--control::after {
+    background-image: url("../img/goal.svg");
+  }
+  &--effect::after {
+    background-image: url("../img/brainstorm.svg");
+  }
+  &--grammar::after {
+    background-image: url("../img/book.svg");
+  }
+  &--books:after {
+    background-image: url("../img/elearning.svg");
+  }
+  &--logic:after {
+    background-image: url("../img/teamwork.svg");
+  }
+  &--create:after {
+    background-image: url("../img/inspection.svg");
+  }
+}
+
+.advantages__buttons a {
+  font-size: 12px;
+  font-weight: 900;
+  color: #7d7d7d;
+  text-decoration: none;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/whatsapp.svg);
+    background-repeat: no-repeat;
+    left: -27px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.advantages__button {
+  background-color: $main-color;
+  &:hover {
+    background-color: #fcbc03;
+  }
+}
+@media (min-width: 450px) {
+  .advantages__item {
+    width: 43%;
+  }
+
+}
+@media (min-width: 768px) {
+  .advantages__item {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  .advantages h2 {
+    font-size: 16px;
+  }
+
+  .advantages {
+    padding: 0 50px 100px 50px;
+    background: url("../img/rectangle_advantages.png") no-repeat 100% 23%,
+    url("../img/rectangle2_advantages.png") no-repeat 17% 101%,
+    url("../img/wave_advantages.png") no-repeat 65% 95%;
+    background-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .advantages {
+    h2 {
+      font-size: 18px;
+      max-width: 357px;
+      margin-bottom: 70px;
+    }
+  }
+
+  .advantages__item {
+    width: 30%;
+    padding-right: 0;
+    margin-bottom: 70px;
+    h3 {
+      font-size: 17px;
+    }
+  }
+
+  .advantages__buttons {
+    display: flex;
+    align-items: center;
+    a {
+      display: block;
+      margin-left: 75px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages {
+    padding: 0 200px 100px 200px;
+  }
+
+  .advantages__item {
+    width: 248px;
+    p {
+      padding-left: 51px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .advantages__item {
+    width: 327px;
+  }
+
+}

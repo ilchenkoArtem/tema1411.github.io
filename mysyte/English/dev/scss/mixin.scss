@@ -1,0 +1,18 @@
+$widthMarket: 1440;
+@function vw($target) {
+  //Переводит px в vw
+  $vw-context: ($widthMarket * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+//шаблон подлкючения шрифта $name должен соответствовать имени файла шрифта
+@mixin font($name, $format) {
+  @font-face {
+    font-family: $format;
+    src: url("../fonts/" + $name + '.' + $format) format($format);
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+//-----------------------
+
+$main-color: #FEE30D;

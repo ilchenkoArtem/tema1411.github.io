@@ -31,6 +31,8 @@ const w3cjs = require('gulp-w3cjs'); //валидатор html
 const htmlmin = require('gulp-htmlmin'); //минификатор html
 const strip = require('gulp-strip-comments'); //удаление коментариев html
 const zip = require('gulp-zip'); //архиватор
+var watch = require('gulp-watch');
+
 
 
 gulp.task('style', function (done) {
@@ -194,14 +196,14 @@ gulp.task('zip', function (done) {
 //запускать таcк: gulp build --prod
 gulp.task('build', gulp.series('clean', 'sprite', 'img', gulp.parallel('style', 'js', 'copy', 'html'), 'zip'));
 
-gulp.task('watch', function (done) {
-    gulp.watch('dev/scss/**/**.*', gulp.series('style'));
+gulp.task('stream', function (done) {
+    watch('dev/scss/**/**.*', gulp.series('style'));
     /*    gulp.watch("dev/img/!**!/!*.{jpg,jpeg,png,gif,svg}", gulp.series('img'));*/
-    gulp.watch(['dev/js/**/*.js', '!dev/js/**/*.min.js'], gulp.series('js'));
-    gulp.watch('dev/img/sprite/*.svg)', gulp.series('sprite'));
-    gulp.watch('dev/*.html', gulp.series('html'));
+    watch(['dev/js/**/*.js', '!dev/js/**/*.min.js'], gulp.series('js'));
+    watch('dev/img/sprite/*.svg)', gulp.series('sprite'));
+    watch('dev/*.html', gulp.series('html'));
     done()
 });
 
-gulp.task('default', gulp.series('style', 'js', 'sprite', 'html', gulp.parallel('watch', 'serve')
+gulp.task('default', gulp.series('style', 'js', 'sprite', 'html', gulp.parallel('stream', 'serve')
 ));

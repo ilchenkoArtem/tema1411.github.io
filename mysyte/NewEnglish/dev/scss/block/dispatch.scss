@@ -1,0 +1,118 @@
+.dispatch {
+  box-sizing: border-box;
+  width: 100%;
+  background-image: linear-gradient(45deg, rgb(254, 227, 8) 0%, rgb(252, 188, 3) 100%);
+  padding: 0 20px 0 35px;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.dispatch__container {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+
+}
+
+.dispatch__email {
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #222222;
+  height: 43px;
+  width: 90%;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 35px;
+  &::placeholder {
+    color: #222222;
+  }
+}
+
+.dispatch__text {
+  h3 {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 0;
+
+  }
+  p {
+    font-size: 9px;
+    margin-top: 2px;
+    span {
+      color: #ffffff;
+    }
+  }
+}
+
+.dispatch__button {
+  margin-top: 25px;
+  font-weight: bold;
+  width: 180px;
+  &:hover {
+    background-color: #f8edc6;
+  }
+}
+
+@media (min-width: 768px) {
+  .dispatch {
+    background: url("../img/decor__round.png") no-repeat 47% -12px,
+    url("../img/decor__x-and-shadow-2.png") no-repeat 66% 98%,
+    linear-gradient(45deg, rgb(254, 227, 8) 0%, rgb(252, 188, 3) 100%);
+    padding: 0 80px;
+  }
+
+  .dispatch__form {
+    align-items: center;
+    display: flex;
+    .form-item {
+      max-width: 427px;
+      margin-right: 86px;
+    }
+    .form-item:last-of-type {
+      width: 49%;
+    }
+    input {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .dispatch__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dispatch__form {
+    .form-item {
+      max-width: 180px;
+      margin-right: 86px;
+    }
+  }
+
+  .dispatch__text {
+    h3 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .dispatch {
+    padding: 0 150px;
+    min-height: 182px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1440px) {
+  .dispatch {
+    .wrapper {
+      padding: 0 200px;
+    }
+  }
+}
