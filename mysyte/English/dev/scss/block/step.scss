@@ -30,11 +30,7 @@
 }
 
 .step__gradient-text {
-  background-color: #fee308;
-  background: -webkit-linear-gradient(to right, #fee308 0%, #fcbc03 100%);
-  background: linear-gradient(to right, #fee308 0%, #fcbc03 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
 }
 
 .step__container {
@@ -73,7 +69,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #fdd206;
+  background-color: $main-color;
   margin: 0 10px 0 0;
 }
 
@@ -103,16 +99,16 @@
     padding: 0;
   }
   .step__item-number {
-    box-shadow: 0px 0px 61px 0px rgba(250,204,0,1);
+    box-shadow: 0px 0px 61px 0px $main-color;
   }
   .step_items {
     padding: 50px 50px;
     position: relative;
     height: 612px;
-    background-image: url("../img/rounds20.png");
+    background-image: url("../img/rounds.png");
     background-repeat: no-repeat;
-    background-position: -77px -339px;
-    background-size: 674px;
+    background-position: 0;
+    background-size: 570px;
   }
 
   .step {
@@ -135,40 +131,43 @@
       left: 324px;
     }
     &--2 {
-      top: 213px;
-      left: 199px;
+      top: 234px;
+      left: 247px;
       p:last-of-type {
         max-width: 200px;
       }
     }
     &--3 {
-      top: 273px;
-      left: 87px;
+      top: 290px;
+      left: 143px;
+      p:last-of-type {
+        width: 60px;
+      }
     }
     &--4{
-      top: 320px;
-      left: 394px;
+      top: 321px;
+      left: 413px;
     }
     &--5{
-      top: 343px;
-      left: 218px;
+      top: 359px;
+      left: 249px;
     }
     &--6{
-      top: 377px;
+      top: 386px;
       left: 103px;
     }
     &--7 {
-      top: 478px;
-      left: 387px;
+      top: 431px;
+      left: 454px;
     }
     &--8 {
       z-index: 1;
-      top: 489px;
-      left: 156px;
+      top: 495px;
+      left: 195px;
     }
 
     &--9 {
-      top: 589px;
+      top: 568px;
       left: 86px;
     }
   }
@@ -182,6 +181,7 @@
   .step__number-text {
     font-size: 200px;
     line-height: 200px;
+    color: $main-color;
   }
 
   .step__description {
@@ -217,14 +217,18 @@
       background-size: 100%;
     }
   }
+  .step__caption {
+    position: relative;
+    top: 41px;
+    left: 53px;
+  }
 }
 @media (min-width: 1024px) {
   .step__button-container {
     padding: 0 50px;
   }
   .step_items {
-    background-position: -124px -450px;
-    background-size: 847px;
+    background-size: 755px;
     height: 760px
   }
   .step__item {
@@ -235,40 +239,47 @@
     }
     &--1 {
       top: 36px;
-      left: 530px;
+      left: 431px;
     }
     &--2 {
-      top: 241px;
-      left: 235px;
+      top: 308px;
+      left: 318px;
     }
     &--3 {
-      top: 309px;
-      left: 99px;
+      top: 369px;
+      left: 198px;
+      p:last-of-type {
+        width: auto;
+      }
     }
     &--4{
       top: 387px;
-      left: 470px;
+      left: 571px;
     }
     &--5{
-      top: 421px;
-      left: 229px;
+      top: 441px;
+      left: 360px;
     }
     &--6{
-      top: 449px;
-      left: 75px;
+      top: 493px;
+      left: 159px;
     }
     &--7 {
       top: 508px;
-      left: 553px;
+      left: 643px;
     }
     &--8 {
-      top: 593px;
-      left: 156px;
+      top: 621px;
+      left: 238px;
     }
     &--9 {
-      top: 732px;
-      left: 109px;
+      top: 736px;
+      left: 185px;
     }
+  }
+  .step__caption {
+    top: 79px;
+    left: 104px;
   }
 }
 
@@ -294,7 +305,7 @@
   .step__item {
     &--1 {
       top: 36px;
-      left: 682px;
+      left: 435px;
     }
     &--2 {
       top: 325px;
