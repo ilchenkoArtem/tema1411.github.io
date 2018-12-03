@@ -45,6 +45,10 @@
   line-height: 38px;
   background-color: $main-color;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #222222;
+  display: block;
+  text-align: center;
   &:hover {
     background-color: #fcbc05;
   }
@@ -340,8 +344,10 @@ input:checked.services__radio + .services__container > .services__item-descripti
     max-width: 180px;
     background-color: #ffffff;
     min-height: 53px;
+    line-height: 53px;
     font-size: 12px;
     font-weight: 900;
+
     &:hover {
       background-color: #f8edc6;
     }

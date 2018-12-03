@@ -288,8 +288,8 @@
     padding: 0 200px;
   }
   .step_items {
-    height: 1014px;
-    background-position: -37px -642px;
+    height: 1218px;
+    background-position: 0;
     background-size: 1182px;
     padding: 50px 200px 0 200px;
   }
@@ -301,43 +301,47 @@
       font-size: 250px;
       line-height: 250px;
   }
+  .step__caption {
+    top: 174px;
+    left: 63px;
+  }
 
   .step__item {
     &--1 {
-      top: 36px;
-      left: 435px;
+      top: 71px;
+      left: 669px;
     }
     &--2 {
-      top: 325px;
-      left: 479px;
+      top: 467px;
+      left: 546px;
     }
     &--3 {
-      top: 424px;
+      top: 604px;
       left: 284px;
     }
     &--4{
-      top: 489px;
-      left: 587px;
+      top: 632px;
+      left: 668px;
     }
     &--5{
-      top: 530px;
-      left: 803px;
+      top: 682px;
+      left: 872px;
     }
     &--6{
-      top: 614px;
-      left: 282px;
+      top: 730px;
+      left: 560px;
     }
     &--7 {
-      top: 700px;
-      left: 910px;
+      top: 780px;
+      left: 1042px;
     }
     &--8 {
-      top: 814px;
-      left: 283px;
+      top: 992px;
+      left: 391px;
     }
     &--9 {
-      top: 992px;
-      left: 229px;
+      top: 1187px;
+      left: 235px;
     }
   }
   .step__item--9 p:first-of-type::after {

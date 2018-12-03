@@ -45,7 +45,7 @@
 }
 
 .wrapper {
-  max-width: 2000px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -4660,7 +4660,7 @@ a.header__service-link:hover {
 
 @media (min-width: 1440px) {
   .advantages__item {
-    width: 327px;
+    width: 33.33%;
   }
 }
 
@@ -4791,7 +4791,7 @@ a.header__service-link:hover {
 
 .footer__button {
   margin-top: 30px;
-  background-color: #fee308;
+  background-color: #fedb58;
   width: 180px;
 }
 
@@ -5050,6 +5050,10 @@ a.header__service-link:hover {
   line-height: 38px;
   background-color: #fedb58;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #222222;
+  display: block;
+  text-align: center;
 }
 
 .services__button:hover {
@@ -5335,6 +5339,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
     max-width: 180px;
     background-color: #ffffff;
     min-height: 53px;
+    line-height: 53px;
     font-size: 12px;
     font-weight: 900;
   }
@@ -5671,8 +5676,8 @@ input:checked.services__radio + .services__container > .services__item-descripti
     padding: 0 200px;
   }
   .step_items {
-    height: 1014px;
-    background-position: -37px -642px;
+    height: 1218px;
+    background-position: 0;
     background-size: 1182px;
     padding: 50px 200px 0 200px;
   }
@@ -5684,41 +5689,45 @@ input:checked.services__radio + .services__container > .services__item-descripti
     font-size: 250px;
     line-height: 250px;
   }
+  .step__caption {
+    top: 174px;
+    left: 63px;
+  }
   .step__item--1 {
-    top: 36px;
-    left: 435px;
+    top: 71px;
+    left: 669px;
   }
   .step__item--2 {
-    top: 325px;
-    left: 479px;
+    top: 467px;
+    left: 546px;
   }
   .step__item--3 {
-    top: 424px;
+    top: 604px;
     left: 284px;
   }
   .step__item--4 {
-    top: 489px;
-    left: 587px;
+    top: 632px;
+    left: 668px;
   }
   .step__item--5 {
-    top: 530px;
-    left: 803px;
+    top: 682px;
+    left: 872px;
   }
   .step__item--6 {
-    top: 614px;
-    left: 282px;
+    top: 730px;
+    left: 560px;
   }
   .step__item--7 {
-    top: 700px;
-    left: 910px;
+    top: 780px;
+    left: 1042px;
   }
   .step__item--8 {
-    top: 814px;
-    left: 283px;
+    top: 992px;
+    left: 391px;
   }
   .step__item--9 {
-    top: 992px;
-    left: 229px;
+    top: 1187px;
+    left: 235px;
   }
   .step__item--9 p:first-of-type::after {
     bottom: -136px;
