@@ -1,6 +1,12 @@
 *, *::after, *::before {
   box-sizing: border-box;
 }
+
+.main {
+  &--services {
+
+  }
+}
 .wrapper {
   max-width: 1400px;
   width: 100%;

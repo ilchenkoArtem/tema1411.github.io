@@ -8,7 +8,7 @@ import jquery from '../libs/jquery/dist/jquery.min';
 //Animate CSS + WayPoints javaScript Plugin
 //Example: $(".element").animated("zoomInUp");
 //Author URL: http://webdesign-mas
-$(document).ready(function () {
+/*$(document).ready(function () {
     (function ($) {
         $.fn.animated = function (inEffect) {
             $(this).each(function () {
@@ -58,7 +58,7 @@ $(document).ready(function () {
         setTypeElement();
 
     };
-});
+});*/
 var videoLink = 'https://www.youtube.com/embed/Vzsuqp8Rbt4?';
 videoLink = videoLink + '?rel=0&autoplay ';
 
@@ -158,7 +158,6 @@ var onScrollbodyElement = function () {
 var popupElement = document.querySelector('.popup');
 var popupCloseElement = document.querySelector('.popup__close');
 var buttonEase = document.querySelectorAll('.button-ease');
-var buttonMondey = document.querySelectorAll('.button-mondey');
 var popupBgElement = document.querySelector('.popup__background');
 const ESK_KEY_CODE = 27;
 var caption = document.querySelector('.popup__form-container h2');
@@ -198,17 +197,12 @@ var onButtonEaseClick = function () {
     openPopup();
 };
 
-var onButtonMondeyClick = function () {
-    caption.innerHTML = mondeyText;
-    openPopup();
-};
+
 
 buttonEase.forEach(function (it) {
     it.addEventListener('click', onButtonEaseClick);
 });
-buttonMondey.forEach(function (it) {
-    it.addEventListener('click', onButtonMondeyClick);
-});
+
 
 popupCloseElement.addEventListener('click', onPopupCloseElementClick);
 
@@ -387,5 +381,8 @@ aboutPlayElement.onclick = function () {
     window.addEventListener('keydown', onWindowKeyVideo);
     aboutVideoBackground.addEventListener('click', onAboutVideoBackgroundClick);
 };
+//скрипты для главной страници
+if($('.body--index').length !== 0){
+}
 
 

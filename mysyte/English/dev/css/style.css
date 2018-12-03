@@ -3691,6 +3691,10 @@ th {
   width: 100%;
 }
 
+.header__container--services .wrapper {
+  max-width: 1600px;
+}
+
 .header__contact-container {
   margin-bottom: 40px;
 }
@@ -5378,7 +5382,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
     background-size: 4%;
   }
   .services .wrapper {
-    padding: 0 200px;
+    padding: 0 134px;
     box-sizing: border-box;
   }
   .services__item-description label {
@@ -5883,4 +5887,91 @@ input:checked.services__radio + .services__container > .services__item-descripti
   z-index: -1;
   opacity: 0;
   transition: 1s opacity ease-in-out;
+}
+
+.service-decryption {
+  padding: 0 200px;
+  padding-top: 171px;
+}
+
+.service-decryption__title {
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  line-height: 42px;
+  letter-spacing: 0.9px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.service-decryption__subtitle {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
+.service-decryption__items {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-decryption__item {
+  padding-left: 22px;
+  font-weight: 800;
+  letter-spacing: 0.35px;
+  display: flex;
+  width: 30%;
+  margin-bottom: 70px;
+  align-items: center;
+}
+
+.service-decryption__item span {
+  display: block;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #fedb58;
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
+  position: relative;
+  margin-right: 35px;
+  text-align: center;
+  line-height: 23px;
+}
+
+.service-decryption__item span::before, .service-decryption__item span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.service-decryption__item span::after {
+  background-image: url("../img/big_circle_player.png");
+  width: 67px;
+  height: 67px;
+}
+
+.service-decryption__item span::before {
+  background-image: url("../img/small_circle_player.png");
+  width: 46px;
+  height: 46px;
+}
+
+@media (max-width: 1200px) {
+  .service-decryption {
+    padding: 0 50px;
+    padding-top: 171px;
+  }
 }
