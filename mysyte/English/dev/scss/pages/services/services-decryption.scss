@@ -1,6 +1,10 @@
 .service-decryption {
   padding: $padding-desctop;
   padding-top: 171px;
+  padding-bottom: 125px;
+  background-image: url("../img/xabout.png"), url("../img/roundabout.png");
+  background-repeat: no-repeat;
+  background-position: 80% 32%, 20% 95%;
 }
 
 .service-decryption__title {
@@ -39,8 +43,8 @@
   align-items: center;
   span {
     display: block;
-    width: 23px;
-    height: 23px;
+    min-width: 23px;
+    min-height: 23px;
     border-radius: 50%;
     background-color: $main-color;
     color: white;
@@ -79,5 +83,44 @@
   .service-decryption {
     padding: $padding-tablet;
     padding-top: 171px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .service-decryption__item {
+    width: 44%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .service-decryption__item {
+    width: 44%;
+  }
+}
+
+@media (max-width: 700px) {
+  .service-decryption {
+    background-image: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-decryption {
+    padding: $padding-mobile;
+    padding-top: 60px;
+  }
+  .service-decryption__title {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 5px;
+  }
+  .service-decryption__subtitle {
+    font-size: 12px;
+    margin-bottom: 50px;
+
+  }
+  .service-decryption__item {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }

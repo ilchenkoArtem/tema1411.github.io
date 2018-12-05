@@ -7,8 +7,8 @@
   background-position-x: center;
   background-position-y: bottom;
   background-size: cover;
-
 }
+
 
 .header__container {
   /*  max-width: 1440px;*/
@@ -197,6 +197,10 @@ a.header__tel {
 .header__service-items {
   list-style: none;
   max-width: 1042px;
+}
+
+.header__services--active {
+  border-bottom: 1px solid #222;
 }
 
 a.header__service-link:hover {
