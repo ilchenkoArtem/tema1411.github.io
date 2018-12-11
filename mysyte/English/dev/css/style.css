@@ -4115,6 +4115,9 @@ a.header__service-link:hover {
   a.header__service-link--fr::before {
     background-image: url("../img/france.svg");
   }
+  a.header__service-link--active {
+    text-decoration: underline;
+  }
   .header__service-items-wrapper:focus-within + .header__service-bg,
   .header__service-items-wrapper:hover + .header__service-bg,
   .header__services:focus-within + .header__services-wrapper > .header__service-bg,

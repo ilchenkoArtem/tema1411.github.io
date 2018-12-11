@@ -471,6 +471,9 @@ a.header__service-link:hover {
     &--fr::before {
       background-image: url("../img/france.svg");
     }
+    &--active {
+      text-decoration: underline;
+    }
   }
 
   .header__service-items-wrapper:focus-within + .header__service-bg,
