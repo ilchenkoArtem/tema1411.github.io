@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body body--services">
-<header class="header__blog__item-container header__blog__item-container--services">
+<header class="header__container header__container--services">
     <div class="wrapper">
         <div class="header__nav">
             <a href="#header" class="header__logo">
                 <img src="img/logo.svg" alt="logo" width="56" height="23">
             </a>
             <nav class="header__main-nav">
-                <div class="header__main-blog__item-container">
+                <div class="header__main-container">
                     <ul class="header__nav-elements">
                         <li>
                             <a href="index.html">Главная</a>
@@ -61,7 +61,7 @@
                             <a href="#footer">Контакты</a>
                         </li>
                     </ul>
-                    <div class=".header__contact-blog__item-container header__contact-blog__item-container">
+                    <div class=".header__contact-container header__contact-container">
                         <a class="header__tel" href="tel:+380962757698">+38 (096) 275 -76 -98</a>
                         <div class="social">
                             <a href="https://www.facebook.com/shoschoooool/" target="_blank">
@@ -194,7 +194,7 @@
     </section>
     <section class="dispatch">
         <div class="wrapper">
-            <div class="dispatch__blog__item-container">
+            <div class="dispatch__container">
                 <div class="dispatch__text">
                     <h3>ИНТЕРЕСНО?</h3>
                     <p>ПОДПИСЫВАЙТЕСЬ НА РАССЫЛКУ
@@ -204,9 +204,9 @@
 
                 <form class="dispatch__form" method='post' action='mail.php' enctype='multipart/form-data'
                       autocomplete='off'>
-                    <input type="text" value="Подписка на рассылку" name="Что интересует:" class="popup__name-services">
+                    <input autocomplete="off" type="text" value="Подписка на рассылку" name="Что интересует:" class="popup__name-services">
                     <div class="form-item">
-                        <input type="email" class="input" id="email-dispatch" name="mail" required>
+                        <input autocomplete="off" type="email" class="input" id="email-dispatch" name="mail" required>
                         <label for="email-dispatch" class="label">Ваш email</label>
                     </div>
                     <input type="submit" value="ОТПРАВИТЬ" class="button dispatch__button">
@@ -217,25 +217,25 @@
 </main>
 <footer class="footer" id="footer">
     <div class="wrapper">
-        <div class="footer__form-blog__item-container">
+        <div class="footer__form-container">
             <h2 class="h2">Остались вопросы?
                 <br>Задайте их нам:</h2>
             <form class="footer__form" method='post' action='mail.php' enctype='multipart/form-data' autocomplete='off'>
-                <input type="text" value="Блок: 'Остались вопросы?'" name="Что интересует:" class="popup__name-services">
+                <input autocomplete="off" type="text" value="Блок: 'Остались вопросы?'" name="Что интересует:" class="popup__name-services">
                 <div class="form-item">
-                    <input type="text" class="input" name="name" id="name" required>
+                    <input autocomplete="off" type="text" class="input" name="name" id="name" required>
                     <label for="name" class="label">Ваше имя</label>
                 </div>
                 <div class="form-item">
-                    <input type="tel" class="input" name="phone" id="tel" required>
+                    <input autocomplete="off" type="tel" class="input" name="phone" id="tel" required>
                     <label for="tel" class="label">Ваш телефон</label>
                 </div>
                 <div class="form-item">
-                    <input type="email" class="input" name="mail" id="email">
+                    <input autocomplete="off" type="email" class="input" name="mail" id="email">
                     <label for="email" class="label">Ваш email</label>
                 </div>
                 <div class="form-item form-item--comment">
-                    <input type="text" class="input" name="comment" id="comment">
+                    <input autocomplete="off" type="text" class="input" name="comment" id="comment">
                     <label for="comment" class="label">Ваш коментарий</label>
                 </div>
                 <div class="footer-submit">
@@ -286,29 +286,29 @@
 
 <section class="popup">
     <div class="popup__background"></div>
-    <div class="popup__form-blog__item-container">
+    <div class="popup__form-container">
         <div class="popup__close">
             <img src="img/close.svg" alt="закрыть окно" width="14" height="14">
         </div>
         <h2>заполни форму и убедись
             <br>что английский это легко</h2>
         <form class="popup__form" method='post' action='mail.php' enctype='multipart/form-data' autocomplete='off'>
-            <input type="text" value="Получить бесплатный урок" id="popup__name-services" class='popup__name-services'
+            <input autocomplete="off" type="text" value="Получить бесплатный урок" id="popup__name-services" class='popup__name-services'
                    name="Что интересует:">
             <div class="form-item">
-                <input type="text" class="input" id="name-popup" name="name" required>
+                <input autocomplete="off" type="text" class="input" id="name-popup" name="name" required>
                 <label for="name-popup" class="label">Ваше имя</label>
             </div>
             <div class="form-item">
-                <input type="tel" class="input" id="tel-popup" name="phone" required>
+                <input autocomplete="off" type="tel" class="input" id="tel-popup" name="phone" required>
                 <label for="tel-popup" class="label">Ваш телефон</label>
             </div>
             <div class="form-item">
-                <input type="email" class="input" name="mail" id="email-popup">
+                <input autocomplete="off" type="email" class="input" name="mail" id="email-popup">
                 <label for="email-popup" class="label">Ваш email</label>
             </div>
             <div class="form-item form-item--comment">
-                <input type="text" class="input" name="comment" id="comment-popup">
+                <input autocomplete="off" type="text" class="input" name="comment" id="comment-popup">
                 <label for="comment-popup" class="label">Ваш коментарий</label>
             </div>
             <div class="popup-submit">
