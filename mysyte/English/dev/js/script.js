@@ -429,6 +429,7 @@ if(document.querySelector('.body--services')) {
     });
 }
 
+/*
 function ellipsizeTextBox(id) {
     var el = document.querySelector(id);
     var wordArray = el.innerHTML.split(' ');
@@ -437,4 +438,4 @@ function ellipsizeTextBox(id) {
         el.innerHTML = wordArray.join(' ') + '...';
     }
 }
-ellipsizeTextBox('.last-news_preview');
+ellipsizeTextBox('.last-news_preview');*/
