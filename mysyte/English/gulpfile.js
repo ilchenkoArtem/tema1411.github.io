@@ -1,6 +1,5 @@
 var gulp = require('gulp'); //сам сборщик
 var sourcemaps = require("gulp-sourcemaps"); //исходная карта файлов
-var argv = require("yargs").argv // позволяет запускать gulp со своими аргументами $gulp --prod
 var del = require('del'); //стандартный модуль для удаления файлов
 var newer = require("gulp-newer"); //отслеживает 2 папки исходящую и входящу, не передаёт в входящуюю папку файл, если такой же уже есть там
 var imageminJpegRecompress = require("imagemin-jpeg-recompress"); //дополнение к gulp-imagemin для работы с JPG-изображениями;
@@ -18,7 +17,6 @@ var browsersync = require('browser-sync').create(); //автоперезагру
 var notify = require("gulp-notify"); //вывод ошибок;
 var plumber = require('gulp-plumber'); //отслеживает ошибки на всё потоке
 var rollup = require('gulp-better-rollup');//соединение js
-var gif = require('gulp-if');// позволяет задавать условия для выполнения пакетов
 var uglify = require('gulp-uglify'); //сжатие js
 var jshint = require('gulp-jshint');//стилизация ошибки в js
 var cheerio = require('gulp-cheerio');
@@ -45,11 +43,9 @@ gulp.task('style', function (done) {
             })
         }))
         .pipe(scssimport())
-        .pipe(gif(!argv.prod, sourcemaps.init()))
+        .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'expanded'}))
-        .pipe(gif(argv.prod, gcmq()))
-        .pipe(gif(argv.prod, csscomb()))
-        .pipe(gif(argv.prod, gulp.dest("prod/css/"), gulp.dest('dev/css')))
+        .pipe(gulp.dest('dev/css'))
         .pipe(sizereport())
         .pipe(autoprefixer({browsers: ["last 10 versions"]}))
         .pipe(minCss({
@@ -59,11 +55,37 @@ gulp.task('style', function (done) {
         .pipe(rename({suffix: ".min"}))
         .pipe(sizereport())
         .pipe(browsersync.stream())
-        .pipe(gif(!argv.prod, sourcemaps.write('../map/css')))
-        .pipe(gif(argv.prod, gulp.dest('prod/css'), gulp.dest('dev/css')));
+        .pipe(sourcemaps.write('../map/css'))
+        .pipe(gulp.dest('dev/css'));
     done()
 });
 
+gulp.task('style-prod', function (done) {
+    gulp.src('dev/scss/style.scss')
+        .pipe(plumber({
+            errorHandler: notify.onError(function (err) {
+                return {
+                    title: 'Ошибка в стилях',
+                    message: '\nФайл: ' + err.relativePath + ';' + '\nРяд: ' + err.line + ';' + '  Колонка: ' + err.column + ';' + '\nОшибка: ' + err.messageOriginal + ';'
+                }
+            })
+        }))
+        .pipe(scssimport())
+        .pipe(sass({outputStyle: 'expanded'}))
+        .pipe(gcmq())
+        .pipe(csscomb())
+        .pipe(gulp.dest("prod/css/"))
+        .pipe(sizereport())
+        .pipe(autoprefixer({browsers: ["last 10 versions"]}))
+        .pipe(minCss({
+            compatibility: "*",
+            level: {1: {specialComments: 0}}
+        }))
+        .pipe(rename({suffix: ".min"}))
+        .pipe(sizereport())
+        .pipe(gulp.dest('prod/css'));
+    done()
+});
 
 gulp.task("img", function () {
     return gulp.src(["./dev/img/**/*.{jpg,jpeg,png,gif,svg}"])
@@ -108,15 +130,37 @@ gulp.task('js', function (done) {
             esversion: ['6']
         }))
         .pipe(jshint.reporter('jshint-stylish', {beep: true}))
-        .pipe(gif(!argv.prod, sourcemaps.init()))
+        .pipe(sourcemaps.init())
         .pipe(rollup({}, 'iife'))
-        .pipe(gif(argv.prod, gulp.dest("prod/js/")))
-        .pipe(gif(argv.prod, sizereport()))
-        .pipe(gif(argv.prod, uglify()))
         .pipe(rename({suffix: ".min"}))
         .pipe(sizereport())
-        .pipe(gif(!argv.prod, sourcemaps.write('../map/js')))
-        .pipe(gif(argv.prod, gulp.dest('prod/js'), gulp.dest('dev/js')))
+        .pipe(sourcemaps.write('../map/js'))
+        .pipe(gulp.dest('dev/js'))
+        .pipe(browsersync.reload({stream: true}));
+    done()
+});
+
+gulp.task('js-prod', function (done) {
+    gulp.src('dev/js/script.js')
+        .pipe(plumber({
+            errorHandler: notify.onError(function () {
+                return {
+                    title: 'Ошибка в синтаксисе js',
+                    message: 'Смотри в терминале'
+                };
+            })
+        }))
+        .pipe(jshint({
+            esversion: ['6']
+        }))
+        .pipe(jshint.reporter('jshint-stylish', {beep: true}))
+        .pipe(rollup({}, 'iife'))
+        .pipe(gulp.dest("prod/js/"))
+        .pipe(sizereport())
+        .pipe(uglify())
+        .pipe(rename({suffix: ".min"}))
+        .pipe(sizereport())
+        .pipe(gulp.dest('prod/js'))
         .pipe(browsersync.reload({stream: true}));
     done()
 });
@@ -136,8 +180,8 @@ gulp.task('clean', function () {
 });
 
 gulp.task('copy', function (done) {
-    gulp.src('dev/fonts')
-        .pipe(gulp.dest('prod/'));
+    gulp.src('dev/fonts/*')
+        .pipe(gulp.dest('prod/fonts'));
     done()
 });
 
@@ -179,21 +223,27 @@ gulp.task('sprite', function (done) {
 gulp.task('html', function () {
     return gulp.src('dev/*.html')
         .pipe(w3cjs())
-        .pipe(gif(argv.prod, strip())) //удаление коментариев
-        //.pipe(gif(argv.prod, htmlmin({ collapseWhitespace: true }))) //раскоментировать если нужно минифицировать html
-        .pipe(gif(argv.prod, gulp.dest('prod/')))
+        .on("end", browsersync.reload);
+});
+
+gulp.task('html-prod', function () {
+    return gulp.src('dev/*.html')
+        .pipe(w3cjs())
+        .pipe(strip()) //удаление коментариев
+        //.pipe(htmlmin({ collapseWhitespace: true })) //раскоментировать если нужно минифицировать html
+        .pipe(gulp.dest('prod/'))
         .on("end", browsersync.reload);
 });
 
 gulp.task('zip', function (done) {
-    gulp.src('prod/*')
+    gulp.src('prod/**')
         .pipe(zip('project.zip'))
         .pipe(gulp.dest('./'));
     done()
 });
 
 //запускать таcк: gulp build --prod
-gulp.task('build', gulp.series('clean', 'sprite', 'img', gulp.parallel('style', 'js', 'copy', 'html'), 'zip'));
+gulp.task('build', gulp.series('clean', 'sprite', 'img', gulp.parallel('style-prod', 'js-prod', 'copy', 'html-prod'), 'zip'));
 
 gulp.task('watches', function (done) {
     gulp.watch(['dev/scss/**/**.*'], gulp.series('style'));
@@ -206,3 +256,11 @@ gulp.task('watches', function (done) {
 
 gulp.task('default', gulp.series('style', 'js', 'sprite', 'html', gulp.parallel('watches', 'serve')
 ));
+
+gulp.task('gulp-uglify', function(done){
+    gulp.src('dev/js/script.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('build/js'))
+    done()
+});
+

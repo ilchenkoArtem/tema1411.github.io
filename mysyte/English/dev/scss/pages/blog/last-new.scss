@@ -1,3 +1,165 @@
+.last-news {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  margin-top: 58px;
+  margin-bottom: 90px;
+}
+
+.last-news__container {
+  background-color: white;
+  max-width: 560px;
+  padding: 42px;
+  max-height: 328px;
+  width: 100%;
+  margin-left: -105px;
+}
+
+.last-news_link {
+  background: $main-color;
+}
+
+.last-news-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.last-news_info {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+}
+
+.last-news_category {
+  margin-right: 5%;
+}
+
+.last-news_title {
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-top: 19px;
+}
+
+.last-news_preview {
+  display: block;
+  font-size: 14px;
+  @include multiLineEllipsis($lineHeight: 1.2em, $lineCount: 3, $bgColor: white)
+}
 
 
+.last-news_similar-news {
+  text-transform: uppercase;
+  color: #222222;
+  list-style: none;
+  padding: 0;
+  max-width: 300px;
+  padding-right: 70px;
+  width: 100%;
+
+  li {
+    border-bottom: 1px solid #c8c8c8;
+  }
+}
+
+.last-news_similar-new {
+  color: #222222;
+  text-decoration: none;
+
+  p {
+    font-size: 8px;
+    margin: 0;
+    font-weight: 600;
+
+  }
+
+  h3 {
+    font-size: 15px;
+    margin: 0;
+  }
+}
+
+.last-news_similar-news-title {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.last-news_link {
+  margin-top: 25px;
+}
+
+@media (max-width: 1040px) {
+  .last-news {
+    margin-bottom: 10px;
+    min-height: auto;
+
+  }
+  .last-news-container {
+    display: block;
+  }
+
+  .last-news_similar-news {
+    max-width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+  .last-news_similar-news-title {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .last-news_similar-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    h3 {
+      max-width: 60%;
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .last-news {
+    display: block;
+    img {
+      display: none;
+    }
+  }
+  .last-news__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 544px) {
+  .last-news {
+    display: block;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .last-news_similar-new {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    h3 {
+      max-width: 100%;
+    };
+    p {
+      text-align: left;
+    }
+  }
+
+  .last-news_similar-news-title {
+    text-align: left;
+    font-size: 8px;
+  }
+}
 

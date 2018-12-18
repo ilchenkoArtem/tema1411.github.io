@@ -1,0 +1,15 @@
+.blog-all-container {
+  max-width: 1178px;
+  padding: $padding-desctop;
+  margin: 0 auto;
+  .service-decryption {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 625px) {
+  .blog-all-container {
+    padding: $padding-mobile;
+  }
+}
