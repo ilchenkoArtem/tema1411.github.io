@@ -238,14 +238,14 @@ gulp.task('html-prod', function () {
 });
 
 gulp.task('zip', function (done) {
-    gulp.src('prod/*')
+    gulp.src('prod/**')
         .pipe(zip('project.zip'))
         .pipe(gulp.dest('./'));
     done()
 });
 
 //запускать таcк: gulp build --prod
-gulp.task('build', gulp.series('clean', 'sprite', 'img', gulp.parallel('style', 'js', 'copy', 'html'), 'zip'));
+gulp.task('build', gulp.series('clean', 'sprite', 'img', gulp.parallel('style-prod', 'js-prod', 'copy', 'html-prod'), 'zip'));
 
 gulp.task('watches', function (done) {
     gulp.watch(['dev/scss/**/**.*'], gulp.series('style'));
