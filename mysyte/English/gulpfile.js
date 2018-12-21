@@ -1,5 +1,6 @@
 var gulp = require('gulp'); //сам сборщик
 var sourcemaps = require("gulp-sourcemaps"); //исходная карта файлов
+var argv = require("yargs").argv; // позволяет запускать gulp со своими аргументами $gulp --prod
 var del = require('del'); //стандартный модуль для удаления файлов
 var newer = require("gulp-newer"); //отслеживает 2 папки исходящую и входящу, не передаёт в входящуюю папку файл, если такой же уже есть там
 var imageminJpegRecompress = require("imagemin-jpeg-recompress"); //дополнение к gulp-imagemin для работы с JPG-изображениями;
@@ -17,6 +18,7 @@ var browsersync = require('browser-sync').create(); //автоперезагру
 var notify = require("gulp-notify"); //вывод ошибок;
 var plumber = require('gulp-plumber'); //отслеживает ошибки на всё потоке
 var rollup = require('gulp-better-rollup');//соединение js
+var gif = require('gulp-if');// позволяет задавать условия для выполнения пакетов
 var uglify = require('gulp-uglify'); //сжатие js
 var jshint = require('gulp-jshint');//стилизация ошибки в js
 var cheerio = require('gulp-cheerio');
@@ -230,20 +232,20 @@ gulp.task('html-prod', function () {
     return gulp.src('dev/*.html')
         .pipe(w3cjs())
         .pipe(strip()) //удаление коментариев
-        //.pipe(htmlmin({ collapseWhitespace: true })) //раскоментировать если нужно минифицировать html
+        .pipe(htmlmin({ collapseWhitespace: true })) //раскоментировать если нужно минифицировать html
         .pipe(gulp.dest('prod/'))
         .on("end", browsersync.reload);
 });
 
 gulp.task('zip', function (done) {
-    gulp.src('prod/**')
+    gulp.src('prod/*')
         .pipe(zip('project.zip'))
         .pipe(gulp.dest('./'));
     done()
 });
 
 //запускать таcк: gulp build --prod
-gulp.task('build', gulp.series('clean', 'sprite', 'img', gulp.parallel('style-prod', 'js-prod', 'copy', 'html-prod'), 'zip'));
+gulp.task('build', gulp.series('clean', 'sprite', 'img', gulp.parallel('style', 'js', 'copy', 'html'), 'zip'));
 
 gulp.task('watches', function (done) {
     gulp.watch(['dev/scss/**/**.*'], gulp.series('style'));
@@ -263,4 +265,3 @@ gulp.task('gulp-uglify', function(done){
         .pipe(gulp.dest('build/js'))
     done()
 });
-
