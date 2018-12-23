@@ -402,13 +402,7 @@ a.header__service-link:hover {
     margin-bottom: 5vh;
     align-self: flex-end;
   }
-  .header__services-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 92px 10px 51px 10px;
-  }
+
 
   .header__service-bg {
     position: absolute;
@@ -544,7 +538,7 @@ a.header__service-link:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .header__container {
     padding: 0 50px;
   }
@@ -566,14 +560,13 @@ a.header__service-link:hover {
   }
 
   .header__info-container {
-    padding: 0 50px;
-  }
-  .header__service-items-wrapper {
-    padding: 0 50px 20px 50px;
+    padding: 92px 50px 50px 50px;
+
   }
 
+
   .header__main-nav {
-    padding: 41px 50px 0 50px;
+    padding: 0px 50px 0 50px;
 
   }
 }
