@@ -1,9 +1,11 @@
 .tariff {
-  padding: $padding-desctop;
   padding-bottom: 50px;
   background-image: url("../img/triangle_about.png");
   background-repeat: no-repeat;
   background-position: 90% 10%;
+  .wrapper {
+    padding:  0 200px;
+  }
 }
 
 .tariff-title {
@@ -160,6 +162,9 @@
   .tariff {
     padding: $padding-tablet;
     padding-bottom: 50px;
+    .wrapper {
+      padding:  0;
+    }
   }
 }
 

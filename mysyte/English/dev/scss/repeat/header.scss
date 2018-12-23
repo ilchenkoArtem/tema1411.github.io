@@ -29,6 +29,7 @@
   .wrapper {
     width: 100%;
   }
+
   &--services {
     .wrapper {
       max-width: 1300px;
@@ -48,6 +49,7 @@
   align-items: center;
   justify-content: space-between;
   font-weight: bold;
+
   a {
     font-size: 14px;
     text-transform: uppercase;
@@ -79,9 +81,11 @@
   transition: transform .5s cubic-bezier(.28, 0, .18, 1) .5s;
 
   overflow-y: auto;
+
   &--active {
     transform-origin: top;
     transform: scaleY(1);
+
     .header__nav-elements,
     .header__contact-container {
       opacity: 1;
@@ -129,6 +133,7 @@ a.header__tel {
   height: 1px;
   background-color: #222222;
   transition: all .6s ease;
+
   &::before {
     content: "";
     position: absolute;
@@ -139,6 +144,7 @@ a.header__tel {
     background-color: #222222;
     transition: .6s cubic-bezier(.47, -.77, .6, 1.8);
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -149,6 +155,7 @@ a.header__tel {
     background-color: #222222;
     transition: .6s cubic-bezier(.47, -.77, .6, 1.8);
   }
+
   &--active {
     &::after,
     &::before {
@@ -169,12 +176,14 @@ a.header__tel {
   height: 77vh;
   padding: 0 20px;
   min-height: 254px;
+
   h1 {
     font-size: 21px;
     line-height: 24px;
     font-weight: 900;
     margin-bottom: 0;
   }
+
   p {
     line-height: 30px;
     font-weight: 500;
@@ -185,6 +194,7 @@ a.header__tel {
 
 .header__button {
   margin-bottom: 60px;
+
   &:hover {
     background-color: #f8edc6;
   }
@@ -212,23 +222,26 @@ a.header__service-link:hover {
     text-decoration: underline;
     text-underline-color: #222222;
   }
+
   br,
   span {
     display: none;
   }
 }
-@media (max-width: 625px) {
+
+@media (max-width: 900px) {
   .header__services-wrapper {
     overflow: hidden;
     height: 0;
     transition: 0.4s ease-in-out height;
   }
   .header__services:hover + .header__services-wrapper,
-  .header__services:focus + .header__services-wrapper{
+  .header__services:focus + .header__services-wrapper {
     height: 180px;
   }
 }
-@media (min-width: 625px) {
+
+@media (min-width: 900px) {
   .header {
     background-size: auto;
     background-image: url(../img/girl740px.jpg);
@@ -247,49 +260,60 @@ a.header__service-link:hover {
 
   .header__decor-img {
     position: absolute;
+
     &--1 {
       top: 1vh;
       left: 20vw;
     }
+
     &--2 {
       top: 22vh;
       left: -1vw;
       transform: scale(1.4);
     }
+
     &--3 {
       top: 66vh;
       left: 9vw;
     }
+
     &--4 {
       top: 27vh;
       left: 46vw;
     }
+
     &--5 {
       top: 10vh;
       left: 570px;
     }
+
     &--6 {
       top: 16vh;
       left: 163px;
     }
+
     &--7 {
       top: 78vh;
       left: 25vw;
     }
+
     &--8 {
       top: 35vh;
       left: 56vw;
       transform: scale(0.9);
     }
+
     &--9 {
       top: 11vh;
       left: 54vw;
 
     }
+
     &--10 {
       top: 27vh;
       left: 92vw;
     }
+
     &--11 {
       top: 97vh;
       left: 9vw;
@@ -323,6 +347,7 @@ a.header__service-link:hover {
     justify-content: flex-end;
     width: 100%;
     opacity: 1;
+
     li:not(:last-of-type) {
       margin-right: 30px;
     }
@@ -331,8 +356,11 @@ a.header__service-link:hover {
   .header__contact-container {
     opacity: 1;
     margin-bottom: 0;
-    margin-top: -35px;
     font-weight: normal;
+    margin-top: 0;
+    margin-left: 130px;
+    min-width: 162px;
+
     .social {
       display: none;
     }
@@ -362,6 +390,7 @@ a.header__service-link:hover {
     align-items: flex-start;
     padding: 0;
     z-index: 2;
+
     h1 {
       font-size: 27px;
       line-height: 28px;
@@ -393,7 +422,10 @@ a.header__service-link:hover {
     opacity: 0;
     transition: opacity 0.3s ease 0.4s;
   }
-
+  a.header__tel {
+    font-weight: 700;
+    font-size: 15px;
+  }
   .header__service-items-wrapper {
     background-color: white;
     width: 100%;
@@ -411,12 +443,14 @@ a.header__service-link:hover {
     margin: 0 auto;
     list-style: none;
     padding-left: 0;
+
     a {
       font-size: 14px;
       line-height: 20px;
       font-weight: 500;
       text-transform: capitalize;
     }
+
     li:not(:last-of-type) {
       margin-right: 0;
     }
@@ -424,8 +458,9 @@ a.header__service-link:hover {
 
   .header__main-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    width: 100%;
+
   }
 
   .header__service-item {
@@ -445,9 +480,11 @@ a.header__service-link:hover {
   a.header__service-link {
     margin: 0 auto;
     position: relative;
+
     br {
       display: block;
     }
+
     &::before {
       content: '';
       position: absolute;
@@ -459,18 +496,23 @@ a.header__service-link:hover {
       background-repeat: no-repeat;
       background-size: cover;
     }
+
     &--eng::before {
       background-image: url("../img/great-britain.svg");
     }
+
     &--nem::before {
       background-image: url("../img/germany.svg");
     }
+
     &--pol::before {
       background-image: url("../img/poland.svg");
     }
+
     &--fr::before {
       background-image: url("../img/france.svg");
     }
+
     &--active {
       text-decoration: underline;
     }
@@ -511,10 +553,12 @@ a.header__service-link:hover {
       top: 92vh;
       left: 90vw;
     }
+
     &--5 {
       top: 19vh;
       left: 295px;
     }
+
     &--8 {
       top: 35vh;
       left: 75vw;
@@ -563,9 +607,11 @@ a.header__service-link:hover {
     font-size: 16px;
 
     transform: translateY(50%);
+
     span {
       display: inline;
     }
+
     br {
       display: none;
     }
@@ -613,6 +659,7 @@ a.header__service-link:hover {
 
   .header__info {
     padding-left: 200px;
+
     h1 {
       font-size: 36px;
       line-height: 48px;
@@ -644,50 +691,61 @@ a.header__service-link:hover {
 
   .header__decor-img {
     position: absolute;
+
     &--1 {
       top: 2vh;
       left: 29vw;
     }
+
     &--2 {
       top: 24vh;
       left: 20px;
       transform: scale(1.4);
     }
+
     &--3 {
       top: 39vh;
       left: 122px;
     }
+
     &--4 {
       top: 87vh;
       left: 1201px;
     }
+
     &--5 {
       top: 20vh;
       left: 570px;
     }
+
     &--6 {
       top: 57vh;
       left: -14px;
     }
+
     &--7 {
       top: 18vh;
       left: 1318px;
       display: block;
     }
+
     &--8 {
       top: 12vh;
       left: 694px;
       display: block;
       transform: scale(0.9);
     }
+
     &--9 {
       top: 79vh;
       left: 558px;
     }
+
     &--10 {
       top: 39vh;
       left: 1417px;
     }
+
     &--11 {
       top: 92vh;
       left: 295px;

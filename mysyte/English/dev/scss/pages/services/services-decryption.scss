@@ -1,10 +1,12 @@
 .service-decryption {
-  padding: $padding-desctop;
   padding-top: 171px;
   padding-bottom: 125px;
   background-image: url("../img/xabout.png"), url("../img/roundabout.png");
   background-repeat: no-repeat;
   background-position: 80% 32%, 20% 95%;
+  .wrapper {
+    padding:  0 200px;
+  }
 }
 
 .service-decryption__title {
@@ -83,6 +85,9 @@
   .service-decryption {
     padding: $padding-tablet;
     padding-top: 171px;
+    .wrapper {
+      padding: 0;
+    }
   }
 }
 

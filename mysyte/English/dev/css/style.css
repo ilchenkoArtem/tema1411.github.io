@@ -3881,7 +3881,7 @@ a.header__service-link:hover {
   display: none;
 }
 
-@media (max-width: 625px) {
+@media (max-width: 900px) {
   .header__services-wrapper {
     overflow: hidden;
     height: 0;
@@ -3893,7 +3893,7 @@ a.header__service-link:hover {
   }
 }
 
-@media (min-width: 625px) {
+@media (min-width: 900px) {
   .header {
     background-size: auto;
     background-image: url(../img/girl740px.jpg);
@@ -3986,8 +3986,10 @@ a.header__service-link:hover {
   .header__contact-container {
     opacity: 1;
     margin-bottom: 0;
-    margin-top: -35px;
     font-weight: normal;
+    margin-top: 0;
+    margin-left: 130px;
+    min-width: 162px;
   }
   .header__contact-container .social {
     display: none;
@@ -4041,6 +4043,10 @@ a.header__service-link:hover {
     opacity: 0;
     transition: opacity 0.3s ease 0.4s;
   }
+  a.header__tel {
+    font-weight: 700;
+    font-size: 15px;
+  }
   .header__service-items-wrapper {
     background-color: white;
     width: 100%;
@@ -4069,8 +4075,8 @@ a.header__service-link:hover {
   }
   .header__main-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    width: 100%;
   }
   .header__service-item {
     text-align: center;
@@ -5915,12 +5921,15 @@ input:checked.services__radio + .services__container > .services__item-descripti
 }
 
 .service-decryption {
-  padding: 0 70px;
   padding-top: 171px;
   padding-bottom: 125px;
   background-image: url("../img/xabout.png"), url("../img/roundabout.png");
   background-repeat: no-repeat;
   background-position: 80% 32%, 20% 95%;
+}
+
+.service-decryption .wrapper {
+  padding: 0 200px;
 }
 
 .service-decryption__title {
@@ -6003,6 +6012,9 @@ input:checked.services__radio + .services__container > .services__item-descripti
     padding: 0 50px;
     padding-top: 171px;
   }
+  .service-decryption .wrapper {
+    padding: 0;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -6044,11 +6056,14 @@ input:checked.services__radio + .services__container > .services__item-descripti
 }
 
 .tariff {
-  padding: 0 70px;
   padding-bottom: 50px;
   background-image: url("../img/triangle_about.png");
   background-repeat: no-repeat;
   background-position: 90% 10%;
+}
+
+.tariff .wrapper {
+  padding: 0 200px;
 }
 
 .tariff-title {
@@ -6205,6 +6220,9 @@ input:checked.services__radio + .services__container > .services__item-descripti
   .tariff {
     padding: 0 50px;
     padding-bottom: 50px;
+  }
+  .tariff .wrapper {
+    padding: 0;
   }
 }
 
