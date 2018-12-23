@@ -46,7 +46,7 @@
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -3663,7 +3663,7 @@ th {
 .header {
   width: 100%;
   height: 100vh;
-  background-color: #fedb58;
+  background-color: #ffdd58;
   background-image: url(../img/girlmobile.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -3693,7 +3693,7 @@ th {
 }
 
 .header__container--services .wrapper {
-  max-width: 1600px;
+  max-width: 1300px;
 }
 
 .header__contact-container {
@@ -4214,7 +4214,8 @@ a.header__service-link:hover {
     height: 95vh;
   }
   .header__info-social {
-    margin-bottom: 5vh;
+    margin-top: -40px;
+    justify-content: flex-end;
   }
   .header__container {
     padding: 0 70px;
@@ -4450,8 +4451,11 @@ a.header__service-link:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 50px 50px 100px 50px;
+    padding: 50px 0 100px 0;
     box-sizing: border-box;
+  }
+  .about {
+    padding: 0 50px;
   }
   .about__text {
     width: 45%;
@@ -4483,8 +4487,12 @@ a.header__service-link:hover {
 }
 
 @media (min-width: 1200px) {
-  .about {
+  .about .wrapper {
     padding: 50px 200px 100px 200px;
+  }
+  .about {
+    padding-left: 0;
+    padding-right: 0;
   }
   .about__text {
     width: 416px;
@@ -4606,7 +4614,7 @@ a.header__service-link:hover {
 }
 
 .advantages__button {
-  background-color: #fedb58;
+  background-color: #ffdd58;
 }
 
 .advantages__button:hover {
@@ -4660,7 +4668,10 @@ a.header__service-link:hover {
 
 @media (min-width: 1200px) {
   .advantages {
-    padding: 0 200px 100px 200px;
+    padding: 0 0 100px 0;
+  }
+  .advantages .wrapper {
+    padding: 0 200px;
   }
   .advantages__item {
     width: 248px;
@@ -4679,7 +4690,7 @@ a.header__service-link:hover {
 .dispatch {
   box-sizing: border-box;
   width: 100%;
-  background-color: #fedb58;
+  background-color: #ffdd58;
   padding: 0 20px 0 35px;
   min-height: 250px;
   display: flex;
@@ -4737,7 +4748,7 @@ a.header__service-link:hover {
 @media (min-width: 768px) {
   .dispatch {
     background: url("../img/decor__round.png") no-repeat 47% -12px, url("../img/decor__x-and-shadow-2.png") no-repeat 66% 98%;
-    background-color: #fedb58;
+    background-color: #ffdd58;
     padding: 0 80px;
   }
   .dispatch__form {
@@ -4803,7 +4814,7 @@ a.header__service-link:hover {
 
 .footer__button {
   margin-top: 30px;
-  background-color: #fedb58;
+  background-color: #ffdd58;
   width: 180px;
 }
 
@@ -5008,8 +5019,11 @@ a.header__service-link:hover {
 
 @media (min-width: 1200px) {
   .footer {
-    padding: 0 200px;
+    padding: 0;
     padding-top: 100px;
+  }
+  .footer .wrapper {
+    padding: 0 200px;
   }
 }
 
@@ -5060,7 +5074,7 @@ a.header__service-link:hover {
   width: 156px;
   height: 38px;
   line-height: 38px;
-  background-color: #fedb58;
+  background-color: #ffdd58;
   text-transform: uppercase;
   text-decoration: none;
   color: #222222;
@@ -5274,7 +5288,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
     opacity: 0;
     transition: 0.5s opacity ease-in-out;
     background: url("../img/decor__round.png") no-repeat 45% -5%, url("../img/decor__x-and-shadow-2.png") no-repeat 14% 10%, url("../img/wave_serve.png") no-repeat 46% 53%, url("../img/servise_bg.png") right top no-repeat;
-    background-color: #fedb58;
+    background-color: #ffdd58;
     width: 100%;
     min-height: 420px;
     padding: 0 50px;
@@ -5374,7 +5388,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
     z-index: 7;
   }
   input:checked.services__radio + .services__container > .services__item-description {
-    border-bottom: 2px solid #fedb58;
+    border-bottom: 2px solid #ffdd58;
   }
   input:checked.services__radio + .services__container > .services__item-description::after {
     transform: none;
@@ -5390,7 +5404,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
     background-size: 4%;
   }
   .services .wrapper {
-    padding: 0 134px;
+    padding: 0 200px;
     box-sizing: border-box;
   }
   .services__item-description label {
@@ -5399,6 +5413,9 @@ input:checked.services__radio + .services__container > .services__item-descripti
   .service__program {
     width: content-box;
     max-width: 372px;
+  }
+  .services {
+    padding: 0;
   }
 }
 
@@ -5432,7 +5449,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
   font-size: 100px;
   font-weight: 900;
   line-height: 100px;
-  color: #fdd206;
+  color: #ffdd58;
   margin: 0;
   margin-right: 5px;
 }
@@ -5443,7 +5460,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
 }
 
 .step__description span {
-  color: #fdd206;
+  color: #ffdd58;
 }
 
 .step__container {
@@ -5483,7 +5500,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #fedb58;
+  background-color: #ffdd58;
   margin: 0 10px 0 0;
 }
 
@@ -5494,7 +5511,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
 }
 
 .step__button {
-  background-color: #fedb58;
+  background-color: #ffdd58;
   margin-top: 20px;
   margin-bottom: 110px;
 }
@@ -5511,7 +5528,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
     padding: 0;
   }
   .step__item-number {
-    box-shadow: 0px 0px 61px 0px #fedb58;
+    box-shadow: 0px 0px 61px 0px #ffdd58;
   }
   .step_items {
     padding: 50px 50px;
@@ -5586,7 +5603,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
   .step__number-text {
     font-size: 200px;
     line-height: 200px;
-    color: #fedb58;
+    color: #ffdd58;
   }
   .step__description {
     font-size: 20px;
@@ -5947,7 +5964,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
   min-width: 23px;
   min-height: 23px;
   border-radius: 50%;
-  background-color: #fedb58;
+  background-color: #ffdd58;
   color: white;
   font-size: 12px;
   font-weight: normal;
@@ -6132,14 +6149,14 @@ input:checked.services__radio + .services__container > .services__item-descripti
   height: 14px;
   width: 14px;
   background-color: transparent;
-  border: 1px solid #fedb58;
+  border: 1px solid #ffdd58;
   left: 0;
 }
 
 .tariff-item-description-item::before {
   width: 8px;
   height: 8px;
-  background-color: #fedb58;
+  background-color: #ffdd58;
   left: 3px;
 }
 
@@ -6165,7 +6182,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
 }
 
 .tariff-button {
-  background-color: #fedb58;
+  background-color: #ffdd58;
   min-width: 154px;
   width: auto;
   font-size: 12px;
@@ -6261,7 +6278,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
 }
 
 .last-news_link {
-  background: #fedb58;
+  background: #ffdd58;
 }
 
 .last-news-container {
@@ -6479,12 +6496,11 @@ input:checked.services__radio + .services__container > .services__item-descripti
 
 @media (min-width: 1200px) {
   .blog {
-    padding: 0 70px;
+    padding: 0;
     padding-top: 171px;
   }
-  .footer {
-    padding: 0 70px;
-    padding-top: 50px;
+  .blog .wrapper {
+    padding: 0 200px;
   }
 }
 
@@ -6512,7 +6528,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
 }
 
 .nav-blog-item--active {
-  border-bottom: 2px solid #fedb58;
+  border-bottom: 2px solid #ffdd58;
 }
 
 @media (max-width: 513px) {

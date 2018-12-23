@@ -388,7 +388,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
 
   .services {
     .wrapper {
-      padding: 0 134px;
+      padding: 0 200px;
       box-sizing: border-box;
     }
 
@@ -403,6 +403,10 @@ input:checked.services__radio + .services__container > .services__item-descripti
   .service__program {
     width: content-box;
     max-width: 372px;
+  }
+
+  .services {
+    padding: 0;
   }
 
 }

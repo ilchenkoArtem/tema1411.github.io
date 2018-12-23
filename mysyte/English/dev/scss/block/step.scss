@@ -16,7 +16,7 @@
   font-size: 100px;
   font-weight: 900;
   line-height: 100px;
-  color: #fdd206;
+  color: $main-color;
   margin: 0;
   margin-right: 5px;
 }
@@ -25,7 +25,7 @@
   font-size: 14px;
   font-weight: 900;
   span {
-    color: #fdd206;
+    color: $main-color;
   }
 }
 

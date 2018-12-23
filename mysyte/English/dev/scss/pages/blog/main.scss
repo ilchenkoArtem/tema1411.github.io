@@ -56,14 +56,13 @@
 @media (min-width: 1200px) {
 
   .blog {
-    padding: $padding-desctop;
+    padding: 0;
     padding-top: 171px;
+    .wrapper {
+      padding: 0 200px;
+    }
   }
-  .footer {
-    padding: $padding-desctop;
-    padding-top: 50px;
 
-  }
 }
 
 

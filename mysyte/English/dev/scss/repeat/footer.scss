@@ -222,7 +222,11 @@
 }
 @media (min-width: 1200px) {
   .footer {
-    padding: 0 200px;
+    padding: 0;
     padding-top: 100px;
+    .wrapper {
+      padding: 0 200px;
+
+    }
   }
 }

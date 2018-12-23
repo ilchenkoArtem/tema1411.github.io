@@ -31,7 +31,7 @@
   }
   &--services {
     .wrapper {
-      max-width: 1600px;
+      max-width: 1300px;
     }
   }
 }
@@ -581,7 +581,9 @@ a.header__service-link:hover {
   }
 
   .header__info-social {
-    margin-bottom: 5vh;
+    margin-top: -40px;
+    justify-content: flex-end;
+
   }
 
   .header__container {

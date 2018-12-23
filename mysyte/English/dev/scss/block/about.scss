@@ -132,9 +132,13 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 50px 50px 100px 50px;
+      padding: 50px 0 100px 0;
       box-sizing: border-box;
     }
+  }
+
+  .about {
+    padding: $padding-tablet;
   }
 
   .about__text {
@@ -169,10 +173,14 @@
 }
 
 @media (min-width: 1200px) {
-  .about {
+  .about .wrapper {
     padding: 50px 200px 100px 200px;
   }
 
+  .about {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .about__text {
     h2 {
       font-size: 34px;

@@ -140,7 +140,10 @@
 
 @media (min-width: 1200px) {
   .advantages {
-    padding: 0 200px 100px 200px;
+    padding: 0 0 100px 0;
+    .wrapper {
+      padding: 0 200px;
+    }
   }
 
   .advantages__item {
