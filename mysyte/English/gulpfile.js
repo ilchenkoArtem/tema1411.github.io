@@ -232,7 +232,7 @@ gulp.task('html-prod', function () {
     return gulp.src('dev/*.html')
         .pipe(w3cjs())
         .pipe(strip()) //удаление коментариев
-        .pipe(htmlmin({ collapseWhitespace: true })) //раскоментировать если нужно минифицировать html
+        //.pipe(htmlmin({ collapseWhitespace: true })) //раскоментировать если нужно минифицировать html
         .pipe(gulp.dest('prod/'))
         .on("end", browsersync.reload);
 });

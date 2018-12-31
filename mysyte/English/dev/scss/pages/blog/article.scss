@@ -52,7 +52,20 @@
 }
 
 .article__other-article-wrapper {
-  margin-top: 40px;
+  margin-top: 100px;
+}
+
+.article__repast {
+  display: flex;
+  align-items: center;
+  h3 {
+    margin: 0 ;
+    margin-right: 20px;
+  }
+  .header__info-social {
+    margin: 0;
+  }
+
 }
 @media (min-width:800px) {
   .article__title {

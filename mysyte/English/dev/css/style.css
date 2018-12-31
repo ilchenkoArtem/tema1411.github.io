@@ -6614,25 +6614,43 @@ input:checked.services__radio + .services__container > .services__item-descripti
   justify-content: center;
 }
 
-.blog-article--wide {
+.blog-articles--all-blog .blog-article--1 {
   background-image: url("../img/left-top.jpg");
 }
 
-.blog-article--very-wide {
-  background-image: url("../img/center-bg.jpg");
-}
-
-.blog-article--yellow .blog-article__wrapper {
+.blog-articles--all-blog .blog-article--2 .blog-article__wrapper {
   background-color: transparent;
 }
 
-.blog-article--very-long {
+.blog-articles--all-blog .blog-article--6, .blog-articles--all-blog .blog-article--3 {
   background-image: url("../img/right-bg.jpg");
   align-items: flex-end;
   display: flex;
 }
 
-.blog-article--very-long .blog-article__wrapper {
+.blog-articles--all-blog .blog-article--6 .blog-article__wrapper, .blog-articles--all-blog .blog-article--3 .blog-article__wrapper {
+  height: auto;
+}
+
+.blog-articles--all-blog .blog-article--4 {
+  background-image: url("../img/center-bg.jpg");
+}
+
+.blog-articles--all-blog-2 .blog-article--2 {
+  background-image: url("../img/center-bg.jpg");
+}
+
+.blog-articles--all-blog-2 .blog-article--3 {
+  background-image: url("../img/center-bg.jpg");
+}
+
+.blog-articles--all-blog-2 .blog-article--5 {
+  background-image: url("../img/right-bg.jpg");
+  align-items: flex-end;
+  display: flex;
+}
+
+.blog-articles--all-blog-2 .blog-article--5 .blog-article__wrapper {
   height: auto;
 }
 
@@ -6671,7 +6689,7 @@ input:checked.services__radio + .services__container > .services__item-descripti
   grid-area: block-6;
 }
 
-.blog-articles--2 {
+.blog-articles--all-blog-2 {
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-areas: 'block-1 block-2 block-6' 'block-3 block-5 block-6' 'block-4 block-5 block-6';
   margin-bottom: 10px;
@@ -6795,7 +6813,21 @@ input:checked.services__radio + .services__container > .services__item-descripti
 }
 
 .article__other-article-wrapper {
-  margin-top: 40px;
+  margin-top: 100px;
+}
+
+.article__repast {
+  display: flex;
+  align-items: center;
+}
+
+.article__repast h3 {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.article__repast .header__info-social {
+  margin: 0;
 }
 
 @media (min-width: 800px) {
