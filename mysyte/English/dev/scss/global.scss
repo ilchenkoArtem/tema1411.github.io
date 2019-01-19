@@ -29,7 +29,9 @@
   box-shadow: none;
   box-sizing: border-box;
   outline:none;
-}
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;}
 
 button,
 input {

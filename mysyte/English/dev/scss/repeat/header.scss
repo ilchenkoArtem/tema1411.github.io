@@ -512,7 +512,19 @@ a.header__service-link:hover {
     }
   }
 
-  .header__service-items-wrapper:focus-within + .header__service-bg,
+  .header__services-main-wrapper:hover {
+    .header__service-items-wrapper {
+      transform: translateY(0);
+      transition: 0.3s transform ease-out 0.2s;
+
+    }
+    .header__service-item {
+      opacity: 1;
+      transition: 0.4s opacity ease-in 0.4s;
+
+    }
+  }
+/*  .header__service-items-wrapper:focus-within + .header__service-bg,
   .header__service-items-wrapper:hover + .header__service-bg,
   .header__services:focus-within + .header__services-wrapper > .header__service-bg,
   .header__services:hover + .header__services-wrapper > .header__service-bg {
@@ -525,7 +537,6 @@ a.header__service-link:hover {
   .header__services:focus-within + .header__services-wrapper > .header__service-items-wrapper,
   .header__services:hover + .header__services-wrapper > .header__service-items-wrapper {
     transform: translateY(0);
-    transition: 0.3s transform ease-out 0.2s;
 
   }
 
@@ -534,11 +545,10 @@ a.header__service-link:hover {
   .header__services:focus-within + .header__services-wrapper > .header__service-item,
   .header__services:hover + .header__services-wrapper .header__service-item {
     opacity: 1;
-    transition: 0.4s opacity ease-in 0.4s;
-  }
+  }*/
 }
 
-@media (min-width: 900px) {
+@media (min-width: 920px) {
   .header__container {
     padding: 0 50px;
   }

@@ -35,7 +35,7 @@
     overflow: hidden;
     height: 24px;
     transition: 0.3s all ease-in-out;
-
+    &:focus,
     &:focus-within {
       height: 109px;
     }
