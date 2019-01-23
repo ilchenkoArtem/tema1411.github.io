@@ -512,16 +512,14 @@ a.header__service-link:hover {
     }
   }
 
-  .header__services-main-wrapper:hover {
-    .header__service-items-wrapper {
+  .header__services-main-wrapper {
+    .header__service-items-wrapper--active {
       transform: translateY(0);
       transition: 0.3s transform ease-out 0.2s;
-
     }
     .header__service-item {
       opacity: 1;
       transition: 0.4s opacity ease-in 0.4s;
-
     }
   }
 /*  .header__service-items-wrapper:focus-within + .header__service-bg,

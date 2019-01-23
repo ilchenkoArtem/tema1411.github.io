@@ -3,7 +3,7 @@ import jquery from '../libs/jquery/dist/jquery.min';
 (function () {
     'use strict';
 
-    $(window).on('load',function () {
+    $(window).on('load', function () {
         var videoLink = 'https://www.youtube.com/embed/Vzsuqp8Rbt4?';
         videoLink = videoLink + '?rel=0&autoplay ';
 
@@ -57,6 +57,12 @@ import jquery from '../libs/jquery/dist/jquery.min';
         };
         addListenerInput();
 
+        $('.header__services-main-wrapper').on('mouseover', function () {
+            $('.header__service-items-wrapper').addClass('header__service-items-wrapper--active');
+            $('.header__services-main-wrapper').on('mouseout ', function () {
+                $('.header__service-items-wrapper').removeClass('header__service-items-wrapper--active');
+            });
+        });
 
         /*------открытие/закрытие попап и изменение заголовка попапа----------*/
 
@@ -252,7 +258,7 @@ import jquery from '../libs/jquery/dist/jquery.min';
         };
 
         //аякс отправка формы
-        $('form').on('submit', function (e) {
+        /*$('form').on('submit', function (e) {
             e.preventDefault();
             var form = this;
             $.ajax({
@@ -283,7 +289,7 @@ import jquery from '../libs/jquery/dist/jquery.min';
                     }, 3000);
                 }
             });
-        });
+        });*/
         //скрипты для главной страници
         if ($('.body--index').length !== 0) {
 
@@ -331,13 +337,90 @@ import jquery from '../libs/jquery/dist/jquery.min';
             popupCloseElement.addEventListener('click', onPopupCloseElementClick);
         }
 
-        if (document.querySelector('.body--services')) {
-            $('.tariff-button').on('click', function () {
-                openPopup();
-                $('#popup__name-services').attr('value', $(this).attr('data-tariff'));
+        function closeOrderPopup() {
+            $('#popup_order, .order-loading, .order__liqpay').hide();
+            $('#order_user-info').show();
 
-            });
+            $('#popup_order .popup__close').off('click', closeOrderPopup);
         }
+
+        function openOrderPopup() {
+            var cardLeson = $(this).parents('.tariff-item');
+            $('.order_quantity-package').text(cardLeson.find('.tariff-item-title span').text());
+            $('.order_price').text(cardLeson.find('.tariff-price_item').text());
+            $('#order_user-info').attr('price', cardLeson.find('.tariff-price_item').text());
+
+            $('#popup_order').show();
+            $('#popup_order .popup__close').on('click', closeOrderPopup);
+        }
+
+        if (document.querySelector('.body--services')) {
+            var test = {
+                data: 'dwdwwdwdwdwdw',
+                sdw: 'dwdwdwdwdw'
+            };
+
+
+            $('#order_user-info').on('submit', function (e) {
+                e.preventDefault();
+                var form = $(this).serialize();
+                var price = '&price=' + $(this).attr('price');
+                console.log(form + price)
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://httpstat.us/200',
+                    data: form + price,
+
+                    beforeSend: function () {
+                        $('.order-loading_overflow, .order-loading').show();
+
+                    },
+                    success: function (data) {
+                        $('.order-loading_overflow, .order-loading, #order_user-info').hide();
+                        $('.order__liqpay [name = data]').text(data.data);
+                        $('.order__liqpay [name= signature]').text(data.signature);
+                        $('.order__liqpay').show();
+                    },
+                    error: function (xhr, str) {
+                        alert('Возникла ошибка: ' + xhr.responseCode);
+                    }
+                });
+            });
+
+
+            $('.tariff-button').on('click', openOrderPopup);
+        }
+
+        //загрузка постов аякс
+        $('#true_loadmore').on('click', function (e) {
+            e.preventDefault();
+            $(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
+            var data = {
+                'action': 'loadmore',
+                'query': currentPosts,
+            };
+            $.ajax({
+                url: ajaxurl, // обработчик
+                data: data, // данные
+                type: 'POST', // тип запроса
+                success: function (data) {
+                    if (data) {
+                        $('#true_loadmore').text('Загрузить ещё').before(data); // вставляем новые посты
+                        currentPosts += 12; // увеличиваем номер страницы на единицу
+                        if (currentPosts >= maxQuantityPosts) {
+                            $("#true_loadmore").remove();
+                        }
+                    } else {
+                        $('#true_loadmore').remove(); // если мы дошли до последней страницы постов, скроем кнопку
+
+                    }
+                },
+                error: function () {
+                    console.log('ошибка');
+                }
+            });
+        });
 
         //загрузка постов аякс
         $('#true_loadmore').on('click', function (e) {
@@ -436,6 +519,8 @@ import jquery from '../libs/jquery/dist/jquery.min';
 
         };
     });*/
+
+    //Заказать уроки
 
 }());
 
