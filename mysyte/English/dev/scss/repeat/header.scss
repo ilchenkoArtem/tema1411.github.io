@@ -228,6 +228,14 @@ a.header__service-link:hover {
     display: none;
   }
 }
+@media (min-width: 500px) {
+  .header {
+    background-size: 113%;
+    background-image: url(../img/girl740px.jpg);
+    background-position-x: 13vh;
+    height: 100vh;
+  }
+}
 
 @media (max-width: 900px) {
   .header__services-wrapper {
@@ -424,7 +432,7 @@ a.header__service-link:hover {
     background-color: white;
     width: 100%;
     padding: 92px 20px 20px 20px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     transform: translateY(-100%);
@@ -511,18 +519,8 @@ a.header__service-link:hover {
       text-decoration: underline;
     }
   }
-
-  .header__services-main-wrapper {
-    .header__service-items-wrapper--active {
-      transform: translateY(0);
-      transition: 0.3s transform ease-out 0.2s;
-    }
-    .header__service-item {
-      opacity: 1;
-      transition: 0.4s opacity ease-in 0.4s;
-    }
-  }
-/*  .header__service-items-wrapper:focus-within + .header__service-bg,
+  
+  .header__service-items-wrapper:focus-within + .header__service-bg,
   .header__service-items-wrapper:hover + .header__service-bg,
   .header__services:focus-within + .header__services-wrapper > .header__service-bg,
   .header__services:hover + .header__services-wrapper > .header__service-bg {
@@ -535,6 +533,7 @@ a.header__service-link:hover {
   .header__services:focus-within + .header__services-wrapper > .header__service-items-wrapper,
   .header__services:hover + .header__services-wrapper > .header__service-items-wrapper {
     transform: translateY(0);
+    transition: 0.3s transform ease-out 0.2s;
 
   }
 
@@ -543,7 +542,8 @@ a.header__service-link:hover {
   .header__services:focus-within + .header__services-wrapper > .header__service-item,
   .header__services:hover + .header__services-wrapper .header__service-item {
     opacity: 1;
-  }*/
+    transition: 0.4s opacity ease-in 0.4s;
+  }
 }
 
 @media (min-width: 920px) {

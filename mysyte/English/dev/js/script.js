@@ -57,12 +57,12 @@ import jquery from '../libs/jquery/dist/jquery.min';
         };
         addListenerInput();
 
-        $('.header__services-main-wrapper').on('mouseover', function () {
-            $('.header__service-items-wrapper').addClass('header__service-items-wrapper--active');
-            $('.header__services-main-wrapper').on('mouseout ', function () {
-                $('.header__service-items-wrapper').removeClass('header__service-items-wrapper--active');
-            });
-        });
+        // $('.header__services-main-wrapper').on('mouseover', function () {
+        //     $('.header__service-items-wrapper').addClass('header__service-items-wrapper--active');
+        //     $('.header__services-main-wrapper').on('mouseout ', function () {
+        //         $('.header__service-items-wrapper').removeClass('header__service-items-wrapper--active');
+        //     });
+        // });
 
         /*------открытие/закрытие попап и изменение заголовка попапа----------*/
 
