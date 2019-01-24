@@ -413,7 +413,7 @@ a.header__service-link:hover {
 
 
   .header__service-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -519,7 +519,7 @@ a.header__service-link:hover {
       text-decoration: underline;
     }
   }
-  
+
   .header__service-items-wrapper:focus-within + .header__service-bg,
   .header__service-items-wrapper:hover + .header__service-bg,
   .header__services:focus-within + .header__services-wrapper > .header__service-bg,
