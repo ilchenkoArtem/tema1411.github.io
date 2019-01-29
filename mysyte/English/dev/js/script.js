@@ -1,8 +1,6 @@
 import jquery from '../libs/jquery/dist/jquery.min';
-
+import waypoints from '../libs/waypoints/lib/jquery.waypoints.js';
 (function () {
-    'use strict';
-
     $(window).on('load', function () {
         var videoLink = 'https://www.youtube.com/embed/Vzsuqp8Rbt4?';
         videoLink = videoLink + '?rel=0&autoplay ';
@@ -57,15 +55,6 @@ import jquery from '../libs/jquery/dist/jquery.min';
         };
         addListenerInput();
 
-        // $('.header__services-main-wrapper').on('mouseover', function () {
-        //     $('.header__service-items-wrapper').addClass('header__service-items-wrapper--active');
-        //     $('.header__services-main-wrapper').on('mouseout ', function () {
-        //         $('.header__service-items-wrapper').removeClass('header__service-items-wrapper--active');
-        //     });
-        // });
-
-        /*------открытие/закрытие попап и изменение заголовка попапа----------*/
-
 
         // -------------------плавный скрол
 
@@ -104,106 +93,6 @@ import jquery from '../libs/jquery/dist/jquery.min';
         inputForm.forEach(function (it) {
             it.addEventListener('change', testValid);
         });
-
-        //---- Отправка формы без перезагрузки
-        /*var TIMEOUT_REQUEST = 10000;
-        var SUCCESS_CODE = 200;
-        var setupXHR = function (onLoad, onError) {
-            var xhr = new XMLHttpRequest();
-            xhr.responseType = 'json';
-
-            xhr.timeout = TIMEOUT_REQUEST;
-
-            xhr.addEventListener('load', function () {
-                var errorText;
-                if (xhr.status === SUCCESS_CODE) {
-                    onLoad(xhr.response);
-                } else {
-                    errorText = 'Cтатус ответа:' + xhr.status + ' ' + xhr.statusText;
-                    onError(errorText);
-                }
-            });
-
-            xhr.addEventListener('error', function () {
-                onError('Cтатус ответа:' + xhr.status + ' ' + xhr.statusText);
-            });
-
-            xhr.addEventListener('timeout', function () {
-                onError('Запрос не успел выполниться за ' + xhr.timeout + 'мс');
-            });
-
-            return xhr;
-        };
-
-        var loadData = function (onLoad, onError) {
-            var xhr = setupXHR(onLoad, onError);
-            xhr.open('GET', LOAD_URL);
-            xhr.send();
-        };
-
-        var saveData = function (onLoad, onError, data) {
-            var xhr = setupXHR(onLoad, onError);
-            xhr.open('POST', SAVE_URL);
-            xhr.send(data);
-        };
-
-        var backend = {
-            'load': loadData,
-            'save': saveData
-        };
-
-        /!*var formDispatch = document.querySelector('.dispatch__form');
-        var popupForm = document.querySelector('.popup__form');
-        var footerForm = document.querySelector('.footer__form');*!/
-
-        var onDeduceErrorText = function (error) {
-            var successForm = document.querySelector('.success__form');
-            var succesFormImg = document.querySelector('.success__form img');
-            successForm.classList.remove('success__form--disabled');
-            succesFormImg.setAttribute('src', 'img/error.svg');
-            setTimeout(function () {
-                successForm.classList.add('success__form--disabled');
-            }, 3000);
-        };
-
-        var onSubmitReset = function (form) {
-            var successForm = document.querySelector('.success__form');
-            successForm.classList.remove('success__form--disabled');
-            successForm.setAttribute('src', 'img/succes.svg');
-            var label = form.querySelectorAll('label');
-            setTimeout(function () {
-                successForm.classList.add('success__form--disabled');
-            }, 3000);
-            form.reset();
-            label.forEach(function (it) {
-                it.classList.remove('label--active')
-            })
-        };
-
-
-
-        formDispatch.addEventListener('submit', function (evt) {
-            window.backend.save(function () {
-                onSubmitReset(formDispatch)
-            }, onDeduceErrorText, new FormData(formDispatch));
-            evt.preventDefault();
-            var input = this.querySelectorAll('.input')
-            input.forEach(function (value) {
-                value.testValid()
-            })
-        });
-
-        popupForm.addEventListener('submit', function (evt) {
-            window.backend.save(resetFormPopup, onDeduceErrorText, new FormData(popupForm));
-            evt.preventDefault();
-        });
-
-        footerForm.addEventListener('submit', function (evt) {
-            window.backend.save(function () {
-                onSubmitReset(footerForm)
-            }, onDeduceErrorText, new FormData(footerForm));
-            evt.preventDefault();
-        });*/
 
         var bodyElement = document.querySelector('body');
 
@@ -258,17 +147,20 @@ import jquery from '../libs/jquery/dist/jquery.min';
         };
 
         //аякс отправка формы
-        /*$('form').on('submit', function (e) {
+        $('.dispatch__form, .footer__form, .popup__form:not(#order_user-info)').on('submit', function (e) {
             e.preventDefault();
             var form = this;
+            var data = $(this).serialize() + '&action=mailss';
+            console.log(data)
             $.ajax({
-                url: $(this).attr('action'),
+                url: $(form).attr('action'),
                 method: 'POST',
-                data: $(this).serialize(),
+                data: data,
                 success: function () {
                     var successForm = document.querySelector('.success__form');
                     successForm.classList.remove('success__form--disabled');
-                    successForm.setAttribute('src', 'img/succes.svg');
+                    $('.mail_send').show();
+                    $('.mail_error').hide();
                     var label = form.querySelectorAll('label');
                     setTimeout(function () {
                         successForm.classList.add('success__form--disabled');
@@ -278,18 +170,21 @@ import jquery from '../libs/jquery/dist/jquery.min';
                         it.classList.remove('label--active');
                     });
                     $('.popup').removeClass('popup-active');
+                    $('body').removeAttr('style')
                 },
                 error: function () {
                     var successForm = document.querySelector('.success__form');
                     var succesFormImg = document.querySelector('.success__form img');
                     successForm.classList.remove('success__form--disabled');
-                    succesFormImg.setAttribute('src', 'img/error.svg');
+                    $('.mail_error').show();
+                    $('.mail_send').hide();
                     setTimeout(function () {
                         successForm.classList.add('success__form--disabled');
                     }, 3000);
+                    $('body').removeAttr('style')
                 }
             });
-        });*/
+        });
         //скрипты для главной страници
         if ($('.body--index').length !== 0) {
 
@@ -337,11 +232,18 @@ import jquery from '../libs/jquery/dist/jquery.min';
             popupCloseElement.addEventListener('click', onPopupCloseElementClick);
         }
 
+        function closeOrderClickESC(evt) {
+            if (evt.keyCode === ESK_KEY_CODE) {
+                closeOrderPopup()
+            }
+        };
+
         function closeOrderPopup() {
             $('#popup_order, .order-loading, .order__liqpay').hide();
             $('#order_user-info').show();
-
             $('#popup_order .popup__close').off('click', closeOrderPopup);
+            $('#popup_order .popup__background').off('click', closeOrderClickESC)
+
         }
 
         function openOrderPopup() {
@@ -349,48 +251,45 @@ import jquery from '../libs/jquery/dist/jquery.min';
             $('.order_quantity-package').text(cardLeson.find('.tariff-item-title span').text());
             $('.order_price').text(cardLeson.find('.tariff-price_item').text());
             $('#order_user-info').attr('price', cardLeson.find('.tariff-price_item').text());
-
+            $('#order_user-info').attr('product', cardLeson.find('.tariff-item-title').text());
             $('#popup_order').show();
-            $('#popup_order .popup__close').on('click', closeOrderPopup);
+            $('#popup_order .popup__close, #popup_order .popup__background').on('click', closeOrderPopup);
+            $(window).on('keypress', closeOrderClickESC)
         }
 
-        if (document.querySelector('.body--services')) {
-            var test = {
-                data: 'dwdwwdwdwdwdw',
-                sdw: 'dwdwdwdwdw'
-            };
 
+        $('#order_user-info').on('submit', function (e) {
+            e.preventDefault();
+            var form = $(this).serialize();
+            var price = '&price=' + $(this).attr('price');
+            var product = '&product=' + $(this).attr('data-language') + '(' + $(this).attr('product') + ')';
+            var action = '&action=getLiqPay';
+            console.log(form + price + product + action);
 
-            $('#order_user-info').on('submit', function (e) {
-                e.preventDefault();
-                var form = $(this).serialize();
-                var price = '&price=' + $(this).attr('price');
-                console.log(form + price)
+            $.ajax({
+                type: 'POST',
+                url: ajaxurl,
+                data: form + price + product + action,
+                dataType: 'json',
+                beforeSend: function () {
+                    $('.order-loading_overflow, .order-loading').show();
 
-                $.ajax({
-                    type: 'POST',
-                    url: 'https://httpstat.us/200',
-                    data: form + price,
-
-                    beforeSend: function () {
-                        $('.order-loading_overflow, .order-loading').show();
-
-                    },
-                    success: function (data) {
-                        $('.order-loading_overflow, .order-loading, #order_user-info').hide();
-                        $('.order__liqpay [name = data]').text(data.data);
-                        $('.order__liqpay [name= signature]').text(data.signature);
-                        $('.order__liqpay').show();
-                    },
-                    error: function (xhr, str) {
-                        alert('Возникла ошибка: ' + xhr.responseCode);
-                    }
-                });
+                },
+                success: function (data) {
+                    console.log(data)
+                    $('.order-loading_overflow, .order-loading, #order_user-info').hide();
+                    $('.order__liqpay [name = data]').val(data.data);
+                    $('.order__liqpay [name= signature]').val(data.signature);
+                    $('.order__liqpay').show();
+                },
+                error: function (xhr, str) {
+                    alert('Возникла ошибка: ' + xhr.responseCode);
+                }
             });
+        });
 
 
-            $('.tariff-button').on('click', openOrderPopup);
-        }
+        $('.tariff-button').on('click', openOrderPopup);
 
         //загрузка постов аякс
         $('#true_loadmore').on('click', function (e) {
@@ -421,54 +320,13 @@ import jquery from '../libs/jquery/dist/jquery.min';
                 }
             });
         });
-
-        //загрузка постов аякс
-        $('#true_loadmore').on('click', function (e) {
-            e.preventDefault();
-            $(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
-            var data = {
-                'action': 'loadmore',
-                'query': currentPosts,
-            };
-            $.ajax({
-                url: ajaxurl, // обработчик
-                data: data, // данные
-                type: 'POST', // тип запроса
-                success: function (data) {
-                    if (data) {
-                        $('#true_loadmore').text('Загрузить ещё').before(data); // вставляем новые посты
-                        currentPosts += 12; // увеличиваем номер страницы на единицу
-                        if (currentPosts >= maxQuantityPosts) {
-                            $("#true_loadmore").remove();
-                        }
-                    } else {
-                        $('#true_loadmore').remove(); // если мы дошли до последней страницы постов, скроем кнопку
-
-                    }
-                },
-                error: function () {
-                    console.log('ошибка');
-                }
-            });
-        });
-        /*
-        function ellipsizeTextBox(id) {
-            var el = document.querySelector(id);
-            var wordArray = el.innerHTML.split(' ');
-            while(el.scrollHeight > el.offsetHeight) {
-                wordArray.pop();
-                el.innerHTML = wordArray.join(' ') + '...';
-            }
-        }
-        ellipsizeTextBox('.last-news_preview');*/
-
     });
 
     // Управление анимацией
     //Animate CSS + WayPoints javaScript Plugin
     //Example: $(".element").animated("zoomInUp");
     //Author URL: http://webdesign-mas
-    /*$(document).ready(function () {
+    $(document).ready(function () {
         (function ($) {
             $.fn.animated = function (inEffect) {
                 $(this).each(function () {
@@ -477,7 +335,6 @@ import jquery from '../libs/jquery/dist/jquery.min';
                         if (dir === "down") {
                             ths.addClass(inEffect).css("opacity", "1");
                         }
-                        ;
                     }, {
                         offset: "90%"
                     });
@@ -488,12 +345,15 @@ import jquery from '../libs/jquery/dist/jquery.min';
 
         var animatesFunction = function () {
             $('button:not(:first-of-type)').animated('zoomInUp');
-            $('.advantages__item, .dispatch__container').animated('rotateInDownRight');
+            $('.advantages__item').animated('rotateInDownRight');
             $('.form-item').animated('zoomIn');
-            $('.step, .step__button-container, footer, .about .services, .advantages, .dispatch, .main-caption, .advantages__buttons, .h2 ').animated("slideInUp");
+            $('.step, .step__button-container, footer, .about .services, .advantages, .dispatch, .main-caption, .advantages__buttons, .h2, .dispatch__container ').animated("slideInUp");
             $('.step__item--1, .step__item--4,.step__item--7, .step__item--9, .step__item--8').animated("fadeInRight");
             $('.step__item--2, .step__item--5, .step__item--3, .step__item--6, .step__description').animated("fadeInLeft");
+
+
         };
+
 
         var inputCheckBoxElement = document.querySelectorAll('.services__radio');
         var windowWidth = window.innerWidth;
@@ -508,8 +368,10 @@ import jquery from '../libs/jquery/dist/jquery.min';
                 inputCheckBoxElement.forEach(function (item) {
                     item.setAttribute('type', 'radio');
                     skypeElement.checked = 'checked';
-                    animatesFunction()
-                })
+                });
+                animatesFunction();
+                $('.service-decryption__title, .service-decryption__subtitle, .service-decryption__item, .tariff-title, .tariff-items, .service-decryption__title, .service-decryption__subtitle, .nav-blog, .last-news-container, .blog-article, .article__wrapper, .article__crumbs-item, .article__info, .addtoany_share_save_container, .article__other-article-title, .article__other-article').animated("slideInUp");
+
             }
         };
         setTypeElement();
@@ -518,10 +380,7 @@ import jquery from '../libs/jquery/dist/jquery.min';
             setTypeElement();
 
         };
-    });*/
-
-    //Заказать уроки
-
+    });
 }());
 
 //# sourceMappingURL=../map/js/script.min.js.map

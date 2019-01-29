@@ -262,6 +262,6 @@ gulp.task('default', gulp.series('style', 'js', 'sprite', 'html', gulp.parallel(
 gulp.task('gulp-uglify', function(done){
     gulp.src('dev/js/script.js')
         .pipe(uglify())
-        .pipe(gulp.dest('build/js'))
+        .pipe(gulp.dest('build/js'));
     done()
 });

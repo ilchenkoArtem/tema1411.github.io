@@ -38,7 +38,9 @@
                                             </a>
                                         </li>
                                         <li class="header__service-item">
-                                            <a href="germany.html" class="header__service-link header__service-link--nem" ><span>Индивидуальные</span>уроки<br> немецкого <span>языка</span>
+                                            <a href="germany.html"
+                                               class="header__service-link header__service-link--nem"><span>Индивидуальные</span>уроки<br>
+                                                немецкого <span>языка</span>
                                             </a>
                                         </li>
                                         <li class="header__service-item">
@@ -109,12 +111,12 @@
             <section class="tariff-items">
                 <section class="tariff-item">
                     <div class="tariff-item-title-wrapper">
-                        <h3 class="tariff-item-title">5 уроков</h3>
+                        <h3 class="tariff-item-title"><span>5</span> уроков</h3>
                         <p class="tariff-item-subtitle">тариф лайт</p>
                     </div>
                     <div class="tariff-item-info-wrapper">
                         <div class="tariff-price-wrapper">
-                            <p class="tariff-price">1100 ₴<span>/пакет</span></p>
+                            <p class="tariff-price"><span class="tariff-price_item">1100</span> ₴<span>/пакет</span></p>
                         </div>
                         <ul class="tariff-description-items">
                             <li class="tariff-item-description-item tariff-item-description-item--no-active">
@@ -136,12 +138,12 @@
                 </section>
                 <section class="tariff-item">
                     <div class="tariff-item-title-wrapper">
-                        <h3 class="tariff-item-title">10 уроков</h3>
+                        <h3 class="tariff-item-title"><span>10</span> уроков</h3>
                         <p class="tariff-item-subtitle">тариф стандрат</p>
                     </div>
                     <div class="tariff-item-info-wrapper">
                         <div class="tariff-price-wrapper">
-                            <p class="tariff-price">2200 ₴<span>/пакет</span></p>
+                            <p class="tariff-price"><span class="tariff-price_item">2200</span> ₴<span>/пакет</span></p>
                         </div>
                         <ul class="tariff-description-items">
                             <li class="tariff-item-description-item">
@@ -163,12 +165,12 @@
                 </section>
                 <section class="tariff-item">
                     <div class="tariff-item-title-wrapper">
-                        <h3 class="tariff-item-title">20 уроков</h3>
+                        <h3 class="tariff-item-title"><span>20</span> уроков</h3>
                         <p class="tariff-item-subtitle">тариф премиум</p>
                     </div>
                     <div class="tariff-item-info-wrapper">
                         <div class="tariff-price-wrapper">
-                            <p class="tariff-price">4400 ₴<span>/пакет</span></p>
+                            <p class="tariff-price"><span class="tariff-price_item">4400</span> ₴<span>/пакет</span></p>
                         </div>
                         <ul class="tariff-description-items">
                             <li class="tariff-item-description-item">
@@ -204,7 +206,8 @@
 
                 <form class="dispatch__form" method='post' action='mail.php' enctype='multipart/form-data'
                       autocomplete='off'>
-                    <input autocomplete="off" type="text" value="Подписка на рассылку" name="Что интересует:" class="popup__name-services">
+                    <input autocomplete="off" type="text" value="Подписка на рассылку" name="Что интересует:"
+                           class="popup__name-services">
                     <div class="form-item">
                         <input autocomplete="off" type="email" class="input" id="email-dispatch" name="mail" required>
                         <label for="email-dispatch" class="label">Ваш email</label>
@@ -221,7 +224,8 @@
             <h2 class="h2">Остались вопросы?
                 <br>Задайте их нам:</h2>
             <form class="footer__form" method='post' action='mail.php' enctype='multipart/form-data' autocomplete='off'>
-                <input autocomplete="off" type="text" value="Блок: 'Остались вопросы?'" name="Что интересует:" class="popup__name-services">
+                <input autocomplete="off" type="text" value="Блок: 'Остались вопросы?'" name="Что интересует:"
+                       class="popup__name-services">
                 <div class="form-item">
                     <input autocomplete="off" type="text" class="input" name="name" id="name" required>
                     <label for="name" class="label">Ваше имя</label>
@@ -284,7 +288,7 @@
 </footer>
 
 
-<section class="popup">
+<section class="popup" id="popup__mail">
     <div class="popup__background"></div>
     <div class="popup__form-container">
         <div class="popup__close">
@@ -293,7 +297,8 @@
         <h2>заполни форму и убедись
             <br>что английский это легко</h2>
         <form class="popup__form" method='post' action='mail.php' enctype='multipart/form-data' autocomplete='off'>
-            <input autocomplete="off" type="text" value="Получить бесплатный урок" id="popup__name-services" class='popup__name-services'
+            <input autocomplete="off" type="text" value="Получить бесплатный урок" id="popup__name-services"
+                   class='popup__name-services'
                    name="Что интересует:">
             <div class="form-item">
                 <input autocomplete="off" type="text" class="input" id="name-popup" name="name" required>
@@ -320,6 +325,85 @@
         </form>
     </div>
 </section>
+
+
+<section class="popup" id="popup_order">
+    <div class="popup__background"></div>
+    <div class="popup__form-container order_wrapper">
+        <section class="order_container">
+            <div class="popup__close">
+                <img src="img/close.svg" alt="закрыть окно" width="14" height="14">
+            </div>
+            <section class="order_title-item">
+                <img src="img/france.svg" alt="флаг страны языка" width="119" height="103">
+                <h2 class="order_title">Индивидуальные уроки английского языка по Skype</h2>
+                <p class="order_price-info"><span class="order_price">1100</span>₴/<span
+                        class="order_package">пакет из <span class="order_quantity-package">5</span> занятий</span></p>
+            </section>
+            <section class="order__wrapper-right">
+                <form class="popup__form" method='post' action='mail.php' enctype='multipart/form-data'
+                      autocomplete='off'
+                      id="order_user-info">
+                    <p class="order_contact-title">1. Контактная информация</p>
+                    <section class="order_inputs-wrapper">
+                        <div class="form-item">
+                            <input autocomplete="off" type="text" class="input" id="name-order" name="first_name"
+                                   required>
+                            <label for="name-order" class="label">Ваше имя</label>
+                        </div>
+                        <div class="form-item">
+                            <input autocomplete="off" type="text" class="input" id="last_name" name="last_name"
+                                   required>
+                            <label for="last_name" class="label">Ваша фамилия</label>
+                        </div>
+                        <div class="form-item">
+                            <input autocomplete="off" type="tel" class="input" id="tel-order" name="phone" required>
+                            <label for="tel-order" class="label">Ваш телефон</label>
+                        </div>
+                        <div class="form-item order_email">
+                            <input autocomplete="off" type="email" class="input" name="mail" id="email-order" required>
+                            <label for="email-order" class="label">Ваш email</label>
+                        </div>
+                        <div class="popup-submit order_submit">
+                            <input type="submit" value="ДАЛЕЕ" class="button popup__button">
+                            <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных в соответствии с
+                                законодательством
+                            </p>
+                        </div>
+                    </section>
+                </form>
+                <section class="order-loading_overflow">
+                    <div class="order-loading">
+                        <div class="wBall" id="wBall_1">
+                            <div class="wInnerBall"></div>
+                        </div>
+                        <div class="wBall" id="wBall_2">
+                            <div class="wInnerBall"></div>
+                        </div>
+                        <div class="wBall" id="wBall_3">
+                            <div class="wInnerBall"></div>
+                        </div>
+                        <div class="wBall" id="wBall_4">
+                            <div class="wInnerBall"></div>
+                        </div>
+                        <div class="wBall" id="wBall_5">
+                            <div class="wInnerBall"></div>
+                        </div>
+                    </div>
+                </section>
+                <form method="POST" accept-charset="utf-8" action="https://www.liqpay.ua/api/3/checkout" class="order__liqpay">
+                    <p class="order_contact-title">2. Оплатите</p>
+
+                    <input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJwdWJsaWNfa2V5IjoiaTk1Njc2Mjk4MjIzIiwiYW1vdW50IjoiNSIsImN1cnJlbmN5IjoiVUFIIiwiZGVzY3JpcHRpb24iOiLQnNC+0Lkg0YLQvtCy0LDRgCIsInR5cGUiOiJidXkiLCJsYW5ndWFnZSI6InJ1In0=" />
+                    <input type="hidden" name="signature" value="4RIOXWciUYGoWpuWoQV0pP/BF1k=" />
+                    <button class="button order__liqpay-button">Оплатить</button>
+                </form>
+            </section>
+        </section>
+    </div>
+</section>
+
+
 <section class="success__form success__form--disabled">
     <img src="img/succes.svg" alt="Успешно">
     <p class="success___form--text"></p>

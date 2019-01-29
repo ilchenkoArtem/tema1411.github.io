@@ -4423,6 +4423,7 @@ a.header__service-link:hover {
   width: 90vw;
   z-index: 10;
   border: 0px;
+  height: 60vh;
 }
 
 .about__video-container--close {
