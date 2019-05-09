@@ -39,6 +39,8 @@
   .blog {
     padding: $padding-tablet;
     padding-top: 95px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
   }
 
   .blog_title-category-wrapper {
@@ -47,7 +49,7 @@
 }
 
 
-@media (min-width: 100px) {
+@media (min-width: 600px) {
   .blog_title-category {
     font-size: 34px;
   }

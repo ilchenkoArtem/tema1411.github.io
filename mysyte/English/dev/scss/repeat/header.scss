@@ -102,7 +102,8 @@
   list-style: none;
 }
 
-.header__nav-elements a:hover {
+.header__nav-elements a:hover,
+.header__nav-elements a:focus{
   border-bottom: 1px solid #222222;
 }
 
@@ -521,27 +522,27 @@ a.header__service-link:hover {
     }
   }
 
-  .header__service-items-wrapper:focus-within + .header__service-bg,
   .header__service-items-wrapper:hover + .header__service-bg,
-  .header__services:focus-within + .header__services-wrapper > .header__service-bg,
-  .header__services:hover + .header__services-wrapper > .header__service-bg {
+  .header__services:hover + .header__services-wrapper > .header__service-bg,
+  .header__service-items-wrapper:focus + .header__service-bg,
+  .header__services:focus + .header__services-wrapper > .header__service-bg{
     visibility: visible;
     opacity: 1;
     transition: opacity 0.3s ease-in;
   }
   .header__service-items-wrapper:hover,
-  .header__service-items-wrapper:focus-within,
-  .header__services:focus-within + .header__services-wrapper > .header__service-items-wrapper,
-  .header__services:hover + .header__services-wrapper > .header__service-items-wrapper {
+  .header__services:hover + .header__services-wrapper > .header__service-items-wrapper,
+  .header__service-items-wrapper:focus,
+  .header__services:focus + .header__services-wrapper > .header__service-items-wrapper{
     transform: translateY(0);
     transition: 0.3s transform ease-out 0.2s;
 
   }
 
   .header__service-items-wrapper:hover .header__service-item,
-  .header__service-items-wrapper:focus-within .header__service-item,
-  .header__services:focus-within + .header__services-wrapper > .header__service-item,
-  .header__services:hover + .header__services-wrapper .header__service-item {
+  .header__services:hover + .header__services-wrapper .header__service-item,
+  .header__service-items-wrapper:focus .header__service-item,
+  .header__services:focus + .header__services-wrapper .header__service-item{
     opacity: 1;
     transition: 0.4s opacity ease-in 0.4s;
   }
@@ -636,6 +637,8 @@ a.header__service-link:hover {
   .header__info-social {
     margin-top: -40px;
     justify-content: flex-end;
+    padding-right: 50px;
+    max-width: 1405px;
 
   }
 
@@ -758,4 +761,10 @@ a.header__service-link:hover {
       left: 295px;
     }
   }
+}
+
+@media (min-width: 1461px) {
+
+
+
 }

@@ -1,7 +1,7 @@
 .blog-articles {
   display: grid;
   margin:  0 auto;
-  grid-template-rows: repeat(3, minmax(180px, 180px));
+  grid-template-rows: repeat(3, minmax(180px, auto));
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
           'block-1 block-2 block-6'

@@ -4,6 +4,9 @@
   align-items: center;
   margin-top: 58px;
   margin-bottom: 90px;
+  >img {
+   object-fit: cover;
+  }
 }
 
 .last-news__container {
@@ -16,7 +19,7 @@
 }
 
 .last-news_link {
-  background: $main-color;
+  background-color: $main-color;
 }
 
 .last-news-container {

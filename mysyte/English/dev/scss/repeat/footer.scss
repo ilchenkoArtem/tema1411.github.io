@@ -5,6 +5,7 @@
 
 .footer__form-container {
   margin-bottom: 60px;
+
   h2 {
     font-weight: 900;
     font-size: 14px;
@@ -17,6 +18,7 @@
   margin-top: 30px;
   background-color: $main-color;
   width: 180px;
+
   &:hover {
     background-color: #fcbc05;
   }
@@ -34,6 +36,7 @@
   position: relative;
   padding-left: 28px;
   margin-bottom: 10px;
+
   p {
     margin-top: 0;
     font-size: 10px;
@@ -41,6 +44,7 @@
     margin-bottom: 0;
     line-height: 10px;
   }
+
   a {
     display: block;
     margin-top: 2px;
@@ -50,6 +54,7 @@
     text-decoration: none;
     line-height: 9px;
   }
+
   &::after {
     content: '';
     position: absolute;
@@ -58,24 +63,28 @@
     left: 0;
     background-repeat: no-repeat;
   }
+
   &--whatsapp::after {
     width: 19px;
     height: 19px;
     left: 3px;
     background-image: url('../img/whatsapp.svg');
   }
+
   &--skype::after {
     width: 20px;
     height: 18px;
     left: 2px;
     background-image: url('../img/skype-logo.svg');
   }
+
   &--email::after {
     width: 21px;
     height: 16px;
     left: 4px;
     background-image: url('../img/mail.svg');
   }
+
   &--viber::after {
     width: 19px;
     height: 21px;
@@ -87,9 +96,11 @@
 
 .footer__social {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   margin-bottom: 15px;
+
   p {
     display: block;
     margin-left: auto;
@@ -97,8 +108,53 @@
   }
 }
 
+.footer__document {
+  width: 100%;
+
+  a {
+    display: block;
+  }
+}
+
+.footer__document-wrapper {
+  width: 100%;
+}
+
 .footer__contact-items {
   margin-bottom: 30px;
+}
+
+.footer__logo-card {
+  width: 100%;
+}
+
+.footer__logo-card--visa {
+  margin-right: 10px;
+}
+
+.footer__document {
+  a {
+    font-size: 11px;
+    color: #222222;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 547px) {
+  .footer__document-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .footer__logo-card {
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -110,11 +166,14 @@
     padding-top: 50px;
   }
 
+
   .form-item {
     width: 30%;
+
     input {
       width: 100%;
     }
+
     &:last-of-type {
       width: 100%;
     }
@@ -139,6 +198,7 @@
   .footer__contact-item {
     width: 40%;
     padding-left: 37px;
+
     &::after {
       height: 25px;
     }
@@ -158,33 +218,64 @@
       height: 27px;
       left: 3px;
     }
+
     &--skype::after {
       width: 26px;
       height: 25px;
       left: 2px;
     }
+
     &--email::after {
       width: 30px;
       height: 23px;
       left: 4px;
     }
+
     &--viber::after {
       width: 23px;
       height: 24px;
     }
   }
+
+  .footer__document-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__document {
+    width: auto;
+    text-align: center;
+  }
+
+  .footer__document-wrapper {
+    width: auto;
+  }
+
+  .footer .social {
+    order: -1;
+  }
+
+  .footer__social {
+    justify-content: space-between;
+    p {
+      margin-left: 0;
+    }
+  }
 }
+
 @media (min-width: 800px) {
   .footer__contact-items {
     flex-wrap: nowrap;
   }
-    .footer__contact-item {
-      width: auto;
+  .footer__contact-item {
+    width: auto;
   }
 }
+
 @media (min-width: 1024px) {
   .footer__form-container {
     display: flex;
+
     h2 {
       width: 100%;
       max-width: 237px;
@@ -197,9 +288,11 @@
     max-width: 715px;
     margin-left: 20px;
     margin-top: 45px;
+
     .form-item {
       max-width: 180px;
     }
+
     .form-item--comment {
       width: 64%;
       max-width: 448px;
@@ -210,6 +303,7 @@
     display: flex;
     align-items: center;
     margin-top: 40px;
+
     p {
       max-width: 328px;
     }
@@ -219,11 +313,27 @@
     margin-top: 0;
     margin-right: 33px;
   }
+
+  .footer__document-wrapper {
+    flex-direction: row;
+    flex-grow: 0.6;
+    justify-content: space-between;
+
+  }
+
+  .footer__document {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.4;
+
+  }
 }
+
 @media (min-width: 1200px) {
   .footer {
     padding: 0;
     padding-top: 100px;
+
     .wrapper {
       padding: 0 200px;
 

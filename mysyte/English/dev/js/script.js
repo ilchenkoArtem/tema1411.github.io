@@ -1,5 +1,6 @@
 import jquery from '../libs/jquery/dist/jquery.min';
 import waypoints from '../libs/waypoints/lib/jquery.waypoints.js';
+
 (function () {
     $(window).on('load', function () {
         var videoLink = 'https://www.youtube.com/embed/Vzsuqp8Rbt4?';
@@ -71,7 +72,7 @@ import waypoints from '../libs/waypoints/lib/jquery.waypoints.js';
                 });
             });
         };
-        scrolling('');
+        scrolling('.header__contacts');
 
         /*-----Валидация форм----*/
         var inputForm = document.querySelectorAll('.form-item input');
@@ -151,12 +152,12 @@ import waypoints from '../libs/waypoints/lib/jquery.waypoints.js';
             e.preventDefault();
             var form = this;
             var data = $(this).serialize() + '&action=mailss';
-            console.log(data)
             $.ajax({
                 url: $(form).attr('action'),
                 method: 'POST',
                 data: data,
                 success: function () {
+                    debugger;
                     var successForm = document.querySelector('.success__form');
                     successForm.classList.remove('success__form--disabled');
                     $('.mail_send').show();
@@ -296,6 +297,7 @@ import waypoints from '../libs/waypoints/lib/jquery.waypoints.js';
             e.preventDefault();
             $(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
             var data = {
+                'category' : category,
                 'action': 'loadmore',
                 'query': currentPosts,
             };

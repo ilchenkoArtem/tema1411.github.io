@@ -1,3 +1,13 @@
 .main {
   background-image: url("../img/main__bg.jpg");
 }
+
+.main-no-bg {
+  background-image: none;
+  > div {
+    background-image: none;
+  }
+  >section {
+    background-image: none;
+  }
+}

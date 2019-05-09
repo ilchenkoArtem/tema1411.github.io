@@ -1,20 +1,18 @@
 
 .nav-blog-items {
   display: flex;
-  width: 100%;
   justify-content: flex-start;
-  max-width: 665px;
   list-style: none;
   padding: 0;
   flex-wrap: wrap;
 
   li:not(:last-of-type) {
-    margin-right: auto;
+    margin-right: 30px;
+    margin-bottom: 6px;
   }
 }
 
 .nav-blog-item {
-  padding-right: 5px;
   text-decoration: none;
   color: #222222;
   font-family: 'Montserrat', sans-serif;
@@ -28,19 +26,23 @@
 
 
 @media (max-width: 513px) {
+  .nav-blog {
+    height: 24px;
+    overflow: hidden;
+
+    &:hover{
+      height: auto;
+    }
+  }
   .nav-blog-items {
     display: block;
     padding-top: 25px;
     position: relative;
-    overflow: hidden;
-    height: 24px;
     transition: 0.3s all ease-in-out;
-    &:focus,
-    &:focus-within {
-      height: 109px;
-    }
+    margin: 0;
   }
   .nav-blog-item {
+    background-color: white;
     padding-left: 10px;
     &--active {
       position: absolute;
